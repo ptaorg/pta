@@ -25,11 +25,12 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-    font-family: 'Noto Sans JP', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
     color: var(--color-text);
     background: linear-gradient(180deg, #F8FAFC 0%, #F8FAFC 60%, #EEF3F8 100%);
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 15px;
 }
 a { color: inherit; }
 img { max-width: 100%; display: block; }
