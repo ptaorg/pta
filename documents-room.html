@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="description" content="自治体回答、Google Sites資料室、法制度整理ページをつなぐハブページです。">
+    <link rel="canonical" href="https://ptaorg.github.io/documents-room.html">
+    <meta property="og:title" content="自治体回答・資料室ハブ | PTA適正化推進委員会">
+    <meta property="og:description" content="自治体回答、Google Sites資料室、法制度整理ページをつなぐハブページです。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptaorg.github.io/documents-room.html">
+    <meta property="og:image" content="https://ptaorg.github.io/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="自治体回答・資料室ハブ | PTA適正化推進委員会">
+    <meta name="twitter:description" content="PTA制度を一次資料に基づいて整理する研究サイトです。">
+    <meta name="twitter:image" content="https://ptaorg.github.io/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>自治体回答・資料室ハブ | PTA適正化推進委員会</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/popc-logo.png" alt="PTA適正化推進委員会ロゴ">
+                <span>PTA適正化推進委員会</span>
+            </a>
+            <nav class="desktop-nav" aria-label="主要ナビゲーション">
+                <a href="index.html" class="nav-link">トップ</a>
+
+                <div class="nav-item">
+                    <a href="#" class="nav-link">入口別ガイド</a>
+                    <div class="mega-menu">
+                        <div class="mega-col">
+                            <h4>対象別入口</h4>
+                            <ul>
+                                <li><a href="guide-parent.html">保護者の方へ</a></li>
+                                <li><a href="guide-pta.html">PTA役員の方へ</a></li>
+                                <li><a href="guide-board.html">教育委員会の方へ</a></li>
+                                <li><a href="guide-research.html">研究者・記者の方へ</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-col">
+                            <h4>関連導線</h4>
+                            <ul>
+                                <li><a href="membership.html">入会手続とオプトアウト</a></li>
+                                <li><a href="documents-room.html">資料室ハブ</a></li>
+                                <li><a href="audit/index.html">監査システム</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="law-map.html" class="nav-link">論点別</a>
+                    <div class="mega-menu">
+                        <div class="mega-col">
+                            <h4>主要論点</h4>
+                            <ul>
+                                <li><a href="privacy.html">個人情報提供</a></li>
+                                <li><a href="fee-collection.html">会費徴収</a></li>
+                                <li><a href="personnel.html">教職員関与</a></li>
+                                <li><a href="facilities.html">施設利用</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-col">
+                            <h4>制度整理</h4>
+                            <ul>
+                                <li><a href="law-map.html">法制度マップ</a></li>
+                                <li><a href="national-map.html">全国PTAマップ</a></li>
+                                <li><a href="national-archive.html">全国PTA資料館</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="documents-room.html" class="nav-link">資料・ツール</a>
+                    <div class="mega-menu">
+                        <div class="mega-col">
+                            <h4>資料</h4>
+                            <ul>
+                                <li><a href="documents-room.html">資料室ハブ</a></li>
+                                <li><a href="national-archive.html">全国PTA資料館</a></li>
+                                <li><a href="blog.html">活動ブログ</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-col">
+                            <h4>ツール</h4>
+                            <ul>
+                                <li><a href="audit/index.html">監査システム</a></li>
+                                <li><a href="post-template.html">投稿テンプレート</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileOverlay"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <div class="mobile-overlay" id="mobileOverlay">
+        <a href="index.html" class="mobile-link"><span>Home</span>トップページ</a>
+        <a href="guide-parent.html" class="mobile-link"><span>Guide</span>保護者の方へ</a>
+        <a href="guide-pta.html" class="mobile-link"><span>Guide</span>PTA役員の方へ</a>
+        <a href="guide-board.html" class="mobile-link"><span>Guide</span>教育委員会の方へ</a>
+        <a href="guide-research.html" class="mobile-link"><span>Guide</span>研究者・記者の方へ</a>
+        <a href="law-map.html" class="mobile-link"><span>Legal map</span>法制度マップ</a>
+        <a href="documents-room.html" class="mobile-link"><span>Archive</span>資料室ハブ</a>
+        <a href="audit/index.html" class="mobile-link"><span>Audit</span>監査システム</a>
+        <a href="blog.html" class="mobile-link"><span>Blog</span>活動ブログ</a>
+        <div class="close-overlay" id="closeOverlay">CLOSE ×</div>
+    </div>
+    <section class="page-header">
+        <div class="page-header-inner">
+            <div class="kicker">Documents hub</div>
+            <h1>資料室ハブ</h1>
+            <p>GitHub Pages 本体では論点整理と診断を担い、Google Sites 側では全国資料・行政回答・学校文書などのアーカイブを保持する構成を前提にしています。このページはその接続ハブです。</p>
+        </div>
+    </section>
+
+    
+<main class="section-container documents-hub-main">
+    <section class="hub-hero">
+        <div class="hub-hero-copy">
+            <div class="kicker">Documents hub</div>
+            <h1>自治体回答・資料室ハブ</h1>
+            <p>このページは、教育委員会回答、全国資料、Google Sites資料室、法制度整理ページをつなぐ中継ページです。個別文書の全文データをこのページ自体に載せるのではなく、資料の種類と読み方を整理して、必要な場所へ移動しやすくする構成にしています。</p>
+            <div class="hub-button-row">
+                <a class="button-primary" href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer">Google Sites資料室トップへ</a>
+                <a class="button-secondary" href="report.html">総合レポートへ戻る</a>
+            </div>
+        </div>
+        <div class="hub-hero-panel">
+            <div class="mini-note">
+                <strong>このページの役割</strong>
+                <ul>
+                    <li>自治体回答の読み方を整理する</li>
+                    <li>法令・判例・行政実例と切り分ける</li>
+                    <li>Google Sites資料群への入口を一本化する</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="documents-reading-guide">
+        <h2>最初に確認すること</h2>
+        <div class="claim-evidence-box">
+            <div class="ce-row">
+                <div class="ce-col ce-claim">
+                    <div class="ce-label">このページで分かること</div>
+                    <p>自治体回答や資料室資料を、法令・判例・行政実例と混同せずに参照するための入口と読み方です。</p>
+                </div>
+                <div class="ce-col ce-evidence">
+                    <div class="ce-label">注意点</div>
+                    <ul>
+                        <li>教育委員会回答は、当該自治体の見解や実務を示す資料であり、全国一律の法的根拠そのものではありません。</li>
+                        <li>法的評価を行う際は、<a href="law-map.html">法制度マップ</a>や<a href="report.html">総合レポート</a>に戻って条文・判例と照合してください。</li>
+                        <li>このページでは、未確認URLや未確認文書を新規に作成していません。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="documents-route-grid">
+        <h2>資料別に入る</h2>
+        <div class="info-grid">
+            <a class="link-card" href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer">
+                <div class="kicker">Archive</div>
+                <strong>Google Sites 資料室トップ</strong>
+                <p>既存の資料群・Drive連携・テーマ別アーカイブへの入口です。</p>
+                <small>外部サイトへ移動 ↗</small>
+            </a>
+            <a class="link-card" href="https://sites.google.com/view/ptatekiseika/pta%E9%81%8B%E5%96%B6%E7%8A%B6%E6%B3%81%E5%A0%B1%E5%91%8A%E6%9B%B8/%E5%85%A8%E5%9B%BDpta%E8%B3%87%E6%96%99%E9%A4%A8" target="_blank" rel="noopener noreferrer">
+                <div class="kicker">National archive</div>
+                <strong>全国PTA資料館</strong>
+                <p>全国の公開資料・実態把握に使うアーカイブ導線です。</p>
+                <small>外部サイトへ移動 ↗</small>
+            </a>
+            <a class="link-card" href="cases.html">
+                <div class="kicker">Cases</div>
+                <strong>判例整理ページ</strong>
+                <p>個別事案の裁判例を、争点・結論・射程で確認したい場合はこちらです。</p>
+                <small>内部ページ</small>
+            </a>
+            <a class="link-card" href="administrative-materials.html">
+                <div class="kicker">Administrative</div>
+                <strong>行政実例・通知等整理</strong>
+                <p>行政解釈・通知・実務資料の位置づけを先に整理したい場合はこちらです。</p>
+                <small>内部ページ</small>
+            </a>
+            <a class="link-card" href="law-map.html">
+                <div class="kicker">Law map</div>
+                <strong>法制度マップへ戻る</strong>
+                <p>条文・制度構造の整理を先に確認したい場合はこちらです。</p>
+                <small>内部ページ</small>
+            </a>
+            <a class="link-card" href="audit/index.html">
+                <div class="kicker">Audit</div>
+                <strong>監査システムへ進む</strong>
+                <p>どの論点が問題化しているかを先に診断したい場合に使います。</p>
+                <small>内部ページ</small>
+            </a>
+        </div>
+    
+
+    <section class="documents-topic-hub">
+        <h2>論点別に自治体回答へ進む</h2>
+        <p class="source-note">以下は、自治体回答や関連資料を読むときの主要論点別入口です。現時点では個別の自治体回答全文をこのページに再掲せず、既存の論点整理ページと資料室ハブをつないでいます。</p>
+        <div class="topic-hub-grid">
+            <article class="topic-hub-card">
+                <div class="topic-kicker">Privacy</div>
+                <h3>個人情報提供</h3>
+                <p>学校からPTAへの名簿提供、第三者提供、目的外利用の論点から自治体回答を読む入口です。</p>
+                <div class="topic-links">
+                    <a href="privacy.html">論点整理ページ</a>
+                    <a href="administrative-materials.html">行政実例・通知等</a>
+                    <a href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer">資料室トップ ↗</a>
+                </div>
+            </article>
+            <article class="topic-hub-card">
+                <div class="topic-kicker">Fee collection</div>
+                <h3>会費徴収・学校徴収</h3>
+                <p>PTA会費の学校徴収、代理徴収、公私会計分離の論点から自治体回答を読む入口です。</p>
+                <div class="topic-links">
+                    <a href="fee-collection.html">論点整理ページ</a>
+                    <a href="administrative-materials.html">行政実例・通知等</a>
+                    <a href="report.html">総合レポート</a>
+                </div>
+            </article>
+            <article class="topic-hub-card">
+                <div class="topic-kicker">Personnel</div>
+                <h3>教職員関与・職務専念義務</h3>
+                <p>教職員がPTA事務にどこまで関与できるか、職務専念義務との関係から自治体回答を読む入口です。</p>
+                <div class="topic-links">
+                    <a href="personnel.html">論点整理ページ</a>
+                    <a href="administrative-materials.html">行政実例・通知等</a>
+                    <a href="cases.html">判例整理</a>
+                </div>
+            </article>
+            <article class="topic-hub-card">
+                <div class="topic-kicker">Membership</div>
+                <h3>任意加入・入退会手続</h3>
+                <p>オプトイン、入会申込書、退会の自由に関する自治体回答や説明資料を読む入口です。</p>
+                <div class="topic-links">
+                    <a href="membership.html">論点整理ページ</a>
+                    <a href="cases.html">判例整理</a>
+                    <a href="report.html">総合レポート</a>
+                </div>
+            </article>
+            <article class="topic-hub-card">
+                <div class="topic-kicker">Facilities</div>
+                <h3>学校施設・公私混同</h3>
+                <p>学校施設の利用、公的媒体との同居、公私混同に関する整理ページへの入口です。</p>
+                <div class="topic-links">
+                    <a href="facilities.html">論点整理ページ</a>
+                    <a href="law-map.html">法制度マップ</a>
+                    <a href="documents-room.html">このページ上部へ</a>
+                </div>
+            </article>
+            <article class="topic-hub-card">
+                <div class="topic-kicker">Board answers</div>
+                <h3>教育委員会回答の読み方</h3>
+                <p>自治体回答を、法令・判例・行政実例と混同せず読むための入口です。</p>
+                <div class="topic-links">
+                    <a href="report.html#source-guide">資料の種類</a>
+                    <a href="administrative-materials.html">行政実例・通知等</a>
+                    <a href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer">資料室トップ ↗</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="documents-type-table-section">
+        <h2>資料の種類と位置づけ</h2>
+        <div class="source-type-table-wrap">
+            <table class="source-type-table">
+                <thead>
+                    <tr>
+                        <th>資料類型</th>
+                        <th>このサイトでの位置づけ</th>
+                        <th>読むときの注意</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>法令</th>
+                        <td>制度上の可否・限界を確認する最優先資料</td>
+                        <td><a href="law-map.html">法制度マップ</a>から確認</td>
+                    </tr>
+                    <tr>
+                        <th>判例</th>
+                        <td>個別事案に対する裁判所判断</td>
+                        <td><a href="cases.html">判例整理ページ</a>で射程を確認</td>
+                    </tr>
+                    <tr>
+                        <th>行政実例・通知等</th>
+                        <td>行政解釈や実務運用の参考資料</td>
+                        <td><a href="administrative-materials.html">行政実例・通知等整理</a>で位置づけを確認</td>
+                    </tr>
+                    <tr>
+                        <th>教育委員会回答</th>
+                        <td>当該自治体の実務認識・見解の把握資料</td>
+                        <td>自治体差があるため、法令や判例と照合する</td>
+                    </tr>
+                    <tr>
+                        <th>委員会論考・学術資料</th>
+                        <td>制度横断の論点整理・比較検討の補助資料</td>
+                        <td><a href="report.html#ref-committee">総合レポート参考欄</a>を参照</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="documents-workflow">
+        <h2>おすすめの読み進め方</h2>
+        <div class="workflow-grid">
+            <article class="workflow-card">
+                <div class="workflow-step">1</div>
+                <h3>制度の土台を確認</h3>
+                <p><a href="law-map.html">法制度マップ</a>で、法令の全体構造を先に確認します。</p>
+            </article>
+            <article class="workflow-card">
+                <div class="workflow-step">2</div>
+                <h3>総合整理を見る</h3>
+                <p><a href="report.html">総合レポート</a>で、論点全体の配置を把握します。</p>
+            </article>
+            <article class="workflow-card">
+                <div class="workflow-step">3</div>
+                <h3>資料類型ごとに分ける</h3>
+                <p><a href="cases.html">判例</a>、<a href="administrative-materials.html">行政実例</a>、教育委員会回答を分けて読みます。</p>
+            </article>
+            <article class="workflow-card">
+                <div class="workflow-step">4</div>
+                <h3>資料室で原資料をたどる</h3>
+                <p>必要に応じて <a href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer">Google Sites資料室</a> へ移動します。</p>
+            </article>
+        </div>
+    </section>
+
+
+
+    <section class="documents-case-guides">
+        <h2>ケース別の読む順番</h2>
+        <div class="case-guide-grid">
+            <article class="case-guide-card">
+                <div class="case-guide-kicker">Case 1</div>
+                <h3>個人情報問題を追う場合</h3>
+                <ol class="case-guide-list">
+                    <li><a href="privacy.html">個人情報ページ</a>で論点の概要を確認</li>
+                    <li><a href="law-map.html">法制度マップ</a>で個人情報保護法・学校との関係を確認</li>
+                    <li><a href="administrative-materials.html">行政実例・通知等整理</a>で行政資料の位置づけを確認</li>
+                    <li>必要に応じて <a href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer">Google Sites資料室</a> で関連資料をたどる</li>
+                </ol>
+            </article>
+            <article class="case-guide-card">
+                <div class="case-guide-kicker">Case 2</div>
+                <h3>会費徴収問題を追う場合</h3>
+                <ol class="case-guide-list">
+                    <li><a href="fee-collection.html">会費徴収ページ</a>で問題の型を確認</li>
+                    <li><a href="law-map.html">法制度マップ</a>で地方自治法・個人情報保護法との関係を見る</li>
+                    <li><a href="report.html">総合レポート</a>で制度全体の位置づけを確認</li>
+                    <li>必要に応じて <a href="documents-room.html">この資料室ハブ</a> から資料群へ移動する</li>
+                </ol>
+            </article>
+            <article class="case-guide-card">
+                <div class="case-guide-kicker">Case 3</div>
+                <h3>教職員関与を追う場合</h3>
+                <ol class="case-guide-list">
+                    <li><a href="personnel.html">教職員関与ページ</a>で職務専念義務の論点を確認</li>
+                    <li><a href="administrative-materials.html">行政実例・通知等整理</a>で行政実例の位置づけを確認</li>
+                    <li><a href="law-map.html">法制度マップ</a>で地方公務員法との関係を確認</li>
+                    <li><a href="cases.html">判例整理ページ</a>で裁判例の射程を補助的に確認</li>
+                </ol>
+            </article>
+            <article class="case-guide-card">
+                <div class="case-guide-kicker">Case 4</div>
+                <h3>任意加入・入退会を追う場合</h3>
+                <ol class="case-guide-list">
+                    <li><a href="membership.html">任意加入ページ</a>で論点の出発点を確認</li>
+                    <li><a href="cases.html">判例整理ページ</a>で任意性をめぐる判例の読み方を確認</li>
+                    <li><a href="report.html">総合レポート</a>で制度横断の整理を確認</li>
+                    <li>必要に応じて自治体回答や学校文書の資料へ進む</li>
+                </ol>
+            </article>
+        </div>
+    </section>
+
+    
+    <section class="documents-checklist">
+        <h2>自治体回答を読むときの注意点</h2>
+        <div class="claim-evidence-box">
+            <div class="ce-row">
+                <div class="ce-col ce-claim">
+                    <div class="ce-label">このチェックリストの目的</div>
+                    <p>教育委員会回答や自治体文書を、法令・判例と混同せずに読むための確認項目です。回答文そのものの結論だけでなく、作成主体、対象範囲、根拠条文の有無を見分けるために使います。</p>
+                </div>
+                <div class="ce-col ce-evidence">
+                    <div class="ce-label">前提</div>
+                    <ul>
+                        <li>自治体回答は当該自治体の見解・実務認識を示す資料です。</li>
+                        <li>全国一律の法的結論を直接確定する資料ではありません。</li>
+                        <li>評価するときは、<a href="law-map.html">法制度マップ</a>や<a href="cases.html">判例整理ページ</a>と照合してください。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="checklist-grid">
+            <article class="checklist-card">
+                <div class="check-icon">✓</div>
+                <h3>誰が作成した文書か</h3>
+                <p>教育委員会、学校、PTA、首長部局など、作成主体を確認します。主体が違うと、文書の意味と重みも変わります。</p>
+            </article>
+            <article class="checklist-card">
+                <div class="check-icon">✓</div>
+                <h3>いつの文書か</h3>
+                <p>法改正前後で意味が変わることがあります。日付が明示されているかを確認します。</p>
+            </article>
+            <article class="checklist-card">
+                <div class="check-icon">✓</div>
+                <h3>何について答えているか</h3>
+                <p>個人情報、会費徴収、職務専念義務、任意加入など、対象論点が限定されているかを確認します。</p>
+            </article>
+            <article class="checklist-card">
+                <div class="check-icon">✓</div>
+                <h3>根拠条文が示されているか</h3>
+                <p>結論だけでなく、どの法令・条文に基づいているかが書かれているかを確認します。</p>
+            </article>
+            <article class="checklist-card">
+                <div class="check-icon">✓</div>
+                <h3>一般論か個別事案か</h3>
+                <p>一般的見解なのか、その自治体固有の事情に基づく回答なのかを切り分けます。</p>
+            </article>
+            <article class="checklist-card">
+                <div class="check-icon">✓</div>
+                <h3>学校実務の説明か、法的評価か</h3>
+                <p>「現在こう運用している」という説明と、「法的に許される」という評価は別です。両者を分けて読みます。</p>
+            </article>
+            <article class="checklist-card">
+                <div class="check-icon">✓</div>
+                <h3>他資料と矛盾しないか</h3>
+                <p>法令、判例、行政実例、他自治体回答と照合して、矛盾やズレがないかを確認します。</p>
+            </article>
+            <article class="checklist-card">
+                <div class="check-icon">✓</div>
+                <h3>公開範囲と引用範囲を確認したか</h3>
+                <p>公表文書か、開示資料か、抜粋かによって扱いが変わります。引用時は原資料の範囲を確認します。</p>
+            </article>
+        </div>
+
+        <div class="source-type-table-wrap">
+            <table class="source-type-table">
+                <thead>
+                    <tr>
+                        <th>確認項目</th>
+                        <th>見落としやすい点</th>
+                        <th>戻る先</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>根拠条文</th>
+                        <td>条文番号がないまま結論だけ書かれていることがある</td>
+                        <td><a href="law-map.html">法制度マップ</a></td>
+                    </tr>
+                    <tr>
+                        <th>判例との整合</th>
+                        <td>自治体回答だけでは裁判所判断の射程までは分からない</td>
+                        <td><a href="cases.html">判例整理ページ</a></td>
+                    </tr>
+                    <tr>
+                        <th>行政解釈との関係</th>
+                        <td>通知や行政実例と回答文のレベルが混同されやすい</td>
+                        <td><a href="administrative-materials.html">行政実例・通知等整理</a></td>
+                    </tr>
+                    <tr>
+                        <th>総合評価</th>
+                        <td>複数資料をまたいだ位置づけ確認が必要</td>
+                        <td><a href="report.html">総合レポート</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <section class="documents-quote-template">
+        <h2>自治体回答を引用するときの書き方テンプレート</h2>
+        <div class="claim-evidence-box">
+            <div class="ce-row">
+                <div class="ce-col ce-claim">
+                    <div class="ce-label">目的</div>
+                    <p>教育委員会回答や自治体文書を引用するときに、出所・日付・文書の性質・論点を落とさず示すためのテンプレートです。引用の見た目をそろえることで、後から検証しやすくなります。</p>
+                </div>
+                <div class="ce-col ce-evidence">
+                    <div class="ce-label">前提</div>
+                    <ul>
+                        <li>原資料の文言を変えずに引用することが基本です。</li>
+                        <li>抜粋である場合は、その旨を明示します。</li>
+                        <li>法的評価を加える場合は、引用部分と評価部分を分けて書きます。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-template-grid">
+            <article class="quote-template-card">
+                <h3>基本テンプレート</h3>
+                <pre class="quote-template-block">【自治体名】
+○○県教育委員会／○○市教育委員会
+
+【文書名・件名】
+「□□□□□□□□」
+
+【日付】
+20XX年X月X日
+
+【文書の性質】
+照会回答／開示文書／通知／メール回答／議事録 など
+
+【対象論点】
+個人情報提供／会費徴収／教職員関与／任意加入 など
+
+【引用箇所】
+「…………………………」
+
+【備考】
+原文ママ／一部抜粋／別紙あり／該当ページ○頁 など</pre>
+            </article>
+
+            <article class="quote-template-card">
+                <h3>短く示すテンプレート</h3>
+                <pre class="quote-template-block">○○市教育委員会
+「□□□□□□□□」
+20XX年X月X日
+照会回答（個人情報提供）
+引用：「…………………………」</pre>
+            </article>
+
+            <article class="quote-template-card">
+                <h3>評価を分けて書くテンプレート</h3>
+                <pre class="quote-template-block">【引用】
+○○市教育委員会「□□□□□□□□」（20XX年X月X日）には、
+「…………………………」
+と記載されている。
+
+【整理】
+この文書は、当該自治体の見解資料として重要である。
+
+【留意点】
+ただし、全国一律の法的結論そのものではないため、
+法令・判例・行政実例と照合が必要である。</pre>
+            </article>
+        </div>
+
+        <div class="source-type-table-wrap">
+            <table class="source-type-table">
+                <thead>
+                    <tr>
+                        <th>入れておきたい項目</th>
+                        <th>理由</th>
+                        <th>省くと起きやすい問題</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>自治体名</th>
+                        <td>誰の見解かを明確にするため</td>
+                        <td>他自治体の見解と混同しやすい</td>
+                    </tr>
+                    <tr>
+                        <th>日付</th>
+                        <td>法改正前後や運用変更を見分けるため</td>
+                        <td>古い見解を現行見解として扱いやすい</td>
+                    </tr>
+                    <tr>
+                        <th>文書の性質</th>
+                        <td>回答・通知・議事録などの違いを示すため</td>
+                        <td>文書の重みを誤認しやすい</td>
+                    </tr>
+                    <tr>
+                        <th>対象論点</th>
+                        <td>何について答えた文書かを限定するため</td>
+                        <td>別論点へ過剰に一般化しやすい</td>
+                    </tr>
+                    <tr>
+                        <th>引用箇所</th>
+                        <td>検証可能性を確保するため</td>
+                        <td>要約だけが独り歩きしやすい</td>
+                    </tr>
+                    <tr>
+                        <th>備考</th>
+                        <td>抜粋・別紙・ページ位置を示すため</td>
+                        <td>原資料確認がしにくくなる</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="quote-template-notes">
+            <article class="info-card">
+                <div class="meta">書き方の原則</div>
+                <h3>引用と評価を混ぜない</h3>
+                <p>まず原文を引用し、その後に「この文書は何を意味するか」を整理する構成にすると、検証可能性が高くなります。</p>
+            </article>
+            <article class="info-card">
+                <div class="meta">注意</div>
+                <h3>原文が確認できない場合は断定しない</h3>
+                <p>メールやメモの再記録しかない場合は、「原文未確認」「要約メモ」などと明示して、資料の性質を隠さないことが重要です。</p>
+            </article>
+            <article class="info-card">
+                <div class="meta">戻る先</div>
+                <h3>法的評価は別ページで照合</h3>
+                <p><a href="law-map.html">法制度マップ</a>、<a href="cases.html">判例整理ページ</a>、<a href="administrative-materials.html">行政実例・通知等整理</a>と照らして読む構成を推奨します。</p>
+            </article>
+        </div>
+    </section>
+
+
+
+    <section class="documents-comparison-template">
+        <h2>自治体回答を比較表に起こすときの列設計テンプレート</h2>
+        <div class="claim-evidence-box">
+            <div class="ce-row">
+                <div class="ce-col ce-claim">
+                    <div class="ce-label">目的</div>
+                    <p>複数自治体の回答を比較するときに、記録項目を先に固定して、後から検証しやすい一覧表を作るためのテンプレートです。回答本文だけでなく、資料の性質や根拠条文の有無も同時に記録する前提で設計しています。</p>
+                </div>
+                <div class="ce-col ce-evidence">
+                    <div class="ce-label">使い方</div>
+                    <ul>
+                        <li>まず列名を固定し、あとから列を増やしすぎないようにします。</li>
+                        <li>「事実」と「評価」を別列に分けて記録します。</li>
+                        <li>根拠条文、引用箇所、文書種別を落とさず入れると検証性が上がります。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison-template-grid">
+            <article class="comparison-template-card">
+                <h3>基本列テンプレート</h3>
+                <pre class="quote-template-block">自治体名
+回答日
+文書名・件名
+文書種別
+対象論点
+質問項目
+回答要旨
+原文引用
+根拠条文の明示有無
+根拠条文
+判例言及の有無
+行政実例・通知言及の有無
+学校実務の説明か
+法的評価か
+全国一般論として読めるか
+個別事情依存か
+備考
+原資料の所在</pre>
+            </article>
+
+            <article class="comparison-template-card">
+                <h3>個人情報問題向けの追加列</h3>
+                <pre class="quote-template-block">第三者提供の扱い
+本人同意の扱い
+利用目的の説明有無
+学校保有情報の範囲
+PTAへの提供方法
+非会員情報の扱い
+名簿・連絡網への言及
+個人情報保護法の条文言及</pre>
+            </article>
+
+            <article class="comparison-template-card">
+                <h3>会費徴収問題向けの追加列</h3>
+                <pre class="quote-template-block">学校徴収の有無
+徴収方法
+口座情報利用の扱い
+学校会計での管理有無
+雑部金等の言及
+地方自治法235条の4言及
+個人情報利用根拠の説明
+徴収停止・見直しの有無</pre>
+            </article>
+
+            <article class="comparison-template-card">
+                <h3>教職員関与問題向けの追加列</h3>
+                <pre class="quote-template-block">教職員の担当業務
+勤務時間内処理の有無
+PTA会計関与の有無
+職務命令の有無
+職務専念義務への言及
+行政実例・通知の参照有無
+改善方針の有無</pre>
+            </article>
+        </div>
+
+        <div class="source-type-table-wrap">
+            <table class="source-type-table">
+                <thead>
+                    <tr>
+                        <th>列名</th>
+                        <th>入れる理由</th>
+                        <th>備考</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>自治体名</th>
+                        <td>誰の見解かを特定するため</td>
+                        <td>教育委員会名だけでなく都道府県・市町村まで明確にする</td>
+                    </tr>
+                    <tr>
+                        <th>回答日</th>
+                        <td>法改正や運用変更の前後を区別するため</td>
+                        <td>不明なら「日付未確認」と明示する</td>
+                    </tr>
+                    <tr>
+                        <th>文書種別</th>
+                        <td>回答・通知・開示文書などの違いを示すため</td>
+                        <td>メール要旨しかない場合はその旨を明記する</td>
+                    </tr>
+                    <tr>
+                        <th>原文引用</th>
+                        <td>要約の暴走を防ぐため</td>
+                        <td>抜粋なら「一部抜粋」と記す</td>
+                    </tr>
+                    <tr>
+                        <th>根拠条文</th>
+                        <td>結論と法的根拠を分離するため</td>
+                        <td>条文がなければ「明示なし」と記録する</td>
+                    </tr>
+                    <tr>
+                        <th>法的評価か</th>
+                        <td>単なる実務説明と区別するため</td>
+                        <td>判断が難しければ「要検討」として残す</td>
+                    </tr>
+                    <tr>
+                        <th>原資料の所在</th>
+                        <td>後から再確認できるようにするため</td>
+                        <td>Google Drive、開示資料PDF、メール保存先などを記録する</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="quote-template-notes">
+            <article class="info-card">
+                <div class="meta">実務上のコツ</div>
+                <h3>「要旨」と「原文引用」を分ける</h3>
+                <p>一覧表を作るときは、読みやすい要旨欄とは別に、原文引用欄を置くと後からの検証が容易になります。</p>
+            </article>
+            <article class="info-card">
+                <div class="meta">比較の軸</div>
+                <h3>列を固定してから入力する</h3>
+                <p>自治体ごとに見出しを変えるのではなく、比較軸を先に固定すると、横比較がしやすくなります。</p>
+            </article>
+            <article class="info-card">
+                <div class="meta">戻る先</div>
+                <h3>法的評価は別ページで確認</h3>
+                <p><a href="law-map.html">法制度マップ</a>、<a href="cases.html">判例整理ページ</a>、<a href="administrative-materials.html">行政実例・通知等整理</a>に戻って照合してください。</p>
+            </article>
+        </div>
+    </section>
+
+
+<section class="documents-hub-notes">
+        <div class="info-grid">
+            <article class="info-card">
+                <div class="meta">運用方針</div>
+                <h3>GitHub と Google Sites の役割分担</h3>
+                <p>GitHub Pagesは説明・診断・構造整理に特化し、Google Sitesは大量資料の閲覧・Driveアーカイブのハブとして使います。これにより、公開サイトの軽量性と資料群の網羅性を両立します。</p>
+            </article>
+            <article class="info-card">
+                <div class="meta">自治体回答の扱い</div>
+                <h3>「見解資料」として使う</h3>
+                <p>教育委員会回答は、自治体の実務認識や法的見解の現れとして重要ですが、それ自体を全国共通の結論としては扱わず、法令・判例・行政実例と照合して用います。</p>
+            </article>
+            <article class="info-card">
+                <div class="meta">今後の拡張</div>
+                <h3>自治体別ハブへの展開</h3>
+                <p>今後、自治体別・論点別に回答資料を整理する場合は、このページを上位ハブとして使い、個別ページへ分岐させる構成に拡張できます。</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>PTA適正化推進委員会</h3>
+                <a href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" target="_blank" rel="noopener noreferrer" class="yokomusubi-card">
+                    <img src="assets/yokomusubi.png" alt="よこむすび">
+                    <span class="yokomusubi-meta">登録番号　磯子12406</span>
+                    <span class="yokomusubi-meta">分類番号　12-4（市民活動・社会教育推進）</span>
+                </a>
+                <div class="footer-contact">
+                    <p>横浜市磯子区岡村8-17-5-301</p>
+                    <p>070-9012-7772</p>
+                    <p><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
+                </div>
+            </div>
+            <div>
+                <h4>入口</h4>
+                <ul>
+                    <li><a href="guide-parent.html">保護者の方へ</a></li>
+                    <li><a href="guide-pta.html">PTA役員の方へ</a></li>
+                    <li><a href="guide-board.html">教育委員会の方へ</a></li>
+                    <li><a href="guide-research.html">研究者・記者の方へ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>主要導線</h4>
+                <ul>
+                    <li><a href="law-map.html">法制度マップ</a></li>
+                    <li><a href="documents-room.html">資料室ハブ</a></li>
+                    <li><a href="audit/index.html">監査システム</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 PTA適正化推進委員会</p>
+    </footer>
+    <script src="js/law-data.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

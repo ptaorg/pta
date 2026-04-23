@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="description" content="保護者向け：入会手続き・会費・個人情報・退会の方法を法的根拠とともに整理。すぐ使える照会メール・退会届テンプレート付き。">
+  <link rel="canonical" href="https://ptaorg.github.io/guide-parent.html">
+  <meta property="og:title" content="保護者の方へ | PTA適正化推進委員会">
+  <meta property="og:description" content="入会・会費・個人情報・退会について法的根拠から整理。すぐ使えるテンプレート付き。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ptaorg.github.io/guide-parent.html">
+  <meta property="og:image" content="https://ptaorg.github.io/assets/og-image.png">
+  <title>保護者の方へ | PTA適正化推進委員会</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ===== PARENT PAGE STYLES ===== */
+
+    /* Hero — warmer tone than board page */
+    .parent-hero {
+      background: linear-gradient(135deg, #0f2744 0%, #1e3a6e 50%, #1a4b8c 100%);
+      color: #fff;
+      padding: 80px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .parent-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 85% 50%, rgba(212,175,55,.14) 0%, transparent 60%);
+    }
+    .parent-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .parent-hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(calc(100% - 40px), 1200px);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 40px;
+      align-items: center;
+    }
+    .parent-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(212,175,55,.18);
+      border: 1px solid rgba(212,175,55,.35);
+      color: var(--color-gold-light);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .06em;
+      margin-bottom: 20px;
+    }
+    .parent-hero h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(2rem, 3.8vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+    .parent-hero h1 em {
+      font-style: normal;
+      color: var(--color-gold-light);
+    }
+    .parent-hero p {
+      color: rgba(255,255,255,.82);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      max-width: 580px;
+      margin-bottom: 28px;
+    }
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-parent-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      background: var(--color-gold);
+      color: var(--color-navy-dark);
+      font-weight: 900;
+      font-size: .95rem;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .btn-parent-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(212,175,55,.3); }
+    .btn-parent-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      color: #fff;
+      font-weight: 700;
+      font-size: .95rem;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.4);
+      transition: var(--transition);
+    }
+    .btn-parent-secondary:hover { background: rgba(255,255,255,.08); }
+
+    /* Quick nav panel */
+    .parent-hero-panel {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 22px;
+      padding: 24px;
+    }
+    .panel-label {
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--color-gold-light);
+      margin-bottom: 14px;
+    }
+    .panel-jump-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 14px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: rgba(255,255,255,.9);
+      font-size: .9rem;
+      font-weight: 600;
+      transition: var(--transition);
+      margin-bottom: 5px;
+    }
+    .panel-jump-link:hover { background: rgba(255,255,255,.1); }
+    .panel-jump-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 8px;
+      background: rgba(212,175,55,.22);
+      color: var(--color-gold-light);
+      display: grid;
+      place-items: center;
+      font-size: .78rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .panel-divider {
+      height: 1px;
+      background: rgba(255,255,255,.1);
+      margin: 12px 0;
+    }
+    .panel-action-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 14px;
+      border-radius: 12px;
+      background: rgba(212,175,55,.15);
+      border: 1px solid rgba(212,175,55,.3);
+      text-decoration: none;
+      color: var(--color-gold-light);
+      font-size: .88rem;
+      font-weight: 700;
+      transition: var(--transition);
+    }
+    .panel-action-link:hover { background: rgba(212,175,55,.25); }
+
+    /* Main layout */
+    .parent-content {
+      width: min(calc(100% - 40px), 1200px);
+      margin-inline: auto;
+      padding: 72px 0 88px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .parent-sidebar {
+      position: sticky;
+      top: 100px;
+    }
+    .sidebar-nav {
+      background: #fff;
+      border: 1px solid var(--color-line);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+    .sidebar-nav-title {
+      font-size: .8rem;
+      font-weight: 900;
+      letter-spacing: .06em;
+      color: var(--color-navy);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--color-gold);
+    }
+    .sidebar-link {
+      display: block;
+      padding: 9px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--color-text-soft);
+      font-size: .88rem;
+      font-weight: 600;
+      transition: var(--transition);
+      margin-bottom: 3px;
+    }
+    .sidebar-link:hover, .sidebar-link.active {
+      background: rgba(26,54,93,.07);
+      color: var(--color-navy);
+      font-weight: 700;
+    }
+    .sidebar-link.section-head {
+      font-weight: 800;
+      color: var(--color-navy);
+      font-size: .9rem;
+      margin-top: 10px;
+    }
+    .sidebar-cta {
+      margin-top: 18px;
+      padding: 14px;
+      background: linear-gradient(135deg, var(--color-navy-dark), var(--color-navy));
+      border-radius: 16px;
+      text-align: center;
+    }
+    .sidebar-cta p {
+      color: rgba(255,255,255,.8);
+      font-size: .82rem;
+      margin-bottom: 10px;
+    }
+    .sidebar-cta a {
+      display: block;
+      padding: 10px;
+      border-radius: 10px;
+      background: var(--color-gold);
+      color: var(--color-navy-dark);
+      font-weight: 900;
+      font-size: .85rem;
+      text-decoration: none;
+    }
+
+    /* Article */
+    .parent-main { min-width: 0; }
+    .parent-section {
+      margin-bottom: 72px;
+      scroll-margin-top: 100px;
+    }
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(26,54,93,.07);
+      color: var(--color-navy);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .parent-section h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.7rem, 2.8vw, 2.3rem);
+      color: var(--color-navy);
+      line-height: 1.28;
+      margin-bottom: 18px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--color-gold);
+    }
+    .parent-section h3 {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: var(--color-navy);
+      margin: 28px 0 12px;
+      padding-left: 14px;
+      border-left: 4px solid var(--color-gold);
+    }
+    .parent-section p {
+      color: var(--color-text);
+      line-height: 1.9;
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+    }
+
+    /* Pattern cards — 4つのパターン */
+    .pattern-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin: 24px 0;
+    }
+    .pattern-card {
+      background: #fff;
+      border: 1px solid var(--color-line);
+      border-radius: 18px;
+      padding: 22px;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .pattern-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .pattern-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #B91C1C, #EF4444);
+    }
+    .pattern-icon { font-size: 1.8rem; margin-bottom: 12px; }
+    .pattern-card h4 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: var(--color-navy);
+      margin-bottom: 8px;
+    }
+    .pattern-card p {
+      font-size: .9rem;
+      color: var(--color-text-soft);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .pattern-label {
+      display: inline-flex;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #FEE2E2;
+      color: #B91C1C;
+      font-size: .72rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    /* 3 legal truths */
+    .truth-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .truth-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 22px;
+      background: #fff;
+      border: 1px solid var(--color-line);
+      border-radius: 18px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .truth-item:hover { transform: translateX(4px); border-color: rgba(26,54,93,.2); }
+    .truth-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--color-navy-dark), var(--color-navy));
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .truth-body strong {
+      display: block;
+      font-size: 1.05rem;
+      color: var(--color-navy);
+      margin-bottom: 6px;
+    }
+    .truth-body p { margin: 0; font-size: .95rem; color: var(--color-text-soft); line-height: 1.75; }
+    .truth-law {
+      display: inline-flex;
+      margin-top: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(26,54,93,.07);
+      color: var(--color-navy);
+      font-size: .76rem;
+      font-weight: 800;
+    }
+
+    /* Opt-out breakdown */
+    .optout-breakdown {
+      background: linear-gradient(145deg, #FFF5F5, #FFF0F0);
+      border: 1px solid #FED7D7;
+      border-left: 5px solid #B91C1C;
+      border-radius: 0 18px 18px 0;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .ob-title {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: #B91C1C;
+      margin-bottom: 16px;
+    }
+    .ob-points {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .ob-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: .93rem;
+      color: var(--color-text);
+      line-height: 1.7;
+    }
+    .ob-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #FEE2E2;
+      color: #B91C1C;
+      display: grid;
+      place-items: center;
+      font-size: .75rem;
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Law quote */
+    .law-quote-block {
+      background: #F6F9FD;
+      border-left: 5px solid var(--color-navy);
+      border-radius: 0 16px 16px 0;
+      padding: 18px 22px;
+      margin: 20px 0;
+    }
+    .law-quote-block .lq-label {
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .06em;
+      color: var(--color-navy);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .law-quote-block p {
+      font-family: 'Noto Serif JP', serif;
+      font-size: .97rem;
+      color: var(--color-text);
+      line-height: 1.85;
+      margin: 0;
+    }
+
+    /* Alert blocks */
+    .alert-block {
+      display: flex;
+      gap: 16px;
+      padding: 18px 20px;
+      border-radius: 16px;
+      margin: 20px 0;
+    }
+    .alert-block.info {
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-left: 5px solid #2563EB;
+    }
+    .alert-block.success {
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-left: 5px solid #15803D;
+    }
+    .alert-block.warning {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-left: 5px solid #D97706;
+    }
+    .alert-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .alert-block p { margin: 0; font-size: .96rem; color: var(--color-text); line-height: 1.75; }
+    .alert-block p + p { margin-top: 8px; }
+
+    /* Template cards */
+    .template-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 24px 0;
+    }
+    .template-card {
+      background: #fff;
+      border: 1px solid var(--color-line);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .template-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 22px;
+      background: linear-gradient(135deg, var(--color-navy-dark), var(--color-navy));
+      cursor: pointer;
+      user-select: none;
+      gap: 12px;
+    }
+    .template-header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .template-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(212,175,55,.22);
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .template-title {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+    .template-subtitle {
+      color: rgba(255,255,255,.65);
+      font-size: .82rem;
+      margin-top: 2px;
+    }
+    .template-toggle {
+      color: var(--color-gold-light);
+      font-size: .85rem;
+      font-weight: 700;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .template-body {
+      padding: 22px;
+      display: none;
+    }
+    .template-body.is-open { display: block; }
+    .template-meta {
+      font-size: .82rem;
+      color: var(--color-text-soft);
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--color-line);
+    }
+    .template-text {
+      background: #F8FAFC;
+      border: 1px solid var(--color-line);
+      border-radius: 12px;
+      padding: 18px;
+      font-size: .93rem;
+      line-height: 1.85;
+      color: var(--color-text);
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .template-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .btn-copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: var(--color-navy);
+      color: #fff;
+      font-size: .85rem;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .btn-copy:hover { background: var(--color-navy-soft); }
+    .btn-copy.copied { background: #15803D; }
+    .btn-dl {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: #fff;
+      color: var(--color-navy);
+      font-size: .85rem;
+      font-weight: 700;
+      border: 1px solid var(--color-line);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .btn-dl:hover { background: var(--color-surface-soft); }
+
+    /* Flow steps — 保護者が取るべきステップ */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin: 24px 0;
+    }
+    .step-card {
+      background: #fff;
+      border: 1px solid var(--color-line);
+      border-radius: 18px;
+      padding: 24px;
+      text-align: center;
+      position: relative;
+      transition: var(--transition);
+    }
+    .step-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .step-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-navy-dark), var(--color-navy));
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin: 0 auto 14px;
+    }
+    .step-card h4 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--color-navy);
+      margin-bottom: 8px;
+    }
+    .step-card p {
+      font-size: .88rem;
+      color: var(--color-text-soft);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .step-connector {
+      display: none;
+    }
+
+    /* FAQ accordion */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 24px 0;
+    }
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--color-line);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      cursor: pointer;
+      user-select: none;
+      gap: 12px;
+    }
+    .faq-q:hover { background: var(--color-surface-soft); }
+    .faq-q-text {
+      font-size: .97rem;
+      font-weight: 700;
+      color: var(--color-navy);
+      flex: 1;
+    }
+    .faq-q-text::before {
+      content: 'Q. ';
+      color: var(--color-gold);
+    }
+    .faq-toggle {
+      font-size: .8rem;
+      color: var(--color-text-soft);
+      flex-shrink: 0;
+      transition: transform .25s ease;
+    }
+    .faq-item.is-open .faq-toggle { transform: rotate(180deg); }
+    .faq-a {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .35s ease;
+    }
+    .faq-item.is-open .faq-a {
+      max-height: 600px;
+      padding: 0 20px 18px;
+    }
+    .faq-a p {
+      font-size: .93rem;
+      color: var(--color-text);
+      line-height: 1.85;
+      margin: 0;
+      padding-top: 4px;
+      border-top: 1px solid var(--color-line);
+    }
+    .faq-a p::before {
+      content: 'A. ';
+      color: var(--color-navy);
+      font-weight: 700;
+    }
+
+    /* Info chain — 連鎖的違法構造 */
+    .chain-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 24px 0;
+    }
+    .chain-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .chain-icon-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .chain-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #B91C1C, #EF4444);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: .8rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .chain-line {
+      width: 2px;
+      flex: 1;
+      background: linear-gradient(180deg, #EF4444, transparent);
+      min-height: 24px;
+      margin: 4px 0;
+    }
+    .chain-body {
+      padding: 4px 0 22px;
+      flex: 1;
+    }
+    .chain-body strong {
+      display: block;
+      font-size: .97rem;
+      color: var(--color-navy);
+      margin-bottom: 5px;
+    }
+    .chain-body p { margin: 0; font-size: .9rem; color: var(--color-text-soft); line-height: 1.7; }
+
+    /* Related links */
+    .related-links-section {
+      background: var(--color-surface-soft);
+      border-radius: 20px;
+      padding: 28px;
+      margin-top: 48px;
+    }
+    .related-links-title {
+      font-size: 1rem;
+      font-weight: 900;
+      color: var(--color-navy);
+      margin-bottom: 16px;
+    }
+    .related-link-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .related-link-card {
+      background: #fff;
+      border: 1px solid var(--color-line);
+      border-radius: 14px;
+      padding: 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+    .related-link-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+    .related-link-card .rlc-label {
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .05em;
+      color: var(--color-text-soft);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .related-link-card strong {
+      display: block;
+      font-size: .93rem;
+      color: var(--color-navy);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+    .related-link-card span { font-size: .82rem; color: var(--color-text-soft); }
+
+    @media (max-width: 1024px) {
+      .parent-content { grid-template-columns: 1fr; }
+      .parent-sidebar { position: static; }
+      .parent-hero-inner { grid-template-columns: 1fr; }
+      .parent-hero-panel { display: none; }
+    }
+    @media (max-width: 768px) {
+      .pattern-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .related-link-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/popc-logo.png" alt="PTA適正化推進委員会ロゴ">
+        <span>PTA適正化推進委員会</span>
+      </a>
+      <nav class="desktop-nav" aria-label="主要ナビゲーション">
+        <a href="index.html" class="nav-link">トップ</a>
+        <div class="nav-item has-dropdown">
+          <a href="#" class="nav-link active">入口別ガイド</a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>対象別入口</h4>
+              <ul>
+                <li><a href="guide-parent.html">保護者の方へ</a></li>
+                <li><a href="guide-pta.html">PTA役員の方へ</a></li>
+                <li><a href="guide-board.html">教育委員会の方へ</a></li>
+                <li><a href="guide-research.html">研究者・記者の方へ</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>導線</h4>
+              <ul>
+                <li><a href="membership.html">入会手続とオプトアウト</a></li>
+                <li><a href="audit/index.html">監査システム</a></li>
+                <li><a href="law-map.html">法制度マップ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="law-map.html" class="nav-link">論点別</a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>主要論点</h4>
+              <ul>
+                <li><a href="membership.html">入会手続・オプトアウト</a></li>
+                <li><a href="privacy.html">個人情報提供</a></li>
+                <li><a href="fee-collection.html">会費徴収</a></li>
+                <li><a href="personnel.html">教職員関与</a></li>
+                <li><a href="facilities.html">施設利用</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>制度整理</h4>
+              <ul>
+                <li><a href="law-map.html">法制度マップ</a></li>
+                <li><a href="cases.html">判例整理</a></li>
+                <li><a href="administrative-materials.html">行政資料整理</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="national-archive.html" class="nav-link">資料・ツール</a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>資料</h4>
+              <ul>
+                <li><a href="national-archive.html">全国PTA資料館</a></li>
+                <li><a href="report.html">総合分析レポート</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>ツール</h4>
+              <ul>
+                <li><a href="audit/index.html">監査システム</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="audit/index.html" class="btn-gold" style="font-size:.88rem; padding:10px 18px; min-height:0;">監査を開く</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileOverlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay">
+    <a href="index.html" class="mobile-link"><span>Home</span>トップページ</a>
+    <a href="guide-parent.html" class="mobile-link"><span>Guide</span>保護者の方へ</a>
+    <a href="guide-pta.html" class="mobile-link"><span>Guide</span>PTA役員の方へ</a>
+    <a href="guide-board.html" class="mobile-link"><span>Guide</span>教育委員会の方へ</a>
+    <a href="audit/index.html" class="mobile-link"><span>Audit</span>監査システム</a>
+    <div class="close-overlay" id="closeOverlay">CLOSE ×</div>
+  </div>
+
+  <!-- Hero -->
+  <section class="parent-hero">
+    <div class="parent-hero-inner">
+      <div>
+        <div class="parent-hero-eyebrow">For Parents</div>
+        <h1>一人で悩まないで。<br><em>PTAの「おかしい」は、</em><br>変えられます。</h1>
+        <p>「入会した覚えがないのに会費が引き落とされる」「断ったら子供に影響するかも」——そのモヤモヤの正体は、制度の歪みです。法的根拠と教育委員会の公式回答をもとに、あなたの権利を整理します。</p>
+        <div class="hero-cta-row">
+          <a href="audit/index.html" class="btn-parent-primary">⚙️ 今すぐ監査診断</a>
+          <a href="#templates" class="btn-parent-secondary">📝 テンプレートを使う</a>
+        </div>
+      </div>
+      <div class="parent-hero-panel">
+        <div class="panel-label">このページで分かること</div>
+        <a href="#truths" class="panel-jump-link"><span class="panel-jump-num">1</span>知っておくべき3つの法的事実</a>
+        <a href="#patterns" class="panel-jump-link"><span class="panel-jump-num">2</span>不適切な運用4パターン</a>
+        <a href="#optout" class="panel-jump-link"><span class="panel-jump-num">3</span>みなし加入が無効な理由</a>
+        <a href="#info" class="panel-jump-link"><span class="panel-jump-num">4</span>個人情報提供の問題</a>
+        <a href="#fees" class="panel-jump-link"><span class="panel-jump-num">5</span>会費返還請求の根拠</a>
+        <a href="#templates" class="panel-jump-link"><span class="panel-jump-num">6</span>すぐ使えるテンプレート</a>
+        <a href="#faq" class="panel-jump-link"><span class="panel-jump-num">7</span>よくある疑問</a>
+        <div class="panel-divider"></div>
+        <a href="audit/index.html" class="panel-action-link">⚙️ 監査システムで診断する →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <div class="parent-content">
+
+    <!-- Sidebar -->
+    <aside class="parent-sidebar">
+      <nav class="sidebar-nav" aria-label="ページ内ナビゲーション">
+        <div class="sidebar-nav-title">目次</div>
+        <a href="#truths" class="sidebar-link section-head">法的な3つの事実</a>
+        <a href="#patterns" class="sidebar-link section-head">4つの不適切パターン</a>
+        <a href="#optout" class="sidebar-link section-head">みなし加入の無効性</a>
+        <a href="#optout-law" class="sidebar-link">民法上の破綻</a>
+        <a href="#optout-consumer" class="sidebar-link">消費者契約法違反</a>
+        <a href="#optout-constitution" class="sidebar-link">憲法21条</a>
+        <a href="#info" class="sidebar-link section-head">個人情報の問題</a>
+        <a href="#fees" class="sidebar-link section-head">会費返還の根拠</a>
+        <a href="#steps" class="sidebar-link section-head">取るべきステップ</a>
+        <a href="#templates" class="sidebar-link section-head">テンプレート集</a>
+        <a href="#faq" class="sidebar-link section-head">よくある疑問</a>
+      </nav>
+      <div class="sidebar-cta">
+        <p>学校のPTAを今すぐ点検</p>
+        <a href="audit/index.html">監査システムを開く →</a>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="parent-main">
+
+      <!-- ===== 1. 3つの法的事実 ===== -->
+      <section id="truths" class="parent-section">
+        <div class="section-eyebrow">基本知識</div>
+        <h2>知っておくべき3つの法的事実</h2>
+
+        <p>「みんなやっているから」「子供のためだから」と自分に言い聞かせていませんか。PTAに関する法的な事実を、教育委員会の公式回答と法令根拠とともに整理します。</p>
+
+        <div class="truth-stack">
+          <div class="truth-item">
+            <div class="truth-num">1</div>
+            <div class="truth-body">
+              <strong>PTAは100%任意の団体です</strong>
+              <p>社会教育法に基づく「社会教育関係団体」であり、入会・退会・継続はすべて個人の自由な意思に委ねられています。強制加入は日本国憲法第21条が保障する「結社しない自由」に反します。「入学したら全員入会」という扱いに法的根拠はなく、照会を受けた全国の教育委員会のいずれも「強制加入は適法」とは回答していません。</p>
+              <span class="truth-law">憲法 第21条</span>
+              <span class="truth-law">社会教育法 第10条</span>
+            </div>
+          </div>
+          <div class="truth-item">
+            <div class="truth-num">2</div>
+            <div class="truth-body">
+              <strong>非会員の子どもを差別することは許されません</strong>
+              <p>「登校班に入れない」「卒業記念品を配らない」「保護者会で別扱いにする」といった行為は、公教育の場において憲法第26条（教育を受ける権利）・第14条（平等）に抵触する人権侵害です。横浜市教育委員会通知（学教第1965号）はこれを明示的に禁止し、全国の複数の教育委員会も「不適切」と公式回答しています。</p>
+              <span class="truth-law">憲法 第26条・第14条</span>
+              <span class="truth-law">横浜市通知 学教第1965号</span>
+            </div>
+          </div>
+          <div class="truth-item">
+            <div class="truth-num">3</div>
+            <div class="truth-body">
+              <strong>学校による個人情報の無断提供は違法です</strong>
+              <p>学校が教育目的で収集した名簿を、保護者の同意なくPTAへ提供することは個人情報保護法第69条（利用及び提供の制限）違反です。全国の教育委員会への照会で、すべての自治体が「同意なき利用は法に抵触する」と回答しています。校長・教頭個人への懲戒処分・刑事リスクも発生し得ます。</p>
+              <span class="truth-law">個人情報保護法 第69条</span>
+              <span class="truth-law">地公法 第34条（守秘義務）</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. 4パターン ===== -->
+      <section id="patterns" class="parent-section">
+        <div class="section-eyebrow">現状把握</div>
+        <h2>「おかしい」と感じる4つのパターン</h2>
+
+        <p>あなたの学校で起きているのはどれですか？これらはすべて、一次資料において「改善すべき点」として指摘されている内容です。</p>
+
+        <div class="pattern-grid">
+          <div class="pattern-card">
+            <div class="pattern-label">違法リスク高</div>
+            <div class="pattern-icon">💳</div>
+            <h4>抱き合わせ徴収</h4>
+            <p>給食費などの学校徴収金と一緒にPTA会費が引き落とされる。委任契約がなければ無権代理（民法113条）となり、返還請求の対象になります。</p>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-label">契約不成立</div>
+            <div class="pattern-icon">📋</div>
+            <h4>みなし加入・オプトアウト</h4>
+            <p>特に申し出ない限り全員が会員とされる。民法の契約成立要件（承諾の意思表示）を欠き、沈黙は承諾とみなされません。</p>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-label">個人情報保護法違反</div>
+            <div class="pattern-icon">📂</div>
+            <h4>無断名簿提供</h4>
+            <p>学校からPTAへ、保護者の同意なく連絡先や住所が渡される。個人情報保護法第69条に直接違反し、担当者の刑事責任が問われる可能性があります。</p>
+          </div>
+          <div class="pattern-card">
+            <div class="pattern-label">誤認誘導</div>
+            <div class="pattern-icon">🏫</div>
+            <h4>学校行事での義務的誘導</h4>
+            <p>入学説明会で「全員加入です」「断ると子供に影響します」のように誤認させる。任意性の不告知は消費者契約法第4条（取消権）の対象になります。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. みなし加入の無効性 ===== -->
+      <section id="optout" class="parent-section">
+        <div class="section-eyebrow">法的分析</div>
+        <h2>みなし加入・オプトアウトが無効な理由</h2>
+
+        <p>「拒否しなければ入会とみなす」オプトアウト方式は、現在の日本の法体系において複数の根拠から無効です。</p>
+
+        <h3 id="optout-law">① 民法上の破綻——「沈黙は承諾ではない」</h3>
+        <p>改正民法第522条は、契約の成立に「申込みに対する承諾の意思表示」を必要としています。オプトアウト方式では保護者が「何もしない（沈黙）」ことをもって承諾とみなしますが、民法上、沈黙は原則として意思表示とはみなされません。</p>
+
+        <div class="law-quote-block">
+          <div class="lq-label">民法 第522条（契約の成立）</div>
+          <p>契約は、契約の内容を示してその締結を申し入れる意思表示（申込み）に対して相手方が承諾をしたときに成立する。</p>
+        </div>
+
+        <p>沈黙が承諾とみなされるのは商法上の継続的商取引関係など特別な場合に限られます。新入生の保護者とPTAの間にそのような関係はなく、「これまでの慣習」は法的拘束力ある慣習法の要件（公序良俗に反しないこと）を満たしません。</p>
+
+        <div class="optout-breakdown">
+          <div class="ob-title">⚠️ オプトアウト方式が内包する連鎖的な問題</div>
+          <div class="ob-points">
+            <div class="ob-point"><span class="ob-icon">1</span>PTAはオプトアウト通知を送るために保護者の連絡先を必要とする</div>
+            <div class="ob-point"><span class="ob-icon">2</span>しかし連絡先は学校の名簿にしかない</div>
+            <div class="ob-point"><span class="ob-icon">3</span>学校が保護者の同意なく名簿をPTAに渡すことは個人情報保護法第69条違反</div>
+            <div class="ob-point"><span class="ob-icon">4</span>つまりオプトアウト方式の実施自体が、その出発点から違法行為に依存している</div>
+            <div class="ob-point"><span class="ob-icon">✗</span><strong>結論：オプトアウト方式は実施プロセスとして成立しない</strong></div>
+          </div>
+        </div>
+
+        <h3 id="optout-consumer">② 消費者契約法違反——PTAは「事業者」</h3>
+        <p>消費者庁との協議記録および消費者庁逐条解説において、PTAは消費者契約法上の「事業者」に該当することが確認されています。この前提に立つと：</p>
+
+        <div class="truth-stack" style="margin:16px 0;">
+          <div class="truth-item" style="padding:16px 20px;">
+            <div class="truth-num" style="width:36px;height:36px;font-size:.9rem;">①</div>
+            <div class="truth-body">
+              <strong>不作為による契約条項の無効（第10条）</strong>
+              <p>「不作為（沈黙）をもって承諾とみなす」条項は、民法の任意規定（意思主義）から逸脱し消費者の利益を一方的に害するため無効。</p>
+            </div>
+          </div>
+          <div class="truth-item" style="padding:16px 20px;">
+            <div class="truth-num" style="width:36px;height:36px;font-size:.9rem;">②</div>
+            <div class="truth-body">
+              <strong>不利益事実の不告知による取消権（第4条）</strong>
+              <p>「実は入会義務はない」「入会しなくても不利益な扱いは受けない」という重要事実を告げずに加入させた場合、保護者は契約を取り消すことができます。</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="optout-constitution">③ 憲法第21条——「加入しない自由」の侵害</h3>
+        <p>日本国憲法第21条が保障する「結社の自由」には、「加入しない自由」（消極的結社の自由）が含まれます。これは憲法学の通説（芦部信喜・佐藤幸治ら）および最高裁判例（南九州税理士会事件等）で確立した解釈です。</p>
+        <p>オプトアウト方式は、本来自由であるはずの「加入しない権利」の行使に心理的・物理的な障壁を設けるものであり、公立学校という公的空間で実施されることで実質的な強制として機能します。</p>
+
+        <div class="alert-block success">
+          <div class="alert-icon">⚖️</div>
+          <div>
+            <p><strong>判例の変遷：</strong>熊本PTA裁判（2016年地裁）では長期間の会費納入・活動参加による「黙示の承諾」が認定されましたが、翌年の高裁和解では「任意団体であることの十分な周知」が条項に盛り込まれました。入学直後で何もしていない段階での黙示の承諾は認定されません。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. 個人情報 ===== -->
+      <section id="info" class="parent-section">
+        <div class="section-eyebrow">個人情報</div>
+        <h2>学校からPTAへの個人情報提供の問題</h2>
+
+        <p>「入会も申し込んでいないのに、なぜPTAから連絡が来るのか」——その答えは、学校が保護者の同意なく名簿をPTAに渡しているからです。</p>
+
+        <h3>なぜ違法なのか</h3>
+        <p>公立学校は「行政機関等」に該当するため、一般事業者よりも厳格な個人情報保護法制の規律を受けます。学校が教育目的で収集した名簿を、PTAという別団体に提供することは、「法令に基づく場合その他正当な理由のある場合」に該当しない限り、原則禁止です（個人情報保護法第69条）。</p>
+
+        <div class="chain-flow">
+          <div class="chain-item">
+            <div class="chain-icon-col">
+              <div class="chain-dot">1</div>
+              <div class="chain-line"></div>
+            </div>
+            <div class="chain-body">
+              <strong>学校が教育目的で名簿を収集</strong>
+              <p>入学時に収集された住所・電話番号・緊急連絡先は「学校教育」のために取得されたもの。</p>
+            </div>
+          </div>
+          <div class="chain-item">
+            <div class="chain-icon-col">
+              <div class="chain-dot">2</div>
+              <div class="chain-line"></div>
+            </div>
+            <div class="chain-body">
+              <strong>同意なくPTAへ提供 → 個人情報保護法第69条違反</strong>
+              <p>保護者の同意なしにPTAへ渡すことは「目的外提供」として原則禁止。</p>
+            </div>
+          </div>
+          <div class="chain-item">
+            <div class="chain-icon-col">
+              <div class="chain-dot">3</div>
+              <div class="chain-line"></div>
+            </div>
+            <div class="chain-body">
+              <strong>PTAがその名簿で会費徴収</strong>
+              <p>違法に取得した個人情報を使った会費徴収は、民法上も公序良俗違反（民法第90条）として無効となり得る。</p>
+            </div>
+          </div>
+          <div class="chain-item">
+            <div class="chain-icon-col">
+              <div class="chain-dot">!</div>
+            </div>
+            <div class="chain-body">
+              <strong>担当者への刑事リスク</strong>
+              <p>名簿を渡した校長・教頭は地方公務員法第34条（守秘義務）違反、個人情報保護法第179条（罰則）のリスクを負います。書類送検事例も実際に発生しています。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert-block info">
+          <div class="alert-icon">💡</div>
+          <div>
+            <p><strong>適法な方法：</strong>PTAが会員情報を持つには、入会届（オプトイン）によって保護者が自らの意思で連絡先を提供する「直接収集」が唯一の適法な手段です。学校の名簿に依存すること自体が構造的問題です。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. 会費返還 ===== -->
+      <section id="fees" class="parent-section">
+        <div class="section-eyebrow">会費の問題</div>
+        <h2>入会していない会費の返還を求める根拠</h2>
+
+        <p>入会の意思表示をしていないまま徴収された会費は、法律上「不当利得」に該当し、返還請求が可能です。</p>
+
+        <div class="law-quote-block">
+          <div class="lq-label">民法 第703条（不当利得の返還義務）</div>
+          <p>法律上の原因なく他人の財産又は労務によって利益を受け、そのために他人に損失を及ぼした者（以下この章において「受益者」という。）は、その利益の存する限度において、これを返還する義務を負う。</p>
+        </div>
+
+        <h3>返還請求の論理</h3>
+        <p>入会申込書（承諾の意思表示）が存在しない場合、契約は成立していません（民法第522条）。契約が存在しない以上、会費を徴収する「法律上の原因」がなく、民法第703条の不当利得として返還請求できます。多くの教育委員会も「承諾のない義務は無効」と公式に回答しています。</p>
+
+        <div class="alert-block warning">
+          <div class="alert-icon">⚠️</div>
+          <div>
+            <p><strong>時効に注意：</strong>不当利得返還請求権は、権利を行使できることを知った時から5年（民法166条1項1号）または権利を行使できる時から10年（同条1項2号）の消滅時効があります。</p>
+            <p>また長期間にわたって会費を支払い続けていた場合、「黙示の承諾（追認）」と認定されるリスクがあります。気づいた段階で早めに行動することが重要です。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. 取るべきステップ ===== -->
+      <section id="steps" class="parent-section">
+        <div class="section-eyebrow">行動ガイド</div>
+        <h2>保護者が取るべき3つのステップ</h2>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h4>現状を確認する</h4>
+            <p>監査システムで自分の学校のPTAを診断。入会手続き・会費・個人情報・教職員関与の4軸で現状を把握します。</p>
+            <div style="margin-top:14px;">
+              <a href="audit/index.html" style="display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:800;color:var(--color-navy);text-decoration:none;">診断する →</a>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h4>照会メールを送る</h4>
+            <p>学校またはPTAへ、入会根拠・個人情報の取扱いについて書面で確認します。下のテンプレートをそのまま使えます。</p>
+            <div style="margin-top:14px;">
+              <a href="#templates" style="display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:800;color:var(--color-navy);text-decoration:none;">テンプレートへ →</a>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h4>退会届を提出する</h4>
+            <p>退会を希望する場合は退会届を書面で提出。差別的取扱いがないよう明示しつつ、手続き完了の確認も求めます。</p>
+            <div style="margin-top:14px;">
+              <a href="#template-withdraw" style="display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:800;color:var(--color-navy);text-decoration:none;">退会届へ →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7. テンプレート集 ===== -->
+      <section id="templates" class="parent-section">
+        <div class="section-eyebrow">すぐ使える</div>
+        <h2>照会メール・退会届テンプレート集</h2>
+
+        <p>以下のテンプレートは法的根拠に基づいて作成しています。コピーしてそのまま使用できます。文中の〇〇は適宜ご自身の情報に書き換えてください。</p>
+
+        <div class="template-stack">
+
+          <!-- Template A -->
+          <div class="template-card" id="template-inquiry">
+            <div class="template-header" onclick="toggleTemplate('tpl-a')">
+              <div class="template-header-left">
+                <div class="template-icon">✉️</div>
+                <div>
+                  <div class="template-title">A. 入会の意思確認・照会メール</div>
+                  <div class="template-subtitle">入会根拠が不明な時・入会手続きを確認したい時</div>
+                </div>
+              </div>
+              <span class="template-toggle" id="toggle-tpl-a">▼ 開く</span>
+            </div>
+            <div class="template-body" id="tpl-a">
+              <div class="template-meta">宛先：学校長またはPTA会長 ／ 件名：PTAの入会手続きに関するご確認のお願い</div>
+              <div class="template-text" id="text-tpl-a">【件名】PTAの入会手続きに関するご確認のお願い
+
+〇〇小学校 PTA会長様 / 学校長様
+
+〇年〇組 〇〇（児童名）の保護者です。
+
+配布資料を拝見しましたが、PTAへの入会に関する意思確認のプロセスが見当たりませんでした。文部科学省の指針や各教育委員会の見解では、「PTAは任意団体であり、入会には本人の明確な合意（入会申込書等による意思表示）が必要」とされています。横浜市教育委員会は令和7年12月、全市立学校に対しオプトイン方式の必須化を通知しました。
+
+つきましては、以下の点についてご確認をお願いします。
+
+1. 当家庭がいつ、どのような書面によりPTAへの入会に同意したことになっているか
+2. 個人情報（氏名・連絡先）をPTAへ提供することについて、いつ同意を取得したか
+3. 退会を希望する場合の手続き窓口と方法
+
+法に基づいた適正な運営を希望しております。
+ご回答は書面（メール可）にていただけますようお願いいたします。
+
+〇〇学校　〇年〇組　保護者　〇〇　〇〇
+（連絡先）</div>
+              <div class="template-actions">
+                <button class="btn-copy" onclick="copyTemplate('text-tpl-a', this)">📋 コピーする</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template B -->
+          <div class="template-card" id="template-fees">
+            <div class="template-header" onclick="toggleTemplate('tpl-b')">
+              <div class="template-header-left">
+                <div class="template-icon">💳</div>
+                <div>
+                  <div class="template-title">B. 会費徴収根拠の確認・停止要請</div>
+                  <div class="template-subtitle">心当たりのない会費が引き落とされている時</div>
+                </div>
+              </div>
+              <span class="template-toggle" id="toggle-tpl-b">▼ 開く</span>
+            </div>
+            <div class="template-body" id="tpl-b">
+              <div class="template-meta">宛先：学校長またはPTA会長 ／ 学校徴収金との合算の場合は学校長宛</div>
+              <div class="template-text" id="text-tpl-b">【件名】PTA会費の徴収根拠についてのお問い合わせ
+
+〇〇小学校 学校長様 / PTA会長様
+
+〇年〇組 〇〇（児童名）の保護者です。
+
+会費の引き落とし案内が届いておりますが、私はPTAへの入会届を提出した記憶がございません。民法第522条では、契約の成立には申込みと承諾の意思の合致が必要とされており、入会申込書の提出がない場合、会費徴収の法的根拠が存在しません（民法第703条 不当利得）。
+
+以下の点について、書面にてご回答をお願いします。
+
+1. 当家庭がどのような書面によりPTA入会に合意したとされているか（根拠書類の提示）
+2. 学校がPTAの代理として会費を徴収する場合の委任契約書の有無
+3. 上記の記録がない場合は、次回の引き落としを停止していただくこと
+
+なお、本照会は法令遵守を求めるものであり、お子さまへの不利益な取扱いがないよう配慮いただけますようお願いいたします。
+
+〇〇学校　〇年〇組　保護者　〇〇　〇〇
+（連絡先）</div>
+              <div class="template-actions">
+                <button class="btn-copy" onclick="copyTemplate('text-tpl-b', this)">📋 コピーする</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template C -->
+          <div class="template-card" id="template-withdraw">
+            <div class="template-header" onclick="toggleTemplate('tpl-c')">
+              <div class="template-header-left">
+                <div class="template-icon">📄</div>
+                <div>
+                  <div class="template-title">C. PTA退会届</div>
+                  <div class="template-subtitle">退会を正式に通知する書面</div>
+                </div>
+              </div>
+              <span class="template-toggle" id="toggle-tpl-c">▼ 開く</span>
+            </div>
+            <div class="template-body" id="tpl-c">
+              <div class="template-meta">宛先：PTA会長 ／ 書面で提出し控えを必ず手元に保管してください</div>
+              <div class="template-text" id="text-tpl-c">PTA退会届
+
+〇〇市立〇〇小学校 PTA会長 殿
+
+私は、貴団体の活動内容を検討した結果、下記の通り退会することを通知いたします。
+
+記
+
+退会日：令和〇年〇月〇日
+児童名（クラス）：〇〇 〇〇（〇年〇組）
+保護者氏名：〇〇 〇〇
+
+本退会通知に際し、以下の対応をお願いします。
+
+1. 退会日以降の会費徴収を即時停止すること
+2. 当家庭から取得した個人情報（氏名・住所・電話番号・口座情報等）を適切に廃棄または返還すること
+3. 学校教育活動において、本退会を理由とした児童への差別的取扱いや不利益が生じないよう十分に配慮すること（なお、教育委員会より、退会を理由とした不利益取扱いは不適切と指導されています）
+
+本退会届の受領を確認するため、受領書（またはメールでの確認）をいただけますようお願いします。
+
+提出日：令和〇年〇月〇日
+保護者氏名（署名）：</div>
+              <div class="template-actions">
+                <button class="btn-copy" onclick="copyTemplate('text-tpl-c', this)">📋 コピーする</button>
+                <a href="https://docs.google.com/document/d/1GvhyFn9Up-ZDnvX9qs-HJJOsmeqM2eozxTgV5qbxjRk/edit?usp=sharing"
+                   target="_blank" rel="noopener noreferrer" class="btn-dl">📄 Word版を開く</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Template D -->
+          <div class="template-card">
+            <div class="template-header" onclick="toggleTemplate('tpl-d')">
+              <div class="template-header-left">
+                <div class="template-icon">🔒</div>
+                <div>
+                  <div class="template-title">D. 個人情報削除・提供停止要請</div>
+                  <div class="template-subtitle">学校またはPTAに対し個人情報の取扱いを確認・是正する</div>
+                </div>
+              </div>
+              <span class="template-toggle" id="toggle-tpl-d">▼ 開く</span>
+            </div>
+            <div class="template-body" id="tpl-d">
+              <div class="template-meta">宛先：学校長 ／ 個人情報保護法上の権利行使として提出できます</div>
+              <div class="template-text" id="text-tpl-d">【件名】個人情報の取扱いに関するご確認・是正のお願い
+
+〇〇小学校 学校長様
+
+〇年〇組 〇〇（児童名）の保護者です。
+
+入学時に提供した当家庭の個人情報（氏名・住所・電話番号等）について、以下の点を確認させてください。
+
+1. 当家庭の個人情報が、PTAまたはその他の第三者団体に提供されているか
+2. 提供されている場合、いつ、どのような同意に基づき提供されたか
+
+個人情報保護法第69条において、行政機関等は法令に基づく場合等を除き、利用目的以外への提供は制限されています。当家庭は、教育目的以外のいかなる団体への個人情報提供にも同意しておりません。
+
+つきましては、以下の対応をお願いします。
+
+1. PTAその他への個人情報提供を直ちに停止すること
+2. 既に提供済みの情報については、提供先（PTA等）に対し廃棄・削除を求めること
+3. 上記対応の完了を書面にてご報告いただくこと
+
+〇〇学校　〇年〇組　保護者　〇〇　〇〇
+（連絡先）</div>
+              <div class="template-actions">
+                <button class="btn-copy" onclick="copyTemplate('text-tpl-d', this)">📋 コピーする</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== 8. FAQ ===== -->
+      <section id="faq" class="parent-section">
+        <div class="section-eyebrow">よくある疑問</div>
+        <h2>保護者からよくある疑問</h2>
+
+        <div class="faq-list">
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <div class="faq-q-text">退会したら子供が不利益を受けるのでは？</div>
+              <div class="faq-toggle">▼</div>
+            </div>
+            <div class="faq-a"><p>PTAの退会を理由に子供への不利益な扱い（登校班への不参加・記念品の不配布・行事への差別的取扱い等）をすることは、教育委員会が「不適切」と公式に回答しており、横浜市教育委員会通知でも明示的に禁止されています。このような取扱いがあった場合は、教育委員会へ速やかに相談してください。退会届には「差別的取扱いのないよう配慮を求める」文言を明記することが有効です。</p></div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <div class="faq-q-text">「全員加入が慣例」という学校の説明は正しい？</div>
+              <div class="faq-toggle">▼</div>
+            </div>
+            <div class="faq-a"><p>正しくありません。「慣例」は法的効力を持ちません。民法上、契約の成立には双方の意思表示（申込み＋承諾）が必要であり、長年の慣習であっても「公序良俗に反しない」こと等の条件を満たさなければ慣習法として認められません。全国の教育委員会への照会でも「みなし加入は法的に有効ではない」との回答が得られています。</p></div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <div class="faq-q-text">「同意書を出した覚えがある」のに内容が分からない時</div>
+              <div class="faq-toggle">▼</div>
+            </div>
+            <div class="faq-a"><p>入学時の書類にPTA関連の同意が「小さな文字」で含まれているケースがあります。この場合でも、PTAへの入会同意・個人情報提供の同意・会費引き落とし委任がそれぞれ明示的・独立して記載されているかを確認することが重要です。「学校入学に伴う一括同意」の中にPTA同意が紛れ込んでいる形は、消費者契約法上の問題があります。学校・PTAに「いつ・どの書類で・何に同意したか」を書面で確認する権利があります。</p></div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <div class="faq-q-text">今まで支払った会費は戻ってくる？</div>
+              <div class="faq-toggle">▼</div>
+            </div>
+            <div class="faq-a"><p>入会申込書がなく契約が成立していないと認められれば、民法第703条（不当利得）として返還請求ができます。ただし、長期間にわたり異議なく会費を支払い活動に参加していた場合、熊本PTA裁判の事例のように「黙示の追認」と認定されるリスクがあります。また不当利得返還請求権には時効があります（知った時から5年等）。早めに照会メールを出して記録を残し、必要に応じて消費者センターや弁護士への相談を検討してください。</p></div>
+          </div>
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">
+              <div class="faq-q-text">教育委員会に相談していい？</div>
+              <div class="faq-toggle">▼</div>
+            </div>
+            <div class="faq-a"><p>はい、相談できます。学校施設・教職員服務・個人情報管理に関わる問題は教育委員会の所掌事務です。学校が是正に応じない場合や、子供への不利益取扱いが疑われる場合は、自治体の教育委員会（生涯学習課・学校教育課等）への相談が有効です。当委員会が実施した全国照会では、多くの教育委員会が「相談があれば学校への指導・助言を行う」と回答しています。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related links -->
+      <div class="related-links-section">
+        <div class="related-links-title">関連する論点・ページ</div>
+        <div class="related-link-grid">
+          <a href="membership.html" class="related-link-card">
+            <div class="rlc-label">論点</div>
+            <strong>入会手続・オプトアウトの詳細</strong>
+            <span>法的分析・行政回答・判例の詳細整理</span>
+          </a>
+          <a href="privacy.html" class="related-link-card">
+            <div class="rlc-label">論点</div>
+            <strong>個人情報提供の詳細</strong>
+            <span>個人情報保護法69条・同意の要件</span>
+          </a>
+          <a href="fee-collection.html" class="related-link-card">
+            <div class="rlc-label">論点</div>
+            <strong>会費徴収の詳細</strong>
+            <span>無権代理・委任契約・不当利得</span>
+          </a>
+          <a href="guide-board.html" class="related-link-card">
+            <div class="rlc-label">関連ページ</div>
+            <strong>教育委員会の方へ</strong>
+            <span>全国教委回答・横浜市通知分析</span>
+          </a>
+          <a href="audit/index.html" class="related-link-card">
+            <div class="rlc-label">ツール</div>
+            <strong>監査システム</strong>
+            <span>保護者立場からの5軸診断</span>
+          </a>
+          <a href="cases.html" class="related-link-card">
+            <div class="rlc-label">判例</div>
+            <strong>判例整理</strong>
+            <span>熊本PTA裁判・関連裁判例</span>
+          </a>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>PTA適正化推進委員会</h3>
+        <a href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" target="_blank" rel="noopener noreferrer" class="yokomusubi-card">
+          <img src="assets/yokomusubi.png" alt="よこむすび">
+          <span class="yokomusubi-meta">登録番号　磯子12406</span>
+          <span class="yokomusubi-meta">分類番号　12-4（市民活動・社会教育推進）</span>
+        </a>
+        <div class="footer-contact" style="margin-top:18px;">
+          <p>横浜市磯子区岡村8-17-5-301</p>
+          <p>070-9012-7772</p>
+          <p><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
+        </div>
+      </div>
+      <div>
+        <h4>入口別ガイド</h4>
+        <ul>
+          <li><a href="guide-parent.html">保護者の方へ</a></li>
+          <li><a href="guide-pta.html">PTA役員の方へ</a></li>
+          <li><a href="guide-board.html">教育委員会の方へ</a></li>
+          <li><a href="guide-research.html">研究者・記者の方へ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>主要導線</h4>
+        <ul>
+          <li><a href="membership.html">入会手続・オプトアウト</a></li>
+          <li><a href="privacy.html">個人情報提供</a></li>
+          <li><a href="fee-collection.html">会費徴収</a></li>
+          <li><a href="law-map.html">法制度マップ</a></li>
+          <li><a href="audit/index.html">監査システム</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 PTA適正化推進委員会</p>
+  </footer>
+
+  <script src="js/law-data.js"></script>
+  <script src="js/site.js"></script>
+  <script>
+    // Template toggle
+    function toggleTemplate(id) {
+      const body = document.getElementById(id);
+      const toggleLabel = document.getElementById('toggle-' + id);
+      if (!body) return;
+      const isOpen = body.classList.toggle('is-open');
+      if (toggleLabel) toggleLabel.textContent = isOpen ? '▲ 閉じる' : '▼ 開く';
+    }
+
+    // Copy to clipboard
+    function copyTemplate(id, btn) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      navigator.clipboard.writeText(el.textContent).then(() => {
+        btn.textContent = '✅ コピーしました';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = '📋 コピーする';
+          btn.classList.remove('copied');
+        }, 2200);
+      });
+    }
+
+    // FAQ toggle
+    function toggleFaq(item) {
+      const isOpen = item.classList.toggle('is-open');
+    }
+  </script>
+</body>
+</html>
