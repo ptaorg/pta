@@ -1051,3 +1051,50 @@ button, input, select { font: inherit; }
 .documents-comparison-template{ margin-top: 2rem; }
 .comparison-template-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1rem; margin-bottom: 1.5rem; }
 .comparison-template-card{ background:#fff; border:1px solid #e4ebf5; border-radius:16px; padding:1.1rem; box-shadow:0 8px 24px rgba(20,45,90,0.05); }
+/* css/style.css の末尾に追記してください */
+
+/* サイト全体をゴシック体に統一 */
+body, h1, h2, h3, h4, h5, h6, .hero-copy h1, .section-title {
+    font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
+}
+
+/* 検索窓の共通スタイル（全ページで利用可能） */
+.site-search {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+.site-search form {
+    display: flex;
+    background: #fff;
+    border: 1px solid var(--color-line);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.site-search input[type="search"] {
+    border: none;
+    padding: 5px 12px;
+    font-size: 14px;
+    width: 150px;
+    outline: none;
+}
+.site-search button {
+    background: var(--color-navy);
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* モバイル表示での調整 */
+@media (max-width: 768px) {
+    .site-search {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .site-search input {
+        width: 100%;
+    }
+}
