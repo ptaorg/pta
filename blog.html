@@ -1,789 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <meta name="description" content="PTA適正化推進委員会の活動記録・調査報告・論考・提言書のブログ一覧。横浜市通知・全国調査・法的分析の最新情報。">
-  <link rel="canonical" href="https://ptaorg.github.io/blog.html">
-  <meta property="og:title" content="活動ブログ | PTA適正化推進委員会">
-  <meta property="og:description" content="調査報告・論考・提言書・活動記録の一覧。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ptaorg.github.io/blog.html">
-  <meta property="og:image" content="https://ptaorg.github.io/assets/og-image.png">
-  <title>活動ブログ | PTA適正化推進委員会</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* ===== BLOG PAGE ===== */
-    .blog-hero {
-      background: linear-gradient(135deg, #0A192F 0%, #1A365D 55%, #1e3f7a 100%);
-      color: #fff;
-      padding: 72px 0 64px;
-      position: relative;
-      overflow: hidden;
-    }
-    .blog-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 60% 60% at 80% 40%, rgba(212,175,55,.15) 0%, transparent 60%);
-    }
-    .blog-hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-      background-size: 56px 56px;
-    }
-    .blog-hero-inner {
-      position: relative;
-      z-index: 1;
-      width: min(calc(100% - 40px), 1100px);
-      margin-inline: auto;
-    }
-    .blog-hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 14px;
-      border-radius: 999px;
-      background: rgba(212,175,55,.18);
-      border: 1px solid rgba(212,175,55,.35);
-      color: var(--color-gold-light);
-      font-size: .82rem;
-      font-weight: 800;
-      letter-spacing: .06em;
-      margin-bottom: 20px;
-    }
-    .blog-hero h1 {
-      font-family: 'Noto Serif JP', serif;
-      font-size: clamp(2rem, 3.5vw, 3rem);
-      font-weight: 900;
-      margin-bottom: 14px;
-    }
-    .blog-hero p {
-      color: rgba(255,255,255,.78);
-      font-size: 1.02rem;
-      line-height: 1.8;
-      max-width: 620px;
-    }
-
-    /* Main layout */
-    .blog-shell {
-      width: min(calc(100% - 40px), 1100px);
-      margin: 0 auto;
-      padding: 64px 0 96px;
-      display: grid;
-      grid-template-columns: 1fr 280px;
-      gap: 48px;
-      align-items: start;
-    }
-
-    /* Category filter tabs */
-    .filter-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 36px;
-    }
-    .filter-tab {
-      padding: 8px 16px;
-      border-radius: 999px;
-      border: 1px solid var(--color-line);
-      background: #fff;
-      color: var(--color-text-soft);
-      font-size: .85rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-    .filter-tab:hover { border-color: var(--color-navy); color: var(--color-navy); }
-    .filter-tab.active {
-      background: var(--color-navy);
-      color: #fff;
-      border-color: var(--color-navy);
-    }
-
-    /* Post cards */
-    .post-list { display: flex; flex-direction: column; gap: 22px; }
-
-    /* Featured post */
-    .post-card-featured {
-      background: linear-gradient(135deg, var(--color-navy-dark), var(--color-navy));
-      border-radius: 24px;
-      padding: 36px;
-      color: #fff;
-      position: relative;
-      overflow: hidden;
-      text-decoration: none;
-      display: block;
-      transition: var(--transition);
-    }
-    .post-card-featured::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--color-gold), #f4e07a);
-    }
-    .post-card-featured:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(10,25,47,.25); }
-    .post-card-featured .post-meta-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 14px;
-    }
-    .post-card-featured .post-date { font-size: .8rem; color: rgba(255,255,255,.65); font-weight: 700; }
-    .post-card-featured h2 {
-      font-family: 'Noto Serif JP', serif;
-      font-size: clamp(1.3rem, 2.2vw, 1.75rem);
-      font-weight: 900;
-      line-height: 1.35;
-      margin-bottom: 12px;
-      color: #fff;
-    }
-    .post-card-featured p { color: rgba(255,255,255,.78); font-size: .95rem; line-height: 1.75; margin-bottom: 18px; }
-    .post-card-featured .post-read-more {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 10px 18px;
-      border-radius: 999px;
-      background: var(--color-gold);
-      color: var(--color-navy-dark);
-      font-size: .88rem;
-      font-weight: 900;
-    }
-
-    /* Standard post card */
-    .post-card {
-      background: #fff;
-      border: 1px solid var(--color-line);
-      border-radius: 20px;
-      padding: 26px;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      gap: 22px;
-      align-items: flex-start;
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-    }
-    .post-card::before {
-      content: '';
-      position: absolute;
-      left: 0; top: 0; bottom: 0;
-      width: 4px;
-      background: var(--color-line);
-      transition: background .25s ease;
-    }
-    .post-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: rgba(26,54,93,.15); }
-    .post-card:hover::before { background: var(--color-gold); }
-    .post-card-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      font-size: 1.5rem;
-      flex-shrink: 0;
-    }
-    .post-card-body { flex: 1; min-width: 0; }
-    .post-meta-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 8px;
-      flex-wrap: wrap;
-    }
-    .post-date { font-size: .78rem; color: var(--color-text-soft); font-weight: 700; }
-    .post-category {
-      padding: 3px 9px;
-      border-radius: 999px;
-      font-size: .72rem;
-      font-weight: 800;
-      letter-spacing: .03em;
-    }
-    .cat-survey { background: #DBEAFE; color: #1D4ED8; }
-    .cat-report { background: #DCFCE7; color: #15803D; }
-    .cat-legal { background: #FEE2E2; color: #B91C1C; }
-    .cat-proposal { background: #FEF3C7; color: #92400E; }
-    .cat-activity { background: rgba(26,54,93,.1); color: var(--color-navy); }
-    .cat-news { background: #FAE8FF; color: #7C3AED; }
-
-    .post-card h3 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--color-navy);
-      line-height: 1.45;
-      margin-bottom: 7px;
-    }
-    .post-card p {
-      font-size: .88rem;
-      color: var(--color-text-soft);
-      line-height: 1.7;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .post-card .post-link-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      margin-top: 10px;
-      font-size: .82rem;
-      font-weight: 800;
-      color: var(--color-navy);
-    }
-
-    /* Sidebar */
-    .blog-sidebar { position: sticky; top: 100px; }
-
-    .sidebar-widget {
-      background: #fff;
-      border: 1px solid var(--color-line);
-      border-radius: 20px;
-      padding: 22px;
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 20px;
-    }
-    .widget-title {
-      font-size: .85rem;
-      font-weight: 900;
-      color: var(--color-navy);
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--color-gold);
-    }
-
-    /* About widget */
-    .about-text { font-size: .88rem; color: var(--color-text-soft); line-height: 1.75; }
-    .about-links { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
-    .about-link {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 12px;
-      border-radius: 10px;
-      background: var(--color-surface-soft);
-      text-decoration: none;
-      color: var(--color-navy);
-      font-size: .85rem;
-      font-weight: 700;
-      transition: var(--transition);
-    }
-    .about-link:hover { background: rgba(26,54,93,.1); }
-
-    /* Category list */
-    .cat-list { display: flex; flex-direction: column; gap: 6px; }
-    .cat-list-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8px 12px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: var(--transition);
-      font-size: .88rem;
-      font-weight: 700;
-      color: var(--color-text-soft);
-    }
-    .cat-list-item:hover { background: var(--color-surface-soft); color: var(--color-navy); }
-    .cat-count {
-      background: var(--color-surface-soft);
-      padding: 2px 8px;
-      border-radius: 999px;
-      font-size: .72rem;
-      font-weight: 800;
-    }
-
-    /* SNS / external links */
-    .sns-links { display: flex; flex-direction: column; gap: 10px; }
-    .sns-link {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 14px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-size: .88rem;
-      font-weight: 700;
-      transition: var(--transition);
-    }
-    .sns-link.x-link { background: #000; color: #fff; }
-    .sns-link.x-link:hover { background: #333; }
-    .sns-link.yt-link { background: #FF0000; color: #fff; }
-    .sns-link.yt-link:hover { background: #CC0000; }
-    .sns-link.note-link { background: #41C9B4; color: #fff; }
-    .sns-link.note-link:hover { background: #2FA896; }
-    .sns-icon { font-size: 1.1rem; }
-
-    /* Pagination placeholder */
-    .load-more-btn {
-      display: block;
-      width: 100%;
-      padding: 16px;
-      border-radius: 14px;
-      border: 1px solid var(--color-line);
-      background: #fff;
-      color: var(--color-navy);
-      font-size: .92rem;
-      font-weight: 800;
-      text-align: center;
-      cursor: pointer;
-      transition: var(--transition);
-      margin-top: 28px;
-    }
-    .load-more-btn:hover { background: var(--color-surface-soft); border-color: var(--color-navy); }
-
-    /* hidden posts */
-    .post-card.hidden-post { display: none; }
-    .post-card.hidden-post.show { display: flex; }
-
-    @media (max-width: 1024px) {
-      .blog-shell { grid-template-columns: 1fr; }
-      .blog-sidebar { position: static; }
-    }
-    @media (max-width: 640px) {
-      .post-card { flex-direction: column; gap: 14px; }
-      .post-card-icon { width: 40px; height: 40px; font-size: 1.2rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="description" content="PTA制度を一次資料に基づいて整理する研究サイトです。">
+    <link rel="canonical" href="https://ptaorg.github.io/blog.html">
+    <meta property="og:title" content="活動ブログ | PTA適正化推進委員会">
+    <meta property="og:description" content="PTA制度を一次資料に基づいて整理する研究サイトです。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ptaorg.github.io/blog.html">
+    <meta property="og:image" content="https://ptaorg.github.io/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="活動ブログ | PTA適正化推進委員会">
+    <meta name="twitter:description" content="PTA制度を一次資料に基づいて整理する研究サイトです。">
+    <meta name="twitter:image" content="https://ptaorg.github.io/assets/og-image.png">
+<title>活動ブログ | PTA適正化推進委員会</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="assets/popc-logo.png" alt="PTA適正化推進委員会ロゴ">
-        <span>PTA適正化推進委員会</span>
-      </a>
-      <nav class="desktop-nav" aria-label="主要ナビゲーション">
-        <a href="index.html" class="nav-link">トップ</a>
-        <div class="nav-item has-dropdown">
-          <a href="#" class="nav-link">入口別ガイド</a>
-          <div class="mega-menu">
-            <div class="mega-col"><h4>対象別入口</h4><ul>
-              <li><a href="guide-parent.html">保護者の方へ</a></li>
-              <li><a href="guide-pta.html">PTA役員の方へ</a></li>
-              <li><a href="guide-board.html">教育委員会の方へ</a></li>
-              <li><a href="guide-research.html">研究者・記者の方へ</a></li>
-            </ul></div>
-            <div class="mega-col"><h4>導線</h4><ul>
-              <li><a href="membership.html">入会手続とオプトアウト</a></li>
-              <li><a href="audit/index.html">監査システム</a></li>
-            </ul></div>
-          </div>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span>PTA適正化推進委員会</span></a>
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="law-map.html" class="nav-link">法制度マップ</a>
+                <a href="blog.html" class="nav-link active">ブログ</a>
+            </nav>
         </div>
-        <div class="nav-item has-dropdown">
-          <a href="law-map.html" class="nav-link">論点別</a>
-          <div class="mega-menu">
-            <div class="mega-col"><h4>主要論点</h4><ul>
-              <li><a href="membership.html">入会手続・オプトアウト</a></li>
-              <li><a href="privacy.html">個人情報提供</a></li>
-              <li><a href="fee-collection.html">会費徴収</a></li>
-              <li><a href="personnel.html">教職員関与</a></li>
-              <li><a href="facilities.html">施設利用</a></li>
-            </ul></div>
-            <div class="mega-col"><h4>制度整理</h4><ul>
-              <li><a href="law-map.html">法制度マップ</a></li>
-              <li><a href="cases.html">判例整理</a></li>
-            </ul></div>
-          </div>
+    </header>
+
+    <section class="page-header">
+        <h1>活動ブログ</h1>
+    </section>
+
+    <main class="section-container">
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-content">
+                    <span class="blog-date">2026.04.18</span>
+                    <h3>新年度における「入会届」設置状況調査</h3>
+                    <p>横浜市内各校の入会手続きの現状について、調査を開始しました。</p>
+                    <a href="post-template.html" class="read-more">詳細を見る</a>
+                </div>
+            </article>
         </div>
-        <div class="nav-item has-dropdown">
-          <a href="national-archive.html" class="nav-link">資料・ツール</a>
-          <div class="mega-menu">
-            <div class="mega-col"><h4>資料</h4><ul>
-              <li><a href="national-archive.html">全国PTA資料館</a></li>
-              <li><a href="report.html">総合分析レポート</a></li>
-              <li><a href="blog.html">活動ブログ</a></li>
-            </ul></div>
-            <div class="mega-col"><h4>ツール</h4><ul>
-              <li><a href="audit/index.html">監査システム</a></li>
-            </ul></div>
-          </div>
-        </div>
-        <a href="audit/index.html" class="btn-gold" style="font-size:.88rem; padding:10px 18px; min-height:0;">監査を開く</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileOverlay">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <div class="mobile-overlay" id="mobileOverlay">
-    <a href="index.html" class="mobile-link"><span>Home</span>トップページ</a>
-    <a href="guide-parent.html" class="mobile-link"><span>Guide</span>保護者の方へ</a>
-    <a href="guide-pta.html" class="mobile-link"><span>Guide</span>PTA役員の方へ</a>
-    <a href="guide-board.html" class="mobile-link"><span>Guide</span>教育委員会の方へ</a>
-    <a href="blog.html" class="mobile-link"><span>Blog</span>活動ブログ</a>
-    <a href="audit/index.html" class="mobile-link"><span>Audit</span>監査システム</a>
-    <div class="close-overlay" id="closeOverlay">CLOSE ×</div>
-  </div>
-
-  <!-- Hero -->
-  <section class="blog-hero">
-    <div class="blog-hero-inner">
-      <div class="blog-hero-eyebrow">📝 Activity Blog</div>
-      <h1>活動ブログ</h1>
-      <p>調査報告・論考・提言書・活動記録。一次資料と法的根拠に基づいた研究活動の記録を発信しています。最新の行政動向・全国照会の結果・適正化の事例なども随時更新します。</p>
-    </div>
-  </section>
-
-  <div class="blog-shell">
-
-    <!-- Main column -->
-    <main>
-
-      <!-- Filter tabs -->
-      <div class="filter-tabs" id="filterTabs">
-        <button class="filter-tab active" data-cat="all">すべて</button>
-        <button class="filter-tab" data-cat="news">お知らせ</button>
-        <button class="filter-tab" data-cat="survey">調査報告</button>
-        <button class="filter-tab" data-cat="legal">法的分析</button>
-        <button class="filter-tab" data-cat="proposal">提言・申入</button>
-        <button class="filter-tab" data-cat="report">研究論考</button>
-        <button class="filter-tab" data-cat="activity">活動記録</button>
-      </div>
-
-      <!-- Posts -->
-      <div class="post-list" id="postList">
-
-        <!-- Featured -->
-        <a href="guide-board.html#yokohama" class="post-card-featured" data-cat="news">
-          <div class="post-meta-row">
-            <span class="post-date">2025.12.01</span>
-            <span class="post-category cat-news">お知らせ</span>
-          </div>
-          <h2>横浜市教育委員会が全国初の<br>オプトイン義務化通知を発出（学教第1965号）</h2>
-          <p>令和7年12月1日、横浜市教育委員会は市内全校（500校以上）に対し「PTA運営の留意点について（学教第1965号）」を発出。PTAへの自動加入（みなし加入・オプトアウト）を明示的に禁止し、入会届（オプトイン）の必須化を義務付けました。全国初の行政通知として注目されています。</p>
-          <span class="post-read-more">通知の詳細分析を読む →</span>
-        </a>
-
-        <!-- 2 -->
-        <a href="guide-board.html#responses" class="post-card" data-cat="survey">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#EFF6FF,#DBEAFE);">🗺️</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2025.08.20</span>
-              <span class="post-category cat-survey">調査報告</span>
-            </div>
-            <h3>全国教育委員会への一斉照会——「みなし加入は有効」と答えた自治体はゼロ</h3>
-            <p>全国の教育委員会に対しPTA入会手続き・代理徴収・個人情報管理について一斉照会を実施。回答を取得した全自治体が「みなし加入は法的に有効ではない」と回答。藤沢市・小田原市・相模原市・大崎市・茨木市など多数の詳細な回答を収録。</p>
-            <span class="post-link-label">全回答一覧を見る →</span>
-          </div>
-        </a>
-
-        <!-- 3 -->
-        <a href="membership.html" class="post-card" data-cat="legal">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#FFF5F5,#FEE2E2);">⚖️</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2025.06.15</span>
-              <span class="post-category cat-legal">法的分析</span>
-            </div>
-            <h3>オプトアウト方式の完全な法的破綻——民法・消費者契約法・個人情報法の三重否定</h3>
-            <p>「拒否しなければ加入」というオプトアウト方式が、①民法上の契約不成立、②消費者契約法上の不当条項・取消権、③個人情報保護法による物理的不可能性、の三重の理由から成立しないことを論証した包括的報告書。</p>
-            <span class="post-link-label">論考全文を読む →</span>
-          </div>
-        </a>
-
-        <!-- 4 -->
-        <a href="fee-collection.html" class="post-card" data-cat="proposal">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#FFFBEB,#FEF3C7);">💰</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2025.05.30</span>
-              <span class="post-category cat-proposal">提言・申入</span>
-            </div>
-            <h3>「学校徴収金抱き合わせ収納」の是正に関する要望・申入書を提出</h3>
-            <p>給食費等と同口座でPTA会費を一括徴収する「抱き合わせ収納」の是正を各教育委員会に申入。委任契約の不在・個人情報の目的外利用・地方財政法上の割当寄付禁止の三点から問題を指摘。具体的な是正手順を要望。</p>
-            <span class="post-link-label">会費徴収の論点を読む →</span>
-          </div>
-        </a>
-
-        <!-- 5 -->
-        <a href="guide-board.html#double-bind" class="post-card" data-cat="legal">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#FFF5F5,#FEE2E2);">🔄</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2026.01.15</span>
-              <span class="post-category cat-legal">法的分析</span>
-            </div>
-            <h3>「公益性」の抗弁が招く自己矛盾——教職員PTA業務従事の法的破綻</h3>
-            <p>「PTAは学校運営に必要不可欠で公益性が高い」という主張がどちらの立場をとっても法的に詰む構造（ダブルバインド）を分析。茅ヶ崎市職員派遣事件・八王子市観光協会事件の最高裁判例に基づき、職専免の濫用の実質的違法性を論証。</p>
-            <span class="post-link-label">分析を読む →</span>
-          </div>
-        </a>
-
-        <!-- 6 -->
-        <a href="personnel.html" class="post-card" data-cat="report">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#F0FDF4,#DCFCE7);">👩‍🏫</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2026.01.10</span>
-              <span class="post-category cat-report">研究論考</span>
-            </div>
-            <h3>公立学校教職員によるPTA業務従事と地公法第35条「職務専念義務」の法的抵触</h3>
-            <p>教職員が勤務時間中にPTA会計・集金・印刷・配布等の事務を行うことが地方公務員法第35条に違反することを、文部科学省見解・判例・行政実務記録を根拠に包括的に論証した研究論考。</p>
-            <span class="post-link-label">論考全文を読む →</span>
-          </div>
-        </a>
-
-        <!-- 7 -->
-        <a href="https://sites.google.com/view/ptatekiseika/研究資料/適正化状況横浜市pta" target="_blank" rel="noopener noreferrer" class="post-card" data-cat="survey">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#EFF6FF,#DBEAFE);">📊</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2025.10.05</span>
-              <span class="post-category cat-survey">調査報告</span>
-            </div>
-            <h3>【適正化状況】横浜市PTA——市内学校の入会手続き実態調査</h3>
-            <p>横浜市内各校のPTA入会手続き実態を調査。オプトイン・オプトアウト・みなし加入の割合、委任契約の有無、抱き合わせ徴収の実態を学校ごとに整理。横浜市通知発出後の変化も追跡。（Google Sites資料室）</p>
-            <span class="post-link-label">資料室で確認する ↗</span>
-          </div>
-        </a>
-
-        <!-- 8 -->
-        <a href="https://sites.google.com/view/ptatekiseika/課題と提言/公立学校におけるpta業務の職務専念義務免除運用の法理的破綻と組織的完全分離に関する緊急提言書" target="_blank" rel="noopener noreferrer" class="post-card" data-cat="proposal">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#FFFBEB,#FEF3C7);">📋</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2025.11.20</span>
-              <span class="post-category cat-proposal">提言・申入</span>
-            </div>
-            <h3>緊急提言書：PTA業務「職務専念義務免除」運用の法理的破綻と組織的完全分離</h3>
-            <p>学校による職専免の形式的承認でPTA業務を適法化しようとする運用の法的欠陥を論証した緊急提言書。公益上の必要性・業務の性質の二要件から職専免の成立要件を検討し、PTA事務への適用が実質的違法性を帯びることを示す。（Google Sites資料室）</p>
-            <span class="post-link-label">提言書全文を読む ↗</span>
-          </div>
-        </a>
-
-        <!-- 9 -->
-        <a href="https://sites.google.com/view/ptatekiseika/研究資料/論考ptaの法的構造と教育行政の監督責任" target="_blank" rel="noopener noreferrer" class="post-card" data-cat="report">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#F0FDF4,#DCFCE7);">📚</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2025.09.01</span>
-              <span class="post-category cat-report">研究論考</span>
-            </div>
-            <h3>【論考】PTAの法的構造と教育行政の監督責任</h3>
-            <p>PTAの法的地位（権利能力なき社団・社会教育関係団体）、加入強制の憲法問題、個人情報保護法との整合、教育委員会の監督責任を横断的に論じた総括的論考。地方教育行政法・地方財政法・消費者契約法を網羅的に分析。（Google Sites資料室）</p>
-            <span class="post-link-label">論考全文を読む ↗</span>
-          </div>
-        </a>
-
-        <!-- 10 -->
-        <a href="https://sites.google.com/view/ptatekiseika/研究資料/消費者庁ptaは事業者" target="_blank" rel="noopener noreferrer" class="post-card" data-cat="legal">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#FFF5F5,#FEE2E2);">🏛️</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2025.07.28</span>
-              <span class="post-category cat-legal">法的分析</span>
-            </div>
-            <h3>【消費者庁】PTAは消費者契約法上の「事業者」——協議記録の公開</h3>
-            <p>消費者庁との協議において、PTAが消費者契約法第2条第2項の「事業者」に該当することが行政解釈上確定したことを示す記録。逐条解説にPTAが明記されていることの意味と、保護者への取消権行使可能性を整理。（Google Sites資料室）</p>
-            <span class="post-link-label">協議記録を確認する ↗</span>
-          </div>
-        </a>
-
-        <!-- 11 -->
-        <a href="guide-pta.html" class="post-card hidden-post" data-cat="activity">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#F5F3FF,#EDE9FE);">🔧</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2026.04.01</span>
-              <span class="post-category cat-activity">活動記録</span>
-            </div>
-            <h3>新年度を迎えたPTA役員の方へ——適正化チェックリストを公開</h3>
-            <p>新年度に着任したPTA役員向けに、入会手続き・会費管理・個人情報管理・教職員依頼の四分野について、自己点検チェックリストと適正化ロードマップを公開しました。横浜市通知を根拠として提示しながら改革を進める方法を解説。</p>
-            <span class="post-link-label">PTA役員ガイドを読む →</span>
-          </div>
-        </a>
-
-        <!-- 12 -->
-        <a href="https://sites.google.com/view/ptatekiseika/研究資料/川崎市pta業務の校務化の無効性" target="_blank" rel="noopener noreferrer" class="post-card hidden-post" data-cat="legal">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#FFF5F5,#FEE2E2);">⚠️</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2025.08.10</span>
-              <span class="post-category cat-legal">法的分析</span>
-            </div>
-            <h3>川崎市：PTA業務の「校務化」——委任があれば合法かを検証</h3>
-            <p>川崎市における「PTA業務を校務分掌に組み込む」という事例について、校長が職員にPTA事務を職務命令できるかを法的に検証。職務命令の有効要件・権限逸脱の問題から、「委任があれば校務」という論理が破綻することを示す。（Google Sites資料室）</p>
-            <span class="post-link-label">分析を読む ↗</span>
-          </div>
-        </a>
-
-        <!-- 13 -->
-        <a href="https://sites.google.com/view/ptatekiseika/研究資料/学校徴収金pta会費代理徴収問題の統治構造論" target="_blank" rel="noopener noreferrer" class="post-card hidden-post" data-cat="report">
-          <div class="post-card-icon" style="background:linear-gradient(145deg,#F0FDF4,#DCFCE7);">🏗️</div>
-          <div class="post-card-body">
-            <div class="post-meta-row">
-              <span class="post-date">2025.09.25</span>
-              <span class="post-category cat-report">研究論考</span>
-            </div>
-            <h3>学校徴収金・PTA会費代理徴収問題の統治構造論</h3>
-            <p>学校徴収金制度の成り立ちから、PTA会費が「第二の財布」として機能してきた歴史的経緯と、その統治構造上の問題を論じた長文論考。予算措置不履行・行政不作為・国家賠償責任の観点から教育委員会の責任を論じる。（Google Sites資料室）</p>
-            <span class="post-link-label">論考全文を読む ↗</span>
-          </div>
-        </a>
-
-      </div><!-- /post-list -->
-
-      <button class="load-more-btn" id="loadMoreBtn">さらに読み込む ↓</button>
-
     </main>
 
-    <!-- Sidebar -->
-    <aside class="blog-sidebar">
-
-      <div class="sidebar-widget">
-        <div class="widget-title">このサイトについて</div>
-        <p class="about-text">PTA適正化推進委員会は、横浜市磯子区を拠点に、公立学校のPTA運営を法制度・一次資料・全国調査の三本柱で整理する研究団体です。</p>
-        <div class="about-links">
-          <a href="index.html" class="about-link">🏠 トップページ</a>
-          <a href="report.html" class="about-link">📄 総合分析レポート</a>
-          <a href="national-archive.html" class="about-link">🗂️ 全国PTA資料館</a>
-          <a href="audit/index.html" class="about-link">⚙️ 監査システム</a>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>PTA適正化推進委員会</h3>
+                <a href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" target="_blank" rel="noopener noreferrer" class="yokomusubi-card">
+                    <img src="assets/yokomusubi.png" alt="よこむすび">
+                    <span class="yokomusubi-meta">登録番号　磯子12406</span>
+                    <span class="yokomusubi-meta">分類番号　12-4（市民活動・社会教育推進）</span>
+                </a>
+                <div class="footer-contact">
+                    <p>横浜市磯子区岡村8-17-5-301</p>
+                    <p>070-9012-7772</p>
+                    <p><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
+                </div>
+            </div>
+            <div>
+                <h4>入口</h4>
+                <ul>
+                    <li><a href="guide-parent.html">保護者の方へ</a></li>
+                    <li><a href="guide-pta.html">PTA役員の方へ</a></li>
+                    <li><a href="guide-board.html">教育委員会の方へ</a></li>
+                    <li><a href="guide-research.html">研究者・記者の方へ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>主要導線</h4>
+                <ul>
+                    <li><a href="law-map.html">法制度マップ</a></li>
+                    <li><a href="documents-room.html">資料室ハブ</a></li>
+                    <li><a href="audit/index.html">監査システム</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+        <p class="copyright">&copy; 2026 PTA適正化推進委員会</p>
+    </footer>
+    <script src="js/law-data.js"></script>
+    <script src="js/site.js"></script>
 
-      <div class="sidebar-widget">
-        <div class="widget-title">カテゴリ</div>
-        <div class="cat-list">
-          <div class="cat-list-item" onclick="setFilter('all')">📋 すべて<span class="cat-count">13</span></div>
-          <div class="cat-list-item" onclick="setFilter('news')">🔔 お知らせ<span class="cat-count">1</span></div>
-          <div class="cat-list-item" onclick="setFilter('survey')">🗺️ 調査報告<span class="cat-count">2</span></div>
-          <div class="cat-list-item" onclick="setFilter('legal')">⚖️ 法的分析<span class="cat-count">4</span></div>
-          <div class="cat-list-item" onclick="setFilter('proposal')">📋 提言・申入<span class="cat-count">2</span></div>
-          <div class="cat-list-item" onclick="setFilter('report')">📚 研究論考<span class="cat-count">3</span></div>
-          <div class="cat-list-item" onclick="setFilter('activity')">🔧 活動記録<span class="cat-count">1</span></div>
-        </div>
-      </div>
-
-      <div class="sidebar-widget">
-        <div class="widget-title">外部発信</div>
-        <div class="sns-links">
-          <a href="https://x.com/jjjqqqxxx0852" target="_blank" rel="noopener noreferrer" class="sns-link x-link">
-            <span class="sns-icon">𝕏</span>毎日情報発信中
-          </a>
-          <a href="https://www.youtube.com/channel/UCSCZwKdv2k1ZCcstUA2HZZg" target="_blank" rel="noopener noreferrer" class="sns-link yt-link">
-            <span class="sns-icon">▶</span>YouTube チャンネル
-          </a>
-          <a href="https://note.com/hiroshisatoh" target="_blank" rel="noopener noreferrer" class="sns-link note-link">
-            <span class="sns-icon">📝</span>note 記事
-          </a>
-        </div>
-      </div>
-
-      <div class="sidebar-widget">
-        <div class="widget-title">主要論点</div>
-        <div class="about-links">
-          <a href="membership.html" class="about-link">📋 入会手続・オプトアウト</a>
-          <a href="privacy.html" class="about-link">🔒 個人情報提供</a>
-          <a href="fee-collection.html" class="about-link">💰 会費徴収</a>
-          <a href="personnel.html" class="about-link">👩‍🏫 教職員関与</a>
-          <a href="facilities.html" class="about-link">🏫 施設利用</a>
-        </div>
-      </div>
-
-    </aside>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div>
-        <h3>PTA適正化推進委員会</h3>
-        <a href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" target="_blank" rel="noopener noreferrer" class="yokomusubi-card">
-          <img src="assets/yokomusubi.png" alt="よこむすび">
-          <span class="yokomusubi-meta">登録番号　磯子12406</span>
-          <span class="yokomusubi-meta">分類番号　12-4（市民活動・社会教育推進）</span>
-        </a>
-        <div class="footer-contact" style="margin-top:18px;">
-          <p>横浜市磯子区岡村8-17-5-301</p>
-          <p>070-9012-7772</p>
-          <p><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
-        </div>
-      </div>
-      <div>
-        <h4>入口別ガイド</h4>
-        <ul>
-          <li><a href="guide-parent.html">保護者の方へ</a></li>
-          <li><a href="guide-pta.html">PTA役員の方へ</a></li>
-          <li><a href="guide-board.html">教育委員会の方へ</a></li>
-          <li><a href="guide-research.html">研究者・記者の方へ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>主要導線</h4>
-        <ul>
-          <li><a href="law-map.html">法制度マップ</a></li>
-          <li><a href="cases.html">判例整理</a></li>
-          <li><a href="national-archive.html">全国PTA資料館</a></li>
-          <li><a href="audit/index.html">監査システム</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="copyright">&copy; 2026 PTA適正化推進委員会</p>
-  </footer>
-
-  <script src="js/law-data.js"></script>
-  <script src="js/site.js"></script>
-  <script>
-    // Filter tabs
-    function setFilter(cat) {
-      // Update tab active state
-      document.querySelectorAll('.filter-tab').forEach(t => {
-        t.classList.toggle('active', t.dataset.cat === cat);
-      });
-      // Show/hide posts
-      document.querySelectorAll('#postList > *').forEach(card => {
-        const cardCat = card.dataset.cat;
-        const match = cat === 'all' || cardCat === cat;
-        if (match) {
-          card.style.display = card.classList.contains('post-card') ? 'flex' : 'block';
-          card.classList.remove('hidden-post');
-        } else {
-          card.style.display = 'none';
-        }
-      });
-      // Hide load more when filtering
-      document.getElementById('loadMoreBtn').style.display = cat === 'all' ? '' : 'none';
-    }
-
-    document.querySelectorAll('.filter-tab').forEach(tab => {
-      tab.addEventListener('click', () => setFilter(tab.dataset.cat));
-    });
-
-    // Load more
-    let expanded = false;
-    document.getElementById('loadMoreBtn').addEventListener('click', function() {
-      if (!expanded) {
-        document.querySelectorAll('.hidden-post').forEach(el => {
-          el.style.display = 'flex';
-          el.classList.remove('hidden-post');
-          el.classList.add('show');
-        });
-        this.textContent = '折りたたむ ↑';
-        expanded = true;
-      } else {
-        location.reload();
-      }
-    });
-  </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
