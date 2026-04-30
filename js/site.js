@@ -110,6 +110,9 @@ document.querySelectorAll('.egov-link').forEach((link) => { if (!link.textConten
     .structure-step b{display:block;color:var(--color-navy);font-size:1rem;line-height:1.45;margin-bottom:8px;}
     .structure-step span{font-size:.86rem;color:var(--color-text-soft);line-height:1.65;}
     .structure-step.alert{border-color:rgba(185,28,28,.25);background:linear-gradient(180deg,#fff,#fff5f5);}
+    .legal-links{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px;}
+    .legal-link-card{background:#f8fafc;border:1px solid var(--color-line);border-radius:16px;padding:14px;text-decoration:none;color:var(--color-navy);}
+    .legal-link-card b{display:block;font-size:.98rem;margin-bottom:4px;}.legal-link-card span{font-size:.82rem;color:var(--color-text-soft);line-height:1.55;}
     .structure-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}
     .structure-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 16px;border-radius:999px;text-decoration:none;font-weight:900;}
     .structure-actions .primary{background:var(--color-navy);color:#fff;}
@@ -128,7 +131,7 @@ document.querySelectorAll('.egov-link').forEach((link) => { if (!link.textConten
     .national-map-stat{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px;}
     .national-map-stat b{display:block;color:#F4E7A6;font-size:1.5rem;line-height:1;}
     .national-map-stat span{font-size:.84rem;color:rgba(255,255,255,.72);}
-    @media(max-width:980px){.structure-flow{grid-template-columns:1fr}.structure-step:not(:last-child):after{content:'↓';right:auto;left:50%;top:auto;bottom:-22px;transform:translateX(-50%)}.structure-step{min-height:auto}}
+    @media(max-width:980px){.structure-flow,.legal-links{grid-template-columns:1fr}.structure-step:not(:last-child):after{content:'↓';right:auto;left:50%;top:auto;bottom:-22px;transform:translateX(-50%)}.structure-step{min-height:auto}}
     @media(max-width:760px){.national-map-stats{grid-template-columns:repeat(2,1fr)}.national-map-entry,.pta-structure-entry{padding:22px}}
   `;
   document.head.appendChild(style);
@@ -146,10 +149,15 @@ document.querySelectorAll('.egov-link').forEach((link) => { if (!link.textConten
       <div class="structure-step"><b>会費・個人情報・教職員関与が混線</b><span>私団体活動と学校事務の境界が見えにくくなる。</span></div>
       <div class="structure-step alert"><b>構造問題として表面化</b><span>個別トラブルではなく、制度上の境界問題として現れる。</span></div>
     </div>
+    <div class="legal-links">
+      <a class="legal-link-card" href="membership.html"><b>入会・意思確認</b><span>承諾・申込み・記録の確認論点</span></a>
+      <a class="legal-link-card" href="fee-collection.html"><b>会費徴収</b><span>学校徴収金・委任関係・会計分離</span></a>
+      <a class="legal-link-card" href="privacy.html"><b>個人情報</b><span>名簿提供・同意・利用目的の確認</span></a>
+      <a class="legal-link-card" href="personnel.html"><b>教職員関与</b><span>職務・職専免・公私境界の確認</span></a>
+    </div>
     <div class="structure-actions">
       <a class="primary" href="national-map.html">全国の回答傾向を見る</a>
-      <a class="secondary" href="membership.html">入会・意思確認を見る</a>
-      <a class="secondary" href="law-map.html">関連法制度を見る</a>
+      <a class="secondary" href="law-map.html">法制度マップを見る</a>
     </div>
   `;
 
