@@ -1250,6 +1250,11 @@
         <img src="../assets/popc-logo.png" alt="PTA適正化推進委員会ロゴ">
         <span>PTA適正化推進委員会</span>
       </a>
+      <div class="header-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-input" placeholder="ページを検索…" aria-label="サイト内検索">
+        <div class="search-results-dropdown"></div>
+      </div>
       <nav class="desktop-nav" aria-label="主要ナビゲーション">
         <a href="../index.html" class="nav-link">トップ</a>
         <div class="nav-item has-dropdown">
@@ -1652,17 +1657,17 @@
         q: '入会の意思確認は、どのような形で行われましたか。',
         opts: [
           { t: 'PTAが独自に用意した入会届を自ら記入・提出した。', level: 1, laws: ['civil-law'],
-            adv: '入会の意思表示として比較的明確ですが、PTAの任意性・個人情報の利用目的が明示されていたか確認してください。',
-            links: [{ label: '入会手続の詳細を見る', url: '../membership.html' }] },
-          { t: '非加入届を出さない限り会員とされる(オプトアウト)。', level: 3, laws: ['civil-law','constitution'],
-            adv: '民法上、沈黙は承諾とみなされません。オプトアウト方式は契約不成立であり、横浜市教育委員会通知でも否定されています。',
-            links: [{ label: 'みなし加入の無効性を読む', url: '../membership.html' }, { label: '横浜市通知の詳細', url: '../guide-board.html' }] },
+            adv: '入会の意思表示として比較的明確です。ただしPTAの任意性・個人情報の利用目的・退会の自由が入会届に明記されていたか確認してください。',
+            links: [{ label: '入会手続の詳細', url: '../membership.html' }] },
+          { t: '非加入届を出さない限り会員とされる（オプトアウト）。', level: 3, laws: ['civil-law','constitution'],
+            adv: '【違法リスク高】民法上、沈黙は承諾とみなされません。民法522条の契約成立要件を欠き、横浜市教育委員会通知（学教第1965号）でも禁止されています。会費は不当利得として返還請求の対象です。',
+            links: [{ label: 'みなし加入の無効性', url: '../membership.html' }, { label: '横浜市通知の詳細', url: '../guide-board.html' }] },
           { t: '意思確認なく、入学と同時に全員会員として扱われた。', level: 4, laws: ['civil-law','constitution'],
-            adv: '【重大違法】契約の申込み・承諾が存在せず、民法522条の契約成立要件を完全に欠きます。会費は不当利得(民法703条)として返還請求が可能です。',
-            links: [{ label: 'みなし加入の無効性を読む', url: '../membership.html' }, { label: '保護者向けテンプレート', url: '../guide-parent.html#templates' }] },
+            adv: '【重大違法】契約の申込み・承諾が存在せず、民法522条の契約成立要件を完全に欠きます。会費は不当利得（民法703条）として返還請求が可能です。全国の教育委員会も「不適切」と回答しています。',
+            links: [{ label: 'みなし加入の詳細', url: '../membership.html' }, { label: '保護者向けテンプレートPDF', url: '../guide-parent.html#pdf-dl' }] },
           { t: '任意と言われたが、断りづらい雰囲気・説明だった。', level: 2, laws: ['constitution'],
-            adv: '任意性が形骸化している状態です。消費者契約法上の「不利益事実の不告知」として、契約の取消し(第4条)の対象になり得ます。',
-            links: [{ label: '保護者の権利を確認する', url: '../guide-parent.html' }] }
+            adv: '任意性が形骸化している状態です。消費者契約法4条の「不利益事実の不告知」として、契約取消しの対象になり得ます。',
+            links: [{ label: '保護者の権利を確認', url: '../guide-parent.html' }] }
         ]
       },
       {
@@ -1670,16 +1675,16 @@
         q: 'PTA名簿や連絡先は、どのように準備されていますか。',
         opts: [
           { t: '入会届にPTA活動への情報提供に同意し、PTAへ直接提出した。', level: 0, laws: ['personal-info'],
-            adv: '直接収集であり、個人情報保護法上適正な取得方法です。',
+            adv: '直接収集かつ明示的同意あり。個人情報保護法上、最も適正な取得方法です。',
             links: [] },
           { t: '学校を通じた書面同意の上で情報が提供されている。', level: 1, laws: ['personal-info'],
-            adv: '同意の具体的な内容(利用目的・提供先・管理方法)が明示されているか確認が必要です。',
-            links: [{ label: '個人情報提供の要件を確認', url: '../privacy.html' }] },
+            adv: '同意の具体的な内容（利用目的・提供先・管理方法）が明示されているか確認が必要です。形式的な同意書では不十分な場合があります。',
+            links: [{ label: '個人情報提供の要件', url: '../privacy.html' }] },
           { t: '学校の名簿がそのままPTAに渡されている。', level: 4, laws: ['personal-info'],
-            adv: '【重大違法】個人情報保護法第69条違反。学校(行政機関等)が本人同意なく第三者(PTA)へ提供することは原則禁止です。校長・教頭の刑事リスクも伴います。',
-            links: [{ label: '個人情報問題の詳細', url: '../privacy.html' }, { label: '個人情報削除要請テンプレート', url: '../guide-parent.html#templates' }] },
+            adv: '【重大違法】個人情報保護法第69条違反。学校（行政機関等）が本人同意なく第三者（PTA）へ提供することは原則禁止です。全国の教育委員会への照会でも「違法」との回答が得られています。',
+            links: [{ label: '個人情報問題の詳細', url: '../privacy.html' }, { label: '削除要請テンプレート', url: '../guide-parent.html#pdf-dl' }] },
           { t: '誰がどの情報を持っているか把握できていない。', level: 2, laws: ['personal-info'],
-            adv: '情報の保有主体・利用目的・管理責任が不明な状態です。会員管理自体が成立していません。',
+            adv: '情報の保有主体・利用目的・管理責任が不明な状態です。個人情報保護法上の安全管理措置義務（同法66条）を欠く可能性があります。',
             links: [{ label: '個人情報問題の詳細', url: '../privacy.html' }] }
         ]
       },
@@ -1687,186 +1692,238 @@
         cat: '会費徴収', axis: 'finance', axisIcon: '💰',
         q: 'PTA会費は、どのように徴収されていますか。',
         opts: [
-          { t: 'PTA独自口座に、会員が直接振り込みまたは集金している。', level: 0, laws: ['civil-law'],
-            adv: '学校会計と分離されており、公私の区別が明確です。',
+          { t: 'PTA独自口座に、会員が直接振り込みまたはPTAが集金している。', level: 0, laws: ['civil-law'],
+            adv: '学校会計と分離されており、公私の区別が明確です。最も適正な形式です。',
             links: [] },
-          { t: '学校徴収金と一体だが、別途明確な同意書と委任契約がある。', level: 1, laws: ['civil-law'],
-            adv: '手続き上は一定の根拠がありますが、義務的費用とPTA会費の混同による誤認がないか確認が必要です。',
-            links: [{ label: '会費徴収の詳細', url: '../fee-collection.html' }] },
-          { t: '給食費等と同口座・同引き落としで当然に徴収されている。', level: 3, laws: ['civil-law'],
-            adv: '委任契約・個別同意が存在しない場合、無権代理(民法113条)として無効となり、不当利得(703条)として返還請求が可能です。',
-            links: [{ label: '会費返還の根拠を確認', url: '../guide-parent.html#fees' }, { label: '会費停止要請テンプレート', url: '../guide-parent.html#templates' }] },
-          { t: '現金を子ども経由で担任が回収している。', level: 4, laws: ['civil-law','local-public-service'],
-            adv: '【重大違法】金銭管理・教職員の職務専念義務(地公法35条)・事故責任の三重の問題があります。至急改善が必要です。',
-            links: [{ label: '会費徴収の詳細', url: '../fee-collection.html' }] }
+          { t: '学校徴収金と一体だが、別途明確な委任契約書がある。', level: 1, laws: ['civil-law'],
+            adv: '委任契約の内容と、PTAへの入会契約が先行して成立していることが前提です。入会前に会費が引き落とされていないか確認してください。',
+            links: [{ label: '会費徴収の問題', url: '../fee-collection.html' }] },
+          { t: '給食費等と同じ口座から一括で引き落とされている。', level: 4, laws: ['civil-law'],
+            adv: '【重大違法】地方自治法235条の4第2項（私費保管禁止）・地方財政法4条の5（割当寄付禁止）に抵触します。また入会契約なく徴収された場合は民法113条（無権代理）・703条（不当利得）として返還請求が可能です。',
+            links: [{ label: '会費徴収問題の詳細', url: '../fee-collection.html' }, { label: '返還請求テンプレート', url: '../guide-parent.html#pdf-dl' }] },
+          { t: '現金を児童・生徒経由で担任が回収している。', level: 4, laws: ['local-public-service'],
+            adv: '【重大違法】地公法35条（職務専念義務）違反。教職員が勤務時間中に私的団体の集金を担う行為は、違法な利益供与（便宜供与）にあたります。金銭紛失時の責任帰属も重大なリスクです。',
+            links: [{ label: '教職員関与の問題', url: '../personnel.html' }] }
         ]
       },
       {
         cat: '学校関与', axis: 'personnel', axisIcon: '👩‍🏫',
         q: 'PTA配布物や連絡は誰が担っていますか。',
         opts: [
-          { t: 'PTA役員がメール・ポスト・独自手段で配布・送信している。', level: 0, laws: ['social-education'],
-            adv: '独立団体として自律的に事務を担っている理想的な状態です。',
+          { t: 'PTA役員がすべて配布・送信している。', level: 0, laws: ['social-education'],
+            adv: '独立した任意団体として自律的に事務を担えています。最も適正な状態です。',
             links: [] },
-          { t: '学校配布物にPTA文書が同封されることがある。', level: 1, laws: ['social-education'],
-            adv: '学校文書と私的団体文書の境界が曖昧になります。頻度・範囲を確認し、学校側との役割分担を明確化してください。',
+          { t: '学校配布物にPTA文書が同封されることがある（年数回程度）。', level: 1, laws: ['social-education'],
+            adv: '学校文書と私的団体文書の境界が不明確になるリスクがあります。「PTAは任意団体である」旨の明示が伴っているか確認してください。',
             links: [] },
-          { t: '担任が日常的にPTA文書の配布・回収をしている。', level: 3, laws: ['local-public-service'],
-            adv: '教職員が私的団体の実務を恒常的に担う構造は、地公法35条の職務専念義務違反となります。教育委員会が是正指導の対象とします。',
-            links: [{ label: '教職員関与の詳細', url: '../personnel.html' }] },
-          { t: '授業時間・学校行事でPTA加入案内が行われた。', level: 4, laws: ['constitution','social-education'],
-            adv: '【重大違法】学校の権威や公的場面を利用した勧誘は、任意加入の原則を根本から損ないます。消費者契約法上の不当勧誘にも当たり得ます。',
-            links: [{ label: '保護者向けテンプレート', url: '../guide-parent.html#templates' }] }
+          { t: '担任が日常的にPTA文書を配布・回収している。', level: 3, laws: ['local-public-service'],
+            adv: '【違法リスク高】地公法35条（職務専念義務）違反。教職員が私的団体の実務を恒常的に担う構造は、職務専念義務違反・利益供与にあたります。',
+            links: [{ label: '教職員関与の詳細', url: '../personnel.html' }, { label: '渉外業務の範囲', url: '../guide-board.html' }] },
+          { t: '授業時間や学校行事を利用してPTA加入案内が行われる。', level: 4, laws: ['constitution','social-education'],
+            adv: '【重大違法】学校の公的権威・場を利用した私的団体への加入促進。任意性を根本的に損ない、消費者契約法上の「不当勧誘」にあたる可能性があります。',
+            links: [{ label: '入会手続の問題', url: '../membership.html' }, { label: '教育委員会への相談', url: '../board-responses.html' }] }
+        ]
+      },
+      {
+        cat: '施設・備品', axis: 'facilities', axisIcon: '🏫',
+        q: '学校の施設・備品はどのように利用していますか。',
+        opts: [
+          { t: 'PTA専用の施設・備品を使用し、使用料等を適切に負担している。', level: 0, laws: ['school-ed'],
+            adv: '公私の境界が明確に保たれています。',
+            links: [] },
+          { t: 'PTA室・印刷機等を使用するが、使用条件の書面化はない。', level: 1, laws: ['school-ed'],
+            adv: '学校教育法137条に基づく許可条件・費用負担を書面で整理することをお勧めします。',
+            links: [{ label: '施設利用の整理', url: '../facilities.html' }] },
+          { t: '学校の印刷機・光熱費を無償で常態的に使用している。', level: 3, laws: ['school-ed'],
+            adv: '地方自治法237条（公有財産の適正管理）・地方財政法上の問題があります。公有財産の無償使用は法的根拠が必要です。',
+            links: [{ label: '施設利用の詳細', url: '../facilities.html' }] },
+          { t: '学校電話・郵便をPTAの連絡に常態的に使用している。', level: 2, laws: ['school-ed'],
+            adv: '公費（学校の通信設備）を私的団体が使用することは、利用根拠と費用負担の整理が必要です。渉外業務の範囲内での利用かどうかを確認してください。',
+            links: [{ label: '渉外業務の範囲', url: '../guide-board.html' }] }
         ]
       }
     ],
-
     officer: [
       {
         cat: '入会手続', axis: 'membership', axisIcon: '📋',
         q: '新入生への加入案内は、どの方式で行っていますか。',
         opts: [
-          { t: 'PTAが独自に用意した入会届を配布し、提出者のみを会員とするオプトイン方式。', level: 0, laws: ['civil-law'],
-            adv: '民法・横浜市通知に沿った適正な方式です。入会届に任意性・個人情報の利用目的を明記してください。',
-            links: [{ label: '適正化ロードマップを見る', url: '../guide-pta.html#roadmap' }] },
-          { t: '任意と説明しているが、実質的には全員から入会届を回収する流れになっている。', level: 1, laws: ['civil-law'],
-            adv: '形式はオプトインでも、断りにくい雰囲気があれば消費者契約法上の問題が残ります。「入らなくてもよい」ことを明示してください。',
+          { t: '入会届提出者のみ登録するオプトイン方式。', level: 0, laws: ['civil-law'],
+            adv: '加入意思の明示を前提とする最も適正な方式です。横浜市通知（学教第1965号）に完全に対応しています。',
             links: [] },
-          { t: '非加入届が出ない限り加入とみなす(オプトアウト)。', level: 3, laws: ['civil-law','constitution'],
-            adv: '民法・消費者契約法・個人情報保護法の三重の問題。横浜市通知は明示的に禁止。役員個人が不当利得返還請求の被告になり得ます。',
-            links: [{ label: 'PTA役員が負うリスク', url: '../guide-pta.html#risks' }, { label: 'みなし加入の無効性', url: '../membership.html' }] },
-          { t: '学校名簿を基に全員を当然登録している。', level: 4, laws: ['civil-law','personal-info'],
-            adv: '【重大違法】入会意思確認の欠如＋個人情報の無断利用が同時に問題化。会費返還請求・個人情報保護法違反の双方でリスクが顕在化します。',
-            links: [{ label: 'PTA役員が負うリスク', url: '../guide-pta.html#risks' }] }
+          { t: '非加入届が出ない限り加入扱いにする。', level: 3, laws: ['civil-law', 'constitution'],
+            adv: '【違法リスク高】民法522条・消費者契約法に違反します。横浜市通知でも禁止されています。役員として継続している場合、不当利得の返還責任を問われる可能性があります。',
+            links: [{ label: '入会手続を適正化する', url: '../guide-pta.html' }, { label: '入会届の雛形', url: '../guide-pta.html#pdf-officer' }] },
+          { t: '学校名簿を基に当然に全員登録している。', level: 4, laws: ['civil-law', 'personal-info'],
+            adv: '【重大違法】加入意思確認の欠如（民法522条違反）と個人情報の目的外取得（個人情報保護法69条違反）が同時に発生しています。役員として早急に是正が必要です。',
+            links: [{ label: '就任直後チェックリスト', url: '../guide-pta.html#onboard' }, { label: '適正化ロードマップ', url: '../guide-pta.html#roadmap' }] },
+          { t: '実務担当者によって学校ごとに運用が違う。', level: 2, laws: ['civil-law'],
+            adv: '統一ルールがない状態です。役員として今期中に入会届様式を整備し、全員がオプトイン方式で運用するよう規程を定めてください。',
+            links: [{ label: '適正化ロードマップ', url: '../guide-pta.html#roadmap' }] }
         ]
       },
       {
         cat: '会計管理', axis: 'finance', axisIcon: '💰',
         q: '会費や資金は、どのように管理していますか。',
         opts: [
-          { t: 'PTA名義口座を設け、役員が会計規程に基づいて管理している。', level: 0, laws: ['civil-law'],
-            adv: '団体会計としての独立性が確保されています。定期的な監査・総会への報告を継続してください。',
+          { t: 'PTA名義口座と役員が独立して管理・監査している。', level: 0, laws: ['civil-law'],
+            adv: '団体会計としての独立性と透明性が確保されています。',
             links: [] },
-          { t: 'PTA口座はあるが、学校事務室の協力を受けて管理している。', level: 2, laws: ['local-public-service'],
-            adv: '教職員が勤務時間中に関与している場合、職務専念義務違反となります。PTAが主体となり独立管理できる体制への移行が必要です。',
-            links: [{ label: '適正化の手順', url: '../guide-pta.html#roadmap' }] },
-          { t: '学校事務室が実質的に全ての会計管理を行っている。', level: 3, laws: ['local-public-service'],
-            adv: '学校が私的団体会計を担う構造は公私混同であり、教職員の職務専念義務違反(地公法35条)にも当たります。是正指導の対象です。',
-            links: [{ label: '教職員関与の詳細', url: '../personnel.html' }] },
-          { t: '会長個人の通帳で管理されている。', level: 4, laws: ['civil-law'],
-            adv: '【重大違法】会計責任の所在が著しく不明確。使途不明・横領リスクが高く、任期終了後のトラブルに発展しやすい状態です。直ちに改善が必要です。',
-            links: [] }
+          { t: '学校事務室が実質的に管理・補助している。', level: 4, laws: ['local-public-service'],
+            adv: '【重大違法】地公法35条（職務専念義務）・地方自治法235条の4（私費保管禁止）に反します。学校が私費を保管・管理することは法的根拠がありません。役員として即時の分離が必要です。',
+            links: [{ label: '会費徴収の問題', url: '../fee-collection.html' }, { label: '会計規程の雛形', url: '../guide-pta.html#pdf-officer' }] },
+          { t: '会長個人の口座や通帳で管理している。', level: 4, laws: ['civil-law'],
+            adv: '【重大違法】会計責任の所在が著しく不明確で、横領事件の典型パターンです。退任後に前任者として追及される可能性があります。今期中にPTA名義口座への移行が必要です。',
+            links: [{ label: '会計規程の雛形', url: '../guide-pta.html#pdf-officer' }, { label: '適正化ロードマップ', url: '../guide-pta.html#roadmap' }] },
+          { t: '現金保管が多く、監査は形式的・未実施である。', level: 2, laws: ['civil-law'],
+            adv: '内部統制が弱く、不正・紛失時に役員個人が責任を問われるリスクがあります。外部監査または独立した内部監査体制を今期中に整備してください。',
+            links: [{ label: '就任直後チェックリスト', url: '../guide-pta.html#onboard' }] }
         ]
       },
       {
         cat: '学校依存', axis: 'personnel', axisIcon: '👩‍🏫',
         q: '印刷・仕分け・配布・会計補助などの事務は誰が担っていますか。',
         opts: [
-          { t: '役員と会員が分担し、必要に応じて外注している。', level: 0, laws: ['social-education'],
-            adv: '団体として自律的に事務処理を担っている適正な形です。',
+          { t: '役員・有償スタッフ・外注で処理している。', level: 0, laws: ['social-education'],
+            adv: '団体として自主的に事務処理を担えています。最も適正な状態です。',
             links: [] },
-          { t: '繁忙期に限り、放課後に先生の善意で手伝ってもらうことがある。', level: 1, laws: ['social-education'],
-            adv: '勤務時間外・個人的協力の範囲内であれば問題は小さいですが、継続化しないよう注意が必要です。',
-            links: [] },
-          { t: '教頭・事務職員に相当程度依頼している(勤務時間中)。', level: 3, laws: ['local-public-service'],
-            adv: '勤務時間中の従事は地公法35条違反。教職員を法的リスクにさらしており、役員としての依頼責任も問われます。',
-            links: [{ label: '教職員関与の詳細', url: '../personnel.html' }, { label: '変えるべき理由', url: '../guide-pta.html#why-change' }] },
-          { t: '担任に毎月のクラス配布物処理・集金を依頼している。', level: 4, laws: ['local-public-service'],
-            adv: '【重大違法】継続的・組織的な事務代行であり、学校依存構造が顕著。教職員への職務命令違反・PTA役員の共同責任も問われます。',
-            links: [{ label: 'PTA役員が負うリスク', url: '../guide-pta.html#risks' }] }
+          { t: '教頭・事務職員に相当程度依存している。', level: 3, laws: ['local-public-service'],
+            adv: '【違法リスク高】地公法35条（職務専念義務）違反。教職員の公務と団体事務が混在しており、学校への違法な利益供与（便宜供与）にあたります。',
+            links: [{ label: '渉外業務の範囲', url: '../guide-board.html' }, { label: '適正化ロードマップ', url: '../guide-pta.html#roadmap' }] },
+          { t: '担任にクラス数分の配布物処理を依頼している。', level: 4, laws: ['local-public-service'],
+            adv: '【重大違法】恒常的な事務代行であり、地公法35条の職務専念義務違反が明確です。担任への依頼を今期中に全廃し、PTAが独自配布体制を整える必要があります。',
+            links: [{ label: '就任直後チェックリスト', url: '../guide-pta.html#onboard' }, { label: 'PDF雛形（覚書）', url: '../guide-pta.html#pdf-officer' }] },
+          { t: '繁忙期のみ学校の善意で支援を受ける。', level: 1, laws: ['social-education'],
+            adv: '一時的・例外的な支援であっても、恒常化すれば職務専念義務違反となります。学校との間で「渉外業務の範囲」を書面で明確にしておくことが重要です。',
+            links: [{ label: '渉外業務の定義', url: '../guide-board.html' }] }
         ]
       },
       {
-        cat: '利益相反', axis: 'facilities', axisIcon: '🏫',
-        q: '校長・教頭などの学校管理職は、PTAの意思決定にどの程度関与していますか。',
+        cat: '個人情報管理', axis: 'privacy', axisIcon: '🔒',
+        q: '役員・会員の個人情報はどのように管理していますか。',
         opts: [
-          { t: '顧問的立場にとどまり、議決権を持たない。', level: 0, laws: ['social-education'],
-            adv: '団体の自律性と学校との協議機能が適切に切り分けられています。',
+          { t: '入会届で直接収集し、PTA独自の名簿として厳重に管理している。', level: 0, laws: ['personal-info'],
+            adv: 'PTAとして適正に個人情報を管理できています。退会時の即時削除も忘れずに。',
             links: [] },
-          { t: '会議で意見を述べるが、形式上は役員ではない。', level: 1, laws: ['social-education'],
-            adv: '実質的な影響力の強さ・方向性によっては問題になり得ます。PTAの方針が学校側の意向に左右されていないか確認してください。',
-            links: [] },
-          { t: '副会長や監査として議決権を持つ。', level: 3, laws: ['social-education'],
-            adv: '学校側とPTA側の利害が交差し、利益相反構造になります。社会教育法上、PTAは学校から独立した自主的運営が求められます。',
-            links: [{ label: '法制度マップを見る', url: '../law-map.html' }] },
-          { t: 'PTA予算や寄付の使途を実質的に学校管理職が決めている。', level: 4, laws: ['social-education','school-edu'],
-            adv: '【重大違法】団体財産と学校利益の境界が崩壊。寄付の目的・使途が不明確になり、地方財政法上の割当寄付禁止(4条の5)にも抵触し得ます。',
-            links: [{ label: '施設利用の問題を見る', url: '../facilities.html' }] }
-        ]
-      }
-    ],
-
-    school: [
-      {
-        cat: '服務規律', axis: 'personnel', axisIcon: '👩‍🏫',
-        q: '教職員にPTA事務をどの程度担わせていますか。',
-        opts: [
-          { t: '担わせていない。PTAが自主的に行う。', level: 0, laws: ['local-public-service'],
-            adv: '学校とPTAの役割分担が明確です。教職員の本来業務に集中できる環境です。',
-            links: [] },
-          { t: '繁忙期のみ、勤務時間外に限定的な補助がある。', level: 1, laws: ['local-public-service'],
-            adv: '補助の範囲・時間・任意性を明確にする必要があります。慣例化しないよう記録を残してください。',
-            links: [] },
-          { t: '慣例として勤務時間中に当然行っている。', level: 3, laws: ['local-public-service'],
-            adv: '地公法35条の職務専念義務違反。文部科学省も「PTA業務は公務ではない」と明示しています。教育委員会の是正指導対象です。',
-            links: [{ label: '教職員関与の詳細', url: '../personnel.html' }, { label: '教育委員会向けガイド', url: '../guide-board.html' }] },
-          { t: '時間外にも無償でPTA事務を行わせている。', level: 4, laws: ['local-public-service'],
-            adv: '【重大違法】超過勤務・無償労働の強制は労働法上の問題も伴います。管理職として職員を法的リスクにさらしている状態です。即時是正が必要です。',
-            links: [{ label: '教職員関与の詳細', url: '../personnel.html' }] }
-        ]
-      },
-      {
-        cat: '個人情報', axis: 'privacy', axisIcon: '🔒',
-        q: '児童・保護者の情報をPTAにどのように提供していますか。',
-        opts: [
-          { t: '提供していない。PTAが入会届で独自に情報を取得する。', level: 0, laws: ['personal-info'],
-            adv: '学校保有情報とPTA名簿が完全分離されており、個人情報保護法上適正な状態です。',
-            links: [] },
-          { t: '本人から別途取得した書面同意(PTA活動への利用目的明示あり)を前提に、限定提供している。', level: 1, laws: ['personal-info'],
-            adv: '同意取得の主体・範囲・記録方法の確認が必要です。学校の優越的立場による圧力がなかったか確認してください。',
-            links: [{ label: '個人情報提供の要件', url: '../privacy.html' }] },
-          { t: '緊急連絡の名目で包括的に共有している。', level: 3, laws: ['personal-info'],
-            adv: '目的外利用(個人情報保護法69条)の問題。「緊急連絡」と「PTA活動への利用」は別目的であり、包括同意は無効とされます。',
-            links: [{ label: '個人情報提供の詳細', url: '../privacy.html' }] },
-          { t: '名簿を慣例でそのまま渡している。', level: 4, laws: ['personal-info'],
-            adv: '【重大違法】個人情報保護法第69条違反。校長・教頭の個人的な刑事・懲戒リスクが発生します。全国の教育委員会照会でも全自治体が「違法」と認識しています。',
-            links: [{ label: '全国教育委員会の回答', url: '../guide-board.html#responses' }, { label: '個人情報の詳細', url: '../privacy.html' }] }
+          { t: '学校から提供を受けた名簿を使用しているが、同意は取得している。', level: 1, laws: ['personal-info'],
+            adv: '同意取得の方法（オプトインか否か）と利用目的の明示を確認してください。同意書が存在しても、目的外利用は禁止されます。',
+            links: [{ label: '個人情報管理の要件', url: '../privacy.html' }] },
+          { t: '学校名簿をそのまま使用しており、本人同意は確認していない。', level: 4, laws: ['personal-info'],
+            adv: '【重大違法】個人情報保護法69条違反の状態です。役員として即時の是正が必要です。入会届を整備し、PTAが直接収集する体制に移行してください。',
+            links: [{ label: '入会届の雛形', url: '../guide-pta.html#pdf-officer' }, { label: '個人情報問題の詳細', url: '../privacy.html' }] },
+          { t: 'クラウドサービス・LINEグループ等で管理しているが設定が不明確。', level: 2, laws: ['personal-info'],
+            adv: '個人情報の安全管理措置（個人情報保護法66条）として、アクセス権限・削除手順・漏洩時の対応を規程化する必要があります。',
+            links: [{ label: '個人情報管理の要件', url: '../privacy.html' }] }
         ]
       },
       {
         cat: '施設利用', axis: 'facilities', axisIcon: '🏫',
-        q: 'PTA室や学校設備の利用はどのように整理されていますか。',
+        q: '学校施設・備品の利用状況はどうなっていますか。',
         opts: [
-          { t: '使用許可証・使用条件(光熱費・管理責任)を明文化している。', level: 0, laws: ['school-edu'],
-            adv: '学校教育法137条に基づく適正な施設利用許可の状態です。',
+          { t: '使用許可・費用負担について学校と書面で合意している。', level: 0, laws: ['school-ed'],
+            adv: '学校教育法137条に沿った適正な利用です。覚書の内容が渉外業務の範囲を超えていないかも確認してください。',
             links: [] },
-          { t: '便宜上使わせているが、範囲は限定し口頭で条件を確認している。', level: 1, laws: ['school-edu'],
-            adv: '使用根拠・費用負担・管理責任が曖昧になりやすいため、書面化が必要です。事故時の責任所在を明確にしてください。',
-            links: [] },
-          { t: '許可や契約なく恒常的に専用利用している。', level: 3, laws: ['school-edu'],
-            adv: '学校教育法137条に基づく許可を欠いた公物の無断利用です。学校長の管理監督義務違反として問われます。',
+          { t: '使用しているが、費用負担・条件は口頭合意のみ。', level: 1, laws: ['school-ed'],
+            adv: '書面化が必要です。特に光熱費・備品消耗品費の負担を明記した覚書を作成してください。',
+            links: [{ label: '施設利用の整理', url: '../facilities.html' }, { label: '覚書の雛形', url: '../guide-pta.html#pdf-officer' }] },
+          { t: '学校印刷機・電話・備品を無償で常態的に使用している。', level: 3, laws: ['school-ed'],
+            adv: '地方自治法237条・地方財政法上の問題があります。使用料相当額の負担または代替手段（自前の機器）への移行が必要です。',
             links: [{ label: '施設利用の詳細', url: '../facilities.html' }] },
-          { t: '鍵・コピー機・学校印刷機・備品管理をPTAに丸ごと委ねている。', level: 4, laws: ['school-edu'],
-            adv: '【重大違法】施設管理責任が曖昧化し、事故・情報漏洩時の学校責任が問われます。公物管理義務の放棄として教育委員会の指導対象です。',
-            links: [{ label: '施設利用の詳細', url: '../facilities.html' }, { label: '教育委員会向けガイド', url: '../guide-board.html' }] }
+          { t: '学校からの無償支援を前提とした活動計画になっている。', level: 2, laws: ['school-ed'],
+            adv: '活動計画の前提を見直し、学校の協力なしで運営可能な体制を段階的に整備してください。',
+            links: [{ label: '適正化ロードマップ', url: '../guide-pta.html#roadmap' }] }
+        ]
+      }
+    ],
+    school: [
+      {
+        cat: '加入指導', axis: 'membership', axisIcon: '📋',
+        q: 'PTA加入についての学校側の関与はどの程度ですか。',
+        opts: [
+          { t: 'PTA加入はPTAが独自に案内し、学校は一切関与していない。', level: 0, laws: ['social-education'],
+            adv: 'PTAの任意性・独立性が保たれており、最も適正な状態です。',
+            links: [] },
+          { t: '入学説明会でPTAの案内を行う機会を提供している。', level: 1, laws: ['social-education'],
+            adv: '「PTAは任意団体であり、加入は保護者の自由な意思による」旨を明確に告知することが必要です。',
+            links: [{ label: '教育委員会向けガイド', url: '../guide-board.html' }] },
+          { t: '学校が加入を前提として保護者に説明・案内をしている。', level: 3, laws: ['constitution','social-education'],
+            adv: '【違法リスク高】学校の公的立場を利用して私的団体への加入を促す行為は、任意性を根本的に損ないます。全国の教育委員会への照会でも「不適切」との回答が得られています。',
+            links: [{ label: '教育委員会の回答', url: '../board-responses.html' }, { label: '横浜市通知の内容', url: '../guide-board.html' }] },
+          { t: '校長・教頭がPTA会長・役員を兼務または実質的に決定している。', level: 4, laws: ['social-education'],
+            adv: '【重大違法】社会教育関係団体の自律性（社会教育法10条）を完全に否定する統制的関与。地教行法23条上の教育委員会の監督責任も問われます。',
+            links: [{ label: '教育委員会向けガイド', url: '../guide-board.html' }] }
         ]
       },
       {
-        cat: '統制・介入', axis: 'membership', axisIcon: '📋',
-        q: 'PTA運営に対する学校の関与はどの程度ですか。',
+        cat: '個人情報', axis: 'privacy', axisIcon: '🔒',
+        q: '学校が保有する保護者・児童の情報をPTAに提供していますか。',
         opts: [
-          { t: '独立団体として扱い、学校は運営に介入しない。', level: 0, laws: ['social-education'],
-            adv: '社会教育法上の適正な関係です。協力関係を維持しつつ独立性を尊重する姿勢を継続してください。',
+          { t: '一切提供していない。PTAが入会届で直接収集している。', level: 0, laws: ['personal-info'],
+            adv: '個人情報保護法上、最も適正な状態です。横浜市通知（学教第1965号）が求める形式に完全対応しています。',
             links: [] },
-          { t: '加入案内の配布を学校が補助することがある。', level: 1, laws: ['social-education'],
-            adv: '補助の範囲によっては、学校権威を背景にした事実上の加入強制になります。「任意である」旨の明示が伴っているか確認してください。',
-            links: [] },
-          { t: '学校が加入を前提として保護者への説明をしている。', level: 3, laws: ['constitution','social-education'],
-            adv: '学校の公的立場を利用して私的団体への加入を促す行為。任意性を根本的に損なう違法な関与です。',
-            links: [{ label: '横浜市通知の詳細', url: '../guide-board.html#yokohama' }] },
-          { t: '学校側が役員人事・予算使途・活動内容を実質的に決めている。', level: 4, laws: ['social-education'],
-            adv: '【重大違法】社会教育関係団体の自律性を完全に否定する統制的関与。地教行法上の教育委員会の監督責任も問われます。',
+          { t: '書面による明確な本人同意（オプトイン）を確認の上、提供している。', level: 1, laws: ['personal-info'],
+            adv: '同意の取得方法・利用目的の明示・提供範囲が適切に設定されているか確認が必要です。',
+            links: [{ label: '個人情報提供の要件', url: '../privacy.html' }] },
+          { t: '学校名簿をPTAに渡している（同意の有無は不明確）。', level: 4, laws: ['personal-info'],
+            adv: '【重大違法】個人情報保護法69条違反。校長・教頭個人が不法行為責任を問われる可能性があります。熊本PTA裁判では校長の不法行為責任が追及されています。',
+            links: [{ label: '個人情報問題の詳細', url: '../privacy.html' }, { label: '司法の現実（判例）', url: '../cases.html#judicial-reality' }] },
+          { t: '保護者から学校へ提出された緊急連絡先をPTA用途に使用している。', level: 4, laws: ['personal-info'],
+            adv: '【重大違法】目的外利用（個人情報保護法61条・69条違反）。「緊急連絡先」として収集した情報を「PTA活動」に使用することは目的外利用として厳しく禁止されています。',
+            links: [{ label: '個人情報問題の詳細', url: '../privacy.html' }] }
+        ]
+      },
+      {
+        cat: '職務専念義務', axis: 'personnel', axisIcon: '👩‍🏫',
+        q: '勤務時間中に教職員がPTA事務を担っていますか。',
+        opts: [
+          { t: '教職員はPTA↔学校間の連絡調整（渉外業務）のみを担っている。', level: 0, laws: ['local-public-service'],
+            adv: '地公法35条に沿った唯一適正な関与形態です。渉外業務の範囲が書面で明確化されているとなお適正です。',
+            links: [{ label: '渉外業務の定義', url: '../guide-board.html' }] },
+          { t: 'PTA配布物の配布・回収を担任に依頼することがある。', level: 2, laws: ['local-public-service'],
+            adv: '継続的・恒常的になれば地公法35条違反です。PTAによる独自配布体制への移行を促してください。',
+            links: [{ label: '渉外業務の範囲', url: '../guide-board.html' }] },
+          { t: '事務職員がPTA会費の集計・処理を担っている。', level: 4, laws: ['local-public-service'],
+            adv: '【重大違法】地公法35条（職務専念義務）違反。私的団体の会計事務を公務員が担うことは違法な利益供与（便宜供与）にあたります。1964年行政実例も同様の解釈を示しています。',
+            links: [{ label: '教職員関与の問題', url: '../personnel.html' }, { label: '行政実例の整理', url: '../administrative-materials.html' }] },
+          { t: 'PTA役員の選出・調整を校長・教頭が実質的に行っている。', level: 4, laws: ['social-education','local-public-service'],
+            adv: '【重大違法】社会教育関係団体の自律性侵害（社会教育法10条）と職務専念義務違反が同時に成立します。教育委員会への報告義務が生じる可能性があります。',
             links: [{ label: '教育委員会向けガイド', url: '../guide-board.html' }] }
+        ]
+      },
+      {
+        cat: '会費・施設', axis: 'finance', axisIcon: '💰',
+        q: 'PTA会費の徴収・施設利用について学校の関与はどの程度ですか。',
+        opts: [
+          { t: '会費徴収はPTAが独自に行い、施設利用は許可・費用負担を書面化している。', level: 0, laws: ['civil-law','school-ed'],
+            adv: '公私分離が明確に保たれており、最も適正な状態です。',
+            links: [] },
+          { t: '学校徴収金と別口座だが、引き落としの取りまとめを学校が行っている。', level: 2, laws: ['civil-law'],
+            adv: '取りまとめ行為も「代理」にあたります。PTAへの入会契約が先行して成立していることと、書面による委任の存在が必要です。',
+            links: [{ label: '会費徴収の問題', url: '../fee-collection.html' }] },
+          { t: 'PTA会費が給食費等と同一の引き落とし口座・明細に含まれている。', level: 4, laws: ['civil-law'],
+            adv: '【重大違法】地方自治法235条の4第2項（私費保管禁止）・民法113条（無権代理）に抵触します。校長が「無権代理人」として保護者から返還請求を受けた場合、個人責任が及ぶ可能性があります。',
+            links: [{ label: '会費徴収の問題', url: '../fee-collection.html' }, { label: '無権代理という時限爆弾', url: '../cases.html' }] },
+          { t: '学校施設・印刷機・電話をPTAが費用負担なしで恒常的に使用している。', level: 3, laws: ['school-ed'],
+            adv: '地方自治法237条・地方財政法上の問題があります。使用条件・費用負担を書面化し、他団体との公平性も確認が必要です。',
+            links: [{ label: '施設利用の詳細', url: '../facilities.html' }] }
+        ]
+      },
+      {
+        cat: '覚書・合意書', axis: 'facilities', axisIcon: '🤝',
+        q: '学校とPTAの役割分担は書面化されていますか。',
+        opts: [
+          { t: '渉外業務（連絡調整窓口）の範囲だけを定めた覚書がある。', level: 0, laws: ['social-education'],
+            adv: '最も適正な形式です。覚書の内容が渉外業務の範囲を超えて学校の関与を固定化していないか定期的に確認してください。',
+            links: [{ label: '渉外業務の定義', url: '../guide-board.html' }] },
+          { t: '役割分担の覚書があるが、教職員の事務代行も含まれている。', level: 3, laws: ['local-public-service'],
+            adv: '【違法リスク高】覚書に「学校が○○を担当する」と記載されていても、それが職務専念義務違反に該当する業務であれば、合意しても違法状態は解消されません。覚書の内容を見直してください。',
+            links: [{ label: '覚書問題の詳細', url: '../guide-board.html' }] },
+          { t: '書面化されておらず、慣例で運営している。', level: 2, laws: ['social-education'],
+            adv: '慣例は法的根拠になりません。渉外業務の範囲と費用負担を書面で明確化することが、学校・PTAの双方を守ることにつながります。',
+            links: [{ label: '教育委員会向けガイド', url: '../guide-board.html' }, { label: '覚書の雛形', url: '../guide-pta.html#pdf-officer' }] },
+          { t: '覚書はあるが、内容を把握している職員がいない。', level: 1, laws: ['social-education'],
+            adv: '書面があっても機能しなければ意味がありません。内容を全関係者で確認し、必要に応じて更新してください。',
+            links: [] }
         ]
       }
     ]
@@ -1958,7 +2015,11 @@
     reset() {
       this.role = null; this.step = 0; this.answers = [];
       this.toggle('intro', true); this.toggle('question', false); this.toggle('result', false);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const intro = document.getElementById('screen-intro');
+      if (intro) {
+        const top = intro.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
     },
 
     toggle(name, show) {
@@ -1997,7 +2058,11 @@
 
       const prev = document.getElementById('prevQuestion');
       prev.disabled = this.step === 0;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const qScreen = document.getElementById('screen-question');
+      if (qScreen) {
+        const top = qScreen.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
     },
 
     prev() { if (this.step > 0) { this.step--; this.renderQuestion(); } },
@@ -2006,7 +2071,11 @@
       this.toggle('question', false);
       this.toggle('result', true);
       this.renderResult();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const shell = document.querySelector('.audit-shell');
+      if (shell) {
+        const top = shell.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
     },
 
     renderResult() {
@@ -2110,88 +2179,169 @@
       if (loadingEl) loadingEl.style.display = 'none';
       if (regenBtn) regenBtn.disabled = false;
 
-      // Build assessment from diagnosis results
       const counts = { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0 };
       const axisProblems = {};
-      
+      const criticalItems = [];
+      const illegalItems = [];
+      const actionLinks = new Set();
+
       this.answers.forEach(({ q, opt }) => {
         counts[opt.level]++;
         if (!axisProblems[q.axis]) axisProblems[q.axis] = [];
-        axisProblems[q.axis].push({ cat: q.cat, level: opt.level, problem: opt.adv });
+        axisProblems[q.axis].push({ cat: q.cat, level: opt.level, adv: opt.adv });
+        if (opt.level >= 4) {
+          criticalItems.push({ cat: q.cat, adv: opt.adv, links: opt.links || [] });
+          (opt.links || []).forEach(l => actionLinks.add(JSON.stringify(l)));
+        }
+        if (opt.level === 3) {
+          illegalItems.push({ cat: q.cat, adv: opt.adv, links: opt.links || [] });
+          (opt.links || []).forEach(l => actionLinks.add(JSON.stringify(l)));
+        }
       });
 
       const overall = judgeOverall(counts);
       const hasLevel4 = counts[4] > 0;
       const hasLevel3 = counts[3] > 0;
       const hasLevel2 = counts[2] > 0;
+      const totalProblems = counts[4] + counts[3] + counts[2];
+      const roleLabel = ROLE_LABELS[this.role] || '';
 
-      // ===== Section 1: 総評 =====
-      let summary = '';
+      // ===== 総評 =====
+      let summaryText = '';
       if (hasLevel4) {
-        summary = `本診断では、複数の項目において民法・個人情報保護法・地方公務員法に抵触する重大な法的違反が検出されました。特に契約要件の欠如や個人情報の無断利用、教職員への職務外従事など、構造的な問題が複合的に存在します。これらの問題が放置された場合、保護者からの不当利得返還請求、役員個人への損害賠償請求、教職員や管理職の懲戒処分などが具体化する可能性が極めて高い状態です。`;
+        summaryText = `本診断の結果、${roleLabel}の立場から見て<strong>重大な法的違反状態</strong>が検出されました。民法・個人情報保護法・地方公務員法に抵触する問題が複合的に存在し、このまま放置した場合、<strong>不当利得返還請求・損害賠償・刑事責任・懲戒処分</strong>が現実化するリスクがあります。`;
       } else if (hasLevel3) {
-        summary = `本診断では、複数の項目で法的リスクが高い運用が確認されました。現行の慣行は法令の解釈上問題を生じさせる可能性があり、保護者の権利意識の高まりに伴い、いつ照会や請求が来てもおかしくない状況です。慣例ではなく法的根拠に基づいた運営の再設計が必要な段階にあります。`;
+        summaryText = `本診断の結果、<strong>違法リスクの高い運用</strong>が複数確認されました。現在は訴訟に至っていなくても、保護者の権利意識が高まるなかで、いつ照会・請求が来てもおかしくない状況です。法的根拠に基づいた運営への再設計が必要です。`;
       } else if (hasLevel2) {
-        summary = `本診断では、主要な項目は比較的適正である一方で、任意性・透明性・公私分離の観点から改善の余地がある運用が含まれています。直ちに違法とまでは言い切れないものの、段階的な適正化を進めることで、より堅牢な運営体制が構築できます。`;
+        summaryText = `本診断では、主要な項目は比較的適正ですが、任意性・透明性・公私分離の観点で<strong>改善の余地</strong>がある運用が含まれています。段階的な適正化を進めることで、より堅牢な運営体制が構築できます。`;
       } else {
-        summary = `本診断では、契約性・自主性・公私分離などの主要論点において比較的適正な運営が維持されています。引き続き横浜市教育委員会通知など最新の行政指針を踏まえながら、現在の水準を維持することをお勧めします。`;
+        summaryText = `本診断では、主要論点において<strong>比較的適正な運営</strong>が維持されています。横浜市通知など最新の行政指針を踏まえながら、現在の水準を継続してください。`;
       }
 
-      // ===== Section 2: 評価に至った経緯 =====
-      let rationale = '';
-      const problemAxes = Object.entries(axisProblems)
-        .filter(([_, probs]) => probs.some(p => p.level >= 3))
-        .map(([axis, probs]) => `${AXIS_LABELS[axis]}(${probs.map(p => p.cat).join('・')})`)
-        .join('、');
-
-      if (hasLevel4) {
-        rationale = `本診断が「重大違法」判定に至った主な理由は、以下の通りです。${problemAxes}の各項目において、民法522条の契約成立要件の欠如、個人情報保護法69条の違法提供、地方公務員法35条の職務専念義務違反などが複合的に見られました。特に入会意思確認の欠如と個人情報の無断利用は、同時に複数の法律違反を構成するため、被害者側からの法的請求のハードルが低く、実現可能性が高い状況です。`;
-      } else if (hasLevel3) {
-        rationale = `本診断が「違法リスク高」判定に至った理由は、${problemAxes}において、法令の明示的な要件を欠いた運用が確認されたためです。例えば入会手続においてはオプトアウト方式や暗黙的な全員加入、個人情報提供では同意取得の形式や内容の不備、教職員関与では勤務時間中の恒常的な従事など、改善が必要な点が明確に存在します。教育委員会の是正指導対象となり得る内容も含まれています。`;
-      } else {
-        rationale = `診断結果の判定は、主に適正運営が維持されている一方で、${counts[1] > 0 ? 'いくつかの改善点' : 'おおむね良好な'}状況を反映しています。引き続き、透明性と法的根拠に基づいた丁寧な運営を心がけることが重要です。`;
+      // ===== 重大問題一覧 =====
+      let problemsHtml = '';
+      if (criticalItems.length > 0 || illegalItems.length > 0) {
+        const allProblems = [
+          ...criticalItems.map(i => ({ ...i, badge: '重大違法', badgeCls: 'lv4' })),
+          ...illegalItems.map(i => ({ ...i, badge: '違法リスク高', badgeCls: 'lv3' }))
+        ];
+        problemsHtml = `
+          <h4 style="color:#b91c1c;margin-top:20px;margin-bottom:10px;font-size:1rem;display:flex;align-items:center;gap:8px">
+            <span style="background:#fee2e2;border-radius:50%;width:24px;height:24px;display:inline-grid;place-items:center;font-size:.8rem">⛔</span>
+            検出された問題（${allProblems.length}件）
+          </h4>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            ${allProblems.map(p => `
+              <div style="background:#fff5f5;border:1px solid #fecaca;border-left:4px solid #b91c1c;border-radius:10px;padding:14px 16px">
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                  <span style="font-size:.7rem;font-weight:900;padding:2px 8px;border-radius:999px;background:#fee2e2;color:#b91c1c">${p.badge}</span>
+                  <strong style="font-size:.9rem;color:#1e293b">${p.cat}</strong>
+                </div>
+                <p style="font-size:.87rem;color:#374151;line-height:1.75;margin:0">${p.adv}</p>
+                ${p.links && p.links.length ? `<div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">${p.links.map(l => `<a href="${l.url}" style="font-size:.78rem;font-weight:800;color:#1d4ed8;text-decoration:none;padding:3px 9px;border-radius:999px;background:#eff6ff;border:1px solid #bfdbfe">${l.label} →</a>`).join('')}</div>` : ''}
+              </div>`).join('')}
+          </div>`;
       }
 
-      // ===== Section 3: 何が問題なのか =====
-      let risks = '';
+      // ===== 優先アクションリスト =====
+      let actionsHtml = '';
       if (hasLevel4) {
-        risks = `不当利得返還請求：入会意思確認のない全員加入や違法な会費徴収は、民法703条の不当利得として返還請求の対象となり、役員個人が返還責任を負う可能性があります。損害賠償請求：個人情報の無断利用により精神的損害や実害が生じた保護者は、不法行為に基づく損害賠償請求(民法709条)が可能です。刑事・懲戒処分：名簿の無断提供に関与した校長・教頭は個人情報保護法違反の刑事責任(5年以下の懲役または100万円以下の罰金)、および懲戒処分の対象となり得ます。教育委員会の是正指導：すべてのレベルにおいて教育委員会から是正指導が通知される可能性が高まっています。`;
+        actionsHtml = `
+          <h4 style="margin-top:20px;margin-bottom:10px;font-size:1rem">🗂️ 優先アクション（フェーズ別）</h4>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="background:#fff;border:1.5px solid #fca5a5;border-radius:10px;padding:14px 16px">
+              <div style="font-size:.72rem;font-weight:900;color:#b91c1c;letter-spacing:.06em;margin-bottom:8px">⛔ 最優先（今週中）</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;margin:0;padding:0">
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#b91c1c;flex-shrink:0">1.</span>入会手続の即刻停止・オプトイン方式に切り替え</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#b91c1c;flex-shrink:0">2.</span>学校名簿のPTAへの提供を即時停止</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#b91c1c;flex-shrink:0">3.</span>教職員へのPTA事務依頼を即時停止</li>
+              </ul>
+            </div>
+            <div style="background:#fff;border:1.5px solid #fde68a;border-radius:10px;padding:14px 16px">
+              <div style="font-size:.72rem;font-weight:900;color:#92400e;letter-spacing:.06em;margin-bottom:8px">⚠️ 今期中（1〜3ヶ月）</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;margin:0;padding:0">
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e;flex-shrink:0">4.</span>PTA独自口座を開設・学校徴収金から分離</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e;flex-shrink:0">5.</span>PTAが独自に入会届で情報を直接収集する体制を構築</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e;flex-shrink:0">6.</span>渉外業務の範囲を書面（覚書）で明確化</li>
+              </ul>
+            </div>
+            <div style="background:#fff;border:1.5px solid #bfdbfe;border-radius:10px;padding:14px 16px">
+              <div style="font-size:.72rem;font-weight:900;color:#1d4ed8;letter-spacing:.06em;margin-bottom:8px">📋 中期（3〜6ヶ月）</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;margin:0;padding:0">
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#1d4ed8;flex-shrink:0">7.</span>会計規程・監査体制の整備</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#1d4ed8;flex-shrink:0">8.</span>教育委員会に是正計画を提出・相談</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#1d4ed8;flex-shrink:0">9.</span>総会で規約を改正・適正化を宣言</li>
+              </ul>
+            </div>
+          </div>`;
       } else if (hasLevel3) {
-        risks = `役員の個人責任：違法な加入手続や会費徴収に対する保護者からの返還請求は、役員個人を被告とする訴訟になる可能性があります。教職員のリスク：勤務時間中のPTA事務従事は職務専念義務違反となり、関与した教職員が懲戒処分を受ける可能性があります。管理職の監督責任：学校管理職が違法な情報提供やPTA介入を放置していた場合、監督責任を問われます。`;
+        actionsHtml = `
+          <h4 style="margin-top:20px;margin-bottom:10px;font-size:1rem">🗂️ 優先アクション</h4>
+          <div style="background:#fff;border:1.5px solid #fde68a;border-radius:10px;padding:14px 16px">
+            <div style="font-size:.72rem;font-weight:900;color:#92400e;letter-spacing:.06em;margin-bottom:8px">今期中に対応が必要</div>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;margin:0;padding:0">
+              <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e">→</span>問題項目の改善計画を文書化し、役員会に提出</li>
+              <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e">→</span>入会方式をオプトインへ段階的に移行</li>
+              <li style="font-size:.87mg;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e">→</span>教育委員会への状況説明・相談</li>
+            </ul>
+          </div>`;
       } else {
-        risks = `現在の運営水準が維持できれば、法的リスクは比較的低い状態が続きます。ただし、透明性の強化と定期的な法令確認により、さらに堅牢な体制が構築できます。`;
+        actionsHtml = `
+          <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:14px 16px;margin-top:16px">
+            <div style="font-size:.87rem;color:#15803d;font-weight:700">✅ 現在の適正な運営状態を維持しながら、横浜市通知など最新の行政指針を年1回確認することをお勧めします。</div>
+          </div>`;
       }
 
-      // ===== Section 4: どうすれば改善できるか =====
-      let improvement = '';
+      // ===== 罰則・リスク =====
+      let penaltyHtml = '';
       if (hasLevel4) {
-        improvement = `最優先：入会手続の即刻改善。オプトイン方式を導入し、任意性が明確な入会届の提出を要件とする。既に徴収した会費については返還請求に応じる体制を整備する。次に、個人情報の完全分離。学校名簿との関係を断絶し、PTA独自の情報管理体制を構築する。同時に、教職員のPTA事務からの速やかな離脱。役員会組織で事務を集約し、学校の勤務時間中の関与をゼロにする。最後に、教育委員会への相談。違法状態の是正に向けた計画を提示し、行政指導を仰ぐことで、以降のトラブルの予防が可能になります。`;
+        penaltyHtml = `
+          <h4 style="margin-top:20px;margin-bottom:10px;font-size:1rem;color:#7f1d1d">⚖️ このまま放置した場合の法的リスク</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <div style="background:#fff5f5;border-radius:8px;padding:12px">
+              <div style="font-size:.72rem;font-weight:900;color:#b91c1c;margin-bottom:5px">民事リスク</div>
+              <div style="font-size:.83rem;color:#374151;line-height:1.6">不当利得返還請求（民法703条）<br>損害賠償請求（民法709条）<br>役員個人への賠償義務</div>
+            </div>
+            <div style="background:#fff5f5;border-radius:8px;padding:12px">
+              <div style="font-size:.72rem;font-weight:900;color:#b91c1c;margin-bottom:5px">刑事・行政リスク</div>
+              <div style="font-size:.83rem;color:#374151;line-height:1.6">個人情報保護法違反：1年以下懲役/100万円以下罰金<br>地公法違反による懲戒処分<br>教育委員会の是正指導</div>
+            </div>
+          </div>`;
       } else if (hasLevel3) {
-        improvement = `第一段階：問題項目の明確化と改善計画の策定。例えば入会方式を現在のオプトアウトからオプトインへ、または学校事務室からの独立会計への移行など、優先度を付けて段階的に進める。第二段階：利害関係者（保護者会・教職員・管理職）との協議。透明性を高め、改善の必要性を共有する。第三段階：制度・規約の整備。新しい入会届書式、会計規程の明確化、個人情報保護方針の文書化など、法的根拠を備えた書類を整備する。`;
-      } else {
-        improvement = `現在の運営水準の継続、および定期的な法令・行政指針の確認。横浜市教育委員会から発出される通知や、文部科学省の見解を毎年確認し、逆行する慣行がないか点検する。役員交代時に法的知見を継承するための研修体制を構築することも有効です。`;
+        penaltyHtml = `
+          <div style="background:#fff5f5;border:1px solid #fecaca;border-radius:10px;padding:12px 16px;margin-top:16px">
+            <div style="font-size:.72rem;font-weight:900;color:#b91c1c;margin-bottom:6px">⚠️ 放置した場合のリスク</div>
+            <div style="font-size:.87rem;color:#374151;line-height:1.7">保護者からの照会・返還請求 / 教育委員会からの是正指導 / 役員個人への賠償リスク</div>
+          </div>`;
+      }
+
+      // ===== 参考リンク =====
+      const linkItems = [...actionLinks].map(s => JSON.parse(s));
+      let linksHtml = '';
+      if (linkItems.length > 0) {
+        linksHtml = `
+          <h4 style="margin-top:20px;margin-bottom:10px;font-size:1rem">📎 関連ページ・資料</h4>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            ${linkItems.map(l => `<a href="${l.url}" style="display:inline-flex;align-items:center;gap:5px;font-size:.82rem;font-weight:800;color:var(--navy);text-decoration:none;padding:7px 13px;border-radius:999px;background:#f1f5f9;border:1px solid #e2e8f0">${l.label} →</a>`).join('')}
+            <a href="../guide-pta.html#pdf-officer" style="display:inline-flex;align-items:center;gap:5px;font-size:.82rem;font-weight:800;color:#15803d;text-decoration:none;padding:7px 13px;border-radius:999px;background:#f0fdf4;border:1px solid #bbf7d0">📄 PDF雛形を入手する →</a>
+          </div>`;
       }
 
       const html = `
-        <h4>総評</h4>
-        <p>${summary}</p>
-
-        <h4>評価に至った経緯</h4>
-        <p>${rationale}</p>
-
-        <h4>何が問題なのか</h4>
-        <p>${risks}</p>
-
-        <h4>どうすれば改善できるか</h4>
-        <p>${improvement}</p>
-      `;
+        <div style="font-size:.95rem;color:#374151;line-height:1.9;margin-bottom:4px">${summaryText}</div>
+        ${problemsHtml}
+        ${penaltyHtml}
+        ${actionsHtml}
+        ${linksHtml}
+        <div style="margin-top:20px;padding:14px;background:#f8fafc;border-radius:10px;font-size:.8rem;color:#64748b;line-height:1.7">
+          ※ 本評価書は入力された診断結果に基づき自動生成されたものです。法律解釈は個別事情により異なります。重大な違法性が疑われる場合は弁護士または行政機関へご相談ください。
+        </div>`;
 
       if (bodyEl) {
         bodyEl.innerHTML = html;
         bodyEl.style.display = 'block';
       }
     },
-
 
 
     openLaw(key) {

@@ -33,7 +33,7 @@ window.LAW_DATA = {
     `,
     evidence: [
       { label: '資料室：入会届・オプトアウト問題', url: 'https://sites.google.com/view/ptatekiseika/' },
-      { label: 'オプトアウト問題ページ', url: '../opt-out.html' }
+      { label: 'オプトアウト問題ページ', url: '../membership.html' }
     ]
   },
   'constitution': {
@@ -44,7 +44,7 @@ window.LAW_DATA = {
       <p><a href="https://elaws.e-gov.go.jp/document?lawid=321CONSTITUTION" target="_blank" rel="noopener noreferrer" class="egov-link">e-Govで条文を確認する</a></p>
     `,
     evidence: [
-      { label: 'オプトアウト問題ページ', url: '../opt-out.html' },
+      { label: 'オプトアウト問題ページ', url: '../membership.html' },
       { label: '資料室トップ', url: 'https://sites.google.com/view/ptatekiseika/' }
     ]
   },

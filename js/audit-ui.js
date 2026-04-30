@@ -41,7 +41,11 @@
       this.toggle('intro', true);
       this.toggle('question', false);
       this.toggle('result', false);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const introScreen = document.getElementById('screen-intro');
+      if (introScreen) {
+        const top = introScreen.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
     },
 
     toggle(name, show) {
@@ -53,7 +57,7 @@
       return window.AuditEngine.getQuestions(this.role);
     },
 
-    renderQuestion() {
+    renderQuestion(scroll = false) {
       const questions = this.getQuestions();
       const q = questions[this.step];
       if (!q) return;
@@ -73,7 +77,7 @@
           this.answers[this.step] = { q, opt };
           if (this.step < questions.length - 1) {
             this.step += 1;
-            this.renderQuestion();
+            this.renderQuestion(true);
           } else {
             this.finish();
           }
@@ -82,7 +86,13 @@
       });
 
       document.getElementById('prevQuestion').disabled = this.step === 0;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (scroll) {
+        const target = document.getElementById('questionText');
+        if (target) {
+          const top = target.getBoundingClientRect().top + window.pageYOffset - 100;
+          window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+        }
+      }
     },
 
     prev() {
@@ -96,7 +106,11 @@
       this.toggle('result', true);
       const result = window.AuditEngine.calculate(this.answers);
       this.renderResult(result);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const resultScreen = document.getElementById('screen-result');
+      if (resultScreen) {
+        const top = resultScreen.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
     },
 
     renderResult(result) {
@@ -122,7 +136,7 @@
           return `<a href="#" data-law-open="${law.key}">${law.title}</a>`;
         }).join('');
         const links = (answer.opt.evidence || []).map((url) => {
-          const label = url.includes('opt-out') ? '関連ページを見る' : (url.includes('documents-room') ? '資料室ハブを見る' : '関連資料を見る');
+          const label = url ? '関連ページを見る' : '関連資料を見る';
           return `<a href="${url}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`;
         }).join('');
         div.innerHTML = `

@@ -1,158 +1,427 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <meta name="description" content="PTA制度を一次資料に基づいて整理する研究サイトです。">
-    <link rel="canonical" href="https://ptaorg.github.io/privacy.html">
-    <meta property="og:title" content="個人情報問題 | PTA適正化推進委員会">
-    <meta property="og:description" content="PTA制度を一次資料に基づいて整理する研究サイトです。">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ptaorg.github.io/privacy.html">
-    <meta property="og:image" content="https://ptaorg.github.io/assets/og-image.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="個人情報問題 | PTA適正化推進委員会">
-    <meta name="twitter:description" content="PTA制度を一次資料に基づいて整理する研究サイトです。">
-    <meta name="twitter:image" content="https://ptaorg.github.io/assets/og-image.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>個人情報問題 | PTA適正化推進委員会</title>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="description" content="学校からPTAへの個人情報提供——個人情報保護法第69条・第三者提供禁止・みなし加入の罠。全国教委の回答付き。">
+  <link rel="canonical" href="https://ptaorg.github.io/privacy.html">
+  <meta property="og:title" content="個人情報提供の問題 | PTA適正化推進委員会">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ptaorg.github.io/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="個人情報提供の問題 | PTA適正化推進委員会">
+  <meta name="twitter:description" content="学校名簿のPTA提供は個人情報保護法69条違反。全国教委照会で「違法」との回答。オプトインが必須。">
+  <meta name="twitter:image" content="https://ptaorg.github.io/assets/og-image.png">
+  <title>個人情報提供の問題 | PTA適正化推進委員会</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .pg{width:min(calc(100% - 40px),900px);margin-inline:auto;padding:56px 0 96px}
+    .pg h2{font-family:'Noto Serif JP',serif;font-size:clamp(1.45rem,2.4vw,1.95rem);color:var(--navy);margin:0 0 12px;padding-bottom:10px;border-bottom:3px solid var(--gold)}
+    .pg h3{font-size:1.02rem;font-weight:800;color:var(--navy);margin:28px 0 10px;padding-left:12px;border-left:4px solid var(--gold)}
+    .pg p{color:var(--text);line-height:1.9;margin-bottom:14px;font-size:.97rem}
+    .pg section{margin-bottom:64px}
+    .flow-row{display:flex;align-items:stretch;gap:0;margin:28px 0}
+    .flow-node{flex:1;border-radius:14px;padding:22px 18px;text-align:center}
+    .flow-node h4{font-family:'Noto Serif JP',serif;font-size:1rem;font-weight:900;margin-bottom:6px}
+    .flow-node p{font-size:.84rem;line-height:1.65;margin:0}
+    .flow-arrow{display:flex;align-items:center;padding:0 10px;color:var(--text-soft);font-size:1.4rem;flex-shrink:0}
+    .fn-school{background:#dbeafe;border:1.5px solid #93c5fd}
+    .fn-school h4{color:#1e3a8a}
+    .fn-block{background:#fee2e2;border:2px solid #fca5a5;position:relative}
+    .fn-block h4{color:#7f1d1d}
+    .fn-pta{background:#f0fdf4;border:1.5px solid #86efac}
+    .fn-pta h4{color:#14532d}
+    .block-x{position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:32px;height:32px;background:#b91c1c;border-radius:50%;color:#fff;display:grid;place-items:center;font-size:1rem;font-weight:900}
+    .ok-arrow{color:#15803d;font-size:1rem;margin:0 6px}
+    .result-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+    .result-ok{background:#f0fdf4;border:1px solid #bbf7d0;border-left:4px solid #15803d;border-radius:var(--radius);padding:16px 18px}
+    .result-ng{background:#fff5f5;border:1px solid #fecaca;border-left:4px solid #b91c1c;border-radius:var(--radius);padding:16px 18px}
+    .result-label{font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+    .result-ok .result-label{color:#15803d}
+    .result-ng .result-label{color:#b91c1c}
+    .result-ok p,.result-ng p{font-size:.88rem;line-height:1.7;margin:0;color:var(--text)}
+    .steps{display:flex;flex-direction:column;gap:0;margin:20px 0}
+    .step-r{display:flex;gap:16px;position:relative;padding-bottom:24px}
+    .step-r::before{content:'';position:absolute;left:19px;top:44px;bottom:0;width:2px;background:linear-gradient(180deg,var(--gold) 0%,transparent 100%)}
+    .step-r:last-child::before{display:none}
+    .step-num{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-3));color:#fff;display:grid;place-items:center;font-weight:900;font-size:.95rem;flex-shrink:0;z-index:1}
+    .step-body{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;flex:1}
+    .step-body strong{display:block;font-size:.97rem;color:var(--navy);margin-bottom:5px}
+    .step-body p{margin:0;font-size:.88rem;color:var(--text-soft);line-height:1.75}
+    @media(max-width:700px){.flow-row{flex-direction:column}.flow-arrow{transform:rotate(90deg);padding:4px 0;justify-content:center}.result-row{grid-template-columns:1fr}}
+
+    .page-hero{position:relative;overflow:hidden;}
+    .page-hero-bg-img{
+      position:absolute;inset:0;z-index:0;
+    }
+    .page-hero-bg-img img{
+      width:100%;height:100%;object-fit:cover;
+      filter:brightness(.22) saturate(0.7);
+    }
+    .page-hero-bg-img::after{
+      content:'';position:absolute;inset:0;
+      background:linear-gradient(160deg,rgba(5,17,31,.85) 0%,rgba(5,17,31,.6) 60%,rgba(5,17,31,.4) 100%);
+    }
+    .page-hero-inner{position:relative;z-index:1;}
+  </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/popc-logo.png" alt="PTA適正化推進委員会ロゴ">
-                <span>PTA適正化推進委員会</span>
-            </a>
-            <nav class="desktop-nav" aria-label="主要ナビゲーション">
-                <a href="index.html" class="nav-link">トップ</a>
-
-                <div class="nav-item">
-                    <a href="#" class="nav-link">入口別ガイド</a>
-                    <div class="mega-menu">
-                        <div class="mega-col">
-                            <h4>対象別入口</h4>
-                            <ul>
-                                <li><a href="guide-parent.html">保護者の方へ</a></li>
-                                <li><a href="guide-pta.html">PTA役員の方へ</a></li>
-                                <li><a href="guide-board.html">教育委員会の方へ</a></li>
-                                <li><a href="guide-research.html">研究者・記者の方へ</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>関連導線</h4>
-                            <ul>
-                                <li><a href="membership.html">入会手続とオプトアウト</a></li>
-                                <li><a href="documents-room.html">資料室ハブ</a></li>
-                                <li><a href="audit/index.html">監査システム</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="nav-item">
-                    <a href="law-map.html" class="nav-link">論点別</a>
-                    <div class="mega-menu">
-                        <div class="mega-col">
-                            <h4>主要論点</h4>
-                            <ul>
-                                <li><a href="privacy.html">個人情報提供</a></li>
-                                <li><a href="fee-collection.html">会費徴収</a></li>
-                                <li><a href="personnel.html">教職員関与</a></li>
-                                <li><a href="facilities.html">施設利用</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>制度整理</h4>
-                            <ul>
-                                <li><a href="law-map.html">法制度マップ</a></li>
-                                <li><a href="national-map.html">全国PTAマップ</a></li>
-                                <li><a href="national-archive.html">全国PTA資料館</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="nav-item">
-                    <a href="documents-room.html" class="nav-link">資料・ツール</a>
-                    <div class="mega-menu">
-                        <div class="mega-col">
-                            <h4>資料</h4>
-                            <ul>
-                                <li><a href="documents-room.html">資料室ハブ</a></li>
-                                <li><a href="national-archive.html">全国PTA資料館</a></li>
-                                <li><a href="blog.html">活動ブログ</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ツール</h4>
-                            <ul>
-                                <li><a href="audit/index.html">監査システム</a></li>
-                                <li><a href="post-template.html">投稿テンプレート</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileOverlay"><span></span><span></span><span></span></button>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/popc-logo.png" alt="PTA適正化推進委員会">
+        <span>PTA適正化推進委員会</span>
+      </a>
+      <div class="header-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" class="search-input" placeholder="キーワードで検索…" aria-label="サイト内検索">
+        <div class="search-results-dropdown"></div>
+      </div>
+      <nav class="desktop-nav" aria-label="主要ナビゲーション">
+        <a href="index.html" class="nav-link">トップ</a>
+        <div class="nav-item has-dropdown">
+          <a href="#" class="nav-link">立場別</a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>入口</h4>
+              <ul>
+                <li><a href="guide-parent.html">保護者の方へ</a></li>
+                <li><a href="guide-pta.html">PTA役員の方へ</a></li>
+                <li><a href="guide-board.html">教育委員会・学校へ</a></li>
+                <li><a href="guide-research.html">研究者・記者の方へ</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>ツール</h4>
+              <ul>
+                <li><a href="audit/index.html">監査システム</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </header>
-    <div class="mobile-overlay" id="mobileOverlay">
-        <a href="index.html" class="mobile-link"><span>Home</span>トップページ</a>
-        <a href="guide-parent.html" class="mobile-link"><span>Guide</span>保護者の方へ</a>
-        <a href="guide-pta.html" class="mobile-link"><span>Guide</span>PTA役員の方へ</a>
-        <a href="guide-board.html" class="mobile-link"><span>Guide</span>教育委員会の方へ</a>
-        <a href="guide-research.html" class="mobile-link"><span>Guide</span>研究者・記者の方へ</a>
-        <a href="law-map.html" class="mobile-link"><span>Legal map</span>法制度マップ</a>
-        <a href="documents-room.html" class="mobile-link"><span>Archive</span>資料室ハブ</a>
-        <a href="audit/index.html" class="mobile-link"><span>Audit</span>監査システム</a>
-        <a href="blog.html" class="mobile-link"><span>Blog</span>活動ブログ</a>
-        <div class="close-overlay" id="closeOverlay">CLOSE ×</div>
+        <div class="nav-item has-dropdown">
+          <a href="#" class="nav-link">論点</a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>主要論点</h4>
+              <ul>
+                <li><a href="membership.html">入会手続・オプトアウト</a></li>
+                <li><a href="privacy.html">個人情報提供</a></li>
+                <li><a href="fee-collection.html">会費徴収</a></li>
+                <li><a href="personnel.html">教職員関与</a></li>
+                <li><a href="facilities.html">施設利用</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>制度整理</h4>
+              <ul>
+                <li><a href="law-map.html">法制度マップ</a></li>
+                <li><a href="cases.html">判例整理</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="#" class="nav-link">資料</a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>資料</h4>
+              <ul>
+                <li><a href="board-responses.html">教育委員会の回答</a></li>
+                <li><a href="national-archive.html">全国資料館</a></li>
+                <li><a href="journal.html">論考・調査報告</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>分析</h4>
+              <ul>
+                <li><a href="report.html">総合分析レポート</a></li>
+                <li><a href="administrative-materials.html">行政資料整理</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="audit/index.html" class="btn-gold">監査を開く</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileOverlay">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <section class="page-header"><div class="page-header-inner"><div class="kicker">Privacy</div><h1>学校からPTAへの個人情報提供</h1><p>公立学校が保有する児童・保護者情報を、PTAへどのような根拠で提供しているかは中核論点です。</p></div></section>
-    <section class="section-container"><div class="post-content"><div class="post-body"><h2>制度整理</h2><p>学校は行政機関等として保有個人情報の利用・提供に制約を受けます。PTAは学校とは別主体であり、第三者提供にあたるのか、本人同意がどう整理されるかが問題になります。</p></div></div></section><section class="section-container"><div class="post-content"><div class="post-body"><h2>実務上の論点</h2><ul><li>同意書の有無と取得方法</li><li>入会前提で名簿提供されていないか</li><li>提供目的が曖昧でないか</li><li>学校配布とPTA配布の境界が曖昧でないか</li></ul></div></div></section><section class="section-container"><div class="post-content"><div class="post-body"><h2>関連導線</h2><div class="hero-actions"><a href="law-map.html#personal-info" class="btn-navy">法制度マップで確認する</a><a href="documents-room.html" class="btn-soft">資料室ハブへ</a></div></div></div></section>
-    <footer class="footer">
-        <div class="footer-grid">
-            <div>
-                <h3>PTA適正化推進委員会</h3>
-                <a href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" target="_blank" rel="noopener noreferrer" class="yokomusubi-card">
-                    <img src="assets/yokomusubi.png" alt="よこむすび">
-                    <span class="yokomusubi-meta">登録番号　磯子12406</span>
-                    <span class="yokomusubi-meta">分類番号　12-4（市民活動・社会教育推進）</span>
-                </a>
-                <div class="footer-contact">
-                    <p>横浜市磯子区岡村8-17-5-301</p>
-                    <p>070-9012-7772</p>
-                    <p><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
-                </div>
-            </div>
-            <div>
-                <h4>入口</h4>
-                <ul>
-                    <li><a href="guide-parent.html">保護者の方へ</a></li>
-                    <li><a href="guide-pta.html">PTA役員の方へ</a></li>
-                    <li><a href="guide-board.html">教育委員会の方へ</a></li>
-                    <li><a href="guide-research.html">研究者・記者の方へ</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>主要導線</h4>
-                <ul>
-                    <li><a href="law-map.html">法制度マップ</a></li>
-                    <li><a href="documents-room.html">資料室ハブ</a></li>
-                    <li><a href="audit/index.html">監査システム</a></li>
-                </ul>
-            </div>
+  </header>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <a href="index.html" class="mobile-link"><span>Home</span>トップページ</a>
+    <a href="guide-parent.html" class="mobile-link"><span>Guide</span>保護者の方へ</a>
+    <a href="guide-pta.html" class="mobile-link"><span>Guide</span>PTA役員の方へ</a>
+    <a href="guide-board.html" class="mobile-link"><span>Guide</span>教育委員会・学校へ</a>
+    <a href="board-responses.html" class="mobile-link"><span>Data</span>教育委員会の回答</a>
+    <a href="national-archive.html" class="mobile-link"><span>Archive</span>全国資料館</a>
+    <a href="journal.html" class="mobile-link"><span>Journal</span>論考・調査報告</a>
+    <a href="audit/index.html" class="mobile-link"><span>Audit</span>監査システム</a>
+    <div class="close-overlay" id="closeOverlay">CLOSE ×</div>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-bg-img" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=1400&q=80" alt="" onerror="this.parentElement.style.display='none'">
+    </div>
+    <div class="page-hero-inner">
+      <div class="page-hero-kicker">🔒 Issue 02 — Privacy</div>
+      <h1>学校からPTAへの<br><em>個人情報提供</em></h1>
+      <p>公立学校が保有する名簿・住所・電話番号をPTAに渡すことは、個人情報保護法第69条に抵触します。全国の教育委員会への照会で「違法」との回答が得られています。</p>
+      <div class="hero-actions">
+        <a href="board-responses.html" class="btn-gold">全国教委の回答を見る</a>
+        <a href="audit/index.html" class="btn-outline">監査で診断する</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="pg">
+
+    <!-- 図解：情報提供の適法・違法ルート -->
+    <section>
+      
+      <!-- スライド解説 -->
+      <div style="margin:40px 0 48px">
+        <h3 style="font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:16px;padding-left:14px;border-left:4px solid var(--gold)">スライド解説：個人情報保護と入会問題</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:8px">
+          <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07)" onclick="openPSlide(this)">
+            <img src="assets/slides/hp/slide-07.jpg" alt="個人情報保護法とみなし加入の罠" loading="lazy" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+            <figcaption style="padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc">「個人情報保護法」とみなし加入の罠（HP用スライド）</figcaption>
+          </figure>
+          <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07)" onclick="openPSlide(this)">
+            <img src="assets/slides/audit/slide-04.jpg" alt="みなし加入による結社の自由の侵害" loading="lazy" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+            <figcaption style="padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc">憲法第21条：「みなし加入」による結社の自由の侵害</figcaption>
+          </figure>
+          <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07)" onclick="openPSlide(this)">
+            <img src="assets/slides/audit/slide-05.jpg" alt="黙示の承諾という法的虚構" loading="lazy" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+            <figcaption style="padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc">契約法と消費者保護：「黙示の承諾」という法的虚構</figcaption>
+          </figure>
         </div>
-        <p class="copyright">&copy; 2026 PTA適正化推進委員会</p>
-    </footer>
-    <script src="js/law-data.js"></script>
-    <script src="js/site.js"></script>
-</body>
-</html>
+      </div>
+      <div id="pSlideBox" onclick="closePSlide()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out">
+        <button onclick="closePSlide()" style="position:fixed;top:16px;right:20px;color:#fff;font-size:2rem;cursor:pointer;background:none;border:none;z-index:10000">×</button>
+        <img id="pSlideBox-img" src="" alt="" style="max-width:92vw;max-height:90vh;border-radius:8px">
+      </div>
+      <script>
+      function openPSlide(fig){const img=fig.querySelector('img');document.getElementById('pSlideBox-img').src=img.src;document.getElementById('pSlideBox').style.display='flex';document.body.style.overflow='hidden';}
+      function closePSlide(){document.getElementById('pSlideBox').style.display='none';document.body.style.overflow='';}
+      </script>
+<h2>提供ルートの適法・違法：一目でわかる図解</h2>
+      <p>スライド資料「ハードル②：個人情報保護法とみなし加入の罠」をもとに整理しています。</p>
+
+      <div class="flow-row">
+        <div class="flow-node fn-school">
+          <h4>🏫 学校（School）</h4>
+          <p>児童・保護者の<br>名簿・住所・電話番号</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node fn-block" style="flex:1.2">
+          <div class="block-x">×</div>
+          <h4 style="margin-top:8px">目的外利用・第三者提供</h4>
+          <p style="font-size:.78rem;color:#991b1b;margin-top:6px">個人情報保護法 第69条違反</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node fn-pta">
+          <h4>🤝 PTA</h4>
+          <p>（Third Party）</p>
+        </div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-ok">
+          <div class="result-label">✅ 有効（適法）</div>
+          <p>PTAが配布した入会届に保護者が自ら記入し、PTA活動への情報利用に「明確に同意（オプトイン）」して提出した場合</p>
+        </div>
+        <div class="result-ng">
+          <div class="result-label">❌ 無効（違法）</div>
+          <p>「同意しない場合は申し出てください（オプトアウト）」という方式での名簿提供、および自動加入を前提とした提供</p>
+        </div>
+      </div>
+
+      <div class="alert alert-danger">
+        <div class="alert-icon">⚠️</div>
+        <p>学校が保有する個人情報を、<strong>自動加入を前提としてPTAに渡すことは違法</strong>です。例外的な「特別の理由」による提供も、恒常的なPTA運営には適用できません。</p>
+      </div>
+    </section>
+
+    <!-- 法的根拠 -->
+    <section>
+      <h2>法的根拠</h2>
+      <div class="law-quote">
+        <div class="law-quote-label">個人情報保護法 第69条（保有個人情報の利用及び提供の制限）</div>
+        行政機関の長等は、法令に基づく場合を除き、利用目的以外の目的のために保有個人情報を自ら利用し、又は提供してはならない。
+      </div>
+      <p>2022年の改正個人情報保護法施行により、国公立学校は「行政機関等」として同法の適用対象となりました。PTAは学校とは別の独立した私的団体であり、学校名簿の提供は「第三者提供」にあたります。</p>
+
+      <h3>なぜオプトアウトでは不十分か</h3>
+      <p>同法上、「同意しない場合は申し出てください」という方式（オプトアウト）は、行政機関等による第三者提供の同意取得方法として認められていません。個人が<strong>積極的に同意の意思を示す（オプトイン）</strong>ことが必須です。</p>
+
+      <h3>全国教育委員会の公式回答</h3>
+      <p>当委員会が全国50以上の教育委員会に照会した結果、「名簿の無断提供は個人情報保護法上問題がある」との回答を複数の自治体から得ています。「違法ではない」と回答した教育委員会はゼロです。</p>
+      <a href="board-responses.html" class="btn-soft" style="text-decoration:none;display:inline-flex">教育委員会の回答一覧を見る →</a>
+    </section>
+
+    <!-- 実務上の問題パターン -->
+    <section>
+      <h2>現場でよく起きる4つの問題パターン</h2>
+      <div class="steps">
+        <div class="step-r">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <strong>学校名簿がそのままPTA名簿になっている</strong>
+            <p>入学時に学校へ提出した緊急連絡先届の情報が、保護者の知らないうちにPTA名簿として使用されている。目的外利用（同法69条）かつ第三者提供にあたる。</p>
+          </div>
+        </div>
+        <div class="step-r">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <strong>「緊急連絡先届兼PTA名簿申請書」という合体書類</strong>
+            <p>学校への届出書にPTA名簿登録が抱き合わせになっている。「緊急連絡」と「PTA活動」は別目的であり、包括同意は無効。</p>
+          </div>
+        </div>
+        <div class="step-r">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <strong>オプトアウト方式の同意書</strong>
+            <p>「PTAへの情報提供に同意しない場合はご連絡ください」という記載。行政機関等の第三者提供においてオプトアウトは不可。</p>
+          </div>
+        </div>
+        <div class="step-r">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <strong>退会後も情報が削除されない</strong>
+            <p>退会・非加入の意思を示した後もPTA名簿に氏名・連絡先が残り続ける。保有個人情報の削除・利用停止請求（同法90条以下）の対象。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 適正な情報取得の手順 -->
+    <section>
+      <h2>適正な情報取得の手順</h2>
+      <p>解決策はシンプルです。PTAが学校名簿に頼らず、独自に情報を取得する体制を作るだけです。</p>
+      <div class="steps">
+        <div class="step-r">
+          <div class="step-num">①</div>
+          <div class="step-body">
+            <strong>PTAが独自の入会届を用意する</strong>
+            <p>任意性の明示・個人情報の利用目的・利用範囲・第三者提供の有無を明記。</p>
+          </div>
+        </div>
+        <div class="step-r">
+          <div class="step-num">②</div>
+          <div class="step-body">
+            <strong>保護者が自署して提出する（オプトイン）</strong>
+            <p>PTAが直接配布し、PTAが直接回収。学校の配布・回収ルートを使わない。</p>
+          </div>
+        </div>
+        <div class="step-r">
+          <div class="step-num">③</div>
+          <div class="step-body">
+            <strong>PTAが独自名簿として管理する</strong>
+            <p>学校保有情報とは完全に切り離した独立した名簿。退会時は速やかに削除。</p>
+          </div>
+        </div>
+      </div>
+      <a href="guide-pta.html#pdf-officer" class="btn-navy" style="text-decoration:none;display:inline-flex;margin-top:8px">入会届の雛形PDFを入手する</a>
+    </section>
+
+    <!-- 関連リンク -->
+    <section>
+      <h2>関連導線</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="board-responses.html" class="btn-navy">全国教委の回答</a>
+        <a href="membership.html" class="btn-soft">入会手続の問題へ</a>
+        <a href="guide-parent.html" class="btn-soft">保護者向けガイド</a>
+        <a href="audit/index.html" class="btn-soft">監査システムで診断</a>
+        <a href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer" class="btn-soft">PDF原本をGoogleサイトで見る</a>
+      </div>
+    </section>
+
+    <section style="background:#fff;padding:64px 0">
+      <div class="wrap wrap-narrow">
+        <div class="section-kicker">よくある疑問</div>
+        <h2 class="section-title">よくある質問</h2>
+        <div class="faq-list" style="display:flex;flex-direction:column;gap:10px;margin-top:28px">
+
+          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+            <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
+              <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">学校から「名簿はPTA規約に同意した人に渡している」と説明されましたが適法ですか？</div>
+              <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
+            </div>
+            <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">規約への「同意」が個人情報保護法上の有効な同意になるためには、①同意が自由な意思に基づくこと、②利用目的が特定されていること、③同意の証拠が残っていることが必要です。入学時に「学校の提出書類と一体化した書類」への記名は、優越的立場による強制的同意とみなされる可能性があります。全国の教育委員会への照会でも「規約同意のみでは不十分」との回答が得られています。</p></div>
+          </div>
+          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+            <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
+              <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">PTAに渡った個人情報を削除してもらうにはどうすればいいですか？</div>
+              <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
+            </div>
+            <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">個人情報保護法に基づき、PTAに対して「保有個人情報の利用停止・削除請求」ができます。書面でPTAに請求し、合理的期間内に対応されない場合は所轄の個人情報保護委員会に相談することができます。テンプレートは当サイトの保護者向けページからダウンロードできます。</p></div>
+          </div>
+          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+            <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
+              <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">子どもが緊急時に連絡が取れなくなるのでは？と心配です。</div>
+              <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
+            </div>
+            <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">学校の緊急連絡は学校が直接行うものであり、PTAを経由する必要はありません。学校への緊急連絡先届（教育目的）とPTA名簿（PTA活動目的）は完全に別物です。学校が直接保有する緊急連絡先情報はPTAとは無関係に機能しますので、PTAの名簿からの削除は緊急連絡には影響しません。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>PTA適正化推進委員会</h3>
+        <a href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" target="_blank" rel="noopener noreferrer" class="yokomusubi-card">
+          <img src="assets/yokomusubi.png" alt="よこむすび">
+          <span class="yokomusubi-meta">登録番号　磯子12406</span>
+          <span class="yokomusubi-meta">分類番号　12-4（市民活動・社会教育推進）</span>
+        </a>
+        <div style="margin-top:14px">
+          <p>横浜市磯子区岡村8-17-5-301</p>
+          <p>070-9012-7772</p>
+          <p><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
+        </div>
+      </div>
+      <div>
+        <h4>立場別</h4>
+        <ul>
+          <li><a href="guide-parent.html">保護者の方へ</a></li>
+          <li><a href="guide-pta.html">PTA役員の方へ</a></li>
+          <li><a href="guide-board.html">教育委員会・学校へ</a></li>
+          <li><a href="guide-research.html">研究者・記者の方へ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>論点</h4>
+        <ul>
+          <li><a href="membership.html">入会手続・オプトアウト</a></li>
+          <li><a href="privacy.html">個人情報提供</a></li>
+          <li><a href="fee-collection.html">会費徴収</a></li>
+          <li><a href="personnel.html">教職員関与</a></li>
+          <li><a href="facilities.html">施設利用</a></li>
+          <li><a href="law-map.html">法制度マップ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>資料・ツール</h4>
+        <ul>
+          <li><a href="board-responses.html">教育委員会の回答</a></li>
+          <li><a href="national-archive.html">全国資料館</a></li>
+          <li><a href="journal.html">論考・調査報告</a></li>
+          <li><a href="audit/index.html">監査システム</a></li>
+          <li><a href="report.html">総合分析レポート</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 PTA適正化推進委員会</p>
+  </footer>
+  <script src="js/site.js"></script>
+</body></html>

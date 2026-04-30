@@ -24,145 +24,308 @@
     <title>PTA行政実例・通知等整理ページ | PTA適正化推進委員会</title>
 </head>
 <body>
-    <header class="site-header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/popc-logo.png" alt="PTA適正化推進委員会ロゴ">
-                <span>PTA適正化推進委員会</span>
-            </a>
-            <nav class="desktop-nav" aria-label="主要ナビゲーション">
-                <a href="index.html" class="nav-link">トップ</a>
-
-                <div class="nav-item">
-                    <a href="#" class="nav-link">入口別ガイド</a>
-                    <div class="mega-menu">
-                        <div class="mega-col">
-                            <h4>対象別入口</h4>
-                            <ul>
-                                <li><a href="guide-parent.html">保護者の方へ</a></li>
-                                <li><a href="guide-pta.html">PTA役員の方へ</a></li>
-                                <li><a href="guide-board.html">教育委員会の方へ</a></li>
-                                <li><a href="guide-research.html">研究者・記者の方へ</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>関連導線</h4>
-                            <ul>
-                                <li><a href="membership.html">入会手続とオプトアウト</a></li>
-                                <li><a href="documents-room.html">資料室ハブ</a></li>
-                                <li><a href="audit/index.html">監査システム</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="nav-item">
-                    <a href="law-map.html" class="nav-link">論点別</a>
-                    <div class="mega-menu">
-                        <div class="mega-col">
-                            <h4>主要論点</h4>
-                            <ul>
-                                <li><a href="privacy.html">個人情報提供</a></li>
-                                <li><a href="fee-collection.html">会費徴収</a></li>
-                                <li><a href="personnel.html">教職員関与</a></li>
-                                <li><a href="facilities.html">施設利用</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>制度整理</h4>
-                            <ul>
-                                <li><a href="law-map.html">法制度マップ</a></li>
-                                <li><a href="national-map.html">全国PTAマップ</a></li>
-                                <li><a href="national-archive.html">全国PTA資料館</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="nav-item">
-                    <a href="documents-room.html" class="nav-link">資料・ツール</a>
-                    <div class="mega-menu">
-                        <div class="mega-col">
-                            <h4>資料</h4>
-                            <ul>
-                                <li><a href="documents-room.html">資料室ハブ</a></li>
-                                <li><a href="national-archive.html">全国PTA資料館</a></li>
-                                <li><a href="blog.html">活動ブログ</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>ツール</h4>
-                            <ul>
-                                <li><a href="audit/index.html">監査システム</a></li>
-                                <li><a href="post-template.html">投稿テンプレート</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileOverlay"><span></span><span></span><span></span></button>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/popc-logo.png" alt="PTA適正化推進委員会">
+        <span>PTA適正化推進委員会</span>
+      </a>
+      <div class="header-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" class="search-input" placeholder="キーワードで検索…" aria-label="サイト内検索">
+        <div class="search-results-dropdown"></div>
+      </div>
+      <nav class="desktop-nav" aria-label="主要ナビゲーション">
+        <a href="index.html" class="nav-link">トップ</a>
+        <div class="nav-item has-dropdown">
+          <a href="#" class="nav-link">立場別</a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>入口</h4>
+              <ul>
+                <li><a href="guide-parent.html">保護者の方へ</a></li>
+                <li><a href="guide-pta.html">PTA役員の方へ</a></li>
+                <li><a href="guide-board.html">教育委員会・学校へ</a></li>
+                <li><a href="guide-research.html">研究者・記者の方へ</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>ツール</h4>
+              <ul>
+                <li><a href="audit/index.html">監査システム</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </header>
-    <div class="mobile-overlay" id="mobileOverlay">
-        <a href="index.html" class="mobile-link"><span>Home</span>トップページ</a>
-        <a href="guide-parent.html" class="mobile-link"><span>Guide</span>保護者の方へ</a>
-        <a href="guide-pta.html" class="mobile-link"><span>Guide</span>PTA役員の方へ</a>
-        <a href="guide-board.html" class="mobile-link"><span>Guide</span>教育委員会の方へ</a>
-        <a href="guide-research.html" class="mobile-link"><span>Guide</span>研究者・記者の方へ</a>
-        <a href="law-map.html" class="mobile-link"><span>Legal map</span>法制度マップ</a>
-        <a href="documents-room.html" class="mobile-link"><span>Archive</span>資料室ハブ</a>
-        <a href="audit/index.html" class="mobile-link"><span>Audit</span>監査システム</a>
-        <a href="blog.html" class="mobile-link"><span>Blog</span>活動ブログ</a>
-        <div class="close-overlay" id="closeOverlay">CLOSE ×</div>
+        <div class="nav-item has-dropdown">
+          <a href="#" class="nav-link">論点</a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>主要論点</h4>
+              <ul>
+                <li><a href="membership.html">入会手続・オプトアウト</a></li>
+                <li><a href="privacy.html">個人情報提供</a></li>
+                <li><a href="fee-collection.html">会費徴収</a></li>
+                <li><a href="personnel.html">教職員関与</a></li>
+                <li><a href="facilities.html">施設利用</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>制度整理</h4>
+              <ul>
+                <li><a href="law-map.html">法制度マップ</a></li>
+                <li><a href="cases.html">判例整理</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="#" class="nav-link">資料</a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>資料</h4>
+              <ul>
+                <li><a href="board-responses.html">教育委員会の回答</a></li>
+                <li><a href="national-archive.html">全国資料館</a></li>
+                <li><a href="journal.html">論考・調査報告</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <h4>分析</h4>
+              <ul>
+                <li><a href="report.html">総合分析レポート</a></li>
+                <li><a href="administrative-materials.html">行政資料整理</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="audit/index.html" class="btn-gold">監査を開く</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileOverlay">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <a href="index.html" class="mobile-link"><span>Home</span>トップページ</a>
+    <a href="guide-parent.html" class="mobile-link"><span>Guide</span>保護者の方へ</a>
+    <a href="guide-pta.html" class="mobile-link"><span>Guide</span>PTA役員の方へ</a>
+    <a href="guide-board.html" class="mobile-link"><span>Guide</span>教育委員会・学校へ</a>
+    <a href="board-responses.html" class="mobile-link"><span>Data</span>教育委員会の回答</a>
+    <a href="national-archive.html" class="mobile-link"><span>Archive</span>全国資料館</a>
+    <a href="journal.html" class="mobile-link"><span>Journal</span>論考・調査報告</a>
+    <a href="audit/index.html" class="mobile-link"><span>Audit</span>監査システム</a>
+    <div class="close-overlay" id="closeOverlay">CLOSE ×</div>
+  </div>
+<section class="page-hero">
+    <div class="page-hero-bg-img" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80" alt="" onerror="this.parentElement.style.display='none'">
+    </div>
+    <div class="page-hero-inner">
+      <div class="page-hero-kicker">Administrative Materials</div>
+      <h1>行政資料整理</h1>
+      <p>行政実例・通知・教育委員会回答の位置づけを整理します。法令の根拠を持つ一次資料と、行政実務上の参考資料を区別しながら読む入口です。横浜市通知（学教第1965号）を含む主要行政文書の要点もここで確認できます。</p>
+      <div class="hero-actions">
+        <a href="board-responses.html" class="btn-gold">教育委員会の回答一覧へ</a>
+        <a href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer" class="btn-outline">PDF原本をGoogleサイトで見る</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="page-header page-header-report">
-        <div class="page-header-inner report-hero-inner">
-            <div>
-                <div class="kicker">Feature report</div>
-                <h1>PTAの適正化に向けた課題と提言</h1>
-                <p>確認済みの法令・公的資料リンクを前面に置き、PTAの歴史、法的地位、判例・学説、制度改善提言を横断的に整理した総合分析ページです。一次資料に当たりやすい導線を優先し、未確認のURLは掲載していません。</p>
-                <div class="hero-actions">
-                    <a href="#report-body" class="btn-navy">本文を読む</a>
-                    <a href="law-map.html" class="btn-soft">法制度マップへ</a>
-                </div>
+  <!-- 横浜市通知の詳細ビジュアライゼーション -->
+  <section style="background:#fff;padding:72px 0">
+    <div style="width:min(calc(100% - 40px),960px);margin-inline:auto">
+      <div class="section-kicker">全国初・最重要通知</div>
+      <h2 class="section-title">横浜市教育委員会通知「学教第1965号」<br>全文解説</h2>
+      <p class="section-lead">令和7年12月発出。全市立学校に対し、PTAの自動加入禁止・オプトイン義務化を規定した全国初の行政指針。以下はその主要条項の解説です。</p>
+
+      <!-- タイムライン形式で4条項を展開 -->
+      <div style="margin-top:48px;position:relative">
+        <div style="position:absolute;left:28px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--gold),rgba(212,175,55,.2))"></div>
+
+        <!-- 条項1 -->
+        <div style="display:flex;gap:24px;margin-bottom:36px;position:relative">
+          <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-3));color:#fff;display:grid;place-items:center;font-family:'Noto Serif JP',serif;font-size:1.1rem;font-weight:900;flex-shrink:0;z-index:1;box-shadow:0 4px 12px rgba(5,17,31,.25)">①</div>
+          <div style="background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 24px;flex:1;box-shadow:var(--shadow-sm)">
+            <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:var(--gold);text-transform:uppercase;margin-bottom:8px">入会手続の義務化</div>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.1rem;color:var(--navy);margin-bottom:10px">オプトイン方式の徹底</h3>
+            <p style="font-size:.93rem;color:var(--text);line-height:1.85;margin-bottom:12px">入学時の自動加入を禁止。保護者が自ら署名した入会届（オプトイン）の提出を全市立校で必須化。入会届には<strong>任意性・個人情報の利用目的・退会の自由</strong>を明記することを義務づける。</p>
+            <div style="display:flex;flex-wrap:wrap;gap:7px">
+              <span style="background:#dbeafe;color:#1e3a8a;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800">民法522条対応</span>
+              <span style="background:#dbeafe;color:#1e3a8a;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800">消費者契約法対応</span>
+              <a href="membership.html" style="background:rgba(5,17,31,.07);color:var(--navy);padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800;text-decoration:none">→ 入会手続の論点へ</a>
             </div>
-            <aside class="report-summary-card">
-                <div class="eyebrow">このページで扱う内容</div>
-                <ul>
-                    <li>PTAの歴史的背景と現状</li>
-                    <li>社会教育法・個人情報保護法・地方自治法等との関係</li>
-                    <li>加入強制・差別・寄付をめぐる判例・学説</li>
-                    <li>適正化に向けた制度設計の方向性</li>
-                </ul>
-            </aside>
+          </div>
         </div>
-    </section>
 
-    <section class="section-container primary-source-strip" aria-labelledby="primary-sources-title">
-        <div class="primary-source-card">
-            <div class="eyebrow">確認済みの一次資料リンク</div>
-            <h2 id="primary-sources-title">まず当たりたい公的資料</h2>
-            <p>法令は e-Gov 法令検索、判例は裁判所公式サイト、公的制度は文部科学省等の公式資料を優先しています。確認できないURLは掲載していません。</p>
-            <div class="primary-source-links">
-                <a href="https://laws.e-gov.go.jp/law/321CONSTITUTION" target="_blank" rel="noopener">日本国憲法</a>
-                <a href="https://laws.e-gov.go.jp/law/324AC0000000207" target="_blank" rel="noopener">社会教育法</a>
-                <a href="https://laws.e-gov.go.jp/law/418AC0000000120" target="_blank" rel="noopener">教育基本法</a>
-                <a href="https://laws.e-gov.go.jp/law/322AC0000000026" target="_blank" rel="noopener">学校教育法</a>
-                <a href="https://laws.e-gov.go.jp/law/415AC0000000057" target="_blank" rel="noopener">個人情報保護法</a>
-                <a href="https://laws.e-gov.go.jp/law/322AC0000000067" target="_blank" rel="noopener">地方自治法</a>
-                <a href="https://laws.e-gov.go.jp/law/325AC0000000261" target="_blank" rel="noopener">地方公務員法</a>
-                <a href="https://laws.e-gov.go.jp/law/323AC0000000109" target="_blank" rel="noopener">地方財政法</a>
-                <a href="https://laws.e-gov.go.jp/law/331AC0000000162" target="_blank" rel="noopener">地教行法</a>
-                <a href="https://laws.e-gov.go.jp/law/129AC0000000089" target="_blank" rel="noopener">民法</a>
-                <a href="https://laws.e-gov.go.jp/document?lawid=412AC0000000061_20231001_504AC0000000059" target="_blank" rel="noopener">消費者契約法</a>
-                <a href="https://www.courts.go.jp/" target="_blank" rel="noopener">裁判所公式サイト</a>
+        <!-- 条項2 -->
+        <div style="display:flex;gap:24px;margin-bottom:36px;position:relative">
+          <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-3));color:#fff;display:grid;place-items:center;font-family:'Noto Serif JP',serif;font-size:1.1rem;font-weight:900;flex-shrink:0;z-index:1;box-shadow:0 4px 12px rgba(5,17,31,.25)">②</div>
+          <div style="background:#fff;border:1px solid var(--line);border-left:4px solid #0891b2;border-radius:0 var(--radius) var(--radius) 0;padding:22px 24px;flex:1;box-shadow:var(--shadow-sm)">
+            <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:#0891b2;text-transform:uppercase;margin-bottom:8px">個人情報の分離</div>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.1rem;color:var(--navy);margin-bottom:10px">学校名簿のPTAへの提供を明示的禁止</h3>
+            <p style="font-size:.93rem;color:var(--text);line-height:1.85;margin-bottom:12px">学校保有情報のPTAへの提供を禁止。PTAが入会届を通じて直接、本人から情報を取得する体制を義務化。学校経由での名簿共有・目的外利用を全面的に禁ずる。</p>
+            <div style="display:flex;flex-wrap:wrap;gap:7px">
+              <span style="background:#cffafe;color:#164e63;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800">個人情報保護法69条対応</span>
+              <a href="privacy.html" style="background:rgba(5,17,31,.07);color:var(--navy);padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800;text-decoration:none">→ 個人情報の論点へ</a>
             </div>
+          </div>
         </div>
-    </section>
 
-    
+        <!-- 条項3 -->
+        <div style="display:flex;gap:24px;margin-bottom:36px;position:relative">
+          <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-3));color:#fff;display:grid;place-items:center;font-family:'Noto Serif JP',serif;font-size:1.1rem;font-weight:900;flex-shrink:0;z-index:1;box-shadow:0 4px 12px rgba(5,17,31,.25)">③</div>
+          <div style="background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);border-radius:0 var(--radius) var(--radius) 0;padding:22px 24px;flex:1;box-shadow:var(--shadow-sm)">
+            <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:var(--red);text-transform:uppercase;margin-bottom:8px">非会員差別の禁止</div>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.1rem;color:var(--navy);margin-bottom:10px">非会員の子どもへの差別的取扱いを人権侵害と明記</h3>
+            <p style="font-size:.93rem;color:var(--text);line-height:1.85;margin-bottom:12px">PTA非会員であることを理由とした子どもへの不利益扱い（登校班への不参加、記念品の不配布等）を<strong>人権侵害</strong>として明示的に禁止。教育の場における平等の実現を謳う。</p>
+            <div style="display:flex;flex-wrap:wrap;gap:7px">
+              <span style="background:#fee2e2;color:#7f1d1d;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800">憲法14条・26条対応</span>
+              <a href="guide-parent.html" style="background:rgba(5,17,31,.07);color:var(--navy);padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800;text-decoration:none">→ 保護者ガイドへ</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 条項4 -->
+        <div style="display:flex;gap:24px;position:relative">
+          <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-3));color:#fff;display:grid;place-items:center;font-family:'Noto Serif JP',serif;font-size:1.1rem;font-weight:900;flex-shrink:0;z-index:1;box-shadow:0 4px 12px rgba(5,17,31,.25)">④</div>
+          <div style="background:#fff;border:1px solid var(--line);border-left:4px solid var(--green);border-radius:0 var(--radius) var(--radius) 0;padding:22px 24px;flex:1;box-shadow:var(--shadow-sm)">
+            <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:var(--green);text-transform:uppercase;margin-bottom:8px">会費・口座の分離</div>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.1rem;color:var(--navy);margin-bottom:10px">学校徴収金との一括引落禁止・書面同意の義務化</h3>
+            <p style="font-size:.93rem;color:var(--text);line-height:1.85;margin-bottom:12px">PTA会費を学校徴収金（給食費等）と一括引き落とすことを禁止。PTA独自口座での会費管理と、保護者からの個別書面同意の取得を義務化する。</p>
+            <div style="display:flex;flex-wrap:wrap;gap:7px">
+              <span style="background:#dcfce7;color:#14532d;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800">地方自治法235条の4対応</span>
+              <span style="background:#dcfce7;color:#14532d;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800">地方財政法4条の5対応</span>
+              <a href="fee-collection.html" style="background:rgba(5,17,31,.07);color:var(--navy);padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800;text-decoration:none">→ 会費徴収の論点へ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:36px;background:linear-gradient(135deg,var(--navy),var(--navy-2));border-radius:var(--radius);padding:24px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+        <div>
+          <div style="font-size:.78rem;font-weight:900;color:var(--gold-lt);letter-spacing:.08em;margin-bottom:4px">原本PDF</div>
+          <p style="color:rgba(255,255,255,.88);font-size:.93rem;margin:0">通知原文・全文はGoogleサイトで公開しています</p>
+        </div>
+        <a href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer" class="btn-gold">原本を確認する →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 行政資料の階層構造SVG -->
+  <section style="background:var(--bg);padding:64px 0">
+    <div style="width:min(calc(100% - 40px),900px);margin-inline:auto">
+      <div class="section-kicker">資料の読み方</div>
+      <h2 class="section-title">行政資料の法的強度と読み方</h2>
+      <p class="section-lead">行政実例・通知・教委回答は「法令」ではありません。それぞれの法的強度を理解してから参照することが重要です。</p>
+
+      <svg width="100%" viewBox="0 0 720 260" role="img" style="max-width:720px;display:block;margin:32px auto 8px">
+        <title>行政資料の法的強度の階層：法令＞判例＞通知・通達＞行政実例・教委回答</title>
+        <!-- ピラミッド段階 -->
+        <!-- 第1段：法令（最上位） -->
+        <polygon points="360,20 260,80 460,80" fill="#05111f" stroke="none"/>
+        <text x="360" y="58" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="900" fill="#f4e7a6">法令・条文</text>
+
+        <!-- 第2段：判例 -->
+        <polygon points="260,84 200,130 520,130 460,84" fill="#1a3a52" stroke="none"/>
+        <text x="360" y="112" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="800" fill="#fff">判例・裁判例</text>
+
+        <!-- 第3段：通知・通達 -->
+        <polygon points="200,134 130,184 590,184 520,134" fill="#d4af37" stroke="none"/>
+        <text x="360" y="164" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="800" fill="#05111f">通知・通達・行政指針</text>
+
+        <!-- 第4段：行政実例・教委回答 -->
+        <polygon points="130,188 50,240 670,240 590,188" fill="#e5e7eb" stroke="#9ca3af" stroke-width="0.5"/>
+        <text x="360" y="220" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#374151">行政実例・教育委員会回答・実務資料</text>
+
+        <!-- 右側の説明 -->
+        <text x="690" y="50" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#05111f" font-weight="900">最高位</text>
+        <text x="690" y="65" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#4b5563">法的拘束力あり</text>
+
+        <text x="690" y="108" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#1a3a52" font-weight="900">高</text>
+        <text x="690" y="123" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#4b5563">解釈の根拠に</text>
+
+        <text x="690" y="160" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#92400e" font-weight="900">参考</text>
+        <text x="690" y="175" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#4b5563">条文に戻って確認</text>
+
+        <text x="690" y="212" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#374151" font-weight="900">実務参照</text>
+        <text x="690" y="227" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="#4b5563">一次資料で裏付けを</text>
+      </svg>
+      <p style="font-size:.84rem;color:var(--text-soft);text-align:center">通知・行政実例は法令ではありません。対応する条文（e-Gov）で必ず一次確認してください。</p>
+    </div>
+  </section>
+
 <main class="report-page-main">
+
+  <!-- 文科省Sランク資料 -->
+  <section style="background:#fff;padding:72px 0">
+    <div style="width:min(calc(100% - 40px),960px);margin-inline:auto">
+      <div class="section-kicker">最重要資料</div>
+      <h2 class="section-title">文部科学省公式資料——PTA問題への直接適用</h2>
+      <p class="section-lead">照会・監査請求・保護者対応において最も強い根拠になる文科省の公式文書です（Sランク）。</p>
+
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:36px">
+
+        <!-- S1 -->
+        <div style="background:#fff;border:1px solid var(--line);border-left:5px solid #b91c1c;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-sm)">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+            <div>
+              <span style="background:#fee2e2;color:#b91c1c;font-size:.7rem;font-weight:900;padding:3px 9px;border-radius:4px;letter-spacing:.06em">Sランク・最重要</span>
+              <h3 style="font-family:'Noto Serif JP',serif;font-size:1.1rem;font-weight:900;color:var(--navy);margin:10px 0 6px;line-height:1.4">学校関係団体が実施する事業に係る兼職兼業等の取扱い及び学校における会計処理の適正化についての留意事項等について（通知）</h3>
+              <div style="font-size:.78rem;color:var(--text-soft)">文部科学省初等中等教育局長 / 平成24年5月9日</div>
+            </div>
+          </div>
+          <p style="font-size:.92rem;color:var(--text);line-height:1.85;margin-bottom:14px">PTA等学校関係団体の兼職兼業・学校管理運営経費の保護者負担転嫁・学校会計と団体会計の区分を<strong>直接</strong>規律する最重要通知。教育委員会照会・監査請求向けの中核資料。「学校が保護者等から徴収している学校徴収金は、その目的に沿って使用されなければならない」と明記。</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px">
+            <span class="law-tag">PTA会費</span><span class="law-tag">学校関係団体</span><span class="law-tag">兼職兼業</span><span class="law-tag">会計処理</span><span class="law-tag">地方財政法</span>
+          </div>
+          <a href="https://www.mext.go.jp/content/20221011-mxt_syoto01_02.pdf" target="_blank" rel="noopener noreferrer" class="btn-soft" style="font-size:.84rem">📄 文科省公式PDFを開く ↗</a>
+        </div>
+
+        <!-- S2 -->
+        <div style="background:#fff;border:1px solid var(--line);border-left:5px solid #b91c1c;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-sm)">
+          <div style="margin-bottom:12px">
+            <span style="background:#fee2e2;color:#b91c1c;font-size:.7rem;font-weight:900;padding:3px 9px;border-radius:4px;letter-spacing:.06em">Sランク・最重要</span>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.1rem;font-weight:900;color:var(--navy);margin:10px 0 6px;line-height:1.4">学校徴収金会計業務における教員の負担軽減のための調査研究</h3>
+            <div style="font-size:.78rem;color:var(--text-soft)">全国公立小中学校事務研究会（文科省委託調査研究） / 平成30年3月31日</div>
+          </div>
+          <p style="font-size:.92rem;color:var(--text);line-height:1.85;margin-bottom:14px">学校徴収金と併せて徴収されるPTA会費・後援会費等の団体経費について実態を調査。PTA会費の混在徴収・学校徴収金会計の実態を<strong>文科省委託資料として</strong>示すため、制度実態の証拠資料として強力。</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px">
+            <span class="law-tag">学校徴収金</span><span class="law-tag">PTA会費</span><span class="law-tag">会計事務</span><span class="law-tag">教員負担</span>
+          </div>
+          <a href="https://www.mext.go.jp/content/20201120-mxt_zaimu-000011189_1.pdf" target="_blank" rel="noopener noreferrer" class="btn-soft" style="font-size:.84rem">📄 文科省公式PDFを開く ↗</a>
+        </div>
+
+        <!-- S3：中教審答申 -->
+        <div style="background:#fff;border:1px solid var(--line);border-left:5px solid #b91c1c;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-sm)">
+          <div style="margin-bottom:12px">
+            <span style="background:#fee2e2;color:#b91c1c;font-size:.7rem;font-weight:900;padding:3px 9px;border-radius:4px;letter-spacing:.06em">Sランク・最重要</span>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.1rem;font-weight:900;color:var(--navy);margin:10px 0 6px;line-height:1.4">中教審答申「新しい時代の教育に向けた持続可能な学校指導・運営体制の構築のための学校における働き方改革に関する総合的な方策について」（第213号）</h3>
+            <div style="font-size:.78rem;color:var(--text-soft)">中央教育審議会 / 平成31年1月25日</div>
+          </div>
+          <p style="font-size:.92rem;color:var(--text);line-height:1.85;margin-bottom:14px">働き方改革における<strong>業務3分類の根本資料</strong>。「学校徴収金対応」「登下校見守り」を<strong>学校外に切り分けるべき業務</strong>として明示。PTA業務・学校徴収金の教職員負担を問う前提根拠として最も強力。</p>
+          <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:14px;margin-bottom:14px">
+            <div style="font-size:.8rem;font-weight:900;color:#92400e;margin-bottom:6px">業務3分類の内容</div>
+            <div style="font-size:.88rem;color:#374151;line-height:1.75">
+              <div>① <strong>教師の業務だが負担を軽減すべき</strong>：学校行事・成績処理等</div>
+              <div>② <strong>学校以外が担うべき</strong>：<span style="color:#b91c1c;font-weight:700">学校徴収金の徴収・管理</span>・地域ボランティアとの連絡調整</div>
+              <div>③ <strong>教師が担う必要がない</strong>：部活動・登下校対応</div>
+            </div>
+          </div>
+          <a href="https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/079/sonota/1412985.htm" target="_blank" rel="noopener noreferrer" class="btn-soft" style="font-size:.84rem">📄 文科省公式ページを開く ↗</a>
+        </div>
+
+        <!-- 静岡市事案との接続 -->
+        <div style="background:linear-gradient(145deg,#fff5f5,#fff);border:2px solid #fecaca;border-radius:var(--radius);padding:24px 28px">
+          <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:#b91c1c;margin-bottom:10px">🚨 速報：静岡市事案（2026年4月）との接続</div>
+          <p style="font-size:.93rem;color:var(--text);line-height:1.85;margin-bottom:12px">「教職員の関与ゼロ」と照会回答していた静岡市で、9,200人分の個人情報が保護者の同意なくPTAに提供されていたことが発覚。教育長は「法律と学校文化のずれ」と表現。上記の文科省Sランク資料（特に2012年通知・中教審答申）はこの「ずれ」を制度論として証明する根拠になります。</p>
+          <a href="shizuoka-incident.html" class="btn-navy" style="font-size:.86rem;text-decoration:none">静岡市事案の詳細分析を読む →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section class="section-container report-layout-section" id="admin-page">
     <aside class="report-toc">
       <div class="report-toc-inner">
@@ -184,72 +347,70 @@
 
         <section>
           <h2 id="admin-reading">このページの読み方</h2>
-          <div class="claim-evidence-box">
-            <div class="ce-row">
-              <div class="ce-col ce-claim">
-                <div class="ce-label">位置づけ</div>
-                <p>行政実例・通知等は、法令そのものではありませんが、実務運用や行政解釈を把握する上で重要な補助資料です。</p>
-              </div>
-              <div class="ce-col ce-evidence">
-                <div class="ce-label">確認できること</div>
-                <ul>
-                  <li>法的拘束力の中心はあくまで法令と判例です。</li>
-                  <li>行政実例・通知等は、その作成主体、日付、文書の性質を区別して読む必要があります。</li>
-                  <li>未確認のURLは載せず、確認できる範囲で日付・性質を明示する方針です。</li>
-                </ul>
-              </div>
+          <p>行政実例・通知・教委回答は「法令」ではありません。それぞれの法的強度を理解してから参照することが重要です。</p>
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:20px;margin:16px 0">
+            <div style="font-weight:800;color:#1A365D;margin-bottom:10px;font-size:.9rem">行政資料の法的強度の階層</div>
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <div style="display:flex;align-items:center;gap:10px"><span style="background:#1A365D;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800;flex-shrink:0">S</span><span style="font-size:.86rem;color:#374151">法令（憲法・民法・個人情報保護法・地公法・地方自治法・学校教育法等）</span></div>
+              <div style="display:flex;align-items:center;gap:10px"><span style="background:#2563eb;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800;flex-shrink:0">A</span><span style="font-size:.86rem;color:#374151">確定判決（最高裁・高裁）</span></div>
+              <div style="display:flex;align-items:center;gap:10px"><span style="background:#7c3aed;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800;flex-shrink:0">B</span><span style="font-size:.86rem;color:#374151">文部科学省通知・通達（法令の解釈指針として参照）</span></div>
+              <div style="display:flex;align-items:center;gap:10px"><span style="background:#d97706;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800;flex-shrink:0">C</span><span style="font-size:.86rem;color:#374151">地方教育委員会通知（各自治体管内の指針）</span></div>
+              <div style="display:flex;align-items:center;gap:10px"><span style="background:#6b7280;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800;flex-shrink:0">D</span><span style="font-size:.86rem;color:#374151">行政実例・教委への照会回答（参考情報）</span></div>
             </div>
+            <p style="font-size:.8rem;color:#6b7280;margin:10px 0 0">通知・行政実例は法令ではありません。対応する条文（<a href="https://laws.e-gov.go.jp/" target="_blank" rel="noopener noreferrer">e-Gov</a>）で必ず一次確認してください。</p>
           </div>
-          <p class="source-note">このページは、<a href="personnel.html">教職員関与</a>、<a href="fee-collection.html">会費徴収</a>、<a href="privacy.html">個人情報</a>とあわせて読むと使いやすくなります。</p>
-        </section>
 
-        <section id="admin-main">
           <h2>行政実例・通知等の整理</h2>
-          <div class="claim-evidence-box">
-            <div class="ce-row">
-              <div class="ce-col ce-claim">
-                <div class="ce-label">主張</div>
-                <p>PTAに関する実務では、法令条文だけでは見えにくい運用上の扱いがあり、行政実例・通知等が参考になります。ただし、それ自体で直ちに全国一律の結論を確定するものではありません。</p>
+          <div style="display:flex;flex-direction:column;gap:16px;margin:20px 0">
+            <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                <span style="background:#7c3aed;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800">B</span>
+                <span style="font-size:.8rem;color:#6b7280">文科省通知 / 平成24年5月9日</span>
               </div>
-              <div class="ce-col ce-evidence">
-                <div class="ce-label">確認できる根拠</div>
-                <ul>
-                  <li>本文でも参照されている1964年1月20日付の行政実例は、PTA等任意団体の事務が職務に含まれないという整理との関係で言及されています。</li>
-                  <li>この種の資料は、文書の作成主体、宛先、文書形式、公開状態を分けて扱う必要があります。</li>
-                  <li>法令条文に戻って整合性を確認する読み方が必要です。</li>
-                </ul>
+              <h3 style="font-size:.97rem;color:#1A365D;margin:0 0 6px;line-height:1.5">学校関係団体が実施する事業に係る兼職兼業等の取扱い及び学校における会計処理の適正化についての留意事項等について（通知）</h3>
+              <p style="font-size:.85rem;color:#374151;line-height:1.7;margin:0">PTA等学校関係団体の兼職兼業・学校会計と団体会計の区分を直接規律する最重要通知。「学校が保護者等から徴収している学校徴収金は、その目的に沿って使用されなければならない」と明記。</p>
+            </div>
+            <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                <span style="background:#7c3aed;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800">B</span>
+                <span style="font-size:.8rem;color:#6b7280">文科省委託調査研究 / 平成30年3月31日</span>
               </div>
+              <h3 style="font-size:.97rem;color:#1A365D;margin:0 0 6px;line-height:1.5">学校徴収金会計業務における教員の負担軽減のための調査研究</h3>
+              <p style="font-size:.85rem;color:#374151;line-height:1.7;margin:0">PTA会費の混在徴収・学校徴収金会計の実態を文科省委託資料として示す。制度実態の証拠資料として強力。</p>
+            </div>
+            <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                <span style="background:#7c3aed;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800">B</span>
+                <span style="font-size:.8rem;color:#6b7280">中教審答申第213号</span>
+              </div>
+              <h3 style="font-size:.97rem;color:#1A365D;margin:0 0 6px;line-height:1.5">学校における働き方改革に関する総合的な方策について（中教審第213号）</h3>
+              <p style="font-size:.85rem;color:#374151;line-height:1.7;margin:0 0 8px">働き方改革における業務3分類の根本資料。「学校徴収金の徴収・管理」を学校以外が担うべき業務②として明示。</p>
+              <div style="background:#f8fafc;border-radius:8px;padding:10px;font-size:.82rem;color:#374151;line-height:1.7">①教師の業務だが負担軽減すべき ②<strong>学校以外が担うべき：学校徴収金徴収・管理</strong> ③教師が担う必要がない</div>
+            </div>
+            <div style="background:#fff;border:1px solid #fde68a;border-radius:14px;padding:20px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                <span style="background:#d97706;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800">C 🏆全国初</span>
+                <span style="font-size:.8rem;color:#6b7280">横浜市教育委員会 / 令和7年12月1日</span>
+              </div>
+              <h3 style="font-size:.97rem;color:#1A365D;margin:0 0 6px;line-height:1.5">学教第1965号：PTA等の保護者団体の加入等について</h3>
+              <p style="font-size:.85rem;color:#374151;line-height:1.7;margin:0 0 8px">全市立学校でオプトイン義務化・名簿提供禁止・差別取扱禁止・一括引落禁止を規定した全国初の行政指針。</p>
+              <a href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer" style="font-size:.82rem;font-weight:700;color:#1A365D">原文をGoogleサイトで確認 →</a>
+            </div>
+            <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+                <span style="background:#6b7280;color:#fff;padding:2px 12px;border-radius:4px;font-size:.78rem;font-weight:800">D</span>
+                <span style="font-size:.8rem;color:#6b7280">行政実例 / 昭和39年1月20日</span>
+              </div>
+              <h3 style="font-size:.97rem;color:#1A365D;margin:0 0 6px;line-height:1.5">熊本県教育長宛行政実例：PTA事務と教職員職務の関係</h3>
+              <p style="font-size:.85rem;color:#374151;line-height:1.7;margin:0">「PTA等任意団体の事務は、学校教職員の職務には含まれない」とする行政解釈を示した行政実例。60年以上前から一貫した解釈。行政実例は法令ではないため地公法第35条と整合性を確認すること。</p>
             </div>
           </div>
-          <div class="source-type-table-wrap">
-            <table class="source-type-table">
-              <thead>
-                <tr>
-                  <th>資料類型</th>
-                  <th>読み方</th>
-                  <th>注意点</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>行政実例</th>
-                  <td>当時の行政解釈や実務整理を確認する資料</td>
-                  <td>現行法との関係、時代差、法改正の有無を確認する</td>
-                </tr>
-                <tr>
-                  <th>通知・依頼文</th>
-                  <td>行政内部・対外的な運用方針の参考資料</td>
-                  <td>法令そのものではないため、条文に遡る必要がある</td>
-                </tr>
-                <tr>
-                  <th>教育委員会回答</th>
-                  <td>自治体実務の現状把握資料</td>
-                  <td>自治体ごとの差異があり、全国一律の根拠にはならない</td>
-                </tr>
-              </tbody>
-            </table>
+
+          <div style="background:#fff5f5;border:1px solid #fecaca;border-radius:14px;padding:18px;margin-top:8px">
+            <div style="font-weight:800;color:#b91c1c;margin-bottom:8px">🚨 速報：静岡市事案（2026年4月）</div>
+            <p style="font-size:.86rem;color:#374151;line-height:1.75;margin:0">市内20校で9,200人分の名簿が同意なくPTAに提供。横浜市通知が規定した「名簿提供禁止」が全国的急務であることを示す事案。<a href="shizuoka-incident.html">事案分析ページ →</a></p>
           </div>
-          
+
           <h2 id="committee">PTA適正化推進委員会の研究と提言</h2>
 
     <div class="claim-evidence-box" aria-label="論点整理">
@@ -390,44 +551,53 @@
     </div>
   </section>
 </main>
-
-
-    <footer class="footer">
-        <div class="footer-grid">
-            <div>
-                <h3>PTA適正化推進委員会</h3>
-                <a href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" target="_blank" rel="noopener noreferrer" class="yokomusubi-card">
-                    <img src="assets/yokomusubi.png" alt="よこむすび">
-                    <span class="yokomusubi-meta">登録番号　磯子12406</span>
-                    <span class="yokomusubi-meta">分類番号　12-4（市民活動・社会教育推進）</span>
-                </a>
-                <div class="footer-contact">
-                    <p>横浜市磯子区岡村8-17-5-301</p>
-                    <p>070-9012-7772</p>
-                    <p><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
-                </div>
-            </div>
-            <div>
-                <h4>入口</h4>
-                <ul>
-                    <li><a href="guide-parent.html">保護者の方へ</a></li>
-                    <li><a href="guide-pta.html">PTA役員の方へ</a></li>
-                    <li><a href="guide-board.html">教育委員会の方へ</a></li>
-                    <li><a href="guide-research.html">研究者・記者の方へ</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>主要導線</h4>
-                <ul>
-                    <li><a href="law-map.html">法制度マップ</a></li>
-                    <li><a href="documents-room.html">資料室ハブ</a></li>
-                    <li><a href="audit/index.html">監査システム</a></li>
-                </ul>
-            </div>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>PTA適正化推進委員会</h3>
+        <a href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" target="_blank" rel="noopener noreferrer" class="yokomusubi-card">
+          <img src="assets/yokomusubi.png" alt="よこむすび">
+          <span class="yokomusubi-meta">登録番号　磯子12406</span>
+          <span class="yokomusubi-meta">分類番号　12-4（市民活動・社会教育推進）</span>
+        </a>
+        <div style="margin-top:14px">
+          <p>横浜市磯子区岡村8-17-5-301</p>
+          <p>070-9012-7772</p>
+          <p><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
         </div>
-        <p class="copyright">&copy; 2026 PTA適正化推進委員会</p>
-    </footer>
-    <script src="js/law-data.js"></script>
-    <script src="js/site.js"></script>
-</body>
-</html>
+      </div>
+      <div>
+        <h4>立場別</h4>
+        <ul>
+          <li><a href="guide-parent.html">保護者の方へ</a></li>
+          <li><a href="guide-pta.html">PTA役員の方へ</a></li>
+          <li><a href="guide-board.html">教育委員会・学校へ</a></li>
+          <li><a href="guide-research.html">研究者・記者の方へ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>論点</h4>
+        <ul>
+          <li><a href="membership.html">入会手続・オプトアウト</a></li>
+          <li><a href="privacy.html">個人情報提供</a></li>
+          <li><a href="fee-collection.html">会費徴収</a></li>
+          <li><a href="personnel.html">教職員関与</a></li>
+          <li><a href="facilities.html">施設利用</a></li>
+          <li><a href="law-map.html">法制度マップ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>資料・ツール</h4>
+        <ul>
+          <li><a href="board-responses.html">教育委員会の回答</a></li>
+          <li><a href="national-archive.html">全国資料館</a></li>
+          <li><a href="journal.html">論考・調査報告</a></li>
+          <li><a href="audit/index.html">監査システム</a></li>
+          <li><a href="report.html">総合分析レポート</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 PTA適正化推進委員会</p>
+  </footer>
+  <script src="js/site.js"></script>
+</body></html>
