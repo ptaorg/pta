@@ -24,10 +24,10 @@
     <title>PTA総合分析レポート | PTA適正化推進委員会</title>
   <style>
     .slide-gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:20px 0}
-    .slide-item{margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07);transition:transform .2s,box-shadow .2s}
-    .slide-item:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(5,17,31,.12)}
+    .slide-item{margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s}
+    .slide-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
     .slide-item img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
-    .slide-item figcaption{padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc;line-height:1.4}
+    .slide-item figcaption{padding:8px 10px;font-size:.76rem;color:var(--text-soft);background:var(--bg);line-height:1.4}
     #lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out}
     #lightbox.is-open{display:flex}
     @media(max-width:600px){.slide-gallery-grid{grid-template-columns:repeat(2,1fr);gap:8px}}
@@ -141,6 +141,16 @@
     <a href="audit/index.html" class="mobile-link"><span>Audit</span>監査システム</a>
     <div class="close-overlay" id="closeOverlay">CLOSE ×</div>
   </div>
+    <!-- 冒頭ハイライト -->
+    <section style="background:var(--surface);padding:48px 0 24px">
+      <div class="wrap" style="max-width:920px;margin:0 auto">
+        <div class="hl-quote">
+          <p>PTA問題の本質は、法治主義の原則が教育現場で機能不全に陥っていたことにある。「行政不作為」から「積極的監督」への転換こそが解決の鍵である。</p>
+          <cite>—— PTA運営の法的構造と教育行政の監督責任（令和7年11月）</cite>
+        </div>
+      </div>
+    </section>
+
     <!-- マインドマップ -->
     <section style="background:var(--bg);padding:56px 0 40px">
       <div class="wrap">
@@ -149,14 +159,14 @@
         <p class="section-lead">本レポートが扱う論点の全体構造をマインドマップで整理しています。</p>
         <figure style="margin:28px 0 0">
           <img src="assets/mindmap.png" alt="PTA運営の法的構造と教育行政の監督責任 マインドマップ"
-            style="width:100%;max-width:900px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 12px 36px rgba(5,17,31,.12)">
-          <figcaption style="text-align:center;font-size:.82rem;color:#4b5563;margin-top:10px">▲ 法的構造マインドマップ（NotebookLM生成）</figcaption>
+            style="width:100%;max-width:900px;display:block;margin:0 auto;border-radius:var(--radius);box-shadow:var(--shadow-md)">
+          <figcaption style="text-align:center;font-size:.82rem;color:var(--text-soft);margin-top:var(--radius-sm)">▲ 法的構造マインドマップ（NotebookLM生成）</figcaption>
         </figure>
       </div>
     </section>
 
     <!-- 監査スライド（PTA運営の法的構造と教育行政の監督責任）-->
-    <section style="background:#fff;padding:56px 0">
+    <section style="background:var(--surface);padding:56px 0">
       <div class="wrap">
         <div class="section-kicker">詳細解説スライド</div>
         <h2 class="section-title">PTA運営の法的構造と教育行政の監督責任——全15枚</h2>
@@ -223,13 +233,13 @@
             <figcaption>⑮結論：公教育への信頼と自発的結社の再生</figcaption>
           </figure>
         </div>
-        <p style="font-size:.84rem;color:#4b5563;margin-top:8px">※スライドはNotebookLMを使用して作成。PTA適正化推進委員会の調査・分析に基づきます。</p>
+        <p style="font-size:.84rem;color:var(--text-soft);margin-top:8px">※スライドはNotebookLMを使用して作成。PTA適正化推進委員会の調査・分析に基づきます。</p>
       </div>
     </section>
 
     <!-- Lightbox -->
     <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out">
-      <button onclick="closeLightbox()" aria-label="閉じる" style="position:fixed;top:16px;right:20px;color:#fff;font-size:2rem;cursor:pointer;background:none;border:none;z-index:10000;line-height:1">×</button>
+      <button onclick="closeLightbox()" aria-label="閉じる" style="position:fixed;top:var(--radius);right:20px;color:var(--surface);font-size:2rem;cursor:pointer;background:none;border:none;z-index:10000;line-height:1">×</button>
       <img id="lightbox-img" src="" alt="" style="max-width:92vw;max-height:90vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5)">
     </div>
     <script>
@@ -258,7 +268,7 @@
       <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(5,17,31,.9),rgba(5,17,31,.5));display:flex;align-items:flex-end;padding:32px 40px">
         <div>
           <div style="font-size:.72rem;font-weight:900;letter-spacing:.1em;color:rgba(212,175,55,.8);text-transform:uppercase;margin-bottom:8px">Research Report · 総合分析レポート</div>
-          <h1 style="font-family:'Noto Serif JP',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:#fff;margin:0;line-height:1.3">PTAの適正化に向けた課題と提言</h1>
+          <h1 style="font-family:'Noto Serif JP',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:var(--surface);margin:0;line-height:1.3">PTAの適正化に向けた課題と提言</h1>
           <div style="color:rgba(255,255,255,.6);font-size:.88rem;margin-top:6px">全国調査に基づく構造分析・提言</div>
         </div>
       </div>
@@ -269,7 +279,7 @@
       <div style="width:min(calc(100% - 40px),1100px);margin-inline:auto">
         <div style="text-align:center;margin-bottom:40px">
           <div class="section-kicker" style="background:rgba(212,175,55,.15);color:var(--gold-lt)">総合レポート概要</div>
-          <h2 class="section-title" style="color:#fff;margin-top:8px">PTA問題の5軸構造</h2>
+          <h2 class="section-title" style="color:var(--surface);margin-top:8px">PTA問題の5軸構造</h2>
           <p style="color:rgba(255,255,255,.75);font-size:.95rem;max-width:640px;margin:8px auto 0;line-height:1.8">このレポートが扱う5つの論点と、それぞれが連動する構造を俯瞰します。</p>
         </div>
 
@@ -324,12 +334,12 @@
           <line x1="530" y1="230" x2="530" y2="284" stroke="rgba(74,222,128,.5)" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#r-arr)"/>
         </svg>
 
-        <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:28px">
-          <a href="membership.html" class="btn-soft" style="font-size:.84rem;padding:8px 16px">📋 入会手続</a>
-          <a href="privacy.html" class="btn-soft" style="font-size:.84rem;padding:8px 16px">🔒 個人情報</a>
-          <a href="fee-collection.html" class="btn-soft" style="font-size:.84rem;padding:8px 16px">💰 会費徴収</a>
-          <a href="personnel.html" class="btn-soft" style="font-size:.84rem;padding:8px 16px">👩‍🏫 教職員関与</a>
-          <a href="facilities.html" class="btn-soft" style="font-size:.84rem;padding:8px 16px">🏫 施設利用</a>
+        <div style="display:flex;flex-wrap:wrap;gap:var(--radius-sm);justify-content:center;margin-top:28px">
+          <a href="membership.html" class="btn-soft" style="font-size:.84rem;padding:8px var(--radius)">📋 入会手続</a>
+          <a href="privacy.html" class="btn-soft" style="font-size:.84rem;padding:8px var(--radius)">🔒 個人情報</a>
+          <a href="fee-collection.html" class="btn-soft" style="font-size:.84rem;padding:8px var(--radius)">💰 会費徴収</a>
+          <a href="personnel.html" class="btn-soft" style="font-size:.84rem;padding:8px var(--radius)">👩‍🏫 教職員関与</a>
+          <a href="facilities.html" class="btn-soft" style="font-size:.84rem;padding:8px var(--radius)">🏫 施設利用</a>
         </div>
       </div>
     </section>

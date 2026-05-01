@@ -30,11 +30,11 @@
     .scope-ok{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:var(--radius);padding:22px}
     .scope-ng{background:#fff5f5;border:1px solid #fecaca;border-radius:var(--radius);padding:22px}
     .scope-label{font-size:.74rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
-    .scope-ok .scope-label{color:#15803d}
-    .scope-ng .scope-label{color:#b91c1c}
+    .scope-ok .scope-label{color:var(--green)}
+    .scope-ng .scope-label{color:var(--red)}
     .scope-item{display:flex;gap:9px;font-size:.9rem;line-height:1.6;margin-bottom:8px;color:var(--text)}
-    .ok-dot{color:#15803d;font-weight:900;flex-shrink:0}
-    .ng-dot{color:#b91c1c;font-weight:900;flex-shrink:0}
+    .ok-dot{color:var(--green);font-weight:900;flex-shrink:0}
+    .ng-dot{color:var(--red);font-weight:900;flex-shrink:0}
 
     @media(max-width:700px){.scope-grid{grid-template-columns:1fr}}
 
@@ -194,8 +194,8 @@
           </svg>
         </div>
         <div>
-          <div style="background:var(--navy);border-radius:var(--radius);padding:22px;margin-bottom:16px">
-            <div style="font-size:.74rem;font-weight:900;letter-spacing:.08em;color:var(--gold-lt);margin-bottom:10px">地方公務員法 第35条</div>
+          <div style="background:var(--navy);border-radius:var(--radius);padding:22px;margin-bottom:var(--radius)">
+            <div style="font-size:.74rem;font-weight:900;letter-spacing:.08em;color:var(--gold-lt);margin-bottom:var(--radius-sm)">地方公務員法 第35条</div>
             <p style="color:rgba(255,255,255,.9);font-size:.92rem;line-height:1.85;margin:0">職員は、法律又は条例に特別の定がある場合を除く外、その勤務時間及び職務上の注意力のすべてをその職責遂行のために用い、当該地方公共団体がなすべき責を有する職務にのみ従事しなければならない。</p>
           </div>
           <div class="alert alert-danger">
@@ -206,27 +206,37 @@
       </div>
     </section>
 
+
+      <!-- ビジュアル：教職員の関与レベル -->
+      <div class="callout callout-critical">
+        <div class="callout-icon">⚖️</div>
+        <div class="callout-body">
+          <h4>1日のうち教職員がPTA事務に費やす時間は「税金支払対象」</h4>
+          <p>地方公務員の勤務時間は税金（地方公共団体の予算）で支払われています。その時間を任意団体（PTA）の業務に充てることは、形式的には<strong>「公金を私的団体に提供している」</strong>のと同じ構造です。これが地公法35条が禁ずる「利益供与（便宜供与）」にあたります。</p>
+        </div>
+      </div>
+
     <!-- ② スライド解説 -->
     <section class="pg-section">
       <h2>スライド解説：職務専念義務と個人情報保護</h2>
       <p>以下のスライドは、会費徴収・個人情報保護と職務専念義務の関係を図解したものです。クリックで拡大できます。</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:16px 0 8px">
-        <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07);transition:transform .2s" onclick="openSlide(this)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:var(--radius) 0 8px">
+        <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s" onclick="openSlide(this)">
           <img src="assets/slides/hp/slide-06.jpg" alt="ハードル①職務専念義務の壁" loading="lazy" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
-          <figcaption style="padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc;line-height:1.4">ハードル①：「職務専念義務」の壁（地方公務員法第35条）</figcaption>
+          <figcaption style="padding:8px var(--radius-sm);font-size:.76rem;color:var(--text-soft);background:var(--bg);line-height:1.4">ハードル①：「職務専念義務」の壁（地方公務員法第35条）</figcaption>
         </figure>
-        <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07);transition:transform .2s" onclick="openSlide(this)">
+        <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s" onclick="openSlide(this)">
           <img src="assets/slides/hp/slide-07.jpg" alt="ハードル②個人情報保護法とみなし加入の罠" loading="lazy" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
-          <figcaption style="padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc;line-height:1.4">ハードル②：「個人情報保護法」とみなし加入の罠</figcaption>
+          <figcaption style="padding:8px var(--radius-sm);font-size:.76rem;color:var(--text-soft);background:var(--bg);line-height:1.4">ハードル②：「個人情報保護法」とみなし加入の罠</figcaption>
         </figure>
-        <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07);transition:transform .2s" onclick="openSlide(this)">
+        <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s" onclick="openSlide(this)">
           <img src="assets/slides/audit/slide-07.jpg" alt="労務と個人情報保護：公的資源の不法な流用" loading="lazy" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
-          <figcaption style="padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc;line-height:1.4">労務と個人情報保護：公的資源の不法な流用（地公法35条・個人情報保護法69条）</figcaption>
+          <figcaption style="padding:8px var(--radius-sm);font-size:.76rem;color:var(--text-soft);background:var(--bg);line-height:1.4">労務と個人情報保護：公的資源の不法な流用（地公法35条・個人情報保護法69条）</figcaption>
         </figure>
       </div>
-      <p style="font-size:.82rem;color:#6b7280">※スライドはNotebookLMを使用して作成。</p>
+      <p style="font-size:.82rem;color:var(--text-soft)">※スライドはNotebookLMを使用して作成。</p>
       <div id="slideBox" onclick="closeSlide()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out">
-        <button onclick="closeSlide()" style="position:fixed;top:16px;right:20px;color:#fff;font-size:2rem;cursor:pointer;background:none;border:none;z-index:10000">×</button>
+        <button onclick="closeSlide()" style="position:fixed;top:var(--radius);right:20px;color:var(--surface);font-size:2rem;cursor:pointer;background:none;border:none;z-index:10000">×</button>
         <img id="slideBox-img" src="" alt="" style="max-width:92vw;max-height:90vh;border-radius:8px">
       </div>
       <script>
@@ -235,6 +245,32 @@
       document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSlide();});
       </script>
     </section>
+
+
+      <!-- ビジュアル：違反の連鎖 -->
+      <div class="before-after">
+        <div class="ba-side ba-before">
+          <div class="ba-label">❌ 現状（違法状態）</div>
+          <h4>勤務時間中のPTA事務</h4>
+          <ul>
+            <li>担任がPTA封筒を仕分け</li>
+            <li>事務職員が会費集計</li>
+            <li>校長がPTA予算決定</li>
+            <li>名簿管理を学校が代行</li>
+          </ul>
+        </div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-side ba-after">
+          <div class="ba-label">✅ 適正化後</div>
+          <h4>渉外業務だけが学校との接点</h4>
+          <ul>
+            <li>校長↔PTA会長の連絡調整</li>
+            <li>PTA行事への校長来賓参加</li>
+            <li>PTA総会出席（議決権なし）</li>
+            <li>PTAは独自スタッフで運営</li>
+          </ul>
+        </div>
+      </div>
 
     <!-- ③ OK/NG判断基準 -->
     <section class="pg-section">
@@ -266,13 +302,13 @@
       <h2>「職専免」による公務化——川崎市・仙台市モデルの矛盾</h2>
       <p>一部の自治体は、PTA事務を「職務専念義務免除（職専免）」によって教職員が勤務時間中に行えるよう制度化しています（川崎市・仙台市の要綱など）。しかし、この対応には根本的な矛盾があります。</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:20px 0">
-        <div style="background:#fff7ed;border-left:4px solid #f97316;padding:18px;border-radius:0 12px 12px 0">
-          <div style="font-weight:800;color:#c2410c;margin-bottom:10px">⚠️ 職専免モデルの根本的矛盾</div>
-          <p style="font-size:.9rem;color:#374151;line-height:1.75;margin:0">職専免はPTAへの「入会契約」が成立していることを前提に機能します。しかしみなし加入状態では入会契約が無効です。無効な契約を前提とした委任・職専免は、「無効な契約の公務化」という二重の矛盾を生みます。</p>
+        <div style="background:var(--surface)7ed;border-left:4px solid #f97316;padding:18px;border-radius:0 12px 12px 0">
+          <div style="font-weight:800;color:var(--orange);margin-bottom:var(--radius-sm)">⚠️ 職専免モデルの根本的矛盾</div>
+          <p style="font-size:.9rem;color:var(--text);line-height:1.75;margin:0">職専免はPTAへの「入会契約」が成立していることを前提に機能します。しかしみなし加入状態では入会契約が無効です。無効な契約を前提とした委任・職専免は、「無効な契約の公務化」という二重の矛盾を生みます。</p>
         </div>
-        <div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:18px;border-radius:0 12px 12px 0">
-          <div style="font-weight:800;color:#1d4ed8;margin-bottom:10px">📋 適法な職専免の要件</div>
-          <p style="font-size:.9rem;color:#374151;line-height:1.75;margin:0">①PTAとの正式な業務委任契約（毎年度更新）、②保護者の個別同意取得（会費徴収代理のための別途委任状）、③職専免の厳格な事前申請・承認記録——3条件すべてが必要。いずれかが欠けていれば違法状態のままです。</p>
+        <div style="background:#e8f0fe;border-left:4px solid #3b82f6;padding:18px;border-radius:0 12px 12px 0">
+          <div style="font-weight:800;color:var(--blue);margin-bottom:var(--radius-sm)">📋 適法な職専免の要件</div>
+          <p style="font-size:.9rem;color:var(--text);line-height:1.75;margin:0">①PTAとの正式な業務委任契約（毎年度更新）、②保護者の個別同意取得（会費徴収代理のための別途委任状）、③職専免の厳格な事前申請・承認記録——3条件すべてが必要。いずれかが欠けていれば違法状態のままです。</p>
         </div>
       </div>
       <p>全国の教育委員会への照会では、川崎市・仙台市を除き、ほとんどの自治体が「勤務時間外に行うよう指導」または「関与しない立場」と回答しています（詳細は<a href="board-responses.html">教育委員会の回答ページ</a>）。</p>
@@ -282,10 +318,10 @@
     <section class="pg-section">
       <h2>行政実例：昭和39年「熊本県教育長宛」——PTA事務は職務外</h2>
       <p>昭和39年1月20日付の熊本県教育長宛行政実例では、「PTA等任意団体の事務は、学校教職員の職務には含まれない」とする行政解釈が示されています。これは60年以上前から一貫した解釈であり、「慣習だから」「昔からそうだから」は法的根拠になりません。</p>
-      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:20px;margin:16px 0">
-        <div style="font-size:.8rem;font-weight:700;color:#6b7280;margin-bottom:8px">昭和39年1月20日 行政実例（熊本県教育長宛）</div>
-        <p style="font-size:.93rem;line-height:1.85;margin:0;color:#0f172a">「PTA等学校関係団体が実施する事業は、学校の教職員の職務とは異なるものであり、学校職員がこれに従事することは、通常の職務遂行ということにはならない。」</p>
-        <p style="font-size:.8rem;color:#6b7280;margin-top:8px;margin-bottom:0">※行政実例は法令ではなく行政解釈ですが、職務専念義務の解釈において長年参照されてきた基礎資料です。</p>
+      <div style="background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:20px;margin:var(--radius) 0">
+        <div style="font-size:.8rem;font-weight:700;color:var(--text-soft);margin-bottom:8px">昭和39年1月20日 行政実例（熊本県教育長宛）</div>
+        <p style="font-size:.93rem;line-height:1.85;margin:0;color:var(--text)">「PTA等学校関係団体が実施する事業は、学校の教職員の職務とは異なるものであり、学校職員がこれに従事することは、通常の職務遂行ということにはならない。」</p>
+        <p style="font-size:.8rem;color:var(--text-soft);margin-top:8px;margin-bottom:0">※行政実例は法令ではなく行政解釈ですが、職務専念義務の解釈において長年参照されてきた基礎資料です。</p>
       </div>
     </section>
 
@@ -293,22 +329,22 @@
     <section class="pg-section">
       <h2>全国教育委員会の回答——「PTA事務は公務ではない」が全国的傾向</h2>
       <p>PTA適正化推進委員会が実施した全国照会では、職務専念義務に関して以下のような回答が得られています。</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:16px 0">
-        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:var(--radius) 0">
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:var(--radius)">
           <div style="font-weight:800;color:var(--navy);font-size:.9rem;margin-bottom:8px">高槻市教育委員会（教職員課）</div>
-          <p style="font-size:.85rem;color:#374151;line-height:1.7;margin:0">「教職員がPTAの立場として行う業務は、勤務時間外に行うよう指導している。」</p>
+          <p style="font-size:.85rem;color:var(--text);line-height:1.7;margin:0">「教職員がPTAの立場として行う業務は、勤務時間外に行うよう指導している。」</p>
         </div>
-        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px">
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:var(--radius)">
           <div style="font-weight:800;color:var(--navy);font-size:.9rem;margin-bottom:8px">豊浦町教育委員会（北海道）</div>
-          <p style="font-size:.85rem;color:#374151;line-height:1.7;margin:0">「教育委員会は、学校におけるPTA活動に関与しない立場。」</p>
+          <p style="font-size:.85rem;color:var(--text);line-height:1.7;margin:0">「教育委員会は、学校におけるPTA活動に関与しない立場。」</p>
         </div>
-        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px">
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:var(--radius)">
           <div style="font-weight:800;color:var(--navy);font-size:.9rem;margin-bottom:8px">東京都教育庁（高等学校教育課）</div>
-          <p style="font-size:.85rem;color:#374151;line-height:1.7;margin:0">「学校とPTAは組織として独立した別主体であるとの基本認識を示した。都立学校管理運営規則にはPTAに関する直接の規定はなく、学校がPTA活動を義務づける法的根拠はない。」</p>
+          <p style="font-size:.85rem;color:var(--text);line-height:1.7;margin:0">「学校とPTAは組織として独立した別主体であるとの基本認識を示した。都立学校管理運営規則にはPTAに関する直接の規定はなく、学校がPTA活動を義務づける法的根拠はない。」</p>
         </div>
-        <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:16px">
-          <div style="font-weight:800;color:#c2410c;font-size:.9rem;margin-bottom:8px">川崎市教育委員会 ⚠️</div>
-          <p style="font-size:.85rem;color:#374151;line-height:1.7;margin:0">「要綱によりPTA会費の収納等に関する事務について校務として定め、PTA代表者から市への委任に基づき学校が処理できるものとしている。」（委任契約モデルで継続——ただし矛盾あり）</p>
+        <div style="background:var(--surface)7ed;border:1px solid #fed7aa;border-radius:12px;padding:var(--radius)">
+          <div style="font-weight:800;color:var(--orange);font-size:.9rem;margin-bottom:8px">川崎市教育委員会 ⚠️</div>
+          <p style="font-size:.85rem;color:var(--text);line-height:1.7;margin:0">「要綱によりPTA会費の収納等に関する事務について校務として定め、PTA代表者から市への委任に基づき学校が処理できるものとしている。」（委任契約モデルで継続——ただし矛盾あり）</p>
         </div>
       </div>
       <p style="margin-top:8px">全回答の詳細は<a href="board-responses.html">教育委員会の回答ページ</a>で確認できます。</p>
@@ -326,20 +362,20 @@
       </div>
     </section>
 
-    <section style="background:#fff;padding:64px 0">
+    <section style="background:var(--surface);padding:64px 0">
       <div class="wrap wrap-narrow">
         <div class="section-kicker">よくある疑問</div>
         <h2 class="section-title">よくある質問</h2>
-        <div class="faq-list" style="display:flex;flex-direction:column;gap:10px;margin-top:28px">
+        <div class="faq-list" style="display:flex;flex-direction:column;gap:var(--radius-sm);margin-top:28px">
 
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">担任の先生がPTA封筒の仕分けをしています。違法ですか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">勤務時間中の従事であれば地公法35条の職務専念義務違反にあたります。「ちょっとした手伝い」も、恒常的・組織的に行われれば違法状態です。教育委員会への照会で「PTA事務は公務ではない」との回答が全国で得られています。担任本人も認識しないうちに違法状態に置かれている可能性があります。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">渉外業務として「校長がPTA総会に出席する」のは問題ありませんか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
@@ -347,28 +383,28 @@
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">来賓として出席すること自体は渉外業務の範囲内と考えられます。ただし、「議決権を持つ役員として出席する」「予算・人事を実質的に決める」等の関与は、PTAの自律性を損ない社会教育法上の問題が生じます。出席の形態・役割を明確化することが重要です。</p></div>
           </div>
 
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">副校長がPTA副会長を兼務しています。これは問題ですか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">複数の問題が重なります。①学校長はPTAの「T（教諭）」には該当しないため、役員就任の論理的根拠がありません。②職専免の申請なく役員として議決権を行使すれば職務専念義務違反です。③PTAの「自主性」を損ない、社会教育法第12条との関係で問題が生じます。副校長・校長のPTA役員兼務は廃止することを推奨します。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">学校からPTAへの「渉外担当」の教員を置くことは適法ですか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">連絡調整窓口として位置づけられた渉外担当は、法令上許容される範囲と考えられます。ただし、職務として校務分掌に明記したうえで、「会費徴収・名簿管理・配布物の仕分け」等を担わせないことが条件です。渉外業務の内容を書面で明確化し、PTAの自律的運営を前提とした連絡調整に限定してください。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">「職専免で対応しているから合法」という学校の説明は正しいですか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">職専免の適用には①PTAとの正式な業務委任契約、②保護者の個別同意（みなし加入でないこと）、③事前の承認申請記録が必要です。これらが揃っていなければ職専免自体が無効です。また「職専免があるから公金支出は問題ない」とはなりません。公金で賄われる教職員の時間を私的団体のために使うことは、適切な代替手段（PTAが自前のスタッフ・ツールで処理する）への移行が本来のあるべき姿です。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">事務職員がPTA会費の集計を補助しています。どう対応すればいいですか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>

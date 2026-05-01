@@ -356,7 +356,7 @@
       position: relative;
       height: 220px;
       overflow: hidden;
-      background: #1A365D;
+      background: var(--navy);
     }
     .mode-card-image img {
       width: 100%;
@@ -2226,19 +2226,19 @@
           ...illegalItems.map(i => ({ ...i, badge: '違法リスク高', badgeCls: 'lv3' }))
         ];
         problemsHtml = `
-          <h4 style="color:#b91c1c;margin-top:20px;margin-bottom:10px;font-size:1rem;display:flex;align-items:center;gap:8px">
-            <span style="background:#fee2e2;border-radius:50%;width:24px;height:24px;display:inline-grid;place-items:center;font-size:.8rem">⛔</span>
+          <h4 style="color:var(--red);margin-top:20px;margin-bottom:10px;font-size:1rem;display:flex;align-items:center;gap:8px">
+            <span style="background:#fff0f0;border-radius:50%;width:24px;height:24px;display:inline-grid;place-items:center;font-size:.8rem">⛔</span>
             検出された問題（${allProblems.length}件）
           </h4>
           <div style="display:flex;flex-direction:column;gap:10px">
             ${allProblems.map(p => `
-              <div style="background:#fff5f5;border:1px solid #fecaca;border-left:4px solid #b91c1c;border-radius:10px;padding:14px 16px">
+              <div style="background:var(--surface)5f5;border:1px solid #fecaca;border-left:4px solid var(--red);border-radius:10px;padding:14px 16px">
                 <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-                  <span style="font-size:.7rem;font-weight:900;padding:2px 8px;border-radius:999px;background:#fee2e2;color:#b91c1c">${p.badge}</span>
+                  <span style="font-size:.7rem;font-weight:900;padding:2px 8px;border-radius:999px;background:#fff0f0;color:var(--red)">${p.badge}</span>
                   <strong style="font-size:.9rem;color:#1e293b">${p.cat}</strong>
                 </div>
-                <p style="font-size:.87rem;color:#374151;line-height:1.75;margin:0">${p.adv}</p>
-                ${p.links && p.links.length ? `<div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">${p.links.map(l => `<a href="${l.url}" style="font-size:.78rem;font-weight:800;color:#1d4ed8;text-decoration:none;padding:3px 9px;border-radius:999px;background:#eff6ff;border:1px solid #bfdbfe">${l.label} →</a>`).join('')}</div>` : ''}
+                <p style="font-size:.87rem;color:var(--text);line-height:1.75;margin:0">${p.adv}</p>
+                ${p.links && p.links.length ? `<div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">${p.links.map(l => `<a href="${l.url}" style="font-size:.78rem;font-weight:800;color:var(--blue);text-decoration:none;padding:3px 9px;border-radius:999px;background:#e8f0fe;border:1px solid #bfdbfe">${l.label} →</a>`).join('')}</div>` : ''}
               </div>`).join('')}
           </div>`;
       }
@@ -2249,46 +2249,46 @@
         actionsHtml = `
           <h4 style="margin-top:20px;margin-bottom:10px;font-size:1rem">🗂️ 優先アクション（フェーズ別）</h4>
           <div style="display:flex;flex-direction:column;gap:8px">
-            <div style="background:#fff;border:1.5px solid #fca5a5;border-radius:10px;padding:14px 16px">
-              <div style="font-size:.72rem;font-weight:900;color:#b91c1c;letter-spacing:.06em;margin-bottom:8px">⛔ 最優先（今週中）</div>
+            <div style="background:var(--surface);border:1.5px solid #fca5a5;border-radius:10px;padding:14px 16px">
+              <div style="font-size:.72rem;font-weight:900;color:var(--red);letter-spacing:.06em;margin-bottom:8px">⛔ 最優先（今週中）</div>
               <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;margin:0;padding:0">
-                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#b91c1c;flex-shrink:0">1.</span>入会手続の即刻停止・オプトイン方式に切り替え</li>
-                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#b91c1c;flex-shrink:0">2.</span>学校名簿のPTAへの提供を即時停止</li>
-                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#b91c1c;flex-shrink:0">3.</span>教職員へのPTA事務依頼を即時停止</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">1.</span>入会手続の即刻停止・オプトイン方式に切り替え</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">2.</span>学校名簿のPTAへの提供を即時停止</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">3.</span>教職員へのPTA事務依頼を即時停止</li>
               </ul>
             </div>
-            <div style="background:#fff;border:1.5px solid #fde68a;border-radius:10px;padding:14px 16px">
-              <div style="font-size:.72rem;font-weight:900;color:#92400e;letter-spacing:.06em;margin-bottom:8px">⚠️ 今期中（1〜3ヶ月）</div>
+            <div style="background:var(--surface);border:1.5px solid #fde68a;border-radius:10px;padding:14px 16px">
+              <div style="font-size:.72rem;font-weight:900;color:var(--orange);letter-spacing:.06em;margin-bottom:8px">⚠️ 今期中（1〜3ヶ月）</div>
               <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;margin:0;padding:0">
-                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e;flex-shrink:0">4.</span>PTA独自口座を開設・学校徴収金から分離</li>
-                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e;flex-shrink:0">5.</span>PTAが独自に入会届で情報を直接収集する体制を構築</li>
-                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e;flex-shrink:0">6.</span>渉外業務の範囲を書面（覚書）で明確化</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--orange);flex-shrink:0">4.</span>PTA独自口座を開設・学校徴収金から分離</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--orange);flex-shrink:0">5.</span>PTAが独自に入会届で情報を直接収集する体制を構築</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--orange);flex-shrink:0">6.</span>渉外業務の範囲を書面（覚書）で明確化</li>
               </ul>
             </div>
-            <div style="background:#fff;border:1.5px solid #bfdbfe;border-radius:10px;padding:14px 16px">
-              <div style="font-size:.72rem;font-weight:900;color:#1d4ed8;letter-spacing:.06em;margin-bottom:8px">📋 中期（3〜6ヶ月）</div>
+            <div style="background:var(--surface);border:1.5px solid #bfdbfe;border-radius:10px;padding:14px 16px">
+              <div style="font-size:.72rem;font-weight:900;color:var(--blue);letter-spacing:.06em;margin-bottom:8px">📋 中期（3〜6ヶ月）</div>
               <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;margin:0;padding:0">
-                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#1d4ed8;flex-shrink:0">7.</span>会計規程・監査体制の整備</li>
-                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#1d4ed8;flex-shrink:0">8.</span>教育委員会に是正計画を提出・相談</li>
-                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#1d4ed8;flex-shrink:0">9.</span>総会で規約を改正・適正化を宣言</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--blue);flex-shrink:0">7.</span>会計規程・監査体制の整備</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--blue);flex-shrink:0">8.</span>教育委員会に是正計画を提出・相談</li>
+                <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--blue);flex-shrink:0">9.</span>総会で規約を改正・適正化を宣言</li>
               </ul>
             </div>
           </div>`;
       } else if (hasLevel3) {
         actionsHtml = `
           <h4 style="margin-top:20px;margin-bottom:10px;font-size:1rem">🗂️ 優先アクション</h4>
-          <div style="background:#fff;border:1.5px solid #fde68a;border-radius:10px;padding:14px 16px">
-            <div style="font-size:.72rem;font-weight:900;color:#92400e;letter-spacing:.06em;margin-bottom:8px">今期中に対応が必要</div>
+          <div style="background:var(--surface);border:1.5px solid #fde68a;border-radius:10px;padding:14px 16px">
+            <div style="font-size:.72rem;font-weight:900;color:var(--orange);letter-spacing:.06em;margin-bottom:8px">今期中に対応が必要</div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;margin:0;padding:0">
-              <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e">→</span>問題項目の改善計画を文書化し、役員会に提出</li>
-              <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e">→</span>入会方式をオプトインへ段階的に移行</li>
-              <li style="font-size:.87mg;color:#1e293b;display:flex;gap:8px"><span style="color:#92400e">→</span>教育委員会への状況説明・相談</li>
+              <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--orange)">→</span>問題項目の改善計画を文書化し、役員会に提出</li>
+              <li style="font-size:.87rem;color:#1e293b;display:flex;gap:8px"><span style="color:var(--orange)">→</span>入会方式をオプトインへ段階的に移行</li>
+              <li style="font-size:.87mg;color:#1e293b;display:flex;gap:8px"><span style="color:var(--orange)">→</span>教育委員会への状況説明・相談</li>
             </ul>
           </div>`;
       } else {
         actionsHtml = `
           <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:14px 16px;margin-top:16px">
-            <div style="font-size:.87rem;color:#15803d;font-weight:700">✅ 現在の適正な運営状態を維持しながら、横浜市通知など最新の行政指針を年1回確認することをお勧めします。</div>
+            <div style="font-size:.87rem;color:var(--green);font-weight:700">✅ 現在の適正な運営状態を維持しながら、横浜市通知など最新の行政指針を年1回確認することをお勧めします。</div>
           </div>`;
       }
 
@@ -2296,22 +2296,22 @@
       let penaltyHtml = '';
       if (hasLevel4) {
         penaltyHtml = `
-          <h4 style="margin-top:20px;margin-bottom:10px;font-size:1rem;color:#7f1d1d">⚖️ このまま放置した場合の法的リスク</h4>
+          <h4 style="margin-top:20px;margin-bottom:10px;font-size:1rem;color:var(--red)">⚖️ このまま放置した場合の法的リスク</h4>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-            <div style="background:#fff5f5;border-radius:8px;padding:12px">
-              <div style="font-size:.72rem;font-weight:900;color:#b91c1c;margin-bottom:5px">民事リスク</div>
-              <div style="font-size:.83rem;color:#374151;line-height:1.6">不当利得返還請求（民法703条）<br>損害賠償請求（民法709条）<br>役員個人への賠償義務</div>
+            <div style="background:var(--surface)5f5;border-radius:8px;padding:12px">
+              <div style="font-size:.72rem;font-weight:900;color:var(--red);margin-bottom:5px">民事リスク</div>
+              <div style="font-size:.83rem;color:var(--text);line-height:1.6">不当利得返還請求（民法703条）<br>損害賠償請求（民法709条）<br>役員個人への賠償義務</div>
             </div>
-            <div style="background:#fff5f5;border-radius:8px;padding:12px">
-              <div style="font-size:.72rem;font-weight:900;color:#b91c1c;margin-bottom:5px">刑事・行政リスク</div>
-              <div style="font-size:.83rem;color:#374151;line-height:1.6">個人情報保護法違反：1年以下懲役/100万円以下罰金<br>地公法違反による懲戒処分<br>教育委員会の是正指導</div>
+            <div style="background:var(--surface)5f5;border-radius:8px;padding:12px">
+              <div style="font-size:.72rem;font-weight:900;color:var(--red);margin-bottom:5px">刑事・行政リスク</div>
+              <div style="font-size:.83rem;color:var(--text);line-height:1.6">個人情報保護法違反：1年以下懲役/100万円以下罰金<br>地公法違反による懲戒処分<br>教育委員会の是正指導</div>
             </div>
           </div>`;
       } else if (hasLevel3) {
         penaltyHtml = `
-          <div style="background:#fff5f5;border:1px solid #fecaca;border-radius:10px;padding:12px 16px;margin-top:16px">
-            <div style="font-size:.72rem;font-weight:900;color:#b91c1c;margin-bottom:6px">⚠️ 放置した場合のリスク</div>
-            <div style="font-size:.87rem;color:#374151;line-height:1.7">保護者からの照会・返還請求 / 教育委員会からの是正指導 / 役員個人への賠償リスク</div>
+          <div style="background:var(--surface)5f5;border:1px solid #fecaca;border-radius:10px;padding:12px 16px;margin-top:16px">
+            <div style="font-size:.72rem;font-weight:900;color:var(--red);margin-bottom:6px">⚠️ 放置した場合のリスク</div>
+            <div style="font-size:.87rem;color:var(--text);line-height:1.7">保護者からの照会・返還請求 / 教育委員会からの是正指導 / 役員個人への賠償リスク</div>
           </div>`;
       }
 
@@ -2322,18 +2322,18 @@
         linksHtml = `
           <h4 style="margin-top:20px;margin-bottom:10px;font-size:1rem">📎 関連ページ・資料</h4>
           <div style="display:flex;flex-wrap:wrap;gap:8px">
-            ${linkItems.map(l => `<a href="${l.url}" style="display:inline-flex;align-items:center;gap:5px;font-size:.82rem;font-weight:800;color:var(--navy);text-decoration:none;padding:7px 13px;border-radius:999px;background:#f1f5f9;border:1px solid #e2e8f0">${l.label} →</a>`).join('')}
-            <a href="../guide-pta.html#pdf-officer" style="display:inline-flex;align-items:center;gap:5px;font-size:.82rem;font-weight:800;color:#15803d;text-decoration:none;padding:7px 13px;border-radius:999px;background:#f0fdf4;border:1px solid #bbf7d0">📄 PDF雛形を入手する →</a>
+            ${linkItems.map(l => `<a href="${l.url}" style="display:inline-flex;align-items:center;gap:5px;font-size:.82rem;font-weight:800;color:var(--navy);text-decoration:none;padding:7px 13px;border-radius:999px;background:#f1f5f9;border:1px solid var(--line)">${l.label} →</a>`).join('')}
+            <a href="../guide-pta.html#pdf-officer" style="display:inline-flex;align-items:center;gap:5px;font-size:.82rem;font-weight:800;color:var(--green);text-decoration:none;padding:7px 13px;border-radius:999px;background:#f0fdf4;border:1px solid #bbf7d0">📄 PDF雛形を入手する →</a>
           </div>`;
       }
 
       const html = `
-        <div style="font-size:.95rem;color:#374151;line-height:1.9;margin-bottom:4px">${summaryText}</div>
+        <div style="font-size:.95rem;color:var(--text);line-height:1.9;margin-bottom:4px">${summaryText}</div>
         ${problemsHtml}
         ${penaltyHtml}
         ${actionsHtml}
         ${linksHtml}
-        <div style="margin-top:20px;padding:14px;background:#f8fafc;border-radius:10px;font-size:.8rem;color:#64748b;line-height:1.7">
+        <div style="margin-top:20px;padding:14px;background:var(--bg);border-radius:10px;font-size:.8rem;color:#64748b;line-height:1.7">
           ※ 本評価書は入力された診断結果に基づき自動生成されたものです。法律解釈は個別事情により異なります。重大な違法性が疑われる場合は弁護士または行政機関へご相談ください。
         </div>`;
 

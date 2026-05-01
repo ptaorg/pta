@@ -25,7 +25,7 @@
   <style>
     /* ===== ISSUE PAGE SHARED STYLES ===== */
     .issue-hero {
-      background: linear-gradient(135deg, #0A192F 0%, #1A365D 55%, #1e3f7a 100%);
+      background: linear-gradient(135deg, #0A192F 0%, var(--navy) 55%, #1e3f7a 100%);
       color: #fff;
       padding: 80px 0 72px;
       position: relative;
@@ -828,8 +828,8 @@
 
       <!-- 適法化フロー SVG -->
       <section class="issue-section" style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border-radius:var(--radius);padding:32px;margin-bottom:48px">
-        <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:#15803d;text-transform:uppercase;margin-bottom:10px">✅ 適正化への道</div>
-        <h3 style="font-family:'Noto Serif JP',serif;font-size:1.2rem;color:#14532d;margin-bottom:16px">オプトアウトから適法なオプトイン方式へ</h3>
+        <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:var(--green);text-transform:uppercase;margin-bottom:var(--radius-sm)">✅ 適正化への道</div>
+        <h3 style="font-family:'Noto Serif JP',serif;font-size:1.2rem;color:#14532d;margin-bottom:var(--radius)">オプトアウトから適法なオプトイン方式へ</h3>
 
         <svg width="100%" viewBox="0 0 680 120" role="img" style="max-width:680px;display:block">
           <title>適法な入会プロセス：PTAが入会届配布→保護者が自署→PTAが直接収集→契約成立</title>
@@ -867,9 +867,9 @@
           <text x="598" y="94" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="9" fill="rgba(255,255,255,.75)">民法522条対応</text>
         </svg>
 
-        <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px">
-          <a href="guide-pta.html#pdf-officer" class="btn-navy" style="font-size:.86rem;padding:10px 18px">📄 入会届の雛形を入手する</a>
-          <a href="guide-parent.html" class="btn-soft" style="font-size:.86rem;padding:10px 18px">保護者向けガイドへ</a>
+        <div style="margin-top:var(--radius);display:flex;flex-wrap:wrap;gap:var(--radius-sm)">
+          <a href="guide-pta.html#pdf-officer" class="btn-navy" style="font-size:.86rem;padding:var(--radius-sm) 18px">📄 入会届の雛形を入手する</a>
+          <a href="guide-parent.html" class="btn-soft" style="font-size:.86rem;padding:var(--radius-sm) 18px">保護者向けガイドへ</a>
         </div>
       </section>
 
@@ -877,6 +877,32 @@
       <section id="civil-law" class="issue-section">
         <div class="section-eyebrow">民法</div>
         <h2>民法上の無効性——「沈黙は承諾ではない」</h2>
+        <div class="before-after">
+          <div class="ba-side ba-after">
+            <div class="ba-label">✅ 適法な入会方式</div>
+            <h4>オプトイン（明示同意）</h4>
+            <ul>
+              <li>PTAが独自に入会届を作成・配布</li>
+              <li>保護者が任意で記入・署名・提出</li>
+              <li>申込み（保護者）と承諾（PTA受理）が成立</li>
+              <li>民法522条の要件を満たす</li>
+              <li>横浜市通知が義務化した方式</li>
+            </ul>
+          </div>
+          <div class="ba-arrow">VS</div>
+          <div class="ba-side ba-before">
+            <div class="ba-label">❌ 違法な入会方式</div>
+            <h4>みなし加入（自動入会）</h4>
+            <ul>
+              <li>入会届は存在しない or 学校書類と一体</li>
+              <li>「非加入届を出さないと自動会員」</li>
+              <li>申込みの意思表示がない</li>
+              <li>契約不成立（民法522条）</li>
+              <li>消費者契約法4条の取消対象</li>
+            </ul>
+          </div>
+        </div>
+
 
         <p>PTAと会員（保護者）の関係は、法的には「権利能力なき社団」の内部規約に基づく契約関係と解されます。したがってその入会プロセスの有効性は、民法の契約法理によって判断されなければなりません。</p>
 
@@ -971,6 +997,14 @@
       <section id="personal-info" class="issue-section">
         <div class="section-eyebrow">個人情報保護法</div>
         <h2>個人情報保護法上の「物理的・法的破綻」</h2>
+        <div class="callout callout-info">
+          <div class="callout-icon">🔄</div>
+          <div class="callout-body">
+            <h4>みなし加入は、個人情報の流れも同時に違法化する</h4>
+            <p>「みなし加入」が成立しているという主張は、保護者の同意なく学校がPTAに名簿を渡していることと表裏一体です。<strong>入会同意がない＝個人情報提供の同意もない</strong>。つまり、みなし加入を維持しようとする限り、個人情報保護法第69条違反が同時並行で発生し続けます。これが横浜市通知が「オプトイン義務化」と「学校名簿のPTA提供禁止」を同時に規定した理由です。</p>
+          </div>
+        </div>
+
 
         <p>オプトアウト方式が実務上成立するためには、PTAが事前に「誰が入会対象者か」を把握し、その連絡先にオプトアウト通知を送付する必要があります。しかしこの個人情報の取得プロセスに、回避不可能な違法性が存在します。これがオプトアウト方式の最大の急所です。</p>
 
@@ -1151,7 +1185,7 @@
               「入学と同時に自動でPTAに入ります」と説明されました。これは適法ですか？
               <span style="color:var(--gold);flex-shrink:0;font-size:1.1rem">▼</span>
             </summary>
-            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:#fff">
+            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:var(--surface)">
               適法ではありません。PTAへの入会は契約行為であり、民法第522条の「申込みと承諾」が必要です。入学という事実は入会の申込みにも承諾にも該当しません。兵庫県教育委員会も「みなし加入は不適切」と公式に回答しています。
             </div>
           </details>
@@ -1161,7 +1195,7 @@
               「断らなければ会員」という書類が届きました。これも無効ですか？
               <span style="color:var(--gold);flex-shrink:0;font-size:1.1rem">▼</span>
             </summary>
-            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:#fff">
+            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:var(--surface)">
               無効です。民法上、沈黙は承諾とみなされません（522条）。オプトアウト方式は行政機関等には認められておらず（個人情報保護法）、横浜市通知も明示的に禁止しています。「希望しない場合は申し出てください」という方式は法的根拠のない入会手続です。
             </div>
           </details>
@@ -1171,7 +1205,7 @@
               入会届を出した覚えがないのに会費が引き落とされています。返金を求められますか？
               <span style="color:var(--gold);flex-shrink:0;font-size:1.1rem">▼</span>
             </summary>
-            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:#fff">
+            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:var(--surface)">
               はい。入会契約が成立していない状態での会費徴収は、民法第703条の不当利得に該当します。消滅時効は5年（令和2年改正民法167条）。PTAと学校の双方に書面で返還を求めることができます。保護者向けテンプレートPDFを活用してください。
             </div>
           </details>
@@ -1181,7 +1215,7 @@
               PTAを退会したら子供が不利益を受けますか？
               <span style="color:var(--gold);flex-shrink:0;font-size:1.1rem">▼</span>
             </summary>
-            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:#fff">
+            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:var(--surface)">
               非会員であることを理由に子どもを不利益に扱うことは、憲法第26条（教育を受ける権利）・第14条（法の下の平等）に違反します。横浜市通知はこれを「人権侵害」として明示的に禁止しています。差別的取扱いが行われた場合は、教育委員会への申し立てが可能です。
             </div>
           </details>
@@ -1191,7 +1225,7 @@
               PTAの入会には書面の入会届が必ず必要ですか？
               <span style="color:var(--gold);flex-shrink:0;font-size:1.1rem">▼</span>
             </summary>
-            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:#fff">
+            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:var(--surface)">
               「書面」は必須ではありませんが、「明示的な申込みの意思表示」は必須です（民法522条）。書面（入会届）であれば証拠として明確であり、全国の教育委員会も「書面等による明示的な意思確認が必要」と回答しています。
             </div>
           </details>
@@ -1201,7 +1235,7 @@
               PTAに加入しないと誰かが困りますか？
               <span style="color:var(--gold);flex-shrink:0;font-size:1.1rem">▼</span>
             </summary>
-            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:#fff">
+            <div style="padding:0 22px 18px;font-size:.93rem;color:var(--text);line-height:1.9;background:var(--surface)">
               PTAは任意団体であり、非加入は完全に適法です。学校がPTAに依存している構造自体が問題であり、その解決は個々の保護者の「加入」ではなく、学校とPTAの完全分離によってのみ達成されます。「誰かが困るから加入する」という発想が、違法な構造を温存します。
             </div>
           </details>

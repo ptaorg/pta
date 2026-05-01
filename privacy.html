@@ -36,14 +36,14 @@
     .fn-block h4{color:#7f1d1d}
     .fn-pta{background:#f0fdf4;border:1.5px solid #86efac}
     .fn-pta h4{color:#14532d}
-    .block-x{position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:32px;height:32px;background:#b91c1c;border-radius:50%;color:#fff;display:grid;place-items:center;font-size:1rem;font-weight:900}
-    .ok-arrow{color:#15803d;font-size:1rem;margin:0 6px}
+    .block-x{position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:32px;height:32px;background:var(--red);border-radius:50%;color:#fff;display:grid;place-items:center;font-size:1rem;font-weight:900}
+    .ok-arrow{color:var(--green);font-size:1rem;margin:0 6px}
     .result-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
-    .result-ok{background:#f0fdf4;border:1px solid #bbf7d0;border-left:4px solid #15803d;border-radius:var(--radius);padding:16px 18px}
-    .result-ng{background:#fff5f5;border:1px solid #fecaca;border-left:4px solid #b91c1c;border-radius:var(--radius);padding:16px 18px}
+    .result-ok{background:#f0fdf4;border:1px solid #bbf7d0;border-left:4px solid var(--green);border-radius:var(--radius);padding:16px 18px}
+    .result-ng{background:#fff5f5;border:1px solid #fecaca;border-left:4px solid var(--red);border-radius:var(--radius);padding:16px 18px}
     .result-label{font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
-    .result-ok .result-label{color:#15803d}
-    .result-ng .result-label{color:#b91c1c}
+    .result-ok .result-label{color:var(--green)}
+    .result-ng .result-label{color:var(--red)}
     .result-ok p,.result-ng p{font-size:.88rem;line-height:1.7;margin:0;color:var(--text)}
     .steps{display:flex;flex-direction:column;gap:0;margin:20px 0}
     .step-r{display:flex;gap:16px;position:relative;padding-bottom:24px}
@@ -172,7 +172,7 @@
     <div class="page-hero-inner">
       <div class="page-hero-kicker">🔒 Issue 02 — Privacy</div>
       <h1>学校からPTAへの<br><em>個人情報提供</em></h1>
-      <p>公立学校が保有する名簿・住所・電話番号をPTAに渡すことは、個人情報保護法第69条に抵触します。全国の教育委員会への照会で「違法」との回答が得られています。</p>
+      <p>公立学校が保有する名簿・住所・電話番号をPTAに渡すことは、<strong>個人情報保護法第69条（第三者提供の制限）</strong>に抵触します。令和4年の個人情報保護法改正により国公立学校も「行政機関等」として同法の適用対象となったことで、この問題は法的に決着がついています。全国の教育委員会への照会で「名簿の無断提供は問題ない」と回答した自治体はゼロ。静岡市では2026年4月に20校・9,200人分の名簿が無断提供されていたことが発覚し、教育長が「法律と学校文化にずれ」と認めました。</p>
       <div class="hero-actions">
         <a href="board-responses.html" class="btn-gold">全国教委の回答を見る</a>
         <a href="audit/index.html" class="btn-outline">監査で診断する</a>
@@ -187,24 +187,24 @@
       
       <!-- スライド解説 -->
       <div style="margin:40px 0 48px">
-        <h3 style="font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:16px;padding-left:14px;border-left:4px solid var(--gold)">スライド解説：個人情報保護と入会問題</h3>
+        <h3 style="font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:var(--radius);padding-left:14px;border-left:4px solid var(--gold)">スライド解説：個人情報保護と入会問題</h3>
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:8px">
-          <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07)" onclick="openPSlide(this)">
+          <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)" onclick="openPSlide(this)">
             <img src="assets/slides/hp/slide-07.jpg" alt="個人情報保護法とみなし加入の罠" loading="lazy" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
-            <figcaption style="padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc">「個人情報保護法」とみなし加入の罠（HP用スライド）</figcaption>
+            <figcaption style="padding:8px var(--radius-sm);font-size:.76rem;color:var(--text-soft);background:var(--bg)">「個人情報保護法」とみなし加入の罠（HP用スライド）</figcaption>
           </figure>
-          <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07)" onclick="openPSlide(this)">
+          <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)" onclick="openPSlide(this)">
             <img src="assets/slides/audit/slide-04.jpg" alt="みなし加入による結社の自由の侵害" loading="lazy" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
-            <figcaption style="padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc">憲法第21条：「みなし加入」による結社の自由の侵害</figcaption>
+            <figcaption style="padding:8px var(--radius-sm);font-size:.76rem;color:var(--text-soft);background:var(--bg)">憲法第21条：「みなし加入」による結社の自由の侵害</figcaption>
           </figure>
-          <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(5,17,31,.07)" onclick="openPSlide(this)">
+          <figure style="margin:0;cursor:pointer;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)" onclick="openPSlide(this)">
             <img src="assets/slides/audit/slide-05.jpg" alt="黙示の承諾という法的虚構" loading="lazy" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
-            <figcaption style="padding:8px 10px;font-size:.76rem;color:#4b5563;background:#f8fafc">契約法と消費者保護：「黙示の承諾」という法的虚構</figcaption>
+            <figcaption style="padding:8px var(--radius-sm);font-size:.76rem;color:var(--text-soft);background:var(--bg)">契約法と消費者保護：「黙示の承諾」という法的虚構</figcaption>
           </figure>
         </div>
       </div>
       <div id="pSlideBox" onclick="closePSlide()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out">
-        <button onclick="closePSlide()" style="position:fixed;top:16px;right:20px;color:#fff;font-size:2rem;cursor:pointer;background:none;border:none;z-index:10000">×</button>
+        <button onclick="closePSlide()" style="position:fixed;top:var(--radius);right:20px;color:var(--surface);font-size:2rem;cursor:pointer;background:none;border:none;z-index:10000">×</button>
         <img id="pSlideBox-img" src="" alt="" style="max-width:92vw;max-height:90vh;border-radius:8px">
       </div>
       <script>
@@ -251,59 +251,101 @@
 
     <!-- 法的根拠 -->
     <section>
+      
+      <!-- ビジュアル：個人情報の流れ -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-num stat-num-red">9,200</span>
+          <span class="stat-label">静岡市の無断提供数</span>
+          <span class="stat-sub">2026年4月・市内20校</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num stat-num-gold">2022</span>
+          <span class="stat-label">改正個人情報保護法施行</span>
+          <span class="stat-sub">学校が「行政機関等」に</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num stat-num-red">0</span>
+          <span class="stat-label">「無断提供OK」の教委</span>
+          <span class="stat-sub">全国照会でゼロ</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num stat-num-green">69</span>
+          <span class="stat-label">個人情報保護法第69条</span>
+          <span class="stat-sub">第三者提供の制限</span>
+        </div>
+      </div>
+
+      <div class="callout callout-critical">
+        <div class="callout-icon">🚨</div>
+        <div class="callout-body">
+          <h4>静岡市事案（2026年4月）が示したもの</h4>
+          <p>「PTA会費徴収を分離している」と公式回答していた静岡市で、市内20校・約9,200人分の児童生徒の個人情報が保護者の同意なくPTAに提供されていたことが発覚。教育長は「法律と学校文化にずれがある」と認めました。<strong>会費徴収の分離だけでは個人情報問題は解決しない</strong>——分離が「部分対応の穴」を生むことを示す事例です。</p>
+        </div>
+      </div>
+
       <h2>法的根拠</h2>
       <div class="law-quote">
         <div class="law-quote-label">個人情報保護法 第69条（保有個人情報の利用及び提供の制限）</div>
         行政機関の長等は、法令に基づく場合を除き、利用目的以外の目的のために保有個人情報を自ら利用し、又は提供してはならない。
       </div>
-      <p>2022年の改正個人情報保護法施行により、国公立学校は「行政機関等」として同法の適用対象となりました。PTAは学校とは別の独立した私的団体であり、学校名簿の提供は「第三者提供」にあたります。</p>
+      <p>令和4年（2022年）の改正個人情報保護法施行により、国公立学校は「行政機関等」として個人情報保護法の全面的な適用を受けることになりました。PTAは学校とは別の独立した私的団体（任意団体）であり、学校が保有する名簿・住所・電話番号・口座情報をPTAに提供することは、同法上の<strong>「第三者提供」</strong>にあたります。</p>
+      <p>第三者提供に必要な要件は「本人の明確な同意（オプトイン）」であり、「同意しない場合は申し出てください（オプトアウト）」方式は行政機関等（学校）には適用できません。この点は民間企業と根本的に異なります。横浜市教育委員会は令和7年12月の通知「学教第1965号」でこの解釈を行政指針として明文化し、学校名簿のPTAへの提供を全面禁止しました。</p>
+      <p>さらに、2026年4月の静岡市事案（20校・9,200人）は、「会費徴収を分離しても名簿問題は別に解決が必要」という現実を示しました。論点を個別に対処するだけでは不十分で、入会・名簿・会費・教職員関与・施設の5論点を同時に整理する必要があります。</p>
 
       <h3>なぜオプトアウトでは不十分か</h3>
-      <p>同法上、「同意しない場合は申し出てください」という方式（オプトアウト）は、行政機関等による第三者提供の同意取得方法として認められていません。個人が<strong>積極的に同意の意思を示す（オプトイン）</strong>ことが必須です。</p>
-
-      <h3>全国教育委員会の公式回答</h3>
-      <p>当委員会が全国50以上の教育委員会に照会した結果、「名簿の無断提供は個人情報保護法上問題がある」との回答を複数の自治体から得ています。「違法ではない」と回答した教育委員会はゼロです。</p>
-      <a href="board-responses.html" class="btn-soft" style="text-decoration:none;display:inline-flex">教育委員会の回答一覧を見る →</a>
-    </section>
-
-    <!-- 実務上の問題パターン -->
-    <section>
-      <h2>現場でよく起きる4つの問題パターン</h2>
-      <div class="steps">
-        <div class="step-r">
-          <div class="step-num">1</div>
-          <div class="step-body">
-            <strong>学校名簿がそのままPTA名簿になっている</strong>
-            <p>入学時に学校へ提出した緊急連絡先届の情報が、保護者の知らないうちにPTA名簿として使用されている。目的外利用（同法69条）かつ第三者提供にあたる。</p>
-          </div>
+      <p>「オプトアウト（同意しない場合は申し出てください）」方式では不十分な理由は明確です。第一の理由は法令上の問題で、個人情報保護法上、行政機関等（学校）がオプトアウトで第三者提供を行うことは<strong>法的に認められていません</strong>。民間企業には一定条件のもとオプトアウトによる第三者提供が認められますが、学校にはその規定が適用されません（同法27条2項の適用対象外）。</p>
+      <p>第二の理由は実態上の問題で、入学時という「申し出にくい状況」でオプトアウトを求めることは、事実上の強制に等しいです。「非加入届を出す」「名簿提供を断る」という行動には、心理的・社会的な圧力が伴います。この「任意性の外形のもとでの実質的強制」は消費者契約法第4条（重要事項の不告知・誤認）の問題にも発展します。</p>
+      <p>第三の理由は証拠の問題で、オプトアウト方式では「同意の記録が残らない」ため、後に問題が生じた際に適法性を証明することができません。横浜市通知が「書面による個別同意」を義務化したのはこのためです。</p>
+<h3>全国教育委員会の公式回答</h3>
+      <p>PTA適正化推進委員会が実施した全国照会では、個人情報提供について以下の傾向が確認されています。</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:16px 0">
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px">
+          <div style="font-weight:800;color:var(--navy);font-size:.88rem;margin-bottom:6px">横浜市教育委員会</div>
+          <p style="font-size:.83rem;color:var(--text);line-height:1.7;margin:0">「学校が保有する個人情報をPTAに提供することはできない。入会届を通じてPTAが直接取得する体制を義務化」（令和7年12月通知「学教第1965号」）</p>
         </div>
-        <div class="step-r">
-          <div class="step-num">2</div>
-          <div class="step-body">
-            <strong>「緊急連絡先届兼PTA名簿申請書」という合体書類</strong>
-            <p>学校への届出書にPTA名簿登録が抱き合わせになっている。「緊急連絡」と「PTA活動」は別目的であり、包括同意は無効。</p>
-          </div>
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px">
+          <div style="font-weight:800;color:var(--navy);font-size:.88rem;margin-bottom:6px">長久手市教育委員会（愛知）</div>
+          <p style="font-size:.83rem;color:var(--text);line-height:1.7;margin:0">「学校が保有する個人情報をPTAに提供することはない」と明言。学校名簿の提供ゼロを確認済み。</p>
         </div>
-        <div class="step-r">
-          <div class="step-num">3</div>
-          <div class="step-body">
-            <strong>オプトアウト方式の同意書</strong>
-            <p>「PTAへの情報提供に同意しない場合はご連絡ください」という記載。行政機関等の第三者提供においてオプトアウトは不可。</p>
-          </div>
+        <div style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px">
+          <div style="font-weight:800;color:var(--navy);font-size:.88rem;margin-bottom:6px">門真市教育委員会（大阪）</div>
+          <p style="font-size:.83rem;color:var(--text);line-height:1.7;margin:0">「書面等による明示的な加入意思の確認が必要との認識のもと、従前より市立校に指導している」</p>
         </div>
-        <div class="step-r">
-          <div class="step-num">4</div>
-          <div class="step-body">
-            <strong>退会後も情報が削除されない</strong>
-            <p>退会・非加入の意思を示した後もPTA名簿に氏名・連絡先が残り続ける。保有個人情報の削除・利用停止請求（同法90条以下）の対象。</p>
-          </div>
+        <div style="background:#fff5f5;border:1px solid #fecaca;border-radius:var(--radius-sm);padding:16px">
+          <div style="font-weight:800;color:var(--red);font-size:.88rem;margin-bottom:6px">静岡市 ⚠️（2026年4月 発覚）</div>
+          <p style="font-size:.83rem;color:var(--text);line-height:1.7;margin:0">照会回答では「適切に対応」としていたが、市内20校・9,200人分の名簿を無断提供していたことが報道で発覚。教育長「法律と学校文化にずれ」と認める。</p>
         </div>
       </div>
-    </section>
-
-    <!-- 適正な情報取得の手順 -->
-    <section>
-      <h2>適正な情報取得の手順</h2>
+      <p style="font-size:.86rem;color:var(--text-soft)">全国97自治体の回答詳細は<a href="board-responses.html">教育委員会の回答ページ</a>で確認できます。「名簿の無断提供は問題ない」と回答した自治体はゼロです。</p>
+<h2>現場でよく起きる4つの問題パターン</h2>
+      <div class="callout callout-warn">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-body">
+          <h4>「名簿を渡した」だけが問題ではありません</h4>
+          <p>個人情報保護の問題は、「名簿の提供」という単一の行為ではなく、入学時の書類処理から退会後の削除請求まで、プロセス全体に潜んでいます。以下の4つのパターンは、全国の学校で恒常的に発生している典型例です。あなたの学校に当てはまるものがあれば、すぐに対応が必要です。</p>
+        </div>
+      </div>
+      <p>個人情報保護の問題は「名簿を渡した」という行為単体ではなく、そのプロセス全体に問題が潜んでいます。現場でよく確認される4つのパターンを整理します。</p>
+      <div style="display:flex;flex-direction:column;gap:14px;margin:16px 0">
+        <div style="background:var(--surface);border-left:4px solid var(--red);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0">
+          <div style="font-weight:800;color:var(--navy);margin-bottom:8px">① 緊急連絡先届のPTA転用</div>
+          <p style="font-size:.88rem;color:var(--text);line-height:1.75;margin:0">入学時に学校へ提出した緊急連絡先届の情報が、保護者の知らないうちにPTA名簿として使用されているケース。「学校への届出（教育目的）」と「PTA名簿登録（PTA活動目的）」は目的が全く異なります。目的外利用（同法69条）かつ無断第三者提供にあたります。横浜市通知はこのパターンを「学校名簿の提供禁止」として明示的に禁止しています。</p>
+        </div>
+        <div style="background:var(--surface);border-left:4px solid var(--orange);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0">
+          <div style="font-weight:800;color:var(--navy);margin-bottom:8px">② 学校提出書類へのPTA同意抱き合わせ</div>
+          <p style="font-size:.88rem;color:var(--text);line-height:1.75;margin:0">学校への届出書に「PTA名簿登録に同意します」という一文が入っているケース。「緊急連絡」と「PTA活動」は別目的であり、一枚の書類に抱き合わせた包括同意は無効です。また、学校の公的権威のもとで求められた同意は、自由意思に基づく同意として認められない可能性があります（消費者契約法上の問題も生じます）。</p>
+        </div>
+        <div style="background:var(--surface);border-left:4px solid var(--gold);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0">
+          <div style="font-weight:800;color:var(--navy);margin-bottom:8px">③ オプトアウト方式による提供</div>
+          <p style="font-size:.88rem;color:var(--text);line-height:1.75;margin:0">「PTAへの情報提供に同意しない場合はご連絡ください」という記載。行政機関等（学校）は個人情報保護法上オプトアウトによる第三者提供ができないため、この方式自体が法令違反です。「申し出がなかったから同意した」という解釈は成立しません。全国照会で「オプトアウト方式は適法」と回答した教育委員会はゼロです。</p>
+        </div>
+        <div style="background:var(--surface);border-left:4px solid var(--text-soft);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0">
+          <div style="font-weight:800;color:var(--navy);margin-bottom:8px">④ 退会後も名簿に残り続ける</div>
+          <p style="font-size:.88rem;color:var(--text);line-height:1.75;margin:0">退会・非加入の意思を示した後もPTA名簿に氏名・連絡先が残り続けるケース。個人情報保護法上、本人は保有個人情報の利用停止・削除を請求する権利を持ちます（同法90条以下）。PTAが正当な理由なくこれを拒否した場合、個人情報保護委員会への申告が可能です。なお、削除してもPTAの名簿が学校名簿から派生している場合、根本から再整理が必要です。</p>
+        </div>
+      </div>
+<h2>適正な情報取得の手順</h2>
       <p>解決策はシンプルです。PTAが学校名簿に頼らず、独自に情報を取得する体制を作るだけです。</p>
       <div class="steps">
         <div class="step-r">
@@ -343,27 +385,27 @@
       </div>
     </section>
 
-    <section style="background:#fff;padding:64px 0">
+    <section style="background:var(--surface);padding:64px 0">
       <div class="wrap wrap-narrow">
         <div class="section-kicker">よくある疑問</div>
         <h2 class="section-title">よくある質問</h2>
-        <div class="faq-list" style="display:flex;flex-direction:column;gap:10px;margin-top:28px">
+        <div class="faq-list" style="display:flex;flex-direction:column;gap:var(--radius-sm);margin-top:28px">
 
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">学校から「名簿はPTA規約に同意した人に渡している」と説明されましたが適法ですか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">規約への「同意」が個人情報保護法上の有効な同意になるためには、①同意が自由な意思に基づくこと、②利用目的が特定されていること、③同意の証拠が残っていることが必要です。入学時に「学校の提出書類と一体化した書類」への記名は、優越的立場による強制的同意とみなされる可能性があります。全国の教育委員会への照会でも「規約同意のみでは不十分」との回答が得られています。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">PTAに渡った個人情報を削除してもらうにはどうすればいいですか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">個人情報保護法に基づき、PTAに対して「保有個人情報の利用停止・削除請求」ができます。書面でPTAに請求し、合理的期間内に対応されない場合は所轄の個人情報保護委員会に相談することができます。テンプレートは当サイトの保護者向けページからダウンロードできます。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">子どもが緊急時に連絡が取れなくなるのでは？と心配です。</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>

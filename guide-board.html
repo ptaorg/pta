@@ -71,14 +71,14 @@
       font-size:.78rem;font-weight:900;letter-spacing:.06em;
       text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px;
     }
-    .scope-card-ok .scope-card-label{color:#15803d}
-    .scope-card-ng .scope-card-label{color:#b91c1c}
+    .scope-card-ok .scope-card-label{color:var(--green)}
+    .scope-card-ng .scope-card-label{color:var(--red)}
     .scope-item{
       display:flex;align-items:flex-start;gap:10px;
       margin-bottom:10px;font-size:.9rem;line-height:1.6;
     }
-    .scope-ok-dot{color:#15803d;font-weight:900;flex-shrink:0}
-    .scope-ng-dot{color:#b91c1c;font-weight:900;flex-shrink:0}
+    .scope-ok-dot{color:var(--green);font-weight:900;flex-shrink:0}
+    .scope-ng-dot{color:var(--red);font-weight:900;flex-shrink:0}
 
     /* 覚書問題 */
     .mou-section{
@@ -102,8 +102,8 @@
     .mou-col-problem{background:#fff5f5;border:1px solid #fecaca}
     .mou-col-solution{background:#f0fdf4;border:1px solid #bbf7d0}
     .mou-col-label{font-size:.78rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
-    .mou-col-problem .mou-col-label{color:#b91c1c}
-    .mou-col-solution .mou-col-label{color:#15803d}
+    .mou-col-problem .mou-col-label{color:var(--red)}
+    .mou-col-solution .mou-col-label{color:var(--green)}
     .mou-item{display:flex;gap:10px;font-size:.88rem;line-height:1.6;margin-bottom:9px}
 
     /* Yokohama notice */
@@ -237,7 +237,7 @@
     <div class="page-hero-inner">
       <div class="page-hero-kicker">For School Boards</div>
       <h1>PTA問題は<br><em>行政の問題</em>です</h1>
-      <p>職務専念義務・渉外業務の範囲・学校とPTAの切り離し。「PTAの自治」の問題ではなく、教育行政の構造問題として整理します。</p>
+      <p>職務専念義務・渉外業務の範囲・学校とPTAの切り離し。「PTAの自治の問題だから関与できない」は行政消極主義の誤用であり、公有財産の不当利用・職務専念義務違反・個人情報の無断提供という行政上の違法状態の放置は、地方教育行政法第23条に基づく監督権限の不行使（行政不作為）にあたります。PTAの問題ではなく教育行政の構造問題として整理します。</p>
       <div class="hero-actions">
         <a href="board-responses.html" class="btn-gold">📊 全国教委の回答を見る</a>
         <a href="national-archive.html" class="btn-outline">🗂️ 全国資料館へ</a>
@@ -246,6 +246,40 @@
   </section>
 
   <main>
+    <!-- 教委の監督責任フロー -->
+    <section style="background:var(--surface);padding:40px 0">
+      <div class="wrap">
+        <div class="callout callout-warn">
+          <div class="callout-icon">📊</div>
+          <div class="callout-body">
+            <h4>「自主性の尊重」は不作為の免罪符ではない</h4>
+            <p>教育委員会は社会教育法第12条（不当な干渉の禁止）を理由にPTA問題への関与を避けてきました。しかし<strong>適法性確保のための介入は「不当な干渉」ではありません</strong>。違法状態の放置は地方教育行政法第23条が定める監督権限の不行使（行政不作為）に該当します。</p>
+          </div>
+        </div>
+
+        <h3 style="font-family:'Noto Serif JP',serif;font-size:1.2rem;color:var(--navy);margin:32px 0 12px;text-align:center">教育委員会の3段階監督フロー</h3>
+
+        <div class="steps-row">
+          <div class="step-card">
+            <span class="step-num">1</span>
+            <h4>第一次指導：助言</h4>
+            <p>校長宛てに文書で違法状態の是正を指導し、PTAへの改善計画提出を求める。改善期間（3〜6ヶ月）を設定。</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">2</span>
+            <h4>第二次指導：勧告</h4>
+            <p>改善が見られない場合、教育委員会が直接PTAに対し法令遵守を強く勧告する。勧告内容を文書で公表。</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">3</span>
+            <h4>最終措置：協力停止</h4>
+            <p>違法状態が継続する場合、学校教育法第137条に基づき、施設利用・印刷支援等の便宜供与を停止する。</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
 
     <!-- 職務専念義務の図解 -->
     <section class="duty-section">
@@ -324,32 +358,32 @@
 
         <div class="mou-alert">
           <div class="mou-alert-title">⚠️ 覚書・合意書の盲点</div>
-          <p>善意で作成された「校長とPTA間の役割分担覚書」が、「学校が○○を担当する」という文言で教職員の違法関与を制度化してしまっているケースが全国に存在します。覚書があることで「承認された慣行」として固定化され、問題の是正が難しくなります。</p>
+          <p>善意で作成された「校長とPTA間の役割分担覚書」が、「学校が○○を担当する」「担任がPTAの配布物を取り扱う」という文言で教職員の違法関与を制度として固定化してしまっているケースが全国に多数存在します。覚書があることで「承認された慣行」として記録され、問題の是正がかえって困難になります。重要なのは、<strong>覚書・合意書があっても職務専念義務違反（地公法35条）は解消されない</strong>という点です。当事者間の合意は法律の要件を変更する効力を持ちません。覚書の内容自体が違法な関与を確認・固定化するものであれば、その覚書は行政文書として問題のある文書となります。</p>
         </div>
 
         <div class="mou-compare">
           <div class="mou-col mou-col-problem">
             <div class="mou-col-label">❌ 問題のある覚書の例</div>
-            <div class="mou-item"><span style="color:#b91c1c">✗</span>「学校はPTA配布物の配布を担当する」</div>
-            <div class="mou-item"><span style="color:#b91c1c">✗</span>「事務職員はPTA会費の集計を補助する」</div>
-            <div class="mou-item"><span style="color:#b91c1c">✗</span>「担任はPTA役員選出の取りまとめを行う」</div>
-            <div class="mou-item"><span style="color:#b91c1c">✗</span>「学校徴収金口座でPTA会費を一括引落する」</div>
-            <p style="font-size:.82rem;color:#b91c1c;margin-top:10px;font-weight:700">→ これらは職務専念義務・地方財政法違反を「合意」により正当化しようとするものであり、合意しても違法状態は解消されません。</p>
+            <div class="mou-item"><span style="color:var(--red)">✗</span>「学校はPTA配布物の配布を担当する」</div>
+            <div class="mou-item"><span style="color:var(--red)">✗</span>「事務職員はPTA会費の集計を補助する」</div>
+            <div class="mou-item"><span style="color:var(--red)">✗</span>「担任はPTA役員選出の取りまとめを行う」</div>
+            <div class="mou-item"><span style="color:var(--red)">✗</span>「学校徴収金口座でPTA会費を一括引落する」</div>
+            <p style="font-size:.82rem;color:var(--red);margin-top:var(--radius-sm);font-weight:700">→ これらは職務専念義務・地方財政法違反を「合意」により正当化しようとするものであり、合意しても違法状態は解消されません。</p>
           </div>
           <div class="mou-col mou-col-solution">
             <div class="mou-col-label">✅ 適正な覚書の内容</div>
-            <div class="mou-item"><span style="color:#15803d">✓</span>「学校とPTAの窓口は校長と会長とする」</div>
-            <div class="mou-item"><span style="color:#15803d">✓</span>「学校行事への協力依頼は文書で校長に申請する」</div>
-            <div class="mou-item"><span style="color:#15803d">✓</span>「PTAは独自の入会届・名簿・口座で運営する」</div>
-            <div class="mou-item"><span style="color:#15803d">✓</span>「教職員のPTA事務従事は渉外業務に限定する」</div>
-            <p style="font-size:.82rem;color:#15803d;margin-top:10px;font-weight:700">→ 渉外業務の範囲だけを明文化し、それ以外の関与をゼロにする覚書が理想形です。</p>
+            <div class="mou-item"><span style="color:var(--green)">✓</span>「学校とPTAの窓口は校長と会長とする」</div>
+            <div class="mou-item"><span style="color:var(--green)">✓</span>「学校行事への協力依頼は文書で校長に申請する」</div>
+            <div class="mou-item"><span style="color:var(--green)">✓</span>「PTAは独自の入会届・名簿・口座で運営する」</div>
+            <div class="mou-item"><span style="color:var(--green)">✓</span>「教職員のPTA事務従事は渉外業務に限定する」</div>
+            <p style="font-size:.82rem;color:var(--green);margin-top:var(--radius-sm);font-weight:700">→ 渉外業務の範囲だけを明文化し、それ以外の関与をゼロにする覚書が理想形です。</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- スライド11枚目：代行維持は「詰み」 -->
-    <section style="background:#fff;padding:72px 0">
+    <section style="background:var(--surface);padding:72px 0">
       <div class="wrap">
         <div class="section-kicker">核心的矛盾</div>
         <h2 class="section-title">代行を維持しようとする<br>どのアプローチも法的に破綻する</h2>
@@ -357,27 +391,27 @@
 
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:36px 0">
           <div style="border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)">
-            <div style="background:var(--navy);padding:16px 20px">
+            <div style="background:var(--navy);padding:var(--radius) 20px">
               <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:var(--gold-lt);margin-bottom:4px">アプローチA</div>
-              <div style="font-size:1rem;font-weight:900;color:#fff">川崎市モデル（校務化への挑戦）</div>
+              <div style="font-size:1rem;font-weight:900;color:var(--surface)">川崎市モデル（校務化への挑戦）</div>
             </div>
-            <div style="padding:20px;background:#fff">
+            <div style="padding:20px;background:var(--surface)">
               <p style="font-size:.9rem;color:var(--text-soft);line-height:1.75;margin-bottom:14px">PTAから学校長へ徴収を正式に「委任」し、校務として位置づける。</p>
-              <div style="background:#fee2e2;border:1px solid #fecaca;border-radius:10px;padding:14px">
-                <div style="font-size:.74rem;font-weight:900;color:#b91c1c;margin-bottom:6px">❌ 破綻する理由</div>
+              <div style="background:#fee2e2;border:1px solid #fecaca;border-radius:var(--radius-sm);padding:14px">
+                <div style="font-size:.74rem;font-weight:900;color:var(--red);margin-bottom:6px">❌ 破綻する理由</div>
                 <p style="font-size:.87rem;color:#7f1d1d;line-height:1.7;margin:0">保護者がPTAに正式入会（同意）していなければ、学校は「無効な契約」の集金代行をすることになり違法状態に陥る。委任の前提となる会員資格が成立していない。</p>
               </div>
             </div>
           </div>
           <div style="border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)">
-            <div style="background:var(--navy-2);padding:16px 20px">
+            <div style="background:var(--navy-2);padding:var(--radius) 20px">
               <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:var(--gold-lt);margin-bottom:4px">アプローチB</div>
-              <div style="font-size:1rem;font-weight:900;color:#fff">横浜市モデル（オプトインの徹底）</div>
+              <div style="font-size:1rem;font-weight:900;color:var(--surface)">横浜市モデル（オプトインの徹底）</div>
             </div>
-            <div style="padding:20px;background:#fff">
+            <div style="padding:20px;background:var(--surface)">
               <p style="font-size:.9rem;color:var(--text-soft);line-height:1.75;margin-bottom:14px">書面での入会届と個人情報同意を厳格化し、学校が集金継続を補助する。</p>
-              <div style="background:#fee2e2;border:1px solid #fecaca;border-radius:10px;padding:14px">
-                <div style="font-size:.74rem;font-weight:900;color:#b91c1c;margin-bottom:6px">❌ 破綻する理由</div>
+              <div style="background:#fee2e2;border:1px solid #fecaca;border-radius:var(--radius-sm);padding:14px">
+                <div style="font-size:.74rem;font-weight:900;color:var(--red);margin-bottom:6px">❌ 破綻する理由</div>
                 <p style="font-size:.87rem;color:#7f1d1d;line-height:1.7;margin:0">会員・非会員の照合や個別データ管理により学校側の事務負担が爆発し、労働基準的にも持続不可能に陥る。</p>
               </div>
             </div>
@@ -391,14 +425,14 @@
             唯一の出口は「完全分離」——学校は渉外業務だけ残し、それ以外はPTAが自立する。
           </p>
         </div>
-        <p style="font-size:.84rem;color:var(--text-soft);text-align:center;margin-top:10px">スライド資料「パラドックスの完成：代行システムは詰みの状態」より</p>
+        <p style="font-size:.84rem;color:var(--text-soft);text-align:center;margin-top:var(--radius-sm)">スライド資料「パラドックスの完成：代行システムは詰みの状態」より</p>
       </div>
     </section>
 
     <!-- 校長個人が負うリスク：エスカレーション図解 -->
-    <section style="background:#fff;padding:72px 0">
+    <section style="background:var(--surface);padding:72px 0">
       <div class="wrap">
-        <div class="section-kicker" style="background:#fee2e2;color:#b91c1c">校長・教頭が知るべき個人リスク</div>
+        <div class="section-kicker" style="background:#fee2e2;color:var(--red)">校長・教頭が知るべき個人リスク</div>
         <h2 class="section-title">「知らなかった」では済まされない<br>校長個人が負う法的責任</h2>
         <p class="section-lead">違法状態を「認識しながら放置」した場合、校長個人に賠償責任が及ぶ可能性があります。熊本PTA裁判が示した現実です。</p>
 
@@ -470,31 +504,31 @@
           <!-- 覚書は免罪符にならない -->
           <rect x="100" y="290" width="520" height="60" rx="12" fill="#1e293b"/>
           <text x="360" y="318" text-anchor="middle" font-family="'Noto Serif JP',sans-serif" font-size="14" font-weight="900" fill="#f4e7a6">「覚書を結んだ」「合意した」も免罪符にはならない</text>
-          <text x="360" y="338" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(255,255,255,.8)">合意によって違法状態は解消されない——これが法的論理の核心です</text>
+          <text x="360" y="338" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(255,255,255,.8)">合意によって違法状態は解消されない——これが法的論理の核心です。学校とPTAがどのような覚書を結んでも、地公法第35条・個人情報保護法・地方自治法の要件は変わりません。唯一の解決策は「PTAが完全に自立し、学校は渉外業務だけを接点とする」構造への移行です。教育委員会がこの移行を支援・指導することは「不当な干渉」ではなく、法令遵守を確保するための監督権限の正当な行使です。</text>
 
           <!-- 出口矢印 -->
-          <line x1="360" y1="350" x2="360" y2="386" stroke="#15803d" stroke-width="2" marker-end="url(#rd-arr)" style="--rd-arr-color:#15803d"/>
+          <line x1="360" y1="350" x2="360" y2="386" stroke="#15803d" stroke-width="2" marker-end="url(#rd-arr)" style="--rd-arr-color:var(--green)"/>
           <rect x="160" y="388" width="400" height="26" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
           <text x="360" y="405" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" font-weight="900" fill="#15803d">✅ 出口：渉外業務のみ残して完全分離 → 全リスクが消滅</text>
         </svg>
         <p style="font-size:.84rem;color:var(--text-soft);text-align:center;margin-bottom:32px">熊本PTA裁判（平成28年）・鹿児島地裁の事例をもとに整理</p>
 
         <!-- リスク対応アクション -->
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:16px">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--radius);margin-top:var(--radius)">
           <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:var(--radius);padding:20px">
-            <div style="font-size:.72rem;font-weight:900;color:#15803d;margin-bottom:8px;letter-spacing:.06em">今週やること</div>
+            <div style="font-size:.72rem;font-weight:900;color:var(--green);margin-bottom:8px;letter-spacing:.06em">今週やること</div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:7px">
-              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:#15803d">→</span>教頭・事務職員のPTA補助の実態確認</li>
-              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:#15803d">→</span>学校名簿のPTAへの提供状況確認</li>
-              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:#15803d">→</span>会費の引き落とし口座確認</li>
+              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:var(--green)">→</span>教頭・事務職員のPTA補助の実態確認</li>
+              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:var(--green)">→</span>学校名簿のPTAへの提供状況確認</li>
+              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:var(--green)">→</span>会費の引き落とし口座確認</li>
             </ul>
           </div>
           <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:var(--radius);padding:20px">
-            <div style="font-size:.72rem;font-weight:900;color:#1d4ed8;margin-bottom:8px;letter-spacing:.06em">今期中にやること</div>
+            <div style="font-size:.72rem;font-weight:900;color:var(--blue);margin-bottom:8px;letter-spacing:.06em">今期中にやること</div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:7px">
-              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:#1d4ed8">→</span>PTA会長にオプトイン方式移行を要請</li>
-              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:#1d4ed8">→</span>渉外業務の範囲を書面で明確化</li>
-              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:#1d4ed8">→</span>覚書の内容を見直し・更新</li>
+              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:var(--blue)">→</span>PTA会長にオプトイン方式移行を要請</li>
+              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:var(--blue)">→</span>渉外業務の範囲を書面で明確化</li>
+              <li style="font-size:.87rem;color:var(--text);display:flex;gap:7px"><span style="color:var(--blue)">→</span>覚書の内容を見直し・更新</li>
             </ul>
           </div>
           <div style="background:#fafafa;border:1px solid var(--line);border-radius:var(--radius);padding:20px">
@@ -520,25 +554,25 @@
       <div class="wrap">
         <div class="section-center">
           <div class="section-kicker" style="background:rgba(212,175,55,.15);color:var(--gold-lt)">全国初の指針</div>
-          <h2 class="section-title" style="color:#fff">横浜市通知「学教第1965号」の概要</h2>
+          <h2 class="section-title" style="color:var(--surface)">横浜市通知「学教第1965号」の概要</h2>
           <p class="section-lead" style="color:rgba(255,255,255,.78);margin-inline:auto">令和7年12月発出。他自治体の教育委員会・校長向けに通知の主な内容を整理します。</p>
         </div>
         <div class="yk-notice-card">
           <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px">
             <div>
-              <div style="font-size:.74rem;font-weight:900;letter-spacing:.06em;color:var(--gold-lt);margin-bottom:10px">①入会手続</div>
+              <div style="font-size:.74rem;font-weight:900;letter-spacing:.06em;color:var(--gold-lt);margin-bottom:var(--radius-sm)">①入会手続</div>
               <p style="font-size:.9rem;color:rgba(255,255,255,.88);line-height:1.75">入学時の自動加入を禁止。保護者が自ら署名した入会届（オプトイン）の提出を必須とする。</p>
             </div>
             <div>
-              <div style="font-size:.74rem;font-weight:900;letter-spacing:.06em;color:var(--gold-lt);margin-bottom:10px">②個人情報</div>
+              <div style="font-size:.74rem;font-weight:900;letter-spacing:.06em;color:var(--gold-lt);margin-bottom:var(--radius-sm)">②個人情報</div>
               <p style="font-size:.9rem;color:rgba(255,255,255,.88);line-height:1.75">学校保有情報のPTAへの提供を禁止。PTAが入会届で直接情報を取得する体制を義務化。</p>
             </div>
             <div>
-              <div style="font-size:.74rem;font-weight:900;letter-spacing:.06em;color:var(--gold-lt);margin-bottom:10px">③非会員への対応</div>
+              <div style="font-size:.74rem;font-weight:900;letter-spacing:.06em;color:var(--gold-lt);margin-bottom:var(--radius-sm)">③非会員への対応</div>
               <p style="font-size:.9rem;color:rgba(255,255,255,.88);line-height:1.75">PTA非会員の子どもへの差別的扱いを人権侵害として明示的に禁止。</p>
             </div>
             <div>
-              <div style="font-size:.74rem;font-weight:900;letter-spacing:.06em;color:var(--gold-lt);margin-bottom:10px">④会費・口座</div>
+              <div style="font-size:.74rem;font-weight:900;letter-spacing:.06em;color:var(--gold-lt);margin-bottom:var(--radius-sm)">④会費・口座</div>
               <p style="font-size:.9rem;color:rgba(255,255,255,.88);line-height:1.75">学校徴収金との一括引落を禁止。PTA独自口座での会費管理と書面同意を義務化。</p>
             </div>
           </div>
@@ -554,22 +588,22 @@
       <div class="wrap wrap-narrow">
         <div class="section-kicker">よくある疑問</div>
         <h2 class="section-title">教育委員会・校長からよく出る質問</h2>
-        <div class="faq-list" style="display:flex;flex-direction:column;gap:10px;margin-top:28px">
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+        <div class="faq-list" style="display:flex;flex-direction:column;gap:var(--radius-sm);margin-top:28px">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">「慣例でずっとやってきた」は免責理由になりますか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">なりません。熊本PTA裁判（2016年）では「PTAの違法運用を認識しながら放置した学校長の責任」が問われました。「今までやってきたから」「他もやっているから」は法廷において一切の免罪符にならないと司法が示しています。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">覚書を結べば教職員のPTA補助は合法になりますか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">なりません。覚書・合意書は当事者間の約束であり、法律（地公法35条）の要件を変更する効力はありません。「学校がPTA事務を担う」と覚書に書いても、職務専念義務違反の状態は解消されません。むしろ違法な関与を文書で固定化するリスクがあります。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">学校が急にPTA補助をやめると混乱しませんか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
@@ -581,26 +615,26 @@
     </section>
 
     <!-- 即行動チェックリスト -->
-    <section style="background:linear-gradient(135deg,var(--navy),var(--navy-2));padding:72px 0;color:#fff">
+    <section style="background:linear-gradient(135deg,var(--navy),var(--navy-2));padding:72px 0;color:var(--surface)">
       <div style="width:min(calc(100% - 40px),860px);margin-inline:auto">
         <div class="section-kicker" style="background:rgba(212,175,55,.15);color:var(--gold-lt)">Action Checklist</div>
-        <h2 class="section-title" style="color:#fff;margin-top:10px">今週中にやることリスト</h2>
+        <h2 class="section-title" style="color:var(--surface);margin-top:var(--radius-sm)">今週中にやることリスト</h2>
         <p style="color:rgba(255,255,255,.75);font-size:.95rem;line-height:1.8;margin-bottom:36px">「知っていたのに放置した」が最大のリスクです。まず現状把握から始めてください。</p>
 
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--radius)">
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(212,175,55,.2);border-radius:var(--radius);padding:22px">
             <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:var(--gold-lt);margin-bottom:14px">📋 今週中（確認）</div>
-            <label style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.85)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 教職員がPTA事務を担っている実態を確認する</label>
-            <label style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.85)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> PTA会費が学校徴収金と同口座か確認する</label>
-            <label style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.85)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 学校名簿がPTAに渡されているか確認する</label>
-            <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.85)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 入会届が存在するか・オプトインか確認する</label>
+            <label style="display:flex;align-items:flex-start;gap:var(--radius-sm);margin-bottom:var(--radius-sm);cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.85)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 教職員がPTA事務を担っている実態を確認する</label>
+            <label style="display:flex;align-items:flex-start;gap:var(--radius-sm);margin-bottom:var(--radius-sm);cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.85)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> PTA会費が学校徴収金と同口座か確認する</label>
+            <label style="display:flex;align-items:flex-start;gap:var(--radius-sm);margin-bottom:var(--radius-sm);cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.85)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 学校名簿がPTAに渡されているか確認する</label>
+            <label style="display:flex;align-items:flex-start;gap:var(--radius-sm);cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.85)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 入会届が存在するか・オプトインか確認する</label>
           </div>
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:22px">
             <div style="font-size:.72rem;font-weight:900;letter-spacing:.08em;color:rgba(255,255,255,.5);margin-bottom:14px">📅 今期中（対応）</div>
-            <label style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.7)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> PTA会長にオプトイン方式への移行を要請する</label>
-            <label style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.7)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 渉外業務の範囲を書面（覚書）で明確化する</label>
-            <label style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.7)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 教育委員会に現状を報告・相談する</label>
-            <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.7)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 是正計画を文書化して教委に提出する</label>
+            <label style="display:flex;align-items:flex-start;gap:var(--radius-sm);margin-bottom:var(--radius-sm);cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.7)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> PTA会長にオプトイン方式への移行を要請する</label>
+            <label style="display:flex;align-items:flex-start;gap:var(--radius-sm);margin-bottom:var(--radius-sm);cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.7)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 渉外業務の範囲を書面（覚書）で明確化する</label>
+            <label style="display:flex;align-items:flex-start;gap:var(--radius-sm);margin-bottom:var(--radius-sm);cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.7)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 教育委員会に現状を報告・相談する</label>
+            <label style="display:flex;align-items:flex-start;gap:var(--radius-sm);cursor:pointer;font-size:.9rem;color:rgba(255,255,255,.7)"><input type="checkbox" style="margin-top:3px;accent-color:var(--gold)"> 是正計画を文書化して教委に提出する</label>
           </div>
         </div>
 

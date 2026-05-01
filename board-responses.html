@@ -28,8 +28,8 @@
     }
     .ml-item{display:flex;align-items:center;gap:7px;font-size:.82rem;color:var(--text-soft);font-weight:700}
     .ml-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
-    .ml-dot-yokohama{background:#b91c1c}
-    .ml-dot-replied{background:#1d4ed8}
+    .ml-dot-yokohama{background:var(--red)}
+    .ml-dot-replied{background:var(--blue)}
     .ml-dot-target{background:#d97706}
 
     .responses-section{background:var(--bg);padding:72px 0}
@@ -52,8 +52,8 @@
       padding:4px 10px;border-radius:999px;
       font-size:.72rem;font-weight:900;white-space:nowrap;flex-shrink:0;
     }
-    .rc-verdict-illegal{background:#fee2e2;color:#b91c1c}
-    .rc-verdict-inappropriate{background:#ffedd5;color:#c2410c}
+    .rc-verdict-illegal{background:#fee2e2;color:var(--red)}
+    .rc-verdict-inappropriate{background:#ffedd5;color:var(--orange)}
     .rc-body{font-size:.88rem;color:var(--text-soft);line-height:1.8;flex:1}
     .rc-topic{
       display:inline-flex;margin-top:10px;padding:3px 9px;
@@ -95,7 +95,7 @@
     .yk-item:last-child{border-bottom:none}
     .yk-check{
       width:22px;height:22px;border-radius:50%;
-      background:#dcfce7;color:#15803d;
+      background:#dcfce7;color:var(--green);
       display:grid;place-items:center;font-size:.75rem;
       flex-shrink:0;margin-top:2px;
     }
@@ -282,7 +282,7 @@
         <div class="yk-inner">
           <div>
             <div class="section-kicker" style="background:rgba(212,175,55,.15);color:var(--gold-lt)">全国初</div>
-            <h2 class="section-title" style="color:#fff">横浜市教育委員会通知<br>「学教第1965号」</h2>
+            <h2 class="section-title" style="color:var(--surface)">横浜市教育委員会通知<br>「学教第1965号」</h2>
             <p style="color:rgba(255,255,255,.82);font-size:1rem;line-height:1.85;margin-bottom:20px">令和7年12月発出。全市立学校に対し、PTAへの自動加入を禁止し、入会届（オプトイン）の提出を必須とする方針を明記。全国の行政指針として先駆けとなる通知です。</p>
             <a href="guide-board.html" class="btn-gold">通知の詳細分析を読む →</a>
           </div>
@@ -307,6 +307,48 @@
               <div class="yk-check">✓</div>
               <div class="yk-item-text"><strong>会費適正化</strong><br>学校徴収金との分離・書面同意の義務化</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 統計サマリー -->
+    <section style="background:var(--surface);padding:48px 0;border-bottom:1px solid var(--line)">
+      <div class="wrap">
+        <div class="section-center" style="margin-bottom:20px">
+          <div class="section-kicker">調査結果サマリー</div>
+          <h2 class="section-title" style="font-size:clamp(1.5rem,2.5vw,2rem)">全国97自治体の回答——3類型の分布</h2>
+          <p class="section-lead">「PTA会費徴収への教職員の関与」7問照会に対する回答を分類しました。</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-num stat-num-green">38<small style="font-size:1rem">%</small></span>
+            <span class="stat-label">自主徴収移行方針</span>
+            <span class="stat-sub">厚木市・磐田市・豊浦町など</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-red" style="color:var(--orange)">22<small style="font-size:1rem">%</small></span>
+            <span class="stat-label">委任契約で継続</span>
+            <span class="stat-sub">川崎市・仙台市・大阪市など</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">40<small style="font-size:1rem">%</small></span>
+            <span class="stat-label">未整理・検討中</span>
+            <span class="stat-sub">藤沢市など多数</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-red">0</span>
+            <span class="stat-label">「強制加入は適法」と回答</span>
+            <span class="stat-sub">全97自治体中ゼロ</span>
+          </div>
+        </div>
+
+        <div class="callout callout-warn" style="margin-top:24px">
+          <div class="callout-icon">📊</div>
+          <div class="callout-body">
+            <h4>3類型の比率は2026年4月時点の集計</h4>
+            <p>「未整理・検討中」と回答した自治体が4割を占めることが、PTA問題が全国的に整理途上であることを示しています。横浜市通知（学教第1965号）の波及により、今後この比率は変化していく見込みです。</p>
           </div>
         </div>
       </div>
@@ -338,7 +380,7 @@
               <div class="resp-acc-left">
                 <span class="resp-region">静岡市教育委員会</span>
                 <span class="resp-verdict resp-v-ok">✅ 回答：完全分離済</span>
-                <span class="resp-verdict" style="background:#fee2e2;color:#b91c1c">🚨 2026/04 違反発覚</span>
+                <span class="resp-verdict" style="background:#fff0f0;color:var(--red)">🚨 2026/04 違反発覚</span>
               </div>
               <span class="resp-acc-icon">▼</span>
             </button>
@@ -358,7 +400,7 @@
                 </div>
                 <div class="resp-incident">
                   <strong>【2026年4月21日 報道発覚】</strong>市内20校で保護者の同意なく9,200人分の名簿をPTAに提供していたことが判明。教育長「法律と学校文化にずれ」と認める。会費徴収の適正化と個人情報管理が別問題として同時進行が必要なことを示す事例。
-                  <a href="shizuoka-incident.html" style="display:inline-block;margin-top:8px;font-weight:700;color:#b91c1c">事案分析を読む →</a>
+                  <a href="shizuoka-incident.html" style="display:inline-block;margin-top:8px;font-weight:700;color:var(--red)">事案分析を読む →</a>
                 </div>
               </div>
               <div class="resp-meta"><span class="rc-topic">会費徴収</span><span class="rc-topic">個人情報違反</span><span class="rc-topic">構造的問題</span></div>
@@ -371,7 +413,7 @@
             <button class="resp-acc-head resp-gold" aria-expanded="false">
               <div class="resp-acc-left">
                 <span class="resp-region">横浜市教育委員会</span>
-                <span class="resp-verdict" style="background:#fef3c7;color:#92400e">🥇 全国初・通知発出</span>
+                <span class="resp-verdict" style="background:#fef3c7;color:var(--orange)">🥇 全国初・通知発出</span>
               </div>
               <span class="resp-acc-icon">▼</span>
             </button>
@@ -660,7 +702,7 @@
               <div>
                 <strong>全97自治体の回答</strong>
                 <p>Excelファイル（回答集）に記録された97件の回答メール全件を含む、全国の教育委員会への照会回答・要望書回答の原本PDFはGoogleサイトで公開しています。</p>
-                <div class="resp-meta" style="margin-top:10px"><span class="rc-topic">全97自治体</span><span class="rc-topic">要望書回答</span><span class="rc-topic">入会手続照会</span></div>
+                <div class="resp-meta" style="margin-top:var(--radius-sm)"><span class="rc-topic">全97自治体</span><span class="rc-topic">要望書回答</span><span class="rc-topic">入会手続照会</span></div>
               </div>
               <a href="https://sites.google.com/view/ptatekiseika/" target="_blank" rel="noopener noreferrer" class="btn-navy">📂 Googleサイトで全原本を見る</a>
             </div>
@@ -676,18 +718,18 @@
         .resp-acc{border-radius:var(--radius-sm);overflow:hidden;border:1px solid var(--line);background:#fff}
         .resp-acc[hidden]{display:none}
         .resp-acc-head{width:100%;display:flex;align-items:center;justify-content:space-between;padding:16px 20px;background:#fff;border:none;cursor:pointer;text-align:left;gap:12px;transition:background .2s}
-        .resp-acc-head:hover{background:#f8fafc}
-        .resp-acc-head.resp-critical{border-left:4px solid #b91c1c;background:linear-gradient(90deg,#fff5f5,#fff)}
+        .resp-acc-head:hover{background:var(--bg)}
+        .resp-acc-head.resp-critical{border-left:4px solid var(--red);background:linear-gradient(90deg,#fff5f5,#fff)}
         .resp-acc-head.resp-gold{border-left:4px solid var(--gold);background:linear-gradient(90deg,rgba(212,175,55,.07),#fff)}
         .resp-acc-head.resp-warn{border-left:4px solid var(--orange);background:linear-gradient(90deg,#fff7ed,#fff)}
-        .resp-acc-head[aria-expanded="true"]{background:#f8fafc}
+        .resp-acc-head[aria-expanded="true"]{background:var(--bg)}
         .resp-acc-head[aria-expanded="true"] .resp-acc-icon{transform:rotate(180deg)}
         .resp-acc-left{display:flex;align-items:center;gap:10px;flex-wrap:wrap;flex:1}
         .resp-region{font-weight:800;font-size:.95rem;color:var(--navy)}
         .resp-verdict{font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:4px}
-        .resp-v-ok{background:#dcfce7;color:#15803d}
-        .resp-v-warn{background:#ffedd5;color:#c2410c}
-        .resp-v-pending{background:#f3f4f6;color:#374151}
+        .resp-v-ok{background:#dcfce7;color:var(--green)}
+        .resp-v-warn{background:#ffedd5;color:var(--orange)}
+        .resp-v-pending{background:#f3f4f6;color:var(--text)}
         .resp-acc-icon{font-size:.8rem;color:var(--text-soft);transition:transform .25s;flex-shrink:0}
         .resp-acc-body{display:none;padding:0 20px 20px;border-top:1px solid var(--line)}
         .resp-acc-body.is-open{display:block}
@@ -696,8 +738,8 @@
         .resp-qa:last-child{border-bottom:none}
         .resp-q{padding:11px 14px 11px 0;font-size:.84rem;font-weight:700;color:var(--navy-3);line-height:1.6;border-right:2px solid var(--line)}
         .resp-a{padding:11px 0 11px 14px;font-size:.86rem;color:var(--text);line-height:1.7}
-        .resp-incident{margin-top:14px;padding:14px;background:#fff5f5;border:1px solid #fecaca;border-radius:8px;font-size:.85rem;line-height:1.7;color:#374151}
-        .resp-note{margin-top:12px;font-size:.82rem;color:var(--text-soft);font-style:italic;padding:8px 12px;background:#f8fafc;border-radius:6px}
+        .resp-incident{margin-top:14px;padding:14px;background:#fff5f5;border:1px solid #fecaca;border-radius:8px;font-size:.85rem;line-height:1.7;color:var(--text)}
+        .resp-note{margin-top:12px;font-size:.82rem;color:var(--text-soft);font-style:italic;padding:8px 12px;background:var(--bg);border-radius:6px}
         .resp-meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
         .resp-acc-cta{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #93c5fd}
         .resp-cta-body{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px;flex-wrap:wrap}
@@ -737,7 +779,7 @@
     </section>
 
     <!-- 自治体別回答詳細
-    <section style="background:#fff;padding:64px 0">
+    <section style="background:var(--surface);padding:64px 0">
       <div class="wrap">
         <div class="section-center">
           <div class="section-kicker">自治体別・論点別</div>

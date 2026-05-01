@@ -37,7 +37,7 @@
       cursor:pointer;user-select:none;
       padding:0;transition:background .2s ease;
     }
-    .lc-header:hover{background:#f8fafc}
+    .lc-header:hover{background:var(--bg)}
     .lc-num{
       display:flex;align-items:center;justify-content:center;
       height:72px;
@@ -74,7 +74,7 @@
     .egov-link{
       display:inline-flex;align-items:center;gap:5px;
       padding:7px 14px;border-radius:8px;
-      background:#eff6ff;color:#1d4ed8;
+      background:#eff6ff;color:var(--blue);
       font-size:.8rem;font-weight:800;
       text-decoration:none;border:1px solid #bfdbfe;
       transition:var(--t);
@@ -99,7 +99,7 @@
       background:rgba(5,17,31,.05);font-weight:700;
       line-height:1.4;
     }
-    .mx-col:nth-child(1) .mx-head{background:#1d4ed8}
+    .mx-col:nth-child(1) .mx-head{background:var(--blue)}
     .mx-col:nth-child(2) .mx-head{background:#0e7490}
     .mx-col:nth-child(3) .mx-head{background:#b45309}
     .mx-col:nth-child(4) .mx-head{background:#7c3aed}
@@ -226,6 +226,47 @@
       <div class="page-hero-kicker">Legal Map</div>
       <h1>法制度マップ</h1>
       <p>PTA問題に関係する法令を論点別に整理しています。条文・適用根拠・関連ページへのリンクをまとめました。各法令をクリックで展開します。</p>
+      <div class="callout callout-info" style="margin:24px 0">
+        <div class="callout-icon">⚖️</div>
+        <div class="callout-body">
+          <h4>1つのPTA問題に7つの法律が関わる</h4>
+          <p>PTA問題は単一の法律で解決するものではありません。憲法（結社の自由）・民法（契約・無権代理・不当利得）・個人情報保護法・地方公務員法・地方財政法・地方自治法・学校教育法・社会教育法——<strong>7つの法律が同時に関わる複合的な問題</strong>です。各法律の論点を理解しないと、部分的な対処に終わってしまいます。</p>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-num stat-num-gold">21</span>
+          <span class="stat-label">憲法第21条</span>
+          <span class="stat-sub">結社の自由</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num stat-num-gold">522</span>
+          <span class="stat-label">民法第522条</span>
+          <span class="stat-sub">契約成立の要件</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num stat-num-gold">69</span>
+          <span class="stat-label">個情法第69条</span>
+          <span class="stat-sub">第三者提供の制限</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num stat-num-gold">35</span>
+          <span class="stat-label">地公法第35条</span>
+          <span class="stat-sub">職務専念義務</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num stat-num-gold">235</span>
+          <span class="stat-label">自治法235条の4</span>
+          <span class="stat-sub">私費の保管禁止</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num stat-num-gold">137</span>
+          <span class="stat-label">学校教育法137条</span>
+          <span class="stat-sub">施設利用許可</span>
+        </div>
+      </div>
+
       <div class="hero-actions">
         <a href="audit/index.html" class="btn-gold">監査システムで診断する</a>
         <a href="cases.html" class="btn-outline">判例整理へ</a>
@@ -309,9 +350,9 @@
                 <div class="law-quote-label">憲法 第21条</div>
                 集会、結社及び言論、出版その他一切の表現の自由は、これを保障する。
               </div>
-              <p>結社の自由は「結社する自由」だけでなく、<strong>「結社しない自由」「特定の結社に加入しない自由」</strong>を含みます。PTAへの強制加入・みなし加入は、憲法21条が保障する結社しない自由を侵害するものとして、複数の教育委員会が「不適切」と回答しています。</p>
+              <p>結社の自由は「結社する自由」だけでなく、<strong>「結社しない自由」「特定の結社に加入しない自由」</strong>を含みます。PTAへの強制加入・みなし加入は、憲法21条が保障する結社しない自由を侵害するものとして複数の教育委員会が「適切ではない」と回答しており、最終的な法的評価としては違憲の疑いがあります。同条は表現の自由とともに「集会・結社の自由」を保障しており、特定の団体への強制加入はこの保障に正面から反します。非加入を選択した保護者への事実上の圧力（「子どもが登校班に入れない」等）も同様に憲法上問題のある取扱いです。</p>
               <h4>非会員の子どもへの差別との関係</h4>
-              <p>非加入を理由に子どもを不利益に扱うことは、憲法第26条（教育を受ける権利）・第14条（法の下の平等）にも抵触します。横浜市通知はこれを明示的に禁止しています。</p>
+              <p>非加入を理由に子どもを不利益に扱うこと（登校班への不参加・記念品の不配布等）は、憲法第26条（教育を受ける権利）・第14条（法の下の平等）にも抵触します。横浜市通知「学教第1965号」（令和7年12月）は「PTA非会員であることを理由とした差別的取扱いは人権侵害」として明示的に禁止しており、全国初の行政指針として他自治体の参照基準となっています。</p>
               <a href="https://elaws.e-gov.go.jp/document?lawid=321CONSTITUTION" target="_blank" rel="noopener noreferrer" class="egov-link">↗ e-Govで条文を確認する</a>
               <div class="issue-tags">
                 <a href="membership.html" class="issue-tag">📋 入会手続の問題へ</a>
@@ -338,7 +379,7 @@
                 <div class="law-quote-label">民法 第522条（契約の成立）</div>
                 契約は、契約の内容を示してその締結を申し入れる意思表示（申込み）に対して相手方が承諾をしたときに成立する。
               </div>
-              <p>PTAへの加入は契約行為であり、「申込み」と「承諾」の両方が必要です。みなし加入・オプトアウト方式は保護者の承諾（入会意思）が存在しないため、<strong>契約が成立していない</strong>状態です。</p>
+              <p>PTAへの加入は契約行為であり、「申込み（保護者からの入会届提出）」と「承諾（PTA側の受理）」の両方が必要です。みなし加入・オプトアウト方式は保護者の明示的な申込みが存在しないため、<strong>契約が成立していない</strong>状態です。「書類にサインした」「非加入届を出さなかった」だけでは申込みとしての意思表示にあたりません。消費者契約法第4条は「重要事項の不告知（任意団体であることを告知せずに加入させる行為）」を契約取消事由として定めており、みなし加入は同条による取消権行使の対象ともなります。</p>
               <div class="law-quote">
                 <div class="law-quote-label">民法 第113条（無権代理）</div>
                 代理権を有しない者が他人の代理人としてした契約は、本人がその追認をしなければ、本人に対してその効力を生じない。
@@ -348,7 +389,7 @@
                 <div class="law-quote-label">民法 第703条（不当利得）</div>
                 法律上の原因なく他人の財産又は労務によって利益を受け、そのために他人に損失を及ぼした者は、その利益を返還する義務を負う。
               </div>
-              <p>入会の意思表示なく徴収された会費は、法律上の根拠を欠く「不当利得」として<strong>返還請求が可能</strong>です。消滅時効は5年（令和2年改正民法）。</p>
+              <p>入会の意思表示なく徴収された会費は、法律上の根拠を欠く「不当利得」として<strong>返還請求が可能</strong>です（民法703条）。徴収した主体（PTA会長、または学校経由の場合は学校長）が返還義務を負います。消滅時効は5年（令和2年改正民法）。時効起算点は「権利を行使できることを知った時」であり、みなし加入が無効と認識した時点から5年以内に請求できます。請求は内容証明郵便で行い、応じない場合は少額訴訟（訴額60万円以下）または民事調停が利用できます。</p>
               <a href="https://laws.e-gov.go.jp/law/129AC0000000089" target="_blank" rel="noopener noreferrer" class="egov-link">↗ e-Govで民法を確認する</a>
               <div class="issue-tags">
                 <a href="membership.html" class="issue-tag">📋 入会手続の問題へ</a>
@@ -375,9 +416,9 @@
                 <div class="law-quote-label">個人情報保護法 第69条（保有個人情報の利用及び提供の制限）</div>
                 行政機関の長等は、法令に基づく場合を除き、利用目的以外の目的のために保有個人情報を自ら利用し、又は提供してはならない。
               </div>
-              <p>令和3年改正（令和4年施行）により、国公立学校も「行政機関等」として個人情報保護法の適用対象になりました。PTAは学校とは別の独立した私的団体であるため、学校名簿の提供は「第三者提供」にあたり、<strong>本人の明確な同意（オプトイン）</strong>が必要です。</p>
+              <p>令和3年改正（令和4年施行）により、国公立学校も「行政機関等」として個人情報保護法の全面的な適用を受けます。PTAは学校とは別の独立した私的団体（任意団体）であり、学校名簿の提供は同法上の「第三者提供」にあたり、<strong>本人の明確なオプトイン同意</strong>が必要です。この解釈を「問題ない」と回答した教育委員会は全国でゼロです。2026年4月には静岡市で20校・9,200人分の無断提供が発覚し、教育長が「法律と学校文化のずれ」を公式に認めました。</p>
               <h4>オプトアウトが認められない理由</h4>
-              <p>民間企業には一定条件のもとオプトアウトによる第三者提供が認められる場合がありますが、行政機関等（学校）にはこの例外規定が適用されません。学校がPTAに名簿を提供するには、保護者個人の積極的な同意が必要です。</p>
+              <p>民間企業に認められるオプトアウトによる第三者提供（同法27条2項）は、行政機関等（学校）には適用されません。横浜市通知「学教第1965号」は学校名簿のPTAへの提供を全面禁止し、PTAが入会届を通じて直接取得する体制を義務化しています。これが全国標準となるべきモデルです。</p>
               <a href="https://laws.e-gov.go.jp/law/415AC0000000057" target="_blank" rel="noopener noreferrer" class="egov-link">↗ e-Govで個人情報保護法を確認する</a>
               <div class="issue-tags">
                 <a href="privacy.html" class="issue-tag">🔒 個人情報の問題へ</a>
@@ -404,9 +445,9 @@
                 <div class="law-quote-label">地方公務員法 第35条（職務専念義務）</div>
                 職員は、法律又は条例に特別の定がある場合を除く外、その勤務時間及び職務上の注意力のすべてをその職責遂行のために用い、当該地方公共団体がなすべき責を有する職務にのみ従事しなければならない。
               </div>
-              <p>PTAは独立した任意団体（私）であり、教職員が勤務時間中にその事務（会費集金・名簿管理・配布・印刷等）を担うことは、公務ではない業務への職務注意力の転用として地公法35条に抵触します。</p>
+              <p>PTAは独立した任意団体（私）であり、教職員が勤務時間中にその事務（会費集金・名簿管理・配布物の仕分け・印刷等）を担うことは、公務ではない業務への職務注意力の転用として地公法35条に抵触します。昭和39年行政実例（熊本県教育長宛）でも「PTA等任意団体の事務は教職員の職務に含まれない」と解釈されており、60年以上一貫した行政解釈です。「職専免（職務専念義務免除）」を使えば合法化できるという意見もありますが、職専免には①PTAとの正式な業務委任契約、②保護者の個別同意（みなし加入でないこと）、③事前の承認記録という3条件がすべて必要です。いずれかが欠けていれば職専免自体が無効です。</p>
               <h4>「渉外業務」だけが許容される唯一の接点</h4>
-              <p>学校↔PTA間の連絡調整（渉外業務）だけが、法的に許容される教職員の関与範囲です。それ以外の事務への恒常的従事は違法状態です。詳細は<a href="guide-board.html" style="color:var(--blue)">教育委員会・学校向けガイド</a>を参照してください。</p>
+              <p>学校↔PTA間の連絡調整（渉外業務）だけが法的に許容される関与範囲であり、それ以外の事務への恒常的従事は違法状態です。全国97自治体への照会で「PTA事務は公務である」と回答したのは川崎市・仙台市等の委任契約モデル自治体のみで、大多数は「勤務時間外に行うよう指導」または「関与しない立場」と回答しています。詳細は<a href="personnel.html" style="color:var(--navy)">教職員関与のページ</a>および<a href="guide-board.html" style="color:var(--navy)">教育委員会・学校向けガイド</a>を参照してください。</p>
               <a href="https://laws.e-gov.go.jp/law/325AC0000000261" target="_blank" rel="noopener noreferrer" class="egov-link">↗ e-Govで地方公務員法を確認する</a>
               <div class="issue-tags">
                 <a href="personnel.html" class="issue-tag">👩‍🏫 教職員関与の問題へ</a>
@@ -437,7 +478,7 @@
                 <div class="law-quote-label">地方自治法 第235条の4第2項（私費の保管禁止）</div>
                 普通地方公共団体の所有に属しない現金は、法律又は政令の規定によるのでなければ、これを保管することができない。
               </div>
-              <p>PTA会費は私費です。学校（公）がこれを保管・管理することは地方自治法235条の4第2項に反します。学校徴収金口座でPTA会費を一括引き落とす慣行は、公私混同として同法に抵触する可能性があります。</p>
+              <p>PTA会費は私費です。学校（公）がこれを保管・管理することは地方自治法235条の4第2項に反します。学校徴収金口座でPTA会費を一括引き落とす慣行は、公私混同として同法に抵触する可能性があります。また、PTA会費を学校の帳簿で管理することは会計の透明性を損ない、横領等の不正行為の温床となりやすいことも全国的な問題として確認されています。PTA独自の銀行口座を設置し、収支を全会員に公開する体制が適正運営の最低条件です。</p>
               <h4>割当寄付禁止との関係</h4>
               <p>PTAへの加入を事実上強制し、その会費を学校設備・活動費の補填に充てることは、地方財政法第4条の5が禁止する「割当寄付」にあたる可能性があります。</p>
               <a href="https://laws.e-gov.go.jp/law/323AC0000000109" target="_blank" rel="noopener noreferrer" class="egov-link">↗ e-Govで地方財政法を確認する</a>

@@ -25,7 +25,7 @@
   <style>
     /* ===== SHARED ISSUE PAGE STYLES ===== */
     .issue-hero {
-      background: linear-gradient(135deg, #0A192F 0%, #1A365D 55%, #1e3f7a 100%);
+      background: linear-gradient(135deg, #0A192F 0%, var(--navy) 55%, #1e3f7a 100%);
       color: #fff;
       padding: 80px 0 72px;
       position: relative;
@@ -353,7 +353,7 @@
     .slide-item{margin:0;cursor:pointer;border-radius:var(--radius-sm);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s}
     .slide-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
     .slide-item img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
-    .slide-item figcaption{padding:8px 10px;font-size:.76rem;color:var(--text-soft);background:#f8fafc;line-height:1.4}
+    .slide-item figcaption{padding:8px 10px;font-size:.76rem;color:var(--text-soft);background:var(--bg);line-height:1.4}
     /* Lightbox */
     #lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out}
     #lightbox.is-open{display:flex}
@@ -588,7 +588,7 @@
         <p>下の写真は、実際に使われているPTA会費の台帳です。赤くハイライトされた行（広報紙「飛翔」印刷代など）にPTA関連費用が学校徴収金と同一帳簿で管理されていることが確認できます。これが「公私混同」の具体的実態です。</p>
         <figure style="margin:24px 0">
           <img src="../assets/pta-ledger.jpg" alt="PTA会費が学校徴収金台帳に混在している実例写真" style="width:100%;max-width:640px;border-radius:var(--radius-sm);box-shadow:var(--shadow-md);display:block;margin:0 auto">
-          <figcaption style="text-align:center;font-size:.82rem;color:var(--text-soft);margin-top:10px">▲ 実際の帳簿。赤ハイライト行（−66,830円「広報紙『飛翔』印刷代」等）がPTA費用として学校収支に混在している。</figcaption>
+          <figcaption style="text-align:center;font-size:.82rem;color:var(--text-soft);margin-top:var(--radius-sm)">▲ 実際の帳簿。赤ハイライト行（−66,830円「広報紙『飛翔』印刷代」等）がPTA費用として学校収支に混在している。</figcaption>
         </figure>
         <div class="alert alert-warn" style="margin-top:20px">
           <strong>法的問題点：</strong>地方自治法第235条の4第2項は「普通地方公共団体の所有に属しない現金は、法律又は政令の規定によるのでなければ、これを保管することができない」と定めています。私的団体であるPTAの会費を学校が同一口座・同一帳簿で管理することは、この規定に抵触します。
@@ -676,6 +676,33 @@
       <section id="overview" class="issue-section">
         <div class="section-eyebrow">概要</div>
         <h2>抱き合わせ徴収の三重の法的問題</h2>
+        <div class="callout callout-critical">
+          <div class="callout-icon">🔥</div>
+          <div class="callout-body">
+            <h4>1つの慣行で3つの法律違反が同時に発生</h4>
+            <p>給食費とPTA会費を同じ口座で引き落とす——「便利だから」「昔からやっているから」という理由で続いている慣行は、実は<strong>3つの法律違反を同時に起こしています</strong>。これらは別々に対処できる問題ではなく、構造を変えない限り全てを解決できない関係にあります。</p>
+          </div>
+        </div>
+
+        <div class="stat-grid" style="margin-top:8px;margin-bottom:24px">
+          <div class="stat-card">
+            <span class="stat-num stat-num-red">①</span>
+            <span class="stat-label">無権代理</span>
+            <span class="stat-sub">民法113条<br>入会契約なき集金代行</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-red">②</span>
+            <span class="stat-label">目的外利用</span>
+            <span class="stat-sub">個人情報保護法69条<br>口座情報の流用</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-red">③</span>
+            <span class="stat-label">公私混同</span>
+            <span class="stat-sub">地方自治法235条の4<br>私費の公金口座管理</span>
+          </div>
+        </div>
+
+        
 
         <p>「給食費と一緒にPTA会費が引き落とされる」という慣行は、保護者から見れば「学校への支払い」として認識されがちですが、法的には三重の独立した問題を抱えています。</p>
 
@@ -1037,7 +1064,7 @@
 
       <!-- Lightbox -->
       <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out">
-        <button onclick="closeLightbox()" style="position:fixed;top:16px;right:20px;color:#fff;font-size:2rem;cursor:pointer;background:none;border:none;z-index:10000">×</button>
+        <button onclick="closeLightbox()" style="position:fixed;top:var(--radius);right:20px;color:var(--surface);font-size:2rem;cursor:pointer;background:none;border:none;z-index:10000">×</button>
         <img id="lightbox-img" src="" alt="" style="max-width:92vw;max-height:90vh;border-radius:8px">
       </div>
       <script>

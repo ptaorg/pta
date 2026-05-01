@@ -44,8 +44,8 @@
       padding:4px 10px;border-radius:999px;
       font-size:.68rem;font-weight:900;letter-spacing:.08em;
     }
-    .vc-label-ok{background:#dcfce7;color:#15803d}
-    .vc-label-ng{background:#fee2e2;color:#b91c1c}
+    .vc-label-ok{background:#dcfce7;color:var(--green)}
+    .vc-label-ng{background:#fee2e2;color:var(--red)}
     .vc-label-warn{background:#fef3c7;color:#92400e}
     .vc-body{padding:22px}
     .vc-title{font-family:'Noto Serif JP',serif;font-size:1.05rem;font-weight:900;color:var(--navy);margin-bottom:8px}
@@ -92,7 +92,7 @@
       margin-top:14px;font-size:.85rem;line-height:1.75;
       font-family:'Noto Serif JP',serif;color:var(--text);
     }
-    .ex-doc-label-ok{background:#dcfce7;color:#15803d}
+    .ex-doc-label-ok{background:#dcfce7;color:var(--green)}
     .ex-good{
       margin-top:12px;padding:12px 14px;
       background:#f0fdf4;border-radius:10px;
@@ -287,7 +287,7 @@
     <div class="page-hero-inner">
       <div class="page-hero-kicker">For Parents</div>
       <h1>PTAの「おかしい」に<br><em>法的根拠</em>があります。</h1>
-      <p>「入会した覚えがない」「断ると子供が困るかも」「会費の根拠が分からない」——そのモヤモヤは制度の歪みです。絵と実例で直感的に整理します。</p>
+      <p>「入会した覚えがない」「断ると子供が困るかも」「会費の根拠が分からない」——そのモヤモヤは個人の問題ではなく、制度の歪みです。PTAへの加入は完全任意であり、あなたの名前と住所をPTAに渡すには本人の明確な同意が必要です。会費には法律上の徴収根拠がなければ返還請求できます。このページでは実例と図で直感的に整理します。</p>
       <div class="hero-actions">
         <a href="audit/index.html" class="btn-gold">⚙️ 監査診断を始める</a>
         <a href="#pdf-dl" class="btn-outline">📄 テンプレートPDFを入手</a>
@@ -310,7 +310,7 @@
             <div class="vc-visual vc-visual-ok">
               <span class="vc-label vc-label-ok">✅ あなたの権利</span>
               🙋
-              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:#15803d">入らなくていい</div>
+              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:var(--green)">入らなくていい</div>
             </div>
             <div class="vc-body">
               <div class="vc-title">PTAは100%任意加入です</div>
@@ -322,11 +322,11 @@
             <div class="vc-visual vc-visual-ng">
               <span class="vc-label vc-label-ng">❌ 違法です</span>
               🏫➡️📋
-              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:#b91c1c">名簿の無断提供</div>
+              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:var(--red)">名簿の無断提供</div>
             </div>
             <div class="vc-body">
               <div class="vc-title">学校からPTAへの名簿提供は違法</div>
-              <div class="vc-desc">あなたの住所・電話番号は、あなたの同意なくPTAに提供されてはいけません。全国の教育委員会も「違法」と回答しています。</div>
+              <div class="vc-desc">学校が保有するあなたの住所・電話番号は、あなたの明確な同意（オプトイン）なくPTAに提供されてはいけません。令和4年の個人情報保護法改正により、国公立学校も「行政機関等」として同法の適用を受けます。全国の教育委員会への照会で「名簿の無断提供は問題ない」と回答した自治体はゼロです。静岡市では2026年4月に20校・9,200人分が無断提供されていたことが発覚しています。</div>
               <div class="vc-law">個人情報保護法 69条</div>
             </div>
           </a>
@@ -334,11 +334,11 @@
             <div class="vc-visual vc-visual-ng">
               <span class="vc-label vc-label-ng">❌ 返還請求できます</span>
               💰
-              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:#b91c1c">入会なき会費は不当利得</div>
+              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:var(--red)">入会なき会費は不当利得</div>
             </div>
             <div class="vc-body">
               <div class="vc-title">入会していない会費は返してもらえます</div>
-              <div class="vc-desc">入会の意思表示がないまま徴収された会費は、法律上の根拠を欠く「不当利得」です。民法703条で返還請求ができます。</div>
+              <div class="vc-desc">入会の意思表示がないまま徴収された会費は、法律上の根拠を欠く「不当利得」です（民法703条）。「学校徴収金と一緒に引き落とされていた」「非加入届を出さなかったから自動的に会員になっていた」——どちらの場合も、明示的な入会の申込みと承諾がなければ契約は成立せず（民法522条）、徴収された会費は返還請求できます。消滅時効は5年（令和2年改正民法）です。</div>
               <div class="vc-law">民法 703条</div>
             </div>
           </a>
@@ -346,7 +346,7 @@
             <div class="vc-visual vc-visual-ng">
               <span class="vc-label vc-label-ng">❌ 人権侵害です</span>
               🚸❌
-              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:#b91c1c">非会員の子を差別してはいけない</div>
+              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:var(--red)">非会員の子を差別してはいけない</div>
             </div>
             <div class="vc-body">
               <div class="vc-title">子どもへの差別的扱いは禁止です</div>
@@ -370,7 +370,7 @@
             <div class="vc-visual vc-visual-ok">
               <span class="vc-label vc-label-ok">✅ これが正しい形</span>
               ✍️
-              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:#15803d">入会届に自署してから入会</div>
+              <div style="position:absolute;bottom:14px;font-size:1rem;font-weight:900;color:var(--green)">入会届に自署してから入会</div>
             </div>
             <div class="vc-body">
               <div class="vc-title">本来はこうあるべき</div>
@@ -468,50 +468,50 @@
     </section>
 
     <!-- ===== 書類チェッカー（対話型） ===== -->
-    <section style="background:linear-gradient(135deg,var(--navy),var(--navy-2));padding:72px 0;color:#fff">
+    <section style="background:linear-gradient(135deg,var(--navy),var(--navy-2));padding:72px 0;color:var(--surface)">
       <div class="wrap wrap-narrow">
         <div style="text-align:center;margin-bottom:40px">
           <div class="section-kicker" style="background:rgba(212,175,55,.15);color:var(--gold-lt)">対話型ツール</div>
-          <h2 class="section-title" style="color:#fff;margin-top:8px">手元の書類をチェックする</h2>
+          <h2 class="section-title" style="color:var(--surface);margin-top:8px">手元の書類をチェックする</h2>
           <p style="color:rgba(255,255,255,.78);font-size:.95rem;line-height:1.85">学校から届いた書類の特徴を選ぶと、問題点と対処法を表示します。</p>
         </div>
 
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:32px">
-          <p style="color:rgba(255,255,255,.7);font-size:.85rem;margin-bottom:16px">書類の特徴をすべて選択してください（複数可）</p>
+          <p style="color:rgba(255,255,255,.7);font-size:.85rem;margin-bottom:var(--radius)">書類の特徴をすべて選択してください（複数可）</p>
 
-          <div id="checker-options" style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px">
-            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
-              <input type="checkbox" value="auto" style="margin-top:3px;width:16px;height:16px;accent-color:var(--gold)">
+          <div id="checker-options" style="display:flex;flex-direction:column;gap:var(--radius-sm);margin-bottom:24px">
+            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px var(--radius);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
+              <input type="checkbox" value="auto" style="margin-top:3px;width:var(--radius);height:var(--radius);accent-color:var(--gold)">
               <div>
-                <div style="font-weight:800;color:#fff;font-size:.95rem">入会の意思確認欄がない</div>
+                <div style="font-weight:800;color:var(--surface);font-size:.95rem">入会の意思確認欄がない</div>
                 <div style="font-size:.82rem;color:rgba(255,255,255,.6);margin-top:2px">書類を受け取っただけで自動的に会員扱いになる</div>
               </div>
             </label>
-            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
-              <input type="checkbox" value="optout" style="margin-top:3px;width:16px;height:16px;accent-color:var(--gold)">
+            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px var(--radius);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
+              <input type="checkbox" value="optout" style="margin-top:3px;width:var(--radius);height:var(--radius);accent-color:var(--gold)">
               <div>
-                <div style="font-weight:800;color:#fff;font-size:.95rem">「希望しない場合はご連絡ください」と書いてある</div>
+                <div style="font-weight:800;color:var(--surface);font-size:.95rem">「希望しない場合はご連絡ください」と書いてある</div>
                 <div style="font-size:.82rem;color:rgba(255,255,255,.6);margin-top:2px">断らなければ加入というオプトアウト方式</div>
               </div>
             </label>
-            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
-              <input type="checkbox" value="combined" style="margin-top:3px;width:16px;height:16px;accent-color:var(--gold)">
+            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px var(--radius);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
+              <input type="checkbox" value="combined" style="margin-top:3px;width:var(--radius);height:var(--radius);accent-color:var(--gold)">
               <div>
-                <div style="font-weight:800;color:#fff;font-size:.95rem">給食費等と同じ書類・口座で会費が記載されている</div>
+                <div style="font-weight:800;color:var(--surface);font-size:.95rem">給食費等と同じ書類・口座で会費が記載されている</div>
                 <div style="font-size:.82rem;color:rgba(255,255,255,.6);margin-top:2px">学校徴収金とPTA会費が一体化している</div>
               </div>
             </label>
-            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
-              <input type="checkbox" value="privacy" style="margin-top:3px;width:16px;height:16px;accent-color:var(--gold)">
+            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px var(--radius);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
+              <input type="checkbox" value="privacy" style="margin-top:3px;width:var(--radius);height:var(--radius);accent-color:var(--gold)">
               <div>
-                <div style="font-weight:800;color:#fff;font-size:.95rem">個人情報の利用目的・提供先の記載がない</div>
+                <div style="font-weight:800;color:var(--surface);font-size:.95rem">個人情報の利用目的・提供先の記載がない</div>
                 <div style="font-size:.82rem;color:rgba(255,255,255,.6);margin-top:2px">どこに情報が渡るか書いていない</div>
               </div>
             </label>
-            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
-              <input type="checkbox" value="ok" style="margin-top:3px;width:16px;height:16px;accent-color:var(--gold)">
+            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;padding:14px var(--radius);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;transition:background .2s">
+              <input type="checkbox" value="ok" style="margin-top:3px;width:var(--radius);height:var(--radius);accent-color:var(--gold)">
               <div>
-                <div style="font-weight:800;color:#fff;font-size:.95rem">自署欄があり、任意と書かれている</div>
+                <div style="font-weight:800;color:var(--surface);font-size:.95rem">自署欄があり、任意と書かれている</div>
                 <div style="font-size:.82rem;color:rgba(255,255,255,.6);margin-top:2px">自分で署名して提出するオプトイン方式</div>
               </div>
             </label>
@@ -537,7 +537,7 @@
 
       if (checked.includes('ok') && checked.length === 1) {
         result.innerHTML = `<div style="background:rgba(21,128,61,.2);border:1px solid rgba(74,222,128,.4);border-radius:12px;padding:20px">
-          <div style="font-weight:900;color:#86efac;font-size:1.05rem;margin-bottom:10px">✅ 適正な形式です</div>
+          <div style="font-weight:900;color:#86efac;font-size:1.05rem;margin-bottom:var(--radius-sm)">✅ 適正な形式です</div>
           <p style="color:rgba(255,255,255,.85);font-size:.92rem;line-height:1.8;margin:0">自署欄あり・任意明示のオプトイン方式は、民法・横浜市通知に沿った適正な入会手続です。個人情報の利用目的が明示されていれば、より確実です。</p>
         </div>`;
         return;
@@ -581,9 +581,9 @@
             <div style="font-size:.8rem;font-weight:900;color:rgba(255,255,255,.6);letter-spacing:.06em;margin-bottom:8px">対処方法</div>
             ${actions.map(a => `<div style="display:flex;gap:8px;font-size:.88rem;color:rgba(255,255,255,.88);margin-bottom:6px;line-height:1.6"><span style="color:#86efac;flex-shrink:0">→</span>${a}</div>`).join('')}
           </div>
-          <div style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.1);display:flex;gap:10px;flex-wrap:wrap">
-            <a href="audit/index.html" style="display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;background:var(--gold);color:var(--navy);font-weight:900;font-size:.84rem;text-decoration:none">⚙️ 監査システムで詳しく診断</a>
-            <a href="#pdf-dl" style="display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.1);color:#fff;font-weight:800;font-size:.84rem;text-decoration:none;border:1px solid rgba(255,255,255,.2)">📄 テンプレートPDFを使う</a>
+          <div style="margin-top:var(--radius);padding-top:14px;border-top:1px solid rgba(255,255,255,.1);display:flex;gap:var(--radius-sm);flex-wrap:wrap">
+            <a href="audit/index.html" style="display:inline-flex;align-items:center;gap:6px;padding:9px var(--radius);border-radius:999px;background:var(--gold);color:var(--navy);font-weight:900;font-size:.84rem;text-decoration:none">⚙️ 監査システムで詳しく診断</a>
+            <a href="#pdf-dl" style="display:inline-flex;align-items:center;gap:6px;padding:9px var(--radius);border-radius:999px;background:rgba(255,255,255,.1);color:var(--surface);font-weight:800;font-size:.84rem;text-decoration:none;border:1px solid rgba(255,255,255,.2)">📄 テンプレートPDFを使う</a>
           </div>
         </div>`;
     }
@@ -595,23 +595,46 @@
         <div class="section-center">
           <div class="section-kicker">行動ガイド</div>
           <h2 class="section-title">保護者が取るべき3つのステップ</h2>
+          <p class="section-lead" style="margin-bottom:24px">「言っても無駄」ではありません。法律はあなたの味方です。手順は3つだけ。</p>
+
+          <div class="checklist">
+            <div class="checklist-item">
+              <div class="checklist-mark cl-warn">!</div>
+              <div class="checklist-text">
+                <strong>あなたの状況の確認</strong>：入会届に自署した記憶がない／会費引落しが学校徴収金と一緒／PTA名簿に自分の情報が載っている——どれか1つでも当てはまるなら、現在のPTA運営は法的に問題があります。
+              </div>
+            </div>
+            <div class="checklist-item">
+              <div class="checklist-mark cl-ok">✓</div>
+              <div class="checklist-text">
+                <strong>あなたの権利</strong>：入会の自由・脱退の自由・会費返還請求権（民法703条）・個人情報削除請求権（個情法90条以下）——これらは法律で保障されたあなたの権利です。
+              </div>
+            </div>
+            <div class="checklist-item">
+              <div class="checklist-mark cl-ng">×</div>
+              <div class="checklist-text">
+                <strong>泣き寝入りしない</strong>：「みんなやっているから」「子どもが困るから」という心理的圧力に屈しないでください。横浜市通知（令和7年12月）は「非会員の子どもへの差別は人権侵害」と明示しています。
+              </div>
+            </div>
+          </div>
+
           <p class="section-lead">まず確認し、問題があれば文書で伝え、改善されなければ上位機関へ。</p>
         </div>
         <div class="steps-flow">
           <div class="step-block">
             <div class="step-num">1</div>
             <h4>現状を確認する</h4>
-            <p>入会届の有無・会費引落の経緯・名簿の提供方法を確認。監査システムで診断するとリスクが見えます。</p>
+            <p>入会届（自署したもの）の有無・会費引落の経緯・名簿の提供方法を確認します。「入学時に一括で出した書類にサインがあった」「非加入届を出さなかった」だけでは、法的に有効な入会契約は成立していません。監査システムで現在の状況を診断すると、あなたの学校の問題点がリスクレベルで確認できます。</p>
           </div>
           <div class="step-block">
             <div class="step-num">2</div>
             <h4>文書でPTAに照会</h4>
-            <p>「いつ入会したか」「個人情報提供に同意した記録はあるか」をPTA宛に文書で問い合わせます。テンプレートをご活用ください。</p>
+            <p>「いつ入会したか」「入会の意思表示をいつ行ったか」「個人情報提供に同意した記録があるか」をPTA宛に文書で問い合わせます。PTAが答えられない・答えない場合は、入会契約が成立していないことの証拠になります。このサイトのテンプレート「PTA入会状況照会書」をそのまま使えます。学校ではなくPTAに送ることが重要です（学校とPTAは別組織です）。</p>
           </div>
           <div class="step-block">
             <div class="step-num">3</div>
             <h4>教育委員会に相談</h4>
-            <p>PTAが回答しない・改善がない場合は、学校を管轄する教育委員会に状況を伝えます。</p>
+            <p>PTAが回答しない・改善がない場合は、学校を管轄する教育委員会に状況を伝えます。横浜市通知（令和7年12月）は「非会員の子どもへの差別的取扱いは人権侵害」と明示しており、教育委員会は対応義務を負います。それでも対応がない場合は住民監査請求・個人情報保護委員会への申告も選択肢です。「言っても無駄」ではなく、制度に正式な手続きが用意されています。</p>
           </div>
         </div>
       </div>
@@ -622,7 +645,7 @@
       <div class="wrap">
         <div class="section-center">
           <div class="section-kicker" style="background:rgba(212,175,55,.15);border:1px solid rgba(212,175,55,.3);color:var(--gold-lt)">PDFテンプレート</div>
-          <h2 class="section-title" style="color:#fff">すぐ使えるテンプレートPDF</h2>
+          <h2 class="section-title" style="color:var(--surface)">すぐ使えるテンプレートPDF</h2>
           <p class="section-lead" style="color:rgba(255,255,255,.78)">印刷してそのまま使えます。自分の状況に合わせて使用してください。</p>
         </div>
         <div class="pdf-grid">

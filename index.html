@@ -67,7 +67,7 @@
       display:inline-flex;align-items:center;gap:8px;
       padding:5px 14px;border-radius:999px;
       background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.3);
-      color:#d4af37;font-size:.72rem;font-weight:900;
+      color:var(--gold);font-size:.72rem;font-weight:900;
       letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px;
     }
     .hero-kicker::before{
@@ -81,7 +81,7 @@
       font-weight:900;line-height:1.25;margin-bottom:10px;
       letter-spacing:-.01em;
     }
-    .hero-h1 .accent{color:#d4af37;}
+    .hero-h1 .accent{color:var(--gold);}
     .hero-h1 .break{display:block;}
     .hero-sub{
       font-family:'Noto Serif JP',serif;
@@ -108,7 +108,7 @@
     .hero-stat:last-child{border-right:none}
     .hero-stat strong{
       display:block;font-family:'Noto Serif JP',serif;
-      font-size:1.9rem;font-weight:700;color:#d4af37;
+      font-size:1.9rem;font-weight:700;color:var(--gold);
       line-height:1;margin-bottom:4px;
     }
     .hero-stat span{font-size:.76rem;color:rgba(255,255,255,.5);font-weight:600}
@@ -119,7 +119,7 @@
       display:flex;align-items:center;gap:12px;max-width:560px;
     }
     .ticker-badge{
-      background:#b91c1c;color:#fff;font-size:.68rem;font-weight:900;
+      background:var(--red);color:#fff;font-size:.68rem;font-weight:900;
       padding:2px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;
       letter-spacing:.06em;
     }
@@ -157,10 +157,10 @@
     .ec-desc{font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:8px}
     .ec-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px}
     .ec-tag{background:rgba(255,255,255,.08);color:rgba(255,255,255,.6);font-size:.67rem;font-weight:700;padding:2px 7px;border-radius:4px}
-    .ec-arrow{font-size:.76rem;font-weight:800;color:#d4af37}
+    .ec-arrow{font-size:.76rem;font-weight:800;color:var(--gold)}
 
     /* ===== ALERT BANNER ===== */
-    .alert-banner{background:linear-gradient(90deg,#b91c1c,#991b1b);color:#fff;padding:10px 0;overflow:hidden}
+    .alert-banner{background:linear-gradient(90deg,var(--red),#991b1b);color:#fff;padding:10px 0;overflow:hidden}
     .alert-banner-inner{width:min(calc(100%-40px),1280px);margin-inline:auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
     .ab-badge{background:rgba(255,255,255,.2);font-size:.68rem;font-weight:900;padding:3px 10px;border-radius:4px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;flex-shrink:0}
     .ab-text{font-size:.84rem;font-weight:700;flex:1;min-width:240px}
@@ -171,7 +171,7 @@
     .now-section{background:#fff;padding:88px 0}
     .now-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
     .now-card-featured{
-      background:linear-gradient(145deg,var(--navy),#1a3a52);
+      background:linear-gradient(145deg,var(--navy),var(--navy-3));
       border-radius:var(--radius);padding:36px;color:#fff;
       grid-row:span 2;display:flex;flex-direction:column;
       border:1px solid rgba(212,175,55,.2);
@@ -181,7 +181,7 @@
     .now-label-orange{background:rgba(194,65,12,.25);color:#fdba74;border:1px solid rgba(194,65,12,.35)}
     .now-label-blue{background:rgba(29,78,216,.25);color:#93c5fd;border:1px solid rgba(29,78,216,.35)}
     .now-label-green{background:rgba(21,128,61,.25);color:#86efac;border:1px solid rgba(21,128,61,.35)}
-    .now-card-featured h3{font-family:'Noto Serif JP',serif;font-size:1.5rem;font-weight:900;color:#f4e7a6;margin:0 0 14px}
+    .now-card-featured h3{font-family:'Noto Serif JP',serif;font-size:1.5rem;font-weight:900;color:var(--gold-lt);margin:0 0 14px}
     .now-card-featured p{color:rgba(255,255,255,.82);font-size:.95rem;line-height:1.85;flex:1;margin-bottom:12px}
     .now-card{
       background:#fff;border:1px solid var(--line);border-radius:var(--radius);
@@ -234,7 +234,7 @@
     .issues-section{background:#fff;padding:88px 0}
     .issues-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
     .issue-card-featured{
-      background:linear-gradient(145deg,#05111f,#0c1f35);
+      background:linear-gradient(145deg,var(--navy),var(--navy-2));
       border-radius:var(--radius);padding:36px;color:#fff;
       grid-column:span 2;display:grid;grid-template-columns:1fr auto;
       align-items:start;gap:32px;text-decoration:none;
@@ -508,6 +508,43 @@
 
   <main>
 
+    <!-- ===== 数字で見るPTA問題 ===== -->
+    <section style="background:var(--surface);padding:48px 0 32px;border-bottom:1px solid var(--line)">
+      <div class="wrap">
+        <div class="section-center" style="margin-bottom:24px">
+          <div class="section-kicker">調査実績</div>
+          <h2 class="section-title" style="font-size:clamp(1.4rem,2.4vw,1.9rem)">数字で見る——調査の規模</h2>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-num stat-num-gold">97</span>
+            <span class="stat-label">全国教育委員会への照会</span>
+            <span class="stat-sub">（自治体）</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">50<small style="font-size:1rem">+</small></span>
+            <span class="stat-label">情報公開請求で取得</span>
+            <span class="stat-sub">（自治体の実物文書）</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-red">0</span>
+            <span class="stat-label">「強制加入は適法」と回答した教委</span>
+            <span class="stat-sub">（97自治体中ゼロ）</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-red">9,200</span>
+            <span class="stat-label">無断提供された個人情報</span>
+            <span class="stat-sub">（静岡市20校・2026年4月発覚）</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-green">1</span>
+            <span class="stat-label">全国初の行政指針</span>
+            <span class="stat-sub">（横浜市通知 学教第1965号）</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== 今何が起きているか（画像付きカード） ===== -->
     <section class="now-section">
       <div class="wrap">
@@ -580,8 +617,8 @@
     <section class="testimony-section">
       <div class="wrap">
         <div class="section-center">
-          <div class="section-kicker" style="background:rgba(212,175,55,.12);color:#d4af37">行政の公式見解</div>
-          <h2 class="section-title" style="color:#fff">全国の教育委員会が「違法・不適切」と回答している</h2>
+          <div class="section-kicker" style="background:rgba(212,175,55,.12);color:var(--gold)">行政の公式見解</div>
+          <h2 class="section-title" style="color:var(--surface)">全国の教育委員会が「違法・不適切」と回答している</h2>
           <p class="section-lead" style="color:rgba(255,255,255,.7)">Gmailから直接読み込んだ一次資料。照会への実際の回答文言です。</p>
         </div>
 
@@ -589,7 +626,7 @@
 
           <div class="testimony-card">
             <div class="tc-source">
-              <div class="tc-dot" style="background:#15803d"></div>
+              <div class="tc-dot" style="background:var(--green)"></div>
               <div>
                 <div class="tc-meta">✅ 完全分離・自主移行</div>
                 <div class="tc-date">令和8年3月 照会回答（メール原文）</div>
@@ -601,7 +638,7 @@
 
           <div class="testimony-card">
             <div class="tc-source">
-              <div class="tc-dot" style="background:#15803d"></div>
+              <div class="tc-dot" style="background:var(--green)"></div>
               <div>
                 <div class="tc-meta">✅ 自主徴収への移行方針</div>
                 <div class="tc-date">令和8年4月 照会回答（メール原文）</div>
@@ -613,7 +650,7 @@
 
           <div class="testimony-card">
             <div class="tc-source">
-              <div class="tc-dot" style="background:#15803d"></div>
+              <div class="tc-dot" style="background:var(--green)"></div>
               <div>
                 <div class="tc-meta">✅ みなし加入は不適切と明言</div>
                 <div class="tc-date">令和7年12月 6問照会回答（メール原文）</div>
@@ -625,7 +662,7 @@
 
           <div class="testimony-card">
             <div class="tc-source">
-              <div class="tc-dot" style="background:#c2410c"></div>
+              <div class="tc-dot" style="background:var(--orange)"></div>
               <div>
                 <div class="tc-meta">⚠️ 委任要綱で継続（詰みモデル）</div>
                 <div class="tc-date">令和8年4月 照会回答（メール原文）</div>
@@ -637,7 +674,7 @@
 
           <div class="testimony-card">
             <div class="tc-source">
-              <div class="tc-dot" style="background:#15803d"></div>
+              <div class="tc-dot" style="background:var(--green)"></div>
               <div>
                 <div class="tc-meta">✅ 名簿提供ゼロを明言</div>
                 <div class="tc-date">令和8年1月 要望書回答（メール原文）</div>
@@ -649,7 +686,7 @@
 
           <div class="testimony-card">
             <div class="tc-source">
-              <div class="tc-dot" style="background:#15803d"></div>
+              <div class="tc-dot" style="background:var(--green)"></div>
               <div>
                 <div class="tc-meta">✅ 独立性を明言</div>
                 <div class="tc-date">令和8年2月 要望書回答（メール原文）</div>
@@ -807,17 +844,17 @@
       <div class="wrap">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch">
 
-          <a href="cases.html#judicial-reality" style="text-decoration:none;display:block;background:linear-gradient(145deg,#7f1d1d,#991b1b);border-radius:var(--radius);padding:32px;color:#fff;transition:var(--t)" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
-            <div style="font-size:.72rem;font-weight:900;letter-spacing:.1em;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:10px">司法の現実</div>
-            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.25rem;font-weight:900;color:#fff;line-height:1.4;margin-bottom:12px">「慣例」は法廷では通用しない</h3>
-            <p style="font-size:.9rem;color:rgba(255,255,255,.82);line-height:1.75;margin:0 0 16px">熊本PTA裁判では学校長の不法行為責任が追及。鹿児島地裁では「黙示の入会」の限界が示されました。「今までやってきた」は免罪符になりません。</p>
+          <a href="cases.html#judicial-reality" style="text-decoration:none;display:block;background:linear-gradient(145deg,#7f1d1d,#991b1b);border-radius:var(--radius);padding:32px;color:var(--surface);transition:var(--t)" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+            <div style="font-size:.72rem;font-weight:900;letter-spacing:.1em;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:var(--radius-sm)">司法の現実</div>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.25rem;font-weight:900;color:var(--surface);line-height:1.4;margin-bottom:12px">「慣例」は法廷では通用しない</h3>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.82);line-height:1.75;margin:0 0 var(--radius)">熊本PTA裁判では学校長の不法行為責任が追及。鹿児島地裁では「黙示の入会」の限界が示されました。「今までやってきた」は免罪符になりません。</p>
             <span style="font-size:.86rem;font-weight:800;color:rgba(255,255,255,.75)">判例整理を見る →</span>
           </a>
 
-          <a href="cases.html#model-comparison" style="text-decoration:none;display:block;background:linear-gradient(145deg,var(--navy),var(--navy-2));border-radius:var(--radius);padding:32px;color:#fff;transition:var(--t)" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
-            <div style="font-size:.72rem;font-weight:900;letter-spacing:.1em;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:10px">行政モデルの比較</div>
-            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.25rem;font-weight:900;color:#fff;line-height:1.4;margin-bottom:12px">川崎市モデルも横浜市モデルも「詰み」</h3>
-            <p style="font-size:.9rem;color:rgba(255,255,255,.82);line-height:1.75;margin:0 0 16px">学校代行を維持しようとする試みはすべて破綻する構造を持っています。唯一の解は「完全分離・自立」だけです。</p>
+          <a href="cases.html#model-comparison" style="text-decoration:none;display:block;background:linear-gradient(145deg,var(--navy),var(--navy-2));border-radius:var(--radius);padding:32px;color:var(--surface);transition:var(--t)" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+            <div style="font-size:.72rem;font-weight:900;letter-spacing:.1em;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:var(--radius-sm)">行政モデルの比較</div>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:1.25rem;font-weight:900;color:var(--surface);line-height:1.4;margin-bottom:12px">川崎市モデルも横浜市モデルも「詰み」</h3>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.82);line-height:1.75;margin:0 0 var(--radius)">学校代行を維持しようとする試みはすべて破綻する構造を持っています。唯一の解は「完全分離・自立」だけです。</p>
             <span style="font-size:.86rem;font-weight:800;color:rgba(255,255,255,.75)">比較分析を見る →</span>
           </a>
 

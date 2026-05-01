@@ -76,7 +76,7 @@
       display:grid;place-items:center;font-size:.72rem;
       transition:var(--t);
     }
-    .check-box.checked{background:#15803d;border-color:#15803d;color:#fff}
+    .check-box.checked{background:var(--green);border-color:var(--green);color:#fff}
     .check-text{font-size:.88rem;color:var(--text);line-height:1.6}
     .check-text strong{color:var(--navy)}
     .check-law{display:block;font-size:.74rem;color:var(--text-soft);margin-top:2px}
@@ -106,9 +106,9 @@
     }
     .risk-bar-track{height:8px;background:rgba(255,255,255,.15);border-radius:999px;overflow:hidden}
     .risk-bar-fill{height:100%;border-radius:999px;transition:width 1s ease}
-    .risk-bar-fill-red{background:linear-gradient(90deg,#b91c1c,#ef4444)}
-    .risk-bar-fill-orange{background:linear-gradient(90deg,#c2410c,#f97316)}
-    .risk-bar-fill-blue{background:linear-gradient(90deg,#1d4ed8,#60a5fa)}
+    .risk-bar-fill-red{background:linear-gradient(90deg,var(--red),#ef4444)}
+    .risk-bar-fill-orange{background:linear-gradient(90deg,var(--orange),#f97316)}
+    .risk-bar-fill-blue{background:linear-gradient(90deg,var(--blue),#60a5fa)}
 
     /* Before/After */
     .compare-section{background:var(--bg);padding:80px 0}
@@ -117,11 +117,11 @@
     .compare-col.before{background:#fff5f5;border:1px solid #fecaca}
     .compare-col.after{background:#f0fdf4;border:1px solid #bbf7d0}
     .compare-label{font-size:.78rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-    .compare-col.before .compare-label{color:#b91c1c}
-    .compare-col.after .compare-label{color:#15803d}
+    .compare-col.before .compare-label{color:var(--red)}
+    .compare-col.after .compare-label{color:var(--green)}
     .compare-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;font-size:.9rem;color:var(--text);line-height:1.6}
-    .ci-dot-ng{width:18px;height:18px;border-radius:50%;background:#fee2e2;color:#b91c1c;display:grid;place-items:center;font-size:.7rem;flex-shrink:0;margin-top:1px}
-    .ci-dot-ok{width:18px;height:18px;border-radius:50%;background:#dcfce7;color:#15803d;display:grid;place-items:center;font-size:.7rem;flex-shrink:0;margin-top:1px}
+    .ci-dot-ng{width:18px;height:18px;border-radius:50%;background:#fee2e2;color:var(--red);display:grid;place-items:center;font-size:.7rem;flex-shrink:0;margin-top:1px}
+    .ci-dot-ok{width:18px;height:18px;border-radius:50%;background:#dcfce7;color:var(--green);display:grid;place-items:center;font-size:.7rem;flex-shrink:0;margin-top:1px}
 
     /* Roadmap */
     .roadmap-section{background:#fff;padding:80px 0}
@@ -284,7 +284,7 @@
     <div class="page-hero-inner">
       <div class="page-hero-kicker">For Officers</div>
       <h1>役員だからこそ、<br><em>今すぐ確認</em>すべきことがある。</h1>
-      <p>善意で引き受けた役員職でも、現行の慣行が続く限り役員個人が法的リスクを負います。就任直後にやるべき確認・適正化の手順・使える雛形をまとめました。</p>
+      <p>善意で引き受けた役員職でも、「知らなかった」「前任者からの引き継ぎだった」は法律上の免責理由になりません。みなし加入状態で徴収した会費が不当利得と認定されれば会長個人が返還義務を負う可能性があり、無断で受け取った個人情報についての不法行為責任も問われえます。就任直後に確認すべきことと、段階的な適正化の手順・使える書式をまとめました。</p>
       <div class="hero-actions">
         <a href="#onboard" class="btn-gold">📋 就任直後チェックリスト</a>
         <a href="#roadmap" class="btn-outline">🗺️ 適正化ロードマップ</a>
@@ -294,6 +294,43 @@
   </section>
 
   <main>
+    <!-- 役員リスクのビジュアル -->
+    <section style="background:var(--surface);padding:40px 0">
+      <div class="wrap">
+        <div class="callout callout-critical">
+          <div class="callout-icon">⚖️</div>
+          <div class="callout-body">
+            <h4>「知らなかった」では済まない——4つの個人責任リスク</h4>
+            <p>善意で引き受けた役員職でも、現行の慣行が続く限り、以下の責任があなた個人に及ぶ可能性があります。引き継ぎ前にすべて確認してください。</p>
+          </div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-num stat-num-red">703</span>
+            <span class="stat-label">民法703条</span>
+            <span class="stat-sub">不当利得返還責任<br>（みなし加入時の会費）</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-red">709</span>
+            <span class="stat-label">民法709条</span>
+            <span class="stat-sub">不法行為責任<br>（個人情報の違法取扱）</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-red">253</span>
+            <span class="stat-label">刑法253条</span>
+            <span class="stat-sub">業務上横領<br>（役員個人通帳管理時）</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num stat-num-orange">5</span>
+            <span class="stat-label">時効5年</span>
+            <span class="stat-sub">退任後も追及される<br>（民法改正後）</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
 
     <!-- 就任直後チェックリスト -->
     <section class="onboard-section" id="onboard">
@@ -369,7 +406,7 @@
       <div class="wrap">
         <div class="section-center">
           <div class="section-kicker" style="background:rgba(212,175,55,.15);color:var(--gold-lt)">役員が負うリスク</div>
-          <h2 class="section-title" style="color:#fff">現行慣行が続く場合の法的リスク</h2>
+          <h2 class="section-title" style="color:var(--surface)">現行慣行が続く場合の法的リスク</h2>
           <p class="section-lead" style="color:rgba(255,255,255,.78)">「知らなかった」「前任者からの引き継ぎだった」は免責理由になりません。</p>
         </div>
         <div class="risk-chart">
@@ -422,7 +459,7 @@
           <p class="section-lead">どこを変えれば良いか、対比で確認します。</p>
         </div>
 
-        <h3 style="font-family:'Noto Serif JP',serif;color:var(--navy);margin:40px 0 16px;font-size:1.2rem">入会手続</h3>
+        <h3 style="font-family:'Noto Serif JP',serif;color:var(--navy);margin:40px 0 var(--radius);font-size:1.2rem">入会手続</h3>
         <div class="compare-wrap">
           <div class="compare-col before">
             <div class="compare-label">❌ 問題のある現状</div>
@@ -440,7 +477,7 @@
           </div>
         </div>
 
-        <h3 style="font-family:'Noto Serif JP',serif;color:var(--navy);margin:32px 0 16px;font-size:1.2rem">学校との関係</h3>
+        <h3 style="font-family:'Noto Serif JP',serif;color:var(--navy);margin:32px 0 var(--radius);font-size:1.2rem">学校との関係</h3>
         <div class="compare-wrap">
           <div class="compare-col before">
             <div class="compare-label">❌ 問題のある現状</div>
@@ -472,7 +509,7 @@
             <div class="rm-body">
               <div class="rm-phase">緊急：今期中</div>
               <strong>入会届の整備</strong>
-              <p>PTAが独自に入会届を作成し、新年度から配布開始。任意性・個人情報利用目的を明記。非加入の保護者への差別的扱いを禁止する旨を役員全員で確認する。</p>
+              <p>PTAが独自に入会届を作成し、新年度から配布開始します。記載必須事項は①任意性の明示（「加入は任意です」の文言）、②個人情報の利用目的と第三者提供の有無、③退会の自由と手続き、④会費額と支払方法——の4点です（横浜市通知の要件準拠）。学校の配布ルートを通じず、PTAが独自に配布・回収します。非加入の保護者への差別的取扱い（登校班不参加・記念品不配布等）を役員全員で確認し禁止を明文化します。</p>
             </div>
           </div>
           <div class="rm-step">
@@ -480,7 +517,7 @@
             <div class="rm-body">
               <div class="rm-phase">優先：今期中</div>
               <strong>個人情報の分離</strong>
-              <p>学校から名簿の提供を受けることを中止。入会届に基づいてPTAが独自の会員名簿を作成する。既存の名簿は破棄または本人同意の取得に移行する。</p>
+              <p>学校から名簿の提供を受けることを中止し、入会届に基づいてPTAが独自の会員名簿を作成します。既存の名簿（学校名簿由来のもの）は一律廃棄し、入会届を提出した会員のみの名簿に切り替えます。名簿の保管・管理責任者を明確にし、役員交代時の引き継ぎルールを文書化します。退会者の情報は速やかに削除します。なお、学校が保有する緊急連絡先情報はPTAとは無関係に機能するため、名簿削除が緊急連絡に影響することはありません。</p>
             </div>
           </div>
           <div class="rm-step">
@@ -488,7 +525,7 @@
             <div class="rm-body">
               <div class="rm-phase">優先：今期中</div>
               <strong>会計の独立</strong>
-              <p>学校徴収金からPTA会費を分離。PTA名義の専用口座を設置し、役員の交代に依存しない会計体制を整備。会計規程と年次監査を導入する。</p>
+              <p>学校徴収金からPTA会費を完全に分離します。PTA名義の専用銀行口座を設置し、会費はPTAが独自に徴収します。キャッシュレス対応（PayPay請求・口座振込等）を導入すれば、役員の現金管理負担は大幅に軽減されます。会計規程を整備し、収支の透明性を確保します。役員個人の口座でPTA資金を管理することは横領事件の典型パターンです。年次監査の実施と決算報告の全会員公開を義務化することで、役員リスクを最小化します。</p>
             </div>
           </div>
           <div class="rm-step">
@@ -496,7 +533,7 @@
             <div class="rm-body">
               <div class="rm-phase">中期：来期まで</div>
               <strong>学校事務からの独立</strong>
-              <p>教職員によるPTA事務（配布・集金・印刷等）を段階的に廃止。PTAが自前で担う体制を整備する。渉外業務（校長との連絡調整）だけを公式な接点として残す。</p>
+              <p>教職員によるPTA事務（配布・集金・印刷・名簿管理等）を段階的に廃止し、PTAが自前で担う体制を整備します。「今すぐやめると支障が出る」場合は、移行期間と具体的なスケジュールを文書化し、校長に伝えることが重要です。渉外業務（校長との連絡調整）だけを公式な接点として残します。教職員への「お願い」を徐々に減らしていくことは、教職員の職務専念義務問題も同時に解消します。移行が完了すればPTAも学校も双方の法的リスクが消えます。</p>
             </div>
           </div>
           <div class="rm-step">
@@ -516,7 +553,7 @@
       <div class="wrap">
         <div class="section-center">
           <div class="section-kicker" style="background:rgba(212,175,55,.15);color:var(--gold-lt)">PDF雛形</div>
-          <h2 class="section-title" style="color:#fff">役員のためのPDF雛形集</h2>
+          <h2 class="section-title" style="color:var(--surface)">役員のためのPDF雛形集</h2>
           <p class="section-lead" style="color:rgba(255,255,255,.78)">そのまま使えます。学校名・年度を入れて活用してください。</p>
         </div>
         <div class="officer-pdf-grid">
@@ -571,35 +608,35 @@
     </section>
 
     <!-- ===== FAQ ===== -->
-    <section style="background:#fff;padding:72px 0">
+    <section style="background:var(--surface);padding:72px 0">
       <div class="wrap wrap-narrow">
         <div class="section-center">
           <div class="section-kicker">よくある疑問</div>
           <h2 class="section-title">PTA役員からよく出る質問</h2>
         </div>
-        <div class="faq-list" style="display:flex;flex-direction:column;gap:10px;margin-top:32px">
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+        <div class="faq-list" style="display:flex;flex-direction:column;gap:var(--radius-sm);margin-top:32px">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">就任直後に問題に気づいた場合、前任者の責任を問えますか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">原則として、過去の役員が故意・重過失で不法行為を行っていた場合に限り責任追及が可能です。ただし現任役員として「問題に気づいたが放置した」場合は現任役員の責任も問われます。まず改善計画を文書化し、総会・役員会に提案することで「善意かつ改善着手済み」の事実を記録に残すことが重要です。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">会長個人の通帳で会費を管理しています。今すぐ変えるべきですか？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">即座に変えるべきです。役員個人口座での管理は横領事件の典型パターンです。退任後に「あの期間に不明金がある」と追及されるリスクがあります。今期中にPTA名義の法人口座または代表者連名口座を開設し、会計規程と年次監査を整備してください。PDF雛形は上記からダウンロードできます。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">入会届に変えたら会費収入が減るのでは？という声があります。</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
             </div>
             <div class="faq-a" style="padding:0 22px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease"><p style="font-size:.93rem;color:var(--text);line-height:1.85;margin:0;padding-top:12px;border-top:1px solid var(--line)">短期的には減る可能性があります。しかし現在の「全員から徴収している会費」は法的根拠のない徴収であり、返還請求を受けた場合に全額返還義務が生じます。法的根拠のある収入を少なく集める方が、法的根拠のない収入を多く集めるよりはるかに安全です。また任意加入を明示した上で活動の意義を丁寧に説明すると、加入率は思ったほど落ちないケースが多いです。</p></div>
           </div>
-          <div class="faq-item" style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+          <div class="faq-item" style="background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
             <div class="faq-q" style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:12px;user-select:none">
               <div class="faq-q-text" style="font-size:.97rem;font-weight:700;color:var(--navy);flex:1">担任の先生がPTA配布物を配ってくれています。やめてもらう方法は？</div>
               <span class="faq-toggle" style="color:var(--text-soft)">▼</span>
