@@ -101,7 +101,7 @@
 <a class="next-action-card" href="glossary.html"><span>NOTE</span><h3>引用・印刷時の注記</h3><p>紙資料・申入れ・SNS紹介時の誤読を防ぎます。</p></a>
 </div></div></section>
 <section class="section"><div class="wrap"><div class="section-center"><div class="section-kicker">PTA</div><h2 class="section-title">回答自治体マップ</h2><p class="section-lead">登録した自治体の概略座標にピンを表示します。ポップアップには回答本文の冒頭を入れています。</p></div><div id="responseMap"></div><p class="map-note">注：ピンは公開資料の視覚化用の概略位置です。市役所所在地等の厳密な測量座標ではありません。 地図が表示されない場合は、下部の自治体一覧・回答本文をご確認ください。</p></div></section>
-<section class="section white" id="response-filter"><div class="wrap"><div class="section-center"><div class="section-kicker">Filter</div><h2 class="section-title">自治体・質問類型で絞り込む</h2><p class="section-lead">A〜Gの質問類型、自治体名、本文キーワード、論点候補タグで検索できます。</p></div><div class="board-controls"><div class="filter-label">質問類型</div><div class="filter-row"><button class="is-active" data-board-filter="all">すべて</button><button data-board-filter="A">A:6項目</button><button data-board-filter="B">B:追加7-8</button><button data-board-filter="C">C:要望書</button><button data-board-filter="D">D:実態調査</button><button data-board-filter="E">E:137条</button><button data-board-filter="F">F:個別</button><button data-board-filter="G">G:延長等</button></div><div class="filter-label">論点候補タグ</div><div class="filter-row tag-filter-row" id="tagFilterRow"><button class="is-active" data-response-tag="all">論点すべて</button></div><input class="response-search" id="responseSearch" placeholder="自治体名・本文・論点タグで検索" type="search"/><p class="tag-filter-note">論点候補タグは、回答本文からの自動抽出です。自治体が当該法的結論を明確に認めたことを示すものではありません。</p><p class="selected-tag-note" hidden="" id="selectedTagNote"></p></div><div class="table-wrap"><table class="v35-table"><thead><tr><th>No.</th><th>自治体名</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th></tr></thead><tbody id="indexTableBody"></tbody></table></div></div></section>
+<section class="section white" id="response-filter"><div class="wrap"><div class="section-center"><div class="section-kicker">Filter</div><h2 class="section-title">自治体・質問類型で絞り込む</h2><p class="section-lead">A〜Gの質問類型、自治体名、本文キーワード、論点候補タグで検索できます。自治体一覧は折りたたみ式にし、必要な自治体だけ開いて確認できます。</p></div><div class="board-controls"><div class="filter-label">質問類型</div><div class="filter-row"><button class="is-active" data-board-filter="all">すべて</button><button data-board-filter="A">A:6項目</button><button data-board-filter="B">B:追加7-8</button><button data-board-filter="C">C:要望書</button><button data-board-filter="D">D:実態調査</button><button data-board-filter="E">E:137条</button><button data-board-filter="F">F:個別</button><button data-board-filter="G">G:延長等</button></div><div class="filter-label">論点候補タグ</div><div class="filter-row tag-filter-row" id="tagFilterRow"><button class="is-active" data-response-tag="all">論点すべて</button></div><input class="response-search" id="responseSearch" placeholder="自治体名・本文・論点タグで検索" type="search"/><p class="tag-filter-note">論点候補タグは、回答本文からの自動抽出です。自治体が当該法的結論を明確に認めたことを示すものではありません。</p><p class="selected-tag-note" hidden="" id="selectedTagNote"></p></div><details class="municipality-index-panel" id="municipalityIndexPanel"><summary><span>自治体一覧を開く</span><small id="municipalityIndexCount"></small></summary><p class="municipality-index-note">自治体名を押すと、質問類型・論点候補タグ・検証フラグ・本文冒頭を確認できます。全文は下の「分類シート別・回答本文」で確認してください。</p><div class="municipality-accordion-list" id="indexAccordionBody"></div></details></div></section>
 <section class="section" id="response-details"><div class="wrap"><div class="section-center"><div class="section-kicker">PTA</div><h2 class="section-title">分類シート別・回答本文</h2><p class="section-lead">回答本文をページ内に組み込みました。引用時は、同梱Excelおよび原資料PDFで必ず確認してください。</p></div><p class="db-fulltext-note">回答本文はExcelの「回答内容」列から全文反映しています。長文はアコーディオンを開いて確認してください。</p><div class="detail-grid" id="detailGrid"></div></div></section><section class="section white"><div class="wrap-narrow">
 <div class="section-kicker">References</div>
 <h2 class="section-title">関連資料・分類ガイド</h2>
@@ -721,47 +721,44 @@
 </details>
 </div></section>
 </main>
-<footer class="footer"><div class="footer-grid" style="grid-template-columns:1.4fr 1fr 1fr 1fr 1fr">
-<div>
+<footer class="footer"><div class="footer-grid footer-grid--v8">
+<div class="footer-brand-block">
 <h3>PTA適正化推進委員会</h3>
-<p>〒235-0021 神奈川県横浜市磯子区岡村<br/>070-9012-7772<br/><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
-<a class="yokomusubi-card" href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" rel="noopener noreferrer" target="_blank">
+<a class="yokomusubi-card yokomusubi-card--compact" href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" rel="noopener noreferrer" target="_blank">
+<img alt="よこむすび 横浜市地域活動・ボランティア情報サイト" src="assets/yokomusubi.png"/>
 <strong>磯子区「よこむすび」掲載団体</strong>
-<span>登録番号: 磯子12406 / 分類番号: 12-4</span></a>
+<span class="yokomusubi-meta">登録番号：磯子12406</span>
+<span class="yokomusubi-meta">分類番号：12-4（市民活動・社会教育推進）</span>
+</a>
+<div class="footer-contact">
+<div>〒235-0021</div>
+<div>神奈川県横浜市磯子区岡村</div>
+<div><a href="tel:07090127772">070-9012-7772</a></div>
+<div><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></div>
 </div>
-<div>
-<h4>読む</h4><ul style="list-style:none;padding:0">
-<li><a href="start.html">3分で読む</a></li>
-<li><a href="edu-board-start.html">教委向け5ページ</a></li>
-<li><a href="issues.html">5大論点</a></li>
-<li><a href="guide.html">立場別ガイド</a></li>
-<li><a href="faq.html">よくある質問</a></li></ul>
 </div>
-<div>
-<h4>全国実態</h4><ul style="list-style:none;padding:0">
-<li><a href="archive.html">全国PTA資料館</a></li>
-<li><a href="responses.html">教育委員会回答DB</a></li>
-<li><a href="reports/index.html">運営状況報告書</a></li></ul>
-</div>
-<div>
-<h4>調べる・行動</h4><ul style="list-style:none;padding:0">
-<li><a href="law.html">法制度マップ</a></li>
-<li><a href="journal/index.html">論考・研究</a></li>
-<li><a href="audit/index.html">適正化診断</a></li>
-<li><a href="kit.html">提出キット</a></li></ul>
-</div>
-<div>
+<div class="footer-outreach-block">
 <h4>公式発信</h4>
-<ul style="list-style:none;padding:0">
-<li><a href="https://x.com/jjjqqqxxx0852" rel="noopener noreferrer" target="_blank">X (Twitter)</a></li>
-<li><a href="https://www.youtube.com/@PTA%E9%81%A9%E6%AD%A3%E5%8C%96%E6%8E%A8%E9%80%B2%E5%A7%94%E5%93%A1%E4%BC%9A" rel="noopener noreferrer" target="_blank">YouTube</a></li>
-<li><a href="sitemap.html">サイトマップ</a></li>
-<li><a href="donate.html">ご支援</a></li>
-</ul>
+<div class="footer-social-lead">最新資料・論考・動画はこちら</div>
+<div aria-label="公式SNS" class="footer-social footer-social--polished">
+<a aria-label="XでPTA適正化推進委員会を見る" class="sns-card sns-x" href="https://x.com/jjjqqqxxx0852" rel="noopener noreferrer" target="_blank">
+<span class="sns-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.244 2H21.5l-7.11 8.123L22.75 22h-6.54l-5.12-6.688L5.23 22H1.99l7.6-8.688L1.25 2h6.704l4.627 6.118L18.244 2Zm-1.143 17.91h1.804L6.87 3.99H4.934L17.1 19.91Z"></path></svg></span>
+<span class="sns-text"><strong>X</strong><small>速報・資料更新</small></span>
+</a>
+<a aria-label="YouTubeでPTA適正化推進委員会を見る" class="sns-card sns-youtube" href="https://www.youtube.com/@PTA%E9%81%A9%E6%AD%A3%E5%8C%96%E6%8E%A8%E9%80%B2%E5%A7%94%E5%93%A1%E4%BC%9A" rel="noopener noreferrer" target="_blank">
+<span class="sns-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.13-2.14C19.49 3.5 12 3.5 12 3.5s-7.49 0-9.37.56A3.02 3.02 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.13 2.14c1.88.56 9.37.56 9.37.56s7.49 0 9.37-.56a3.02 3.02 0 0 0 2.13-2.14A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.84 12 9.6 15.6Z"></path></svg></span>
+<span class="sns-text"><strong>YouTube</strong><small>動画で解説</small></span>
+</a>
+<a aria-label="noteで佐藤大の記事を見る" class="sns-card sns-note" href="https://note.com/hiroshisatoh" rel="noopener noreferrer" target="_blank">
+<span class="sns-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 3.5h10.15c3.65 0 5.85 2.15 5.85 5.72V20.5h-4.1V9.74c0-1.67-.83-2.54-2.45-2.54H8.1v13.3H4V3.5Z"></path></svg></span>
+<span class="sns-text"><strong>note</strong><small>論考・研究ノート</small></span>
+</a>
 </div>
 </div>
-<p class="copyright">© PTA適正化推進委員会</p>
-</footer>
+<div><h4>立場別</h4><ul><li><a href="guide-parent.html">保護者</a></li><li><a href="guide-pta.html">PTA役員</a></li><li><a href="guide-board.html">教育委員会・学校</a></li><li><a href="guide-research.html">研究者・記者</a></li><li><a href="edu-board-guideline.html">教育委員会向け指針</a></li></ul></div>
+<div><h4>論点</h4><ul><li><a href="membership.html">入会手続</a></li><li><a href="privacy.html">個人情報</a></li><li><a href="fee-collection.html">会費徴収</a></li><li><a href="personnel.html">教職員関与</a></li><li><a href="facilities.html">施設利用</a></li></ul></div>
+<div><h4>資料・支援</h4><ul><li><a href="responses.html">教育委員会の回答</a></li><li><a href="response-index.html">自治体別索引</a></li><li><a href="map.html">自治体マップ</a></li><li><a href="national-archive.html">全国資料館</a></li><li><a href="journal.html">論考・調査報告</a></li><li><a href="research-index.html">論考・資料索引</a></li><li><a href="claim-evidence-ledger.html">根拠対応表</a></li><li><a href="sitemap.html">サイトマップ</a></li><li><a href="donate.html">ご支援・寄付</a></li></ul></div>
+</div><p class="copyright">© PTA適正化推進委員会</p></footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="data/board-responses-index.js"></script>
 <script src="js/board-responses.js"></script>
