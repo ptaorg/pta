@@ -20,19 +20,17 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
-
 <style>
 .strength-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}.strength-panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow-soft)}.strength-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.metric-box{background:#f6f7fb;border:1px solid var(--line);border-radius:18px;padding:16px}.metric-box strong{display:block;font-size:2rem;color:var(--navy);line-height:1}.metric-box span{font-size:.86rem;color:var(--muted)}.route-card{position:relative;border-left:5px solid var(--gold)}.route-card .tag{font-size:.78rem;font-weight:900;color:var(--gold);letter-spacing:.08em}.bookmark-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.bookmark-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow-soft)}.bookmark-card h3{margin-top:0;color:var(--navy)}.mini-note{font-size:.9rem;color:var(--muted)}.map-list{columns:3;column-gap:24px}.map-list li{break-inside:avoid;margin:0 0 6px}.article-accordion details,.article-full details{border:1px solid var(--line);border-radius:18px;background:#fff;margin:0 0 16px;box-shadow:var(--shadow-soft);overflow:hidden}.article-accordion summary{cursor:pointer;padding:18px 22px;font-weight:900;color:var(--navy);display:flex;justify-content:space-between;gap:20px}.article-accordion summary span{font-size:.85rem;color:var(--muted);font-weight:700}.article-body{padding:0 22px 22px;border-top:1px solid var(--line);background:#fff}.article-body .site-header,.article-body .footer,.article-body .breadcrumb{display:none}.article-body .page-hero{padding:28px 0}.article-body .page-hero h1{font-size:clamp(1.5rem,3vw,2.5rem)}.toc-mini{background:#f7f8fb;border:1px solid var(--line);border-radius:18px;padding:18px}.toc-mini a{display:inline-block;margin:4px 10px 4px 0}.shiori{border:1px dashed #c9a348;background:#fffdf5;border-radius:18px;padding:18px}.shiori h3{margin-top:0}.read-path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.audit-embed-note{padding:16px;border-radius:16px;background:#f4f6f9;border:1px solid var(--line)}@media(max-width:900px){.strength-hero-grid,.bookmark-grid,.read-path{grid-template-columns:1fr}.map-list{columns:1}.strength-metrics{grid-template-columns:1fr}}
 </style>
-
 </head>
 <body>
 <header class="site-header"><div class="nav-container">
 <a class="logo" href="index.html"><span class="logo-mark">POPC</span><span>PTA適正化推進委員会</span></a>
 <nav aria-label="主要ナビゲーション" class="desktop-nav">
 <a class="nav-link" href="index.html">トップ</a>
-<div class="nav-item has-dropdown"><a class="nav-link" href="#">読む</a><div class="dropdown-menu"><div class="dropdown-col"><h4>入口</h4><ul><li><a href="start.html">3分で読む</a></li><li><a href="map.html">全国マップ</a></li><li><a href="guide.html">立場別ガイド</a></li><li><a href="faq.html">よくある質問</a></li></ul></div></div></div>
-<div class="nav-item has-dropdown"><a class="nav-link" href="#">全国実態</a><div class="dropdown-menu"><div class="dropdown-col"><h4>実態調査</h4><ul><li><a href="map.html">全国マップ</a></li><li><a href="responses.html">教育委員会回答DB</a></li><li><a href="archive.html">全国PTA資料館</a></li></ul></div></div></div>
+<div class="nav-item has-dropdown"><a class="nav-link" href="#">読む</a><div class="dropdown-menu"><div class="dropdown-col"><h4>入口</h4><ul><li><a href="start.html">3分で読む</a></li><li><a href="guide.html">立場別ガイド</a></li><li><a href="faq.html">よくある質問</a></li></ul></div></div></div>
+<div class="nav-item has-dropdown"><a class="nav-link" href="#">全国実態</a><div class="dropdown-menu"><div class="dropdown-col"><h4>実態調査</h4><ul><li><a href="responses.html">教育委員会回答DB</a></li><li><a href="archive.html">全国PTA資料館</a></li></ul></div></div></div>
 <div class="nav-item has-dropdown"><a class="nav-link" href="#">調べる</a><div class="dropdown-menu"><div class="dropdown-col"><h4>制度</h4><ul><li><a href="research.html">論考全文</a></li><li><a href="law.html">法制度マップ</a></li></ul></div><div class="dropdown-col"><h4>参照</h4><ul><li><a href="glossary.html">用語・引用</a></li><li><a href="evidence.html">根拠マップ</a></li></ul></div></div></div>
 <div class="nav-item has-dropdown"><a class="nav-link" href="#">行動</a><div class="dropdown-menu"><div class="dropdown-col"><h4>診断・提出</h4><ul><li><a href="audit.html">監査アプリ</a></li><li><a href="kit.html">提出キット</a></li><li><a href="disclosure.html">情報公開・監査</a></li></ul></div></div></div>
 <a class="btn-gold" href="donate.html">ご支援</a></nav>
@@ -62,24 +60,20 @@
 <div class="close-overlay" id="closeOverlay">CLOSE ×</div></div>
 <main>
 <nav aria-label="breadcrumb" class="breadcrumb"><a href="index.html">トップ</a> / <span>論考全文</span></nav>
-<section class="page-hero"><div class="page-hero-inner"><div class="page-hero-kicker">Research Archive</div><h1>個別論考を<br><em>アコーディオンで全文掲載</em></h1><p>個別ページに散らばっていた研究論考を、このページ内で開閉して読めるようにまとめています。元の個別ページも残しています。</p><div class="hero-actions"><a class="btn-gold" href="responses.html">回答DBを見る</a><a class="btn-outline" href="map.html">全国マップを見る</a></div></div></section>
-<section class="evidence-level-strip" aria-label="根拠レベル表示">
-  <div class="evidence-level-strip__inner">
-    <div><strong>根拠レベル</strong><p>論考は本文整理済み・資料導線・要補強を区別しています。個別の法的判断には原資料確認が必要です。</p></div>
-    <div class="evidence-level-pills"><span class="evidence-pill evidence-pill--source">本文整理済み</span><span class="evidence-pill evidence-pill--official">回答DB連携</span><span class="evidence-pill evidence-pill--review">原資料確認推奨</span><span class="evidence-pill evidence-pill--caution">要補強表示あり</span></div>
-    <a class="evidence-level-link" href="evidence.html#evidence-levels">表示の意味</a>
-  </div>
+<section class="page-hero"><div class="page-hero-inner"><div class="page-hero-kicker">Research Archive</div><h1>個別論考を<br/><em>アコーディオンで全文掲載</em></h1><p>個別ページに散らばっていた研究論考を、このページ内で開閉して読めるようにまとめています。元の個別ページも残しています。</p><div class="hero-actions"><a class="btn-gold" href="responses.html">回答DBを見る</a><a class="btn-outline" href="map.html">全国マップを見る</a></div></div></section><section class="page-lead-section"><div class="wrap-narrow"><h2 class="page-lead-title">このページの位置づけ</h2><p>このページは、法令・行政資料・論考を参照しながら、PTA問題を制度面から整理するための入口です。個別ページでは、学校、PTA、教育委員会、保護者の関係を分けて読みます。</p><p>論考は分析を含みます。法令・公的資料・教育委員会回答から直接確認できる部分と、そこから導く評価・仮説を区別して確認してください。</p><div class="page-lead-check"><strong>まず確認すること</strong><ul><li>法令、行政資料、回答DB、実物文書を分けて読む。</li><li>分析部分は原資料と照合して確認する。</li><li>必要に応じて関連論考へ移動する。</li></ul></div></div></section>
+<section aria-label="根拠レベル表示" class="evidence-level-strip">
+<div class="evidence-level-strip__inner">
+<div><strong>根拠レベル</strong><p>論考は本文整理済み・資料導線・要補強を区別しています。個別の法的判断には原資料確認が必要です。</p></div>
+<div class="evidence-level-pills"><span class="evidence-pill evidence-pill--source">本文整理済み</span><span class="evidence-pill evidence-pill--official">回答DB連携</span><span class="evidence-pill evidence-pill--review">原資料確認推奨</span><span class="evidence-pill evidence-pill--caution">要補強表示あり</span></div>
+<a class="evidence-level-link" href="evidence.html#evidence-levels">表示の意味</a>
+</div>
 </section>
-
 <section class="section white edu-board-mini-callout"><div class="wrap-narrow"><div class="alert"><strong>教育委員会・学校管理職の方へ：</strong>初見の場合は、論考全文に入る前に <a href="edu-board-start.html">教育委員会向け「最初に読む5ページ」</a> から確認すると、論点の順番を取り違えにくくなります。</div></div></section>
-
-
 <section class="section white"><div class="wrap-narrow"><div class="toc-mini"><h2 style="margin-top:0">論考一覧</h2><a href="#article-1">総合分析レポート</a><a href="#article-2">【消費者庁】PTAは事業者</a><a href="#article-3">委任があれば校務</a><a href="#article-4">公立学校におけるPTA業務の「職務専念義務免除」運用の法理的破綻と組</a><a href="#article-5">教委・学校用ガイドライン</a><a href="#article-6">教育委員会の法的見解</a><a href="#article-7">10枚で説明するPTA適正化</a><a href="#article-8">学校徴収金・PTA会費代理徴収問題の統治構造論</a><a href="#article-9">【提言】PTA会費の代理徴収</a><a href="#article-10">川崎市：PTA業務の校務化の無効性</a><a href="#article-11">【論考】PTAの法的構造と教育行政の監督責任</a><a href="#article-12">公立学校におけるPTA業務従事と地方公務員法第35条「職務専念義務」</a><a href="#article-13">【文科省】PTA業務は公務ではない</a><a href="#article-14">非会員情報の取得不可能性</a><a href="#article-15">PTA問題 一枚要約</a><a href="#article-16">【論考】オプトアウトの無効性</a><a href="#article-17">オプトアウト加入の無効性</a><a href="#article-18">PTA業務と職務専念義務</a><a href="#article-19">「公益性」と言う名の罠</a><a href="#article-20">校務分掌とPTA業務</a><a href="#article-21">学校徴収金管理及びPTA業務代行における法的整合性の欠落と構造的違法</a><a href="#article-22">【総括】PTA適正化推進委員会</a><a href="#article-23">【考察】第三者提供同意の問題点</a><a href="#article-24">【論考】教職員の働き方改革とPTA会費代理徴収の限界</a><a href="#article-25">横浜市教育委員会 通知 学教第1965号</a></div></div></section>
 <section class="section"><div class="wrap article-accordion"><details id="article-1"><summary><strong>総合分析レポート</strong><span>comprehensive-report.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Issue</div>
-<h1>総合分析<br/><em>総合分析レポート</em></h1>
+<h1>総合分析<br><em>総合分析レポート</em></br></h1>
 <p>PTA問題は個別の不満ではなく、学校が私的団体事務を内部化してきた構造問題として整理できます。</p>
 </div></section>
 <section class="section white"><div class="wrap-narrow">
@@ -92,7 +86,6 @@
 </div></section>
 </div></details>
 <details id="article-2"><summary><strong>【消費者庁】PTAは事業者</strong><span>consumer-agency.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Consumer Law</div>
 <h1>消費者契約法の事業者該当性<br/><em>PTAは事業者</em></h1>
@@ -115,7 +108,6 @@
 </div></section>
 </div></details>
 <details id="article-3"><summary><strong>委任があれば校務</strong><span>delegation-school-duty.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Analysis</div>
 <h1>委任で校務化できるか<br/><em>委任があれば校務</em></h1>
@@ -138,7 +130,6 @@
 </div></section>
 </div></details>
 <details id="article-4"><summary><strong>公立学校におけるPTA業務の「職務専念義務免除」運用の法理的破綻と組織的完全分離に関する緊急提言書</strong><span>duty-exemption.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Urgent Proposal</div>
 <h1>職務専念義務免除運用の法理的破綻<br/><em>緊急提言書</em></h1>
@@ -160,7 +151,6 @@
 </div></section>
 </div></details>
 <details id="article-5"><summary><strong>教委・学校用ガイドライン</strong><span>edu-board-guideline.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Guideline</div>
 <h1>教育委員会・学校が参照する基準<br/><em>教委・学校用ガイドライン</em></h1>
@@ -210,7 +200,6 @@
 </div></section>
 </div></details>
 <details id="article-6"><summary><strong>教育委員会の法的見解</strong><span>edu-board-legal-view.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Legal View</div>
 <h1>全国の公式見解を集約する<br/><em>教育委員会の法的見解</em></h1>
@@ -244,7 +233,6 @@
 </div></section>
 </div></details>
 <details id="article-7"><summary><strong>10枚で説明するPTA適正化</strong><span>explain-deck.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Deck</div>
 <h1>10枚で説明する<br/><em>PTA適正化</em></h1>
@@ -273,7 +261,6 @@
 </div></section>
 </div></details>
 <details id="article-8"><summary><strong>学校徴収金・PTA会費代理徴収問題の統治構造論</strong><span>fee-collection-governance.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Governance</div>
 <h1>代理徴収を統治構造から見る<br/><em>統治構造論からの分析</em></h1>
@@ -302,7 +289,6 @@
 </div></section>
 </div></details>
 <details id="article-9"><summary><strong>【提言】PTA会費の代理徴収</strong><span>fee-collection-proposal.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Proposal</div>
 <h1>代理徴収の見直し提言<br/><em>PTA会費の代理徴収</em></h1>
@@ -329,7 +315,6 @@
 </div></section>
 </div></details>
 <details id="article-10"><summary><strong>川崎市：PTA業務の校務化の無効性</strong><span>kawasaki-school-duty.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Case Study</div>
 <h1>PTA業務の校務化は無効<br/><em>川崎市の校務化運用</em></h1>
@@ -358,7 +343,6 @@
 </div></section>
 </div></details>
 <details id="article-11"><summary><strong>【論考】PTAの法的構造と教育行政の監督責任</strong><span>legal-structure-supervision.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Article</div>
 <h1>PTAの法的構造を整理する<br/><em>法的構造と監督責任</em></h1>
@@ -389,7 +373,6 @@
 </div></section>
 </div></details>
 <details id="article-12"><summary><strong>公立学校におけるPTA業務従事と地方公務員法第35条「職務専念義務」の法的抵触に関する包括的論考</strong><span>lpsa-art35.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Comprehensive Article</div>
 <h1>判例に即した包括論考<br/><em>地公法第35条との抵触</em></h1>
@@ -598,7 +581,6 @@
 </div></section>
 </div></details>
 <details id="article-13"><summary><strong>【文科省】PTA業務は公務ではない</strong><span>mext-not-public.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">MEXT View</div>
 <h1>文科省見解からの確認<br/><em>PTA業務は公務ではない</em></h1>
@@ -623,7 +605,6 @@
 </div></section>
 </div></details>
 <details id="article-14"><summary><strong>非会員情報の取得不可能性</strong><span>non-member-info.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Privacy</div>
 <h1>誰が会員かを把握できない構造<br/><em>非会員情報の取得不可能性</em></h1>
@@ -646,7 +627,6 @@
 </div></section>
 </div></details>
 <details id="article-15"><summary><strong>PTA問題 一枚要約</strong><span>one-page-brief.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">One Page Brief</div>
 <h1>PTA問題の<br/><em>一枚要約</em></h1>
@@ -669,7 +649,6 @@
 </div></section>
 </div></details>
 <details id="article-16"><summary><strong>【論考】オプトアウトの無効性</strong><span>optout-invalidity-article.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Article</div>
 <h1>みなし加入は契約として無効<br/><em>オプトアウトの無効性</em></h1>
@@ -841,7 +820,6 @@
 </div></section>
 </div></details>
 <details id="article-17"><summary><strong>オプトアウト加入の無効性</strong><span>optout-invalidity.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Legal Analysis</div>
 <h1>入会申込書なき加入の連鎖的違法<br/><em>オプトアウト加入の無効性</em></h1>
@@ -896,7 +874,6 @@
 </div></section>
 </div></details>
 <details id="article-18"><summary><strong>PTA業務と職務専念義務</strong><span>pta-duty-concentration.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Legal Issue</div>
 <h1>地方公務員法第35条との抵触<br/><em>PTA業務と職務専念義務</em></h1>
@@ -967,7 +944,6 @@
 </div></section>
 </div></details>
 <details id="article-19"><summary><strong>「公益性」と言う名の罠</strong><span>public-interest-trap.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Critique</div>
 <h1>公益性の抗弁が招く二重の違法性<br/><em>「公益性」と言う名の罠</em></h1>
@@ -1008,7 +984,6 @@
 </div></section>
 </div></details>
 <details id="article-20"><summary><strong>校務分掌とPTA業務</strong><span>school-duties-vs-pta.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Analysis</div>
 <h1>校務分掌に組み込めるか<br/><em>校務分掌とPTA業務</em></h1>
@@ -1199,7 +1174,6 @@
 </div></section>
 </div></details>
 <details id="article-21"><summary><strong>学校徴収金管理及びPTA業務代行における法的整合性の欠落と構造的違法性に関する包括的研究報告書</strong><span>school-fee-illegality.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Research Report</div>
 <h1>代理徴収の構造的違法性<br/><em>学校徴収金とPTA業務代行</em></h1>
@@ -1235,7 +1209,6 @@
 </div></section>
 </div></details>
 <details id="article-22"><summary><strong>【総括】PTA適正化推進委員会</strong><span>summary.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Summary</div>
 <h1>PTA適正化の到達点<br/><em>総括的論考</em></h1>
@@ -1276,7 +1249,6 @@ PTAは入退会自由な任意団体です。私たちは、入学と同時に�
 </div></section>
 </div></details>
 <details id="article-23"><summary><strong>【考察】第三者提供同意の問題点</strong><span>third-party-consent.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Analysis</div>
 <h1>本人同意の有効要件<br/><em>第三者提供同意の問題点</em></h1>
@@ -1305,7 +1277,6 @@ PTAは入退会自由な任意団体です。私たちは、入学と同時に�
 </div></section>
 </div></details>
 <details id="article-24"><summary><strong>【論考】教職員の働き方改革とPTA会費代理徴収の限界</strong><span>work-style-reform.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Article</div>
 <h1>形式的厳格化が招く弊害<br/><em>働き方改革と代理徴収の限界</em></h1>
@@ -1370,7 +1341,6 @@ PTAは入退会自由な任意団体です。私たちは、入学と同時に�
 </div></section>
 </div></details>
 <details id="article-25"><summary><strong>横浜市教育委員会 通知 学教第1965号</strong><span>yokohama-notice-1965.html</span></summary><div class="article-body">
-
 <section class="page-hero"><div class="page-hero-inner">
 <div class="page-hero-kicker">Official Notice</div>
 <h1>オプトイン必須化と名簿提供禁止<br/><em>横浜市教育委員会通知 学教第1965号</em></h1>

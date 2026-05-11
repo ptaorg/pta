@@ -20,17 +20,49 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
+
+
 <style>
-.home-hero{background:linear-gradient(135deg,var(--navy),var(--navy-2) 58%,var(--navy-3));color:#fff;padding:86px 0 72px}.home-hero__inner{width:min(calc(100% - 40px),1080px);margin-inline:auto}.home-kicker{display:inline-block;color:var(--gold-lt);font-weight:900;letter-spacing:.08em;font-size:.82rem;margin-bottom:12px}.home-hero h1{font-family:'Noto Serif JP',serif;font-size:clamp(1.9rem,4.6vw,3.3rem);line-height:1.28;margin:0 0 18px}.home-hero h1 em{color:var(--gold-lt);font-style:normal}.home-lead{max-width:920px;color:rgba(255,255,255,.88);font-size:1.08rem;line-height:1.95}.home-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.home-main{padding:72px 0}.home-section{width:min(calc(100% - 40px),1040px);margin:0 auto 72px}.home-section:last-child{margin-bottom:0}.home-section h2{font-family:'Noto Serif JP',serif;color:var(--navy);font-size:clamp(1.45rem,2.6vw,2.1rem);line-height:1.42;margin:0 0 16px}.home-section p{line-height:1.95}.home-note{color:var(--text-soft);font-size:.95rem}.home-primary-list{display:grid;gap:0;border-top:1px solid var(--line);margin-top:28px}.home-primary{display:grid;grid-template-columns:11rem 1fr auto;gap:18px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}.home-primary__label{font-weight:900;color:#6c4d10}.home-primary h3{font-family:'Noto Serif JP',serif;color:var(--navy);font-size:1.28rem;margin:0 0 6px}.home-primary p{color:var(--text-soft);font-size:.96rem;margin:0}.home-primary__arrow{font-weight:900;color:var(--gold)}.home-plain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:24px}.home-plain-grid h3{font-family:'Noto Serif JP',serif;color:var(--navy);font-size:1.15rem;margin:0 0 8px}.home-plain-grid p{color:var(--text-soft);font-size:.95rem;margin:0}.home-read-order{counter-reset:homeStep;display:grid;gap:12px;margin-top:22px}.home-read-order a{counter-increment:homeStep;display:grid;grid-template-columns:3.1rem 1fr;gap:14px;text-decoration:none;color:inherit;padding:18px 0;border-bottom:1px solid var(--line)}.home-read-order a:first-child{border-top:1px solid var(--line)}.home-read-order a::before{content:counter(homeStep);width:2.4rem;height:2.4rem;border-radius:999px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900}.home-read-order strong{display:block;color:var(--navy);margin-bottom:3px}.home-read-order span{display:block;color:var(--text-soft);font-size:.94rem;line-height:1.75}.home-caution{border-left:5px solid var(--gold);padding:8px 0 8px 18px;margin-top:24px;color:var(--text-soft)}@media(max-width:820px){.home-hero{padding:60px 0 50px}.home-main{padding:48px 0}.home-section{margin-bottom:54px}.home-primary{grid-template-columns:1fr;gap:8px;padding:22px 0}.home-primary__arrow{display:none}.home-plain-grid{grid-template-columns:1fr;gap:22px}.home-actions a{width:100%;justify-content:center}.home-read-order a{grid-template-columns:2.8rem 1fr}}
-</style>
-</head>
+/* トップページ専用：本文中心・スマホ優先 */
+.home-hero{background:#f8fafc;border-bottom:1px solid #d8e0ea;padding:50px 0 42px}
+.home-wrap{width:min(100% - 40px,980px);margin-inline:auto}
+.home-kicker{display:inline-block;background:#0b2a4a;color:#fff;border-radius:999px;padding:.32rem .75rem;font-size:.78rem;font-weight:900;letter-spacing:.04em;margin-bottom:14px}
+.home-hero h1{font-family:'Noto Serif JP',serif;color:#0b2a4a;font-size:clamp(1.65rem,4vw,2.75rem);line-height:1.34;margin:0 0 16px;letter-spacing:-.02em}
+.home-lead{max-width:900px;color:#334155;font-size:1.04rem;line-height:1.95;margin:0}
+.home-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.home-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none!important;border-radius:999px;padding:.84rem 1.18rem;font-weight:900;line-height:1.25;border:1px solid #0b2a4a;color:#0b2a4a;background:#fff}
+.home-btn.primary{background:#d6a600;border-color:#d6a600;color:#061729!important}
+.home-main{padding:42px 0 62px;background:#fff}
+.home-section{width:min(100% - 40px,980px);margin:0 auto 46px;padding-bottom:40px;border-bottom:1px solid #d8e0ea}
+.home-section:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.home-section h2{font-family:'Noto Serif JP',serif;color:#0b2a4a;font-size:clamp(1.34rem,2.7vw,1.9rem);line-height:1.45;margin:0 0 12px}
+.home-section h3{font-family:'Noto Serif JP',serif;color:#0b2a4a;font-size:1.08rem;line-height:1.55;margin:0 0 5px}
+.home-section p{color:#334155;line-height:1.92;margin:0 0 16px}
+.home-line-list{border-top:1px solid #d8e0ea;margin-top:18px}
+.home-line{display:block!important;text-decoration:none!important;color:inherit!important;padding:18px 0;border-bottom:1px solid #d8e0ea;background:transparent!important}
+.home-line strong{display:block;color:#0b2a4a;font-size:1.07rem;line-height:1.55;margin-bottom:4px;background:none!important}
+.home-line span{display:block;color:#475569;font-size:.95rem;line-height:1.8}
+.home-label{display:inline-flex;margin:0 0 7px;padding:.16rem .55rem;border-radius:999px;background:#eef2f7;color:#0b2a4a;font-size:.76rem;font-weight:900;letter-spacing:.02em}
+.home-steps{counter-reset:homeStep;border-top:1px solid #d8e0ea;margin-top:18px}
+.home-step{counter-increment:homeStep;display:block!important;position:relative;text-decoration:none!important;color:inherit!important;padding:18px 0 18px 52px;border-bottom:1px solid #d8e0ea;background:transparent!important}
+.home-step:before{content:counter(homeStep);position:absolute;left:0;top:20px;width:34px;height:34px;border-radius:50%;background:#0b2a4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.95rem}
+.home-step strong{display:block;color:#0b2a4a;font-size:1.06rem;line-height:1.55;margin-bottom:4px;background:none!important}
+.home-step span{display:block;color:#475569;font-size:.94rem;line-height:1.75}
+.home-note{border-left:5px solid #d6a600;background:#fffdf4;padding:12px 14px;margin-top:20px;color:#334155;line-height:1.85}
+.home-plain-list{margin:.2rem 0 0;padding-left:1.15rem;color:#334155;line-height:1.9}
+.home-plain-list li{margin:.35rem 0}
+.home-two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:18px}
+.home-block{border-top:1px solid #d8e0ea;padding-top:16px}
+.home-block p{font-size:.96rem;color:#475569}
+@media(max-width:720px){.home-wrap,.home-section{width:min(100% - 28px,980px)}.home-hero{padding:34px 0 30px}.home-main{padding:30px 0 44px}.home-section{margin-bottom:34px;padding-bottom:30px}.home-actions{display:block}.home-btn{width:100%;margin:0 0 9px}.home-step{padding-left:44px}.home-step:before{width:30px;height:30px;top:20px}.home-two{display:block}.home-block{margin-top:18px}.home-line strong,.home-step strong,.home-section h3{font-size:1.02rem}}
+</style></head>
 <body>
 <header class="site-header"><div class="nav-container">
 <a class="logo" href="index.html"><span class="logo-mark">POPC</span><span>PTA適正化推進委員会</span></a>
 <nav aria-label="主要ナビゲーション" class="desktop-nav">
 <a class="nav-link" href="index.html">トップ</a>
-<div class="nav-item has-dropdown"><a class="nav-link" href="#">読む</a><div class="dropdown-menu"><div class="dropdown-col"><h4>入口</h4><ul><li><a href="start.html">3分で読む</a></li><li><a href="edu-board-start.html">教育委員会向け導線</a></li><li><a href="edu-board-guideline.html">教育委員会向け指針</a></li><li><a href="map.html">全国マップ</a></li><li><a href="guide.html">立場別ガイド</a></li><li><a href="faq.html">よくある質問</a></li></ul></div></div></div>
-<div class="nav-item has-dropdown"><a class="nav-link" href="#">全国実態</a><div class="dropdown-menu"><div class="dropdown-col"><h4>実態調査</h4><ul><li><a href="map.html">全国マップ</a></li><li><a href="responses.html">教育委員会回答DB</a></li><li><a href="archive.html">全国PTA資料館</a></li></ul></div></div></div>
+<div class="nav-item has-dropdown"><a class="nav-link" href="#">読む</a><div class="dropdown-menu"><div class="dropdown-col"><h4>入口</h4><ul><li><a href="start.html">3分で読む</a></li><li><a href="edu-board-start.html">教育委員会向け導線</a></li><li><a href="edu-board-guideline.html">教育委員会向け指針</a></li><li><a href="guide.html">立場別ガイド</a></li><li><a href="faq.html">よくある質問</a></li></ul></div></div></div>
+<div class="nav-item has-dropdown"><a class="nav-link" href="#">全国実態</a><div class="dropdown-menu"><div class="dropdown-col"><h4>実態調査</h4><ul><li><a href="responses.html">教育委員会回答DB</a></li><li><a href="archive.html">全国PTA資料館</a></li></ul></div></div></div>
 <div class="nav-item has-dropdown"><a class="nav-link" href="#">調べる</a><div class="dropdown-menu"><div class="dropdown-col"><h4>制度</h4><ul><li><a href="research.html">論考全文</a></li><li><a href="law.html">法制度マップ</a></li></ul></div><div class="dropdown-col"><h4>参照</h4><ul><li><a href="glossary.html">用語・引用</a></li><li><a href="evidence.html">根拠マップ</a></li></ul></div></div></div>
 <div class="nav-item has-dropdown"><a class="nav-link" href="#">行動</a><div class="dropdown-menu"><div class="dropdown-col"><h4>診断・提出</h4><ul><li><a href="audit.html">監査アプリ</a></li><li><a href="kit.html">提出キット</a></li><li><a href="disclosure.html">情報公開・監査</a></li></ul></div></div></div>
 <a class="btn-gold" href="donate.html">ご支援</a></nav>
@@ -62,81 +94,94 @@
 <div class="close-overlay" id="closeOverlay">CLOSE ×</div></div>
 <main>
 <section class="home-hero">
-<div class="home-hero__inner">
-<div class="home-kicker">PTA適正化推進委員会</div>
-<h1>PTA問題を、<em>回答・公文書・法制度</em>から整理する。</h1>
-<p class="home-lead">このサイトは、PTAをめぐる加入意思確認、個人情報提供、会費徴収、教職員関与、学校施設・学校媒体利用の問題を、教育委員会回答・開示資料・学校配布文書・制度分析に基づいて確認するための研究サイトです。</p>
+<div class="home-wrap">
+<span class="home-kicker">PTA適正化推進委員会</span>
+<h1>PTA問題を、回答・公文書・法制度から整理する。</h1>
+<p class="home-lead">このサイトは、PTAをめぐる加入意思確認、会費徴収、個人情報提供、教職員関与、学校施設・学校媒体利用の問題を、全国の教育委員会回答、公文書開示資料、学校配布文書、法制度に基づいて確認するための研究サイトです。</p>
 <div class="home-actions">
-<a class="btn-gold" href="edu-board-guideline.html">教育委員会向け指針を読む</a>
-<a class="btn-soft" href="responses.html">全国教育委員会回答DB</a>
-<a class="btn-soft" href="audit.html">PTA運営適正化診断</a>
+<a class="home-btn primary" href="edu-board-guideline.html">教育委員会向け指針を読む</a>
+<a class="home-btn" href="responses.html">全国教育委員会回答DBを見る</a>
+<a class="home-btn" href="audit.html">PTA運営適正化診断を使う</a>
 </div>
 </div>
 </section>
 <div class="home-main">
-<section aria-labelledby="home-core-title" class="home-section">
-<h2 id="home-core-title">まず確認する3つの入口</h2>
-<p>情報量を増やすより、最初に見る入口を絞ります。教育委員会・学校管理職・保護者・PTA役員のいずれも、次の3点から確認できます。</p>
-<div class="home-primary-list">
-<a class="home-primary" href="edu-board-guideline.html">
-<div class="home-primary__label">指針</div>
-<div><h3>教育委員会向け PTA運営適正化指針</h3><p>公私分離、職務専念義務、働き方改革、個人情報、会費徴収、加入意思確認を一つの実務指針として整理しています。</p></div>
-<div class="home-primary__arrow">読む</div>
-</a>
-<a class="home-primary" href="responses.html">
-<div class="home-primary__label">回答DB</div>
-<div><h3>全国教育委員会回答データベース</h3><p>自治体名・質問類型・論点候補タグから、教育委員会等の回答本文を確認できます。</p></div>
-<div class="home-primary__arrow">見る</div>
-</a>
-<a class="home-primary" href="audit.html">
-<div class="home-primary__label">診断</div>
-<div><h3>PTA運営適正化診断</h3><p>保護者、PTA役員、学校管理職、教育委員会の立場別に、運用上のリスクと確認資料を整理します。</p></div>
-<div class="home-primary__arrow">使う</div>
-</a>
+<section class="home-section" aria-labelledby="home-purpose">
+<h2 id="home-purpose">このサイトで確認できること</h2>
+<p>PTA活動そのものの賛否ではなく、学校が任意団体であるPTAの内部事務を代行している場合に、どのような制度上の問題が生じるかを整理します。特に、学校の保有情報、学校徴収金、教職員の勤務時間、学校施設、学校名義の媒体が、PTA事務に使われていないかを確認します。</p>
+<ul class="home-plain-list">
+<li>PTA加入が、保護者本人の自由な意思に基づく申込みとして記録されているか。</li>
+<li>PTA会費が、学校徴収金や学校口座と混同されていないか。</li>
+<li>学校保有の児童・保護者情報が、PTAの会員管理や役員選出に当然提供されていないか。</li>
+<li>教職員が勤務時間中にPTAの集金、督促、会計、名簿、役員選出を担っていないか。</li>
+<li>学校ホームページ、配信アプリ、施設、備品が、PTA内部事務に使われていないか。</li>
+</ul>
+<p class="home-note">このサイトでは、PTAを教育委員会が直接統制することではなく、学校側の不適切な関与を是正することを中心に整理しています。</p>
+</section>
+<section class="home-section" aria-labelledby="home-core">
+<h2 id="home-core">まず使う3つの入口</h2>
+<p>初めて読む場合は、次の3つから入ると全体像をつかみやすくなります。各ページは単なるリンク集ではなく、ページ内で基本的な説明と確認手順を読めるようにしています。</p>
+<div class="home-line-list">
+<a class="home-line" href="edu-board-guideline.html"><span class="home-label">指針</span><strong>教育委員会向け PTA運営適正化指針</strong><span>公私分離、職務専念義務、働き方改革、個人情報、会費徴収、加入意思確認を、教育委員会向けの実務指針として整理しています。</span></a>
+<a class="home-line" href="responses.html"><span class="home-label">回答DB</span><strong>全国教育委員会回答データベース</strong><span>自治体名、質問類型、論点候補タグから、教育委員会等の回答本文を確認できます。</span></a>
+<a class="home-line" href="audit.html"><span class="home-label">診断</span><strong>PTA運営適正化診断</strong><span>保護者、PTA役員、学校管理職、教育委員会の立場別に、運用上のリスクと確認資料を整理します。</span></a>
 </div>
 </section>
-<section aria-labelledby="home-strength-title" class="home-section">
-<h2 id="home-strength-title">このサイトの強み</h2>
-<div class="home-plain-grid">
-<div><h3>全国の回答</h3><p>教育委員会等への照会回答を、自治体別・論点別に確認できるよう整理しています。</p></div>
-<div><h3>開示資料と実物文書</h3><p>公文書開示請求で得た資料や、学校・PTAの配布文書をもとに、実際の運用を確認します。</p></div>
-<div><h3>制度分析</h3><p>PTAを学校内部組織として扱わず、社会教育関係団体、学校管理、個人情報、服務、会計の観点から整理します。</p></div>
-</div>
-<p class="home-caution">このサイトは、PTA活動そのものの賛否ではなく、学校が任意団体事務を代行している構造を検証対象にしています。</p>
-</section>
-<section aria-labelledby="home-path-title" class="home-section">
-<h2 id="home-path-title">教育委員会・学校管理職の方へ</h2>
-<p>PTAを直接統制するのではなく、学校側の個人情報提供、会費徴収、教職員関与、学校媒体・施設利用を確認する順番で読めます。</p>
-<div class="home-read-order">
-<a href="edu-board-start.html"><strong>最初に読む5ページ</strong><span>教育委員会・学校管理職向けに、読む順番を固定した入口です。</span></a>
-<a href="edu-board-guideline.html"><strong>PTA運営適正化指針</strong><span>学校とPTAの公私分離、職務専念義務、働き方改革を整理した中核ページです。</span></a>
-<a href="board-checklist.html"><strong>教育委員会向けチェックリスト</strong><span>各学校で確認すべき資料・運用・報告項目を整理します。</span></a>
-<a href="audit/board.html"><strong>教育委員会向け診断</strong><span>学校関与のリスクを立場別に点検します。</span></a>
+<section class="home-section" aria-labelledby="home-roles">
+<h2 id="home-roles">立場別に読む</h2>
+<p>各立場別ページは、結論、確認資料、よくある問題、対応手順、確認文例までをページ内にまとめています。まず自分の立場のページを読み、必要に応じて回答DBや資料ページで裏付けを確認してください。</p>
+<div class="home-line-list">
+<a class="home-line" href="guide-parent.html"><strong>保護者の方へ</strong><span>入会申込、会費、個人情報、非加入・退会時の扱い、学校やPTAへの確認文例を整理しています。</span></a>
+<a class="home-line" href="guide-pta.html"><strong>PTA役員の方へ</strong><span>会員管理、会計開示、学校依存の見直し、規約・役員選出、会員向け説明文例を整理しています。</span></a>
+<a class="home-line" href="guide-board.html"><strong>学校管理職・教育委員会の方へ</strong><span>学校の保有情報、会計、服務、学校媒体・施設利用を、学校側の是正対象として確認する流れを整理しています。</span></a>
 </div>
 </section>
-<section aria-labelledby="home-position-title" class="home-section">
-<h2 id="home-position-title">立場別に確認する</h2>
-<div class="home-plain-grid">
-<div><h3>保護者の方へ</h3><p>入会申込、会費、個人情報、非加入時の取扱いを確認します。<br/><a href="guide-parent.html">保護者向けガイド</a></p></div>
-<div><h3>PTA役員の方へ</h3><p>会員管理、会計開示、学校依存、規約、役員選出を確認します。<br/><a href="guide-pta.html">PTA役員向けガイド</a></p></div>
-<div><h3>学校管理職・教育委員会の方へ</h3><p>学校の保有情報、会計、服務、施設・媒体利用を確認します。<br/><a href="guide-board.html">学校・教育委員会向けガイド</a></p></div>
+<section class="home-section" aria-labelledby="home-board">
+<h2 id="home-board">教育委員会・学校管理職向けの読む順番</h2>
+<p>教育委員会・学校管理職は、PTAの内部運営を直接統制するのではなく、学校がPTA事務を代行している部分を確認する必要があります。次の順番で読むと、制度整理から点検まで進めやすくなります。</p>
+<div class="home-steps">
+<a class="home-step" href="edu-board-start.html"><strong>教育委員会向け確認導線</strong><span>最初に読むページを固定し、全体像を短時間で確認します。</span></a>
+<a class="home-step" href="edu-board-guideline.html"><strong>PTA運営適正化指針</strong><span>公私分離、服務、働き方改革、会費徴収、個人情報を一体で整理します。</span></a>
+<a class="home-step" href="board-checklist.html"><strong>教育委員会向けチェックリスト</strong><span>各学校から集める資料、停止すべき高リスク運用、通知に入れるべき項目を確認します。</span></a>
+<a class="home-step" href="responses.html"><strong>全国教育委員会回答DB</strong><span>同種論点について、他自治体の回答・留保・説明の仕方を確認します。</span></a>
+<a class="home-step" href="audit/board.html"><strong>教育委員会向け診断</strong><span>学校側関与のリスクを点検し、確認資料リストや文案に進みます。</span></a>
 </div>
 </section>
-<section aria-labelledby="home-evidence-title" class="home-section">
-<h2 id="home-evidence-title">根拠を確認する</h2>
-<div class="home-read-order">
-<a href="map.html"><strong>全国マップ</strong><span>回答のある自治体や類型を地図・一覧から確認します。</span></a>
-<a href="research.html"><strong>論考全文</strong><span>個別論点の分析を、ページ内でまとめて読めます。</span></a>
-<a href="evidence.html"><strong>根拠マップ</strong><span>回答、開示資料、実物文書、法制度、分析メモの関係を確認します。</span></a>
+<section class="home-section" aria-labelledby="home-topics">
+<h2 id="home-topics">主要論点を確認する</h2>
+<p>論点別ページも、途中で別ページへ飛ばされず、各ページ内で概要、確認資料、典型的な問題、対応手順、文例を読めるように整理しています。</p>
+<div class="home-two">
+<div class="home-block"><h3>加入意思確認</h3><p>自動加入、みなし加入、退会届方式ではなく、入会申込記録を確認します。<br/><a href="membership.html">加入意思確認を見る</a></p></div>
+<div class="home-block"><h3>会費徴収</h3><p>PTA会費を学校徴収金や学校口座と混同していないかを確認します。<br/><a href="fee-collection.html">会費徴収を見る</a></p></div>
+<div class="home-block"><h3>個人情報</h3><p>学校保有情報をPTAの会員管理、役員選出、当番編成に当然提供していないかを確認します。<br/><a href="privacy.html">個人情報を見る</a></p></div>
+<div class="home-block"><h3>教職員関与</h3><p>勤務時間中の集金、督促、会計、名簿、役員選出が学校職務として扱われていないかを確認します。<br/><a href="school-duties-vs-pta.html">教職員関与を見る</a></p></div>
 </div>
-<p class="home-note">引用・提出に使う場合は、各ページで示した原資料・公的資料・開示文書を確認してください。</p>
+</section>
+<section class="home-section" aria-labelledby="home-evidence">
+<h2 id="home-evidence">根拠と資料を確認する</h2>
+<p>主張を強く見せるためではなく、何が一次資料で、何が回答で、何が分析なのかを区別して確認できるようにしています。引用や提出に使う場合は、各ページに示した原資料・公的資料・開示資料を確認してください。</p>
+<div class="home-line-list">
+<a class="home-line" href="evidence.html"><strong>根拠マップ</strong><span>教育委員会回答、開示資料、実物文書、法制度、分析メモの関係を整理しています。</span></a>
+<a class="home-line" href="administrative-materials.html"><strong>行政資料・開示資料</strong><span>行政文書や開示資料の読み方、引用時の注意点を整理しています。</span></a>
+<a class="home-line" href="actual-pta-documents.html"><strong>学校・PTA実物文書</strong><span>配布文書、会費徴収資料、名簿・同意書等を読む際の確認観点を整理しています。</span></a>
+<a class="home-line" href="national-archive.html"><strong>全国PTA資料館</strong><span>全国各地の資料を、論点別に確認するための入口です。</span></a>
+</div>
+</section>
+<section class="home-section" aria-labelledby="home-action">
+<h2 id="home-action">確認・提出に使う</h2>
+<p>実務キット系ページでは、照会文例、情報公開請求文例、聞き取り記録、時系列整理、住民監査請求の準備メモをページ内にまとめています。</p>
+<div class="home-line-list">
+<a class="home-line" href="kit.html"><strong>提出キット</strong><span>学校・教育委員会・PTAに確認するための文例と整理手順をまとめています。</span></a>
+<a class="home-line" href="disclosure-request-kit.html"><strong>情報公開請求キット</strong><span>会費徴収、個人情報提供、教職員関与、学校媒体利用を確認する請求文例を整理しています。</span></a>
+<a class="home-line" href="resident-audit-prep.html"><strong>住民監査請求準備</strong><span>財務会計行為として整理する際の資料、時系列、論点の準備方法を確認します。</span></a>
+</div>
 </section>
 </div>
 </main>
 <footer class="footer"><div class="footer-grid" style="grid-template-columns:1.4fr 1fr 1fr 1fr 1fr">
 <div>
 <h3>PTA適正化推進委員会</h3>
-<p>〒235-0021 神奈川県横浜市磯子区岡村<br>070-9012-7772<br><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></br></br></p>
+<p>〒235-0021 神奈川県横浜市磯子区岡村<br/>070-9012-7772<br/><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
 <a class="yokomusubi-card" href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" rel="noopener noreferrer" target="_blank">
 <strong>磯子区「よこむすび」掲載団体</strong>
 <span>登録番号: 磯子12406 / 分類番号: 12-4</span></a>
