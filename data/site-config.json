@@ -42,9 +42,9 @@
     {
       "title": "公私分離と是正方針を確認する",
       "kicker": "学校・教育委員会",
-      "href": "guide-board.html",
+      "href": "edu-board-start.html",
       "image": "assets/photo-board.jpg",
-      "description": "学校徴収金、教職員関与、学校HP・配布物、個人情報提供の是正導線を整理します。"
+      "description": "教育委員会向けの確認導線、指針、チェックリスト、回答DB、診断を順に確認します。"
     },
     {
       "title": "教育委員会向けに最初の5ページを読む",
@@ -56,7 +56,7 @@
     {
       "title": "教育委員会の回答を検索する",
       "kicker": "回答DB",
-      "href": "board-responses.html",
+      "href": "responses.html",
       "image": "assets/photo-db.jpg",
       "description": "自治体別、質問類型別、地図、アコーディオン本文で回答を確認できます。"
     },

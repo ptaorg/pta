@@ -7664,7 +7664,7 @@ window.PTA_BOARD_RESPONSE_INDEX = {
     }
   ],
   "links": {
-    "ed": "https://ptaorg.github.io/ed/",
+    "ed": "edu-board-guideline.html",
     "googleSites": "https://sites.google.com/view/ptatekiseika/"
   },
   "qualityFlagDefinitions": {
