@@ -1,0 +1,7 @@
+PTA適正化推進委員会 GitHub Pages 移植サイト 第7段階リンク確認
+
+HTMLファイル数: 121
+内部リンク確認数: 3787
+動的テンプレートとして除外: 1
+Missing files: 0
+Missing anchors: 0

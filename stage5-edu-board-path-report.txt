@@ -1,0 +1,29 @@
+PTA適正化推進委員会 GitHub Pages 移植サイト 第5段階作業報告
+
+実施日: 2026-05-11
+対象ZIP: pta_site_stage4_evidence_levels.zip
+出力ZIP: pta_site_stage5_edu_board_path.zip
+
+実施内容:
+1. 教育委員会向け導線ページを新規追加
+   - dist/edu-board-start.html
+   - タイトル: 教育委員会向け最初に読む5ページ
+   - 内容: 全体像、5大論点、学校・教育委員会向けページ、回答DB、監査診断への固定導線
+
+2. 主要導線を追加
+   - index.html: ヒーロー導線およびCore Evidenceカードに追加
+   - responses.html: 教育委員会向け導線の注意ボックスを追加
+   - research.html: 教育委員会向け導線の注意ボックスを追加
+   - sitemap.html: サイトマップに追加
+
+3. 共通ナビゲーションを補正
+   - ルート直下ページ: 読むメニュー、モバイルメニュー、フッターに「教委向け5ページ」を追加
+   - 1階層下ページ: 相対パス ../edu-board-start.html で追加
+
+4. sitemap.xml / site-config.json を更新
+   - sitemap.xml に edu-board-start.html を追加
+   - site-config.json の homeCards に教育委員会向けカードを追加
+
+注意:
+- 今回は新しい法的断定・新しい外部資料リンクは追加していません。
+- edu-board-start.html はナビゲーションページであり、個別判断には各リンク先の原資料確認が必要である旨を明記しています。

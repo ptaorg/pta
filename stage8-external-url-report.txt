@@ -1,0 +1,46 @@
+PTA site stage8 external URL checklist report
+Generated: 2026-05-11
+
+Implemented:
+- Added external-link-check.html as a noindex maintenance/checklist page.
+- Added data/external-link-checklist.json, data/external-link-checklist.csv, external-link-checklist.md.
+- Regenerated sitemap.xml from indexable HTML pages to remove non-existing internal absolute URLs.
+- Added links from sitemap.html and evidence.html to the checklist page.
+- Added CSS for checklist table.
+
+Counts after sitemap fix:
+- Unique URLs extracted: 155
+- External/contact/spec URLs: 64
+- Site absolute URLs: 91
+- Missing site absolute URLs after sitemap fix: 0
+
+Detected before sitemap fix:
+- Missing site absolute URLs before sitemap fix: 11
+  * comprehensive-report.html <- https://ptaorg.github.io/pta/comprehensive-report.html / sources: sitemap.xml
+  * consumer-agency.html <- https://ptaorg.github.io/pta/consumer-agency.html / sources: sitemap.xml
+  * duty-exemption.html <- https://ptaorg.github.io/pta/duty-exemption.html / sources: sitemap.xml
+  * kawasaki-school-duty.html <- https://ptaorg.github.io/pta/kawasaki-school-duty.html / sources: sitemap.xml
+  * lpsa-art35.html <- https://ptaorg.github.io/pta/lpsa-art35.html / sources: sitemap.xml
+  * mext-not-public.html <- https://ptaorg.github.io/pta/mext-not-public.html / sources: sitemap.xml
+  * non-member-info.html <- https://ptaorg.github.io/pta/non-member-info.html / sources: sitemap.xml
+  * school-fee-illegality.html <- https://ptaorg.github.io/pta/school-fee-illegality.html / sources: sitemap.xml
+  * summary.html <- https://ptaorg.github.io/pta/summary.html / sources: sitemap.xml
+  * third-party-consent.html <- https://ptaorg.github.io/pta/third-party-consent.html / sources: sitemap.xml
+  * work-style-reform.html <- https://ptaorg.github.io/pta/work-style-reform.html / sources: sitemap.xml
+
+Category counts after sitemap fix:
+- Adobe共有資料: 4
+- CDN・地図・フォント: 6
+- Google系資料・旧サイト: 32
+- SNS・外部発信: 4
+- その他外部URL: 1
+- サイト内絶対URL: 91
+- 一次資料・公的機関: 5
+- 仕様参照URL: 2
+- 民間・団体・報道: 4
+- 決済・支援導線: 1
+- 研究機関・リポジトリ: 1
+- 自治体・公的機関: 2
+- 連絡先: 2
+
+Note: HTTP reachability checking was not performed in this stage.

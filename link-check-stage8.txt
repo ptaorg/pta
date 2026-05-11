@@ -1,0 +1,6 @@
+Stage8 internal link check
+HTML files: 122
+Checked internal links/files: 3731
+Skipped dynamic templates: 0
+Missing files: 0
+Missing anchors: 0

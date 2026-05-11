@@ -1,0 +1,68 @@
+# 外部URL・公開前確認リスト
+
+- 生成日: 2026-05-11
+- HTTP到達確認は未実施です。これは公開前に確認すべきURLの棚卸しです。
+- 一意URL数: 155
+- サイト内絶対URL: 91
+- 外部・連絡先・仕様URL: 64
+
+## 分類別件数
+- Adobe共有資料: 4
+- CDN・地図・フォント: 6
+- Google系資料・旧サイト: 32
+- SNS・外部発信: 4
+- その他外部URL: 1
+- サイト内絶対URL: 91
+- 一次資料・公的機関: 5
+- 仕様参照URL: 2
+- 民間・団体・報道: 4
+- 決済・支援導線: 1
+- 研究機関・リポジトリ: 1
+- 自治体・公的機関: 2
+- 連絡先: 2
+
+## A優先URL（サイト内絶対URLを除く）
+- [Adobe共有資料] https://acrobat.adobe.com/id/urn:aaid:sc:AP:07df7371-c3ab-44a9-a96c-7a6c4266d8fc （出現: 4、初出: journal/lpsa-art35.html）
+- [Adobe共有資料] https://acrobat.adobe.com/id/urn:aaid:sc:AP:6d60dffb-c5b2-4084-beb5-f90fc83a4b4d （出現: 2、初出: journal/school-duties-vs-pta.html）
+- [Adobe共有資料] https://acrobat.adobe.com/id/urn:aaid:sc:AP:6e1c1e91-3ae3-495a-8fad-75ba30aae40b （出現: 2、初出: journal/edu-board-guideline.html）
+- [Adobe共有資料] https://acrobat.adobe.com/id/urn:aaid:sc:AP:eea7f8a5-4a69-4bb6-ab8f-7550c036c5a8 （出現: 2、初出: journal/yokohama-notice-1965.html）
+- [Google系資料・旧サイト] https://drive.google.com/open?id=1DistiBvtpsLTQXrLtOpz0pAAXJ5ide0TQnRTmyoURYA （出現: 1、初出: archive.html）
+- [一次資料・公的機関] https://laws.e-gov.go.jp/law/325AC0000000261 （出現: 4、初出: journal/lpsa-art35.html）
+- [決済・支援導線] https://qr.paypay.ne.jp/p2p01_OOcoe73WXQOj8C9p （出現: 1、初出: donate.html）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/ （出現: 2、初出: data/board-responses-index.js）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/ホーム/page （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/ホーム/pta運営適正化診断 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/ホーム/唯一の正解 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/ホーム/非会員情報の取得不可能性 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/全国pta資料館 （出現: 1、初出: archive.html）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/報告書鹿児島市pta運営状況報告書 （出現: 1、初出: reports/index.html）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/教育委員会/pta業務と職務専念義務 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/教育委員会/公益性と言う名の罠 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/教育委員会/公立学校におけるpta運営の法的適正化と教育委員会の-対応に関する包括的調査報告書 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/教育委員会/教委学校用ガイドライン （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/教育委員会/教育委員会の法的見解 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/教育委員会/横浜市教育委員会通知学教第1965号 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/オプトアウト加入の無効性 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/公立学校におけるpta業務従事と地方公務員法第35条職務専念義務の法的抵触に関する包括的論考 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/学校徴収金pta会費代理徴収問題の統治構造論 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/実物文書pta配布文書 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/川崎市pta業務の校務化の無効性 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/提言pta会費の代理徴収 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/文科省ptaは公務ではない （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/消費者庁ptaは事業者 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/総括pta適正化推進委員会 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/考察第三者提供同意問題点 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/論考ptaの法的構造と教育行政の監督責任 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/論考オプトアウトの無効性 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/論考教職員の働き方改革とpta会費代理徴収の限界 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/研究資料/適正化状況横浜市pta （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/課題と提言/公立学校におけるpta業務の職務専念義務免除運用の法理的破綻と組織的完全分離に関する緊急提言書 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/課題と提言/委任があれば校務 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/課題と提言/学校徴収金管理及びpta業務代行における法的整合性の-欠落と構造的違法性に関する包括的研究報告書 （出現: 1、初出: data/migration-pages.json）
+- [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/課題と提言/校務分掌とpta業務 （出現: 1、初出: data/migration-pages.json）
+- [自治体・公的機関] https://www.city.kawasaki.jp/templates/outline/cmsfiles/contents/0000140/140964/R6.4.1PTAyoukou.pdf （出現: 2、初出: journal/lpsa-art35.html）
+- [一次資料・公的機関] https://www.mext.go.jp/a_menu/shotou/uneishien/detail/1416970_00001.htm （出現: 4、初出: journal/work-style-reform.html）
+- [一次資料・公的機関] https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/079/sonota/1412985.htm （出現: 4、初出: journal/work-style-reform.html）
+- [一次資料・公的機関] https://www.mext.go.jp/content/20201120-mxt_zaimu-000011189_1.pdf （出現: 2、初出: journal/work-style-reform.html）
+- [一次資料・公的機関] https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/217/syup/s217019.pdf （出現: 2、初出: journal/lpsa-art35.html）
+- [自治体・公的機関] https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/ （出現: 52、初出: 404.html）
