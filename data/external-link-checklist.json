@@ -1,0 +1,2761 @@
+{
+  "generated_at": "2026-05-11",
+  "note": "HTTP到達確認は未実施。公開前確認の棚卸し用リスト。",
+  "items": [
+    {
+      "url": "http://www.sitemaps.org/schemas/sitemap/0.9",
+      "domain": "www.sitemaps.org",
+      "category": "仕様参照URL",
+      "priority": "C",
+      "check_status": "未実施",
+      "check_method": "構造化データ・サイトマップ仕様。通常は変更不要",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"> <url><loc>https://ptaorg.github.io/pta/index.html</l"
+    },
+    {
+      "url": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:07df7371-c3ab-44a9-a96c-7a6c4266d8fc",
+      "domain": "acrobat.adobe.com",
+      "category": "Adobe共有資料",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・権限・資料名・恒久性を確認",
+      "occurrence_count": 4,
+      "source_count": 3,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "journal/pta-duty-concentration.html",
+        "research.html"
+      ],
+      "first_context": "\">PTA適正化推進委員会 令和7年12月</p> <div class=\"alert\"> <a href=\"https://acrobat.adobe.com/id/urn:aaid:sc:AP:07df7371-c3ab-44a9-a96c-7a6c4266d8fc\" rel=\"noopener\" target=\"_blank\"><strong>本論考 全文PDF版を開く"
+    },
+    {
+      "url": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:6d60dffb-c5b2-4084-beb5-f90fc83a4b4d",
+      "domain": "acrobat.adobe.com",
+      "category": "Adobe共有資料",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・権限・資料名・恒久性を確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "journal/school-duties-vs-pta.html",
+        "research.html"
+      ],
+      "first_context": "TA適正化推進委員会 研究班 令和8年1月</p> <div class=\"alert\"> <a href=\"https://acrobat.adobe.com/id/urn:aaid:sc:AP:6d60dffb-c5b2-4084-beb5-f90fc83a4b4d\" rel=\"noopener\" target=\"_blank\"><strong>本論考 全文PDF版を開く"
+    },
+    {
+      "url": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:6e1c1e91-3ae3-495a-8fad-75ba30aae40b",
+      "domain": "acrobat.adobe.com",
+      "category": "Adobe共有資料",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・権限・資料名・恒久性を確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "journal/edu-board-guideline.html",
+        "research.html"
+      ],
+      "first_context": "務手引き</p> <div class=\"alert\"> <a class=\"btn-navy\" href=\"https://acrobat.adobe.com/id/urn:aaid:sc:AP:6e1c1e91-3ae3-495a-8fad-75ba30aae40b\" rel=\"noopener\" style=\"display:inline-block;text-decor"
+    },
+    {
+      "url": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:eea7f8a5-4a69-4bb6-ab8f-7550c036c5a8",
+      "domain": "acrobat.adobe.com",
+      "category": "Adobe共有資料",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・権限・資料名・恒久性を確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "journal/yokohama-notice-1965.html",
+        "research.html"
+      ],
+      "first_context": "料 ============= --> <h3>関連資料・原本</h3> <ul> <li><a href=\"https://acrobat.adobe.com/id/urn:aaid:sc:AP:eea7f8a5-4a69-4bb6-ab8f-7550c036c5a8\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>横浜市"
+    },
+    {
+      "url": "https://drive.google.com/open?id=1DistiBvtpsLTQXrLtOpz0pAAXJ5ide0TQnRTmyoURYA",
+      "domain": "drive.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "archive.html"
+      ],
+      "first_context": "grid-2\" style=\"margin-top:24px\"> <a class=\"card\" href=\"https://drive.google.com/open?id=1DistiBvtpsLTQXrLtOpz0pAAXJ5ide0TQnRTmyoURYA\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "domain": "fonts.googleapis.com",
+      "category": "CDN・地図・フォント",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "読み込み可否と外部依存リスクを確認",
+      "occurrence_count": 51,
+      "source_count": 51,
+      "source_files": [
+        "404.html",
+        "archive.html",
+        "audit.html",
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "disclosure.html",
+        "donate.html",
+        "edu-board-start.html",
+        "evidence.html",
+        "faq.html",
+        "glossary.html",
+        "guide.html",
+        "index.html",
+        "issues.html",
+        "journal/comprehensive-report.html",
+        "journal/consumer-agency.html",
+        "journal/delegation-school-duty.html",
+        "journal/duty-exemption.html",
+        "journal/edu-board-guideline.html",
+        "journal/edu-board-legal-view.html",
+        "journal/explain-deck.html",
+        "journal/fee-collection-governance.html",
+        "journal/fee-collection-proposal.html",
+        "journal/index.html",
+        "journal/kawasaki-school-duty.html",
+        "journal/legal-structure-supervision.html",
+        "journal/lpsa-art35.html",
+        "journal/mext-not-public.html",
+        "journal/non-member-info.html",
+        "journal/one-page-brief.html",
+        "journal/optout-invalidity-article.html",
+        "journal/optout-invalidity.html",
+        "journal/pta-duty-concentration.html",
+        "journal/public-interest-trap.html",
+        "journal/school-duties-vs-pta.html",
+        "journal/school-fee-illegality.html",
+        "journal/summary.html",
+        "journal/third-party-consent.html",
+        "journal/work-style-reform.html",
+        "journal/yokohama-notice-1965.html",
+        "kit.html",
+        "law.html",
+        "map.html",
+        "reports/index.html",
+        "research.html",
+        "responses.html",
+        "sitemap.html",
+        "start.html"
+      ],
+      "first_context": "f=\"manifest.webmanifest\"> <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"> <link rel=\"preconnect\" href=\"https://fonts.gstatic.c"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap",
+      "domain": "fonts.googleapis.com",
+      "category": "CDN・地図・フォント",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "読み込み可否と外部依存リスクを確認",
+      "occurrence_count": 51,
+      "source_count": 51,
+      "source_files": [
+        "404.html",
+        "archive.html",
+        "audit.html",
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "disclosure.html",
+        "donate.html",
+        "edu-board-start.html",
+        "evidence.html",
+        "faq.html",
+        "glossary.html",
+        "guide.html",
+        "index.html",
+        "issues.html",
+        "journal/comprehensive-report.html",
+        "journal/consumer-agency.html",
+        "journal/delegation-school-duty.html",
+        "journal/duty-exemption.html",
+        "journal/edu-board-guideline.html",
+        "journal/edu-board-legal-view.html",
+        "journal/explain-deck.html",
+        "journal/fee-collection-governance.html",
+        "journal/fee-collection-proposal.html",
+        "journal/index.html",
+        "journal/kawasaki-school-duty.html",
+        "journal/legal-structure-supervision.html",
+        "journal/lpsa-art35.html",
+        "journal/mext-not-public.html",
+        "journal/non-member-info.html",
+        "journal/one-page-brief.html",
+        "journal/optout-invalidity-article.html",
+        "journal/optout-invalidity.html",
+        "journal/pta-duty-concentration.html",
+        "journal/public-interest-trap.html",
+        "journal/school-duties-vs-pta.html",
+        "journal/school-fee-illegality.html",
+        "journal/summary.html",
+        "journal/third-party-consent.html",
+        "journal/work-style-reform.html",
+        "journal/yokohama-notice-1965.html",
+        "kit.html",
+        "law.html",
+        "map.html",
+        "reports/index.html",
+        "research.html",
+        "responses.html",
+        "sitemap.html",
+        "start.html"
+      ],
+      "first_context": "gstatic.com\" crossorigin> <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap\"> <link rel=\"stylesheet\" href=\"css/style.css\"> </head"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "domain": "fonts.gstatic.com",
+      "category": "CDN・地図・フォント",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "読み込み可否と外部依存リスクを確認",
+      "occurrence_count": 51,
+      "source_count": 51,
+      "source_files": [
+        "404.html",
+        "archive.html",
+        "audit.html",
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "disclosure.html",
+        "donate.html",
+        "edu-board-start.html",
+        "evidence.html",
+        "faq.html",
+        "glossary.html",
+        "guide.html",
+        "index.html",
+        "issues.html",
+        "journal/comprehensive-report.html",
+        "journal/consumer-agency.html",
+        "journal/delegation-school-duty.html",
+        "journal/duty-exemption.html",
+        "journal/edu-board-guideline.html",
+        "journal/edu-board-legal-view.html",
+        "journal/explain-deck.html",
+        "journal/fee-collection-governance.html",
+        "journal/fee-collection-proposal.html",
+        "journal/index.html",
+        "journal/kawasaki-school-duty.html",
+        "journal/legal-structure-supervision.html",
+        "journal/lpsa-art35.html",
+        "journal/mext-not-public.html",
+        "journal/non-member-info.html",
+        "journal/one-page-brief.html",
+        "journal/optout-invalidity-article.html",
+        "journal/optout-invalidity.html",
+        "journal/pta-duty-concentration.html",
+        "journal/public-interest-trap.html",
+        "journal/school-duties-vs-pta.html",
+        "journal/school-fee-illegality.html",
+        "journal/summary.html",
+        "journal/third-party-consent.html",
+        "journal/work-style-reform.html",
+        "journal/yokohama-notice-1965.html",
+        "kit.html",
+        "law.html",
+        "map.html",
+        "reports/index.html",
+        "research.html",
+        "responses.html",
+        "sitemap.html",
+        "start.html"
+      ],
+      "first_context": "://fonts.googleapis.com\"> <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin> <link rel=\"stylesheet\" href=\"https://fon"
+    },
+    {
+      "url": "https://kwansei.repo.nii.ac.jp/record/27062/files/6.pdf",
+      "domain": "kwansei.repo.nii.ac.jp",
+      "category": "研究機関・リポジトリ",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "資料名・著者・公開状態を確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "research.html"
+      ],
+      "first_context": "on/56217/</a></li> <li>公私協働時代における職務専念義務免除のあり方：<a href=\"https://kwansei.repo.nii.ac.jp/record/27062/files/6.pdf\" rel=\"noopener\" target=\"_blank\">関西学院大学リポジトリPDF</a></li"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000261",
+      "domain": "laws.e-gov.go.jp",
+      "category": "一次資料・公的機関",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開前にHTTP到達・資料名・取得日を確認",
+      "occurrence_count": 4,
+      "source_count": 2,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "research.html"
+      ],
+      "first_context": "m;color:var(--text-soft)\"> <li>地方公務員法 - e-Gov：<a href=\"https://laws.e-gov.go.jp/law/325AC0000000261\" rel=\"noopener\" target=\"_blank\">https://laws.e-gov.go."
+    },
+    {
+      "url": "https://note.com/hiroshisatoh",
+      "domain": "note.com",
+      "category": "SNS・外部発信",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "プロフィール・投稿・チャンネルの到達確認",
+      "occurrence_count": 6,
+      "source_count": 6,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "data/site-config.json"
+      ],
+      "first_context": "ll></span> </a> <a class=\"sns-card sns-note\" href=\"https://note.com/hiroshisatoh\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label="
+    },
+    {
+      "url": "https://note.com/turtles8men/n/n70075af64dc4",
+      "domain": "note.com",
+      "category": "SNS・外部発信",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "プロフィール・投稿・チャンネルの到達確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "research.html"
+      ],
+      "first_context": "参議院PDF</a></li> <li>PTA訴訟が刻んだ構造的責任（熊本PTA裁判解説）：<a href=\"https://note.com/turtles8men/n/n70075af64dc4\" rel=\"noopener\" target=\"_blank\">note記事</a></li> <li>PT"
+    },
+    {
+      "url": "https://ptaorg.github.io/ed/",
+      "domain": "ptaorg.github.io",
+      "category": "その他外部URL",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "公開前にHTTP到達と引用位置を確認",
+      "occurrence_count": 11,
+      "source_count": 6,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "data/board-responses-index.js"
+      ],
+      "first_context": "ef=\"../submission-kit.html\">提出キット</a></li><li><a href=\"https://ptaorg.github.io/ed/\" target=\"_blank\" rel=\"noopener noreferrer\">教育委員会向け指針</"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 6,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "data/site-config.json"
+      ],
+      "first_context": "ithub.io/pta/#website\", \"name\": \"PTA適正化推進委員会\", \"url\": \"https://ptaorg.github.io/pta/\", \"inLanguage\": \"ja\", \"potentialAction\": {\"@type\": \"Se"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/#website",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 10,
+      "source_count": 5,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html"
+      ],
+      "first_context": "職員関与、学校媒体利用を質問形式で点検する簡易監査アプリです。\", \"isPartOf\": {\"@id\": \"https://ptaorg.github.io/pta/#website\"}, \"inLanguage\": \"ja\"}, {\"@type\": \"BreadcrumbList\", \"@"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/404.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "404.html",
+        "sitemap.xml"
+      ],
+      "first_context": "ets/apple-touch-icon.png\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/404.html\"> <title>ページが見つかりません | PTA適正化推進委員会</title> <meta name="
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/archive.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 5,
+      "source_files": [
+        "actual-pta-documents.html",
+        "archive.html",
+        "national-archive.html",
+        "sitemap.xml",
+        "yokohama-status.html"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/archive.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/assets/og-image.png",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 56,
+      "source_count": 51,
+      "source_files": [
+        "404.html",
+        "archive.html",
+        "audit.html",
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "disclosure.html",
+        "donate.html",
+        "edu-board-start.html",
+        "evidence.html",
+        "faq.html",
+        "glossary.html",
+        "guide.html",
+        "index.html",
+        "issues.html",
+        "journal/comprehensive-report.html",
+        "journal/consumer-agency.html",
+        "journal/delegation-school-duty.html",
+        "journal/duty-exemption.html",
+        "journal/edu-board-guideline.html",
+        "journal/edu-board-legal-view.html",
+        "journal/explain-deck.html",
+        "journal/fee-collection-governance.html",
+        "journal/fee-collection-proposal.html",
+        "journal/index.html",
+        "journal/kawasaki-school-duty.html",
+        "journal/legal-structure-supervision.html",
+        "journal/lpsa-art35.html",
+        "journal/mext-not-public.html",
+        "journal/non-member-info.html",
+        "journal/one-page-brief.html",
+        "journal/optout-invalidity-article.html",
+        "journal/optout-invalidity.html",
+        "journal/pta-duty-concentration.html",
+        "journal/public-interest-trap.html",
+        "journal/school-duties-vs-pta.html",
+        "journal/school-fee-illegality.html",
+        "journal/summary.html",
+        "journal/third-party-consent.html",
+        "journal/work-style-reform.html",
+        "journal/yokohama-notice-1965.html",
+        "kit.html",
+        "law.html",
+        "map.html",
+        "reports/index.html",
+        "research.html",
+        "responses.html",
+        "sitemap.html",
+        "start.html"
+      ],
+      "first_context": "o/pta/donate.html\"> <meta property=\"og:image\" content=\"https://ptaorg.github.io/pta/assets/og-image.png\"> <meta name=\"twitter:card\" content=\"summary\"> <link r"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/audit.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/audit.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/audit/board.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "audit/board.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/audit/board.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/audit/index.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 18,
+      "source_count": 8,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "diagnosis-pta-operation.html",
+        "implementation-roadmap.html",
+        "sitemap.xml"
+      ],
+      "first_context": "\"0; url=audit/index.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/audit/index.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/audit/index.html#breadcrumb",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 5,
+      "source_count": 5,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html"
+      ],
+      "first_context": "nLanguage\": \"ja\"}, {\"@type\": \"BreadcrumbList\", \"@id\": \"https://ptaorg.github.io/pta/audit/index.html#breadcrumb\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\""
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/audit/index.html#webpage",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 5,
+      "source_count": 5,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html"
+      ],
+      "first_context": "//schema.org\", \"@graph\": [{\"@type\": \"WebPage\", \"@id\": \"https://ptaorg.github.io/pta/audit/index.html#webpage\", \"url\": \"https://ptaorg.github.io/pta/audit/index.htm"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/audit/parent.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "audit/parent.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/audit/parent.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/audit/principal.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "audit/principal.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/audit/principal.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/audit/pta.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "audit/pta.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/audit/pta.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/board-responses.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/board-responses.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/disclosure-request-kit.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/disclosure-request-kit.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/disclosure.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "disclosure.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/disclosure.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/disclosure.html#audit",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "resident-audit-prep.html"
+      ],
+      "first_context": "rl=disclosure.html#audit\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/disclosure.html#audit\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/donate.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "donate.html",
+        "sitemap.xml"
+      ],
+      "first_context": "ets/apple-touch-icon.png\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/donate.html\"> <title>ご支援 | PTA適正化推進委員会</title> <meta name=\"descrip"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/edu-board-start.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "edu-board-start.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/edu-board-start.html</loc><lastmod>2026-05-11</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/evidence-map.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/evidence-map.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/evidence.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "evidence.html",
+        "sitemap.xml"
+      ],
+      "first_context": "ets/apple-touch-icon.png\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/evidence.html\"> <title>根拠・マップ | PTA適正化推進委員会</title> <meta name=\"desc"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/evidence.html#claim",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "claim-evidence-ledger.html"
+      ],
+      "first_context": "url=evidence.html#claim\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/evidence.html#claim\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/evidence.html#heatmap",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "risk-heatmap.html"
+      ],
+      "first_context": "rl=evidence.html#heatmap\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/evidence.html#heatmap\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/evidence.html#ledger",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "evidence-ledger.html"
+      ],
+      "first_context": "url=evidence.html#ledger\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/evidence.html#ledger\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/evidence.html#matrix",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "comparison-matrix.html"
+      ],
+      "first_context": "url=evidence.html#matrix\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/evidence.html#matrix\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/evidence.html#navigator",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "issue-navigator.html"
+      ],
+      "first_context": "=evidence.html#navigator\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/evidence.html#navigator\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/evidence.html#visual",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "visual-overview.html"
+      ],
+      "first_context": "url=evidence.html#visual\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/evidence.html#visual\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/faq.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "faq.html",
+        "sitemap.xml"
+      ],
+      "first_context": "ets/apple-touch-icon.png\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/faq.html\"> <title>よくある質問 | PTA適正化推進委員会</title> <meta name=\"desc"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/faq.html#reading",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "reading-guide.html"
+      ],
+      "first_context": "\"0; url=faq.html#reading\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/faq.html#reading\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/glossary.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "glossary.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/glossary.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/glossary.html#citation",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "citation-guide.html"
+      ],
+      "first_context": "l=glossary.html#citation\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/glossary.html#citation\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/glossary.html#notes",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "public-use-notes.html"
+      ],
+      "first_context": "url=glossary.html#notes\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/glossary.html#notes\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/guide.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "guide.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/guide.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/guide.html#board",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "guide-board.html"
+      ],
+      "first_context": "\"0; url=guide.html#board\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/guide.html#board\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/guide.html#briefs",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "stakeholder-briefs.html"
+      ],
+      "first_context": "0; url=guide.html#briefs\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/guide.html#briefs\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/guide.html#checklist",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "board-checklist.html"
+      ],
+      "first_context": "url=guide.html#checklist\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/guide.html#checklist\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/guide.html#parent",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "guide-parent.html"
+      ],
+      "first_context": "0; url=guide.html#parent\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/guide.html#parent\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/guide.html#pta",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "guide-pta.html"
+      ],
+      "first_context": "t=\"0; url=guide.html#pta\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/guide.html#pta\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/guide.html#research",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "guide-research.html"
+      ],
+      "first_context": "url=guide.html#research\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/guide.html#research\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/index.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 14,
+      "source_count": 10,
+      "source_files": [
+        "audit.html",
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "index.html",
+        "map.html",
+        "research.html",
+        "sitemap.xml"
+      ],
+      "first_context": "e-touch-icon.png\" rel=\"apple-touch-icon\"/> <link href=\"https://ptaorg.github.io/pta/index.html\" rel=\"canonical\"/> <title>トップ | PTA適正化推進委員会</title> <m"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/issues.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "issues.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-11</lastmod></url> <url><loc>https://ptaorg.github.io/pta/issues.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/issues.html#facilities",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "facilities.html"
+      ],
+      "first_context": "l=issues.html#facilities\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/issues.html#facilities\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/issues.html#fee",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "fee-collection.html"
+      ],
+      "first_context": "=\"0; url=issues.html#fee\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/issues.html#fee\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/issues.html#membership",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "membership.html"
+      ],
+      "first_context": "l=issues.html#membership\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/issues.html#membership\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/issues.html#personnel",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "personnel.html"
+      ],
+      "first_context": "rl=issues.html#personnel\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/issues.html#personnel\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/issues.html#privacy",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "privacy.html"
+      ],
+      "first_context": "url=issues.html#privacy\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/issues.html#privacy\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/comprehensive-report.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/comprehensive-report.html",
+        "journal/feed.xml",
+        "report.html",
+        "sitemap.xml"
+      ],
+      "first_context": "omprehensive-report.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/journal/comprehensive-report.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/consumer-agency.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "consumer-agency-pta-business.html",
+        "journal/consumer-agency.html",
+        "journal/feed.xml",
+        "sitemap.xml"
+      ],
+      "first_context": "nal/consumer-agency.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/journal/consumer-agency.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/delegation-school-duty.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "delegation-school-duty.html",
+        "journal/delegation-school-duty.html",
+        "journal/feed.xml",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/delegation-school-duty.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/duty-exemption.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "duty-exemption-collapse.html",
+        "journal/duty-exemption.html",
+        "journal/feed.xml",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/duty-exemption.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/edu-board-guideline.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "edu-board-guideline.html",
+        "journal/edu-board-guideline.html",
+        "journal/feed.xml",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/edu-board-guideline.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/edu-board-legal-view.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "edu-board-legal-view.html",
+        "journal/edu-board-legal-view.html",
+        "journal/feed.xml",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/edu-board-legal-view.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/explain-deck.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "explain-deck.html",
+        "journal/explain-deck.html",
+        "journal/feed.xml",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/explain-deck.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/fee-collection-governance.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "fee-collection-governance.html",
+        "journal/fee-collection-governance.html",
+        "journal/feed.xml",
+        "sitemap.xml"
+      ],
+      "first_context": "llection-governance.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/journal/fee-collection-governance.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/fee-collection-proposal.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "fee-collection-proposal.html",
+        "journal/fee-collection-proposal.html",
+        "journal/feed.xml",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/fee-collection-proposal.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/index.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 5,
+      "source_files": [
+        "journal.html",
+        "journal/feed.xml",
+        "journal/index.html",
+        "migration-index.html",
+        "sitemap.xml"
+      ],
+      "first_context": "; url=journal/index.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/journal/index.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/kawasaki-school-duty.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/kawasaki-school-duty.html",
+        "kawasaki-school-duty-invalidity.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/kawasaki-school-duty.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/legal-structure-supervision.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/legal-structure-supervision.html",
+        "legal-structure-supervision.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/legal-structure-supervision.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/lpsa-art35.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/lpsa-art35.html",
+        "lpsa-art35-conflict.html",
+        "sitemap.xml"
+      ],
+      "first_context": "=journal/lpsa-art35.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/journal/lpsa-art35.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/mext-not-public.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/mext-not-public.html",
+        "mext-pta-not-public.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/mext-not-public.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/non-member-info.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/non-member-info.html",
+        "non-member-info-impossibility.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/non-member-info.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/one-page-brief.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/one-page-brief.html",
+        "one-page-brief.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/one-page-brief.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/optout-invalidity-article.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/optout-invalidity-article.html",
+        "optout-invalidity-article.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/optout-invalidity-article.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/optout-invalidity.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/optout-invalidity.html",
+        "optout-invalidity.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/optout-invalidity.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/pta-duty-concentration.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/pta-duty-concentration.html",
+        "pta-duty-concentration.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/pta-duty-concentration.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/public-interest-trap.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/public-interest-trap.html",
+        "public-interest-trap.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/public-interest-trap.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/school-duties-vs-pta.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/school-duties-vs-pta.html",
+        "school-duties-vs-pta.html",
+        "sitemap.xml"
+      ],
+      "first_context": "chool-duties-vs-pta.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/journal/school-duties-vs-pta.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/school-fee-illegality.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/school-fee-illegality.html",
+        "school-fee-collection-illegality.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/school-fee-illegality.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/summary.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/summary.html",
+        "sitemap.xml",
+        "summary-pta-committee.html"
+      ],
+      "first_context": "url=journal/summary.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/journal/summary.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/third-party-consent.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/third-party-consent.html",
+        "sitemap.xml",
+        "third-party-consent-issue.html"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/third-party-consent.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/work-style-reform.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/work-style-reform.html",
+        "sitemap.xml",
+        "work-style-reform-limit.html"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/journal/work-style-reform.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/journal/yokohama-notice-1965.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_files": [
+        "journal/feed.xml",
+        "journal/yokohama-notice-1965.html",
+        "sitemap.xml",
+        "yokohama-notice-1965.html"
+      ],
+      "first_context": "okohama-notice-1965.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/journal/yokohama-notice-1965.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/kit.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "kit.html",
+        "sitemap.xml"
+      ],
+      "first_context": "ets/apple-touch-icon.png\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/kit.html\"> <title>提出キット | PTA適正化推進委員会</title> <meta name=\"descr"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/kit.html#interview",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "interview-record-template.html"
+      ],
+      "first_context": "; url=kit.html#interview\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/kit.html#interview\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/kit.html#print",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "print-toolkit.html"
+      ],
+      "first_context": "t=\"0; url=kit.html#print\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/kit.html#print\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/kit.html#timeline",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "timeline-builder.html"
+      ],
+      "first_context": "0; url=kit.html#timeline\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/kit.html#timeline\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/law-map.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/law-map.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/law.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "law.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/law.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/law.html#cases",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "cases.html"
+      ],
+      "first_context": "t=\"0; url=law.html#cases\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/law.html#cases\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/map.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/map.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/pta-issues-overview.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/pta-issues-overview.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/reports/index.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "reports/index.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/reports/index.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/research.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/research.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/responses.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 8,
+      "source_count": 7,
+      "source_files": [
+        "administrative-materials.html",
+        "answer-type-guide.html",
+        "response-analysis-guide.html",
+        "response-index.html",
+        "responses.html",
+        "sitemap.xml",
+        "source-policy.html"
+      ],
+      "first_context": "t=\"0; url=responses.html\"> <link rel=\"canonical\" href=\"https://ptaorg.github.io/pta/responses.html\"> <meta name=\"robots\" content=\"noindex,follow\"> </head"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/sitemap.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "sitemap.html",
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/sitemap.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/sitemap.html?q={search_term_string",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 5,
+      "source_count": 5,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html"
+      ],
+      "first_context": "potentialAction\": {\"@type\": \"SearchAction\", \"target\": \"https://ptaorg.github.io/pta/sitemap.html?q={search_term_string}\", \"query-input\": \"required name=search_term_string\"}}]"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/sitemap.xml",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "robots.txt"
+      ],
+      "first_context": "User-agent: * Allow: / Sitemap: https://ptaorg.github.io/pta/sitemap.xml"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/start-here-3min.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/start-here-3min.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/start.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_files": [
+        "sitemap.xml",
+        "start.html"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/start.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/submission-kit.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/submission-kit.html</loc><lastmod>2026-05-10</lastmod></url> <url><loc>htt"
+    },
+    {
+      "url": "https://ptaorg.github.io/pta/term-glossary.html",
+      "domain": "ptaorg.github.io",
+      "category": "サイト内絶対URL",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "ローカルファイル存在確認。公開URL統一の確認対象",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "sitemap.xml"
+      ],
+      "first_context": "tml</loc><lastmod>2026-05-10</lastmod></url> <url><loc>https://ptaorg.github.io/pta/term-glossary.html</loc><lastmod>2026-05-10</lastmod></url> </urlset>"
+    },
+    {
+      "url": "https://qr.paypay.ne.jp/p2p01_OOcoe73WXQOj8C9p",
+      "domain": "qr.paypay.ne.jp",
+      "category": "決済・支援導線",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "支援先・表示名・金額導線を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "donate.html"
+      ],
+      "first_context": "ent-method\"><h3>PayPay</h3><a class=\"paypay-btn\" href=\"https://qr.paypay.ne.jp/p2p01_OOcoe73WXQOj8C9p\" rel=\"noopener noreferrer\" target=\"_blank\">PayPayで支援する"
+    },
+    {
+      "url": "https://schema.org",
+      "domain": "schema.org",
+      "category": "仕様参照URL",
+      "priority": "C",
+      "check_status": "未実施",
+      "check_method": "構造化データ・サイトマップ仕様。通常は変更不要",
+      "occurrence_count": 5,
+      "source_count": 5,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html"
+      ],
+      "first_context": "et\"/> <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"WebPage\", \"@id\": \"https://ptao"
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "data/board-responses-index.js",
+        "guide.html"
+      ],
+      "first_context": "el原本</h3><p>添付Excel原本を同梱。</p></a><a class=\"card\" href=\"https://sites.google.com/view/ptatekiseika/\" rel=\"noopener noreferrer\" target=\"_blank\"><h3>Google資"
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/ホーム/page",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": ": \"home\", \"category_label\": \"ホーム\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/ホーム/page\", \"related\": [ \"diagnosis-pta-operation\""
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/ホーム/pta運営適正化診断",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": ": \"home\", \"category_label\": \"ホーム\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/ホーム/pta運営適正化診断\", \"related\": [ \"unique-correct-answer\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/ホーム/唯一の正解",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": ": \"home\", \"category_label\": \"ホーム\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/ホーム/唯一の正解\", \"related\": [ \"diagnosis-pta-operation\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/ホーム/非会員情報の取得不可能性",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": ": \"home\", \"category_label\": \"ホーム\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/ホーム/非会員情報の取得不可能性\", \"related\": [ \"third-party-consent-issue\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/全国pta資料館",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "archive.html"
+      ],
+      "first_context": "本ページとは別に、行政の見解を整理しています。</p> </a> <a class=\"card\" href=\"https://sites.google.com/view/ptatekiseika/全国pta資料館\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text"
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/報告書鹿児島市pta運営状況報告書",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "reports/index.html"
+      ],
+      "first_context": "grid-2\" style=\"margin-top:30px\"> <a class=\"card\" href=\"https://sites.google.com/view/ptatekiseika/報告書鹿児島市pta運営状況報告書\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text"
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/教育委員会/pta業務と職務専念義務",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "board\", \"category_label\": \"教育委員会\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/教育委員会/pta業務と職務専念義務\", \"related\": [ \"public-interest-trap\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/教育委員会/公益性と言う名の罠",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "board\", \"category_label\": \"教育委員会\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/教育委員会/公益性と言う名の罠\", \"related\": [ \"pta-duty-concentration\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/教育委員会/公立学校におけるpta運営の法的適正化と教育委員会の-対応に関する包括的調査報告書",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "board\", \"category_label\": \"教育委員会\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/教育委員会/公立学校におけるpta運営の法的適正化と教育委員会の-対応に関する包括的調査報告書\", \"related\": [ \"edu-board-guideline\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/教育委員会/教委学校用ガイドライン",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "board\", \"category_label\": \"教育委員会\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/教育委員会/教委学校用ガイドライン\", \"related\": [ \"yokohama-notice-1965\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/教育委員会/教育委員会の法的見解",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "board\", \"category_label\": \"教育委員会\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/教育委員会/教育委員会の法的見解\", \"related\": [ \"yokohama-notice-1965\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/教育委員会/横浜市教育委員会通知学教第1965号",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "board\", \"category_label\": \"教育委員会\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/教育委員会/横浜市教育委員会通知学教第1965号\", \"related\": [ \"edu-board-guideline\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/オプトアウト加入の無効性",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/オプトアウト加入の無効性\", \"related\": [ \"optout-invalidity-article\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/公立学校におけるpta業務従事と地方公務員法第35条職務専念義務の法的抵触に関する包括的論考",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/公立学校におけるpta業務従事と地方公務員法第35条職務専念義務の法的抵触に関する包括的論考\", \"related\": [ \"pta-duty-concentration\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/学校徴収金pta会費代理徴収問題の統治構造論",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/学校徴収金pta会費代理徴収問題の統治構造論\", \"related\": [ \"school-fee-collection-illega"
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/実物文書pta配布文書",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/実物文書pta配布文書\", \"related\": [ \"legal-structure-supervision\""
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/川崎市pta業務の校務化の無効性",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/川崎市pta業務の校務化の無効性\", \"related\": [ \"school-duties-vs-pta\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/提言pta会費の代理徴収",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/提言pta会費の代理徴収\", \"related\": [ \"school-fee-collection-illega"
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/文科省ptaは公務ではない",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/文科省ptaは公務ではない\", \"related\": [ \"school-duties-vs-pta\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/消費者庁ptaは事業者",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/消費者庁ptaは事業者\", \"related\": [ \"third-party-consent-issue\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/総括pta適正化推進委員会",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/総括pta適正化推進委員会\", \"related\": [ \"legal-structure-supervision\""
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/考察第三者提供同意問題点",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/考察第三者提供同意問題点\", \"related\": [ \"non-member-info-impossibilit"
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/論考ptaの法的構造と教育行政の監督責任",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/論考ptaの法的構造と教育行政の監督責任\", \"related\": [ \"summary-pta-committee\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/論考オプトアウトの無効性",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/論考オプトアウトの無効性\", \"related\": [ \"optout-invalidity\", \"c"
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/論考教職員の働き方改革とpta会費代理徴収の限界",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/論考教職員の働き方改革とpta会費代理徴収の限界\", \"related\": [ \"fee-collection-proposal\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/研究資料/適正化状況横浜市pta",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "earch\", \"category_label\": \"研究・資料\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/研究資料/適正化状況横浜市pta\", \"related\": [ \"yokohama-notice-1965\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/課題と提言/公立学校におけるpta業務の職務専念義務免除運用の法理的破綻と組織的完全分離に関する緊急提言書",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "issue\", \"category_label\": \"課題と提言\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/課題と提言/公立学校におけるpta業務の職務専念義務免除運用の法理的破綻と組織的完全分離に関する緊急提言書\", \"related\": [ \"pta-duty-concentration\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/課題と提言/委任があれば校務",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "issue\", \"category_label\": \"課題と提言\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/課題と提言/委任があれば校務\", \"related\": [ \"school-duties-vs-pta\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/課題と提言/学校徴収金管理及びpta業務代行における法的整合性の-欠落と構造的違法性に関する包括的研究報告書",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "issue\", \"category_label\": \"課題と提言\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/課題と提言/学校徴収金管理及びpta業務代行における法的整合性の-欠落と構造的違法性に関する包括的研究報告書\", \"related\": [ \"fee-collection-proposal\","
+    },
+    {
+      "url": "https://sites.google.com/view/ptatekiseika/課題と提言/校務分掌とpta業務",
+      "domain": "sites.google.com",
+      "category": "Google系資料・旧サイト",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開範囲・閲覧権限・移植後の要否を確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "data/migration-pages.json"
+      ],
+      "first_context": "issue\", \"category_label\": \"課題と提言\", \"src_url\": \"https://sites.google.com/view/ptatekiseika/課題と提言/校務分掌とpta業務\", \"related\": [ \"delegation-school-duty\","
+    },
+    {
+      "url": "https://sukusuku.tokyo-np.co.jp/education/56217/",
+      "domain": "sukusuku.tokyo-np.co.jp",
+      "category": "民間・団体・報道",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "補助資料として位置付け、リンク切れ確認",
+      "occurrence_count": 4,
+      "source_count": 2,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "research.html"
+      ],
+      "first_context": "</li> <li>川崎市立小がPTA会費を加入意思を確認せずに徴収（オンブズマンの指摘）：<a href=\"https://sukusuku.tokyo-np.co.jp/education/56217/\" rel=\"noopener\" target=\"_blank\">https://sukusuku.tokyo"
+    },
+    {
+      "url": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+      "domain": "unpkg.com",
+      "category": "CDN・地図・フォント",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "読み込み可否と外部依存リスクを確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "map.html",
+        "responses.html"
+      ],
+      "first_context": "et\" href=\"css/style.css\"> <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\" crossorigin=\"\"> </head> <body> <header class=\"site-he"
+    },
+    {
+      "url": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+      "domain": "unpkg.com",
+      "category": "CDN・地図・フォント",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "読み込み可否と外部依存リスクを確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "map.html",
+        "responses.html"
+      ],
+      "first_context": "pyright\">&copy; PTA適正化推進委員会</p> </footer> <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script> <script src=\"data/board-responses-index.js\""
+    },
+    {
+      "url": "https://www.city.kawasaki.jp/templates/outline/cmsfiles/contents/0000140/140964/R6.4.1PTAyoukou.pdf",
+      "domain": "www.city.kawasaki.jp",
+      "category": "自治体・公的機関",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開前にHTTP到達・資料名・取得日を確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "research.html"
+      ],
+      "first_context": ".html</a></li> <li>川崎市立学校におけるPTAの会費の取扱等に関する要綱：<a href=\"https://www.city.kawasaki.jp/templates/outline/cmsfiles/contents/0000140/140964/R6.4.1PTAyoukou.pdf\" rel=\"noopener\" target=\"_blank\">川崎市要綱PDF</a></li> <li>"
+    },
+    {
+      "url": "https://www.jichiro.gr.jp/jichiken_kako/report/rep_aichi33/11/1107_jre/index.htm",
+      "domain": "www.jichiro.gr.jp",
+      "category": "民間・団体・報道",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "補助資料として位置付け、リンク切れ確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "research.html"
+      ],
+      "first_context": "\">関西学院大学リポジトリPDF</a></li> <li>公教育の無償化に向けた取り組み：<a href=\"https://www.jichiro.gr.jp/jichiken_kako/report/rep_aichi33/11/1107_jre/index.htm\" rel=\"noopener\" target=\"_blank\">自治労報告</a></li> <li>学校徴"
+    },
+    {
+      "url": "https://www.mext.go.jp/a_menu/shotou/uneishien/detail/1416970_00001.htm",
+      "domain": "www.mext.go.jp",
+      "category": "一次資料・公的機関",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開前にHTTP到達・資料名・取得日を確認",
+      "occurrence_count": 4,
+      "source_count": 2,
+      "source_files": [
+        "journal/work-style-reform.html",
+        "research.html"
+      ],
+      "first_context": "<li>文部科学省（2019）「学校給食費等の徴収等の公会計化について（通知）」<br/><a href=\"https://www.mext.go.jp/a_menu/shotou/uneishien/detail/1416970_00001.htm\" rel=\"noopener\" target=\"_blank\">https://www.mext.go.jp"
+    },
+    {
+      "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/079/sonota/1412985.htm",
+      "domain": "www.mext.go.jp",
+      "category": "一次資料・公的機関",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開前にHTTP到達・資料名・取得日を確認",
+      "occurrence_count": 4,
+      "source_count": 2,
+      "source_files": [
+        "journal/work-style-reform.html",
+        "research.html"
+      ],
+      "first_context": "運営体制の構築のための学校における働き方改革に関する総合的な方策について（答申）」<br/><a href=\"https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/079/sonota/1412985.htm\" rel=\"noopener\" target=\"_blank\">https://www.mext.go.jp"
+    },
+    {
+      "url": "https://www.mext.go.jp/content/20201120-mxt_zaimu-000011189_1.pdf",
+      "domain": "www.mext.go.jp",
+      "category": "一次資料・公的機関",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開前にHTTP到達・資料名・取得日を確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "journal/work-style-reform.html",
+        "research.html"
+      ],
+      "first_context": "学省（2019）「学校給食費等の徴収等の公会計化等の推進について（ガイドライン）」<br/><a href=\"https://www.mext.go.jp/content/20201120-mxt_zaimu-000011189_1.pdf\" rel=\"noopener\" target=\"_blank\">PDF: 1417743_001.pdf</"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/217/syup/s217019.pdf",
+      "domain": "www.sangiin.go.jp",
+      "category": "一次資料・公的機関",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開前にHTTP到達・資料名・取得日を確認",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "research.html"
+      ],
+      "first_context": "治労報告</a></li> <li>学校徴収金の私費会計管理リスクに関する参議院質問主意書：<a href=\"https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/217/syup/s217019.pdf\" rel=\"noopener\" target=\"_blank\">参議院PDF</a></li> <li>PT"
+    },
+    {
+      "url": "https://www.youtube.com/@PTA%E9%81%A9%E6%AD%A3%E5%8C%96%E6%8E%A8%E9%80%B2%E5%A7%94%E5%93%A1%E4%BC%9A",
+      "domain": "www.youtube.com",
+      "category": "SNS・外部発信",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "プロフィール・投稿・チャンネルの到達確認",
+      "occurrence_count": 52,
+      "source_count": 52,
+      "source_files": [
+        "404.html",
+        "archive.html",
+        "audit.html",
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "data/site-config.json",
+        "disclosure.html",
+        "donate.html",
+        "edu-board-start.html",
+        "evidence.html",
+        "faq.html",
+        "glossary.html",
+        "guide.html",
+        "index.html",
+        "issues.html",
+        "journal/comprehensive-report.html",
+        "journal/consumer-agency.html",
+        "journal/delegation-school-duty.html",
+        "journal/duty-exemption.html",
+        "journal/edu-board-guideline.html",
+        "journal/edu-board-legal-view.html",
+        "journal/explain-deck.html",
+        "journal/fee-collection-governance.html",
+        "journal/fee-collection-proposal.html",
+        "journal/index.html",
+        "journal/kawasaki-school-duty.html",
+        "journal/legal-structure-supervision.html",
+        "journal/lpsa-art35.html",
+        "journal/mext-not-public.html",
+        "journal/non-member-info.html",
+        "journal/one-page-brief.html",
+        "journal/optout-invalidity-article.html",
+        "journal/optout-invalidity.html",
+        "journal/pta-duty-concentration.html",
+        "journal/public-interest-trap.html",
+        "journal/school-duties-vs-pta.html",
+        "journal/school-fee-illegality.html",
+        "journal/summary.html",
+        "journal/third-party-consent.html",
+        "journal/work-style-reform.html",
+        "journal/yokohama-notice-1965.html",
+        "kit.html",
+        "law.html",
+        "map.html",
+        "reports/index.html",
+        "research.html",
+        "responses.html",
+        "sitemap.html",
+        "start.html"
+      ],
+      "first_context": "noopener noreferrer\">X (Twitter)</a></li> <li><a href=\"https://www.youtube.com/@PTA%E9%81%A9%E6%AD%A3%E5%8C%96%E6%8E%A8%E9%80%B2%E5%A7%94%E5%93%A1%E4%BC%9A\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>"
+    },
+    {
+      "url": "https://x.com/jjjqqqxxx0852",
+      "domain": "x.com",
+      "category": "SNS・外部発信",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "プロフィール・投稿・チャンネルの到達確認",
+      "occurrence_count": 52,
+      "source_count": 52,
+      "source_files": [
+        "404.html",
+        "archive.html",
+        "audit.html",
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "data/site-config.json",
+        "disclosure.html",
+        "donate.html",
+        "edu-board-start.html",
+        "evidence.html",
+        "faq.html",
+        "glossary.html",
+        "guide.html",
+        "index.html",
+        "issues.html",
+        "journal/comprehensive-report.html",
+        "journal/consumer-agency.html",
+        "journal/delegation-school-duty.html",
+        "journal/duty-exemption.html",
+        "journal/edu-board-guideline.html",
+        "journal/edu-board-legal-view.html",
+        "journal/explain-deck.html",
+        "journal/fee-collection-governance.html",
+        "journal/fee-collection-proposal.html",
+        "journal/index.html",
+        "journal/kawasaki-school-duty.html",
+        "journal/legal-structure-supervision.html",
+        "journal/lpsa-art35.html",
+        "journal/mext-not-public.html",
+        "journal/non-member-info.html",
+        "journal/one-page-brief.html",
+        "journal/optout-invalidity-article.html",
+        "journal/optout-invalidity.html",
+        "journal/pta-duty-concentration.html",
+        "journal/public-interest-trap.html",
+        "journal/school-duties-vs-pta.html",
+        "journal/school-fee-illegality.html",
+        "journal/summary.html",
+        "journal/third-party-consent.html",
+        "journal/work-style-reform.html",
+        "journal/yokohama-notice-1965.html",
+        "kit.html",
+        "law.html",
+        "map.html",
+        "reports/index.html",
+        "research.html",
+        "responses.html",
+        "sitemap.html",
+        "start.html"
+      ],
+      "first_context": "4> <ul style=\"list-style:none;padding:0\"> <li><a href=\"https://x.com/jjjqqqxxx0852\" target=\"_blank\" rel=\"noopener noreferrer\">X (Twitter)"
+    },
+    {
+      "url": "https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/",
+      "domain": "yokomusubi.city.yokohama.lg.jp",
+      "category": "自治体・公的機関",
+      "priority": "A",
+      "check_status": "未実施",
+      "check_method": "公開前にHTTP到達・資料名・取得日を確認",
+      "occurrence_count": 52,
+      "source_count": 52,
+      "source_files": [
+        "404.html",
+        "archive.html",
+        "audit.html",
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "data/site-config.json",
+        "disclosure.html",
+        "donate.html",
+        "edu-board-start.html",
+        "evidence.html",
+        "faq.html",
+        "glossary.html",
+        "guide.html",
+        "index.html",
+        "issues.html",
+        "journal/comprehensive-report.html",
+        "journal/consumer-agency.html",
+        "journal/delegation-school-duty.html",
+        "journal/duty-exemption.html",
+        "journal/edu-board-guideline.html",
+        "journal/edu-board-legal-view.html",
+        "journal/explain-deck.html",
+        "journal/fee-collection-governance.html",
+        "journal/fee-collection-proposal.html",
+        "journal/index.html",
+        "journal/kawasaki-school-duty.html",
+        "journal/legal-structure-supervision.html",
+        "journal/lpsa-art35.html",
+        "journal/mext-not-public.html",
+        "journal/non-member-info.html",
+        "journal/one-page-brief.html",
+        "journal/optout-invalidity-article.html",
+        "journal/optout-invalidity.html",
+        "journal/pta-duty-concentration.html",
+        "journal/public-interest-trap.html",
+        "journal/school-duties-vs-pta.html",
+        "journal/school-fee-illegality.html",
+        "journal/summary.html",
+        "journal/third-party-consent.html",
+        "journal/work-style-reform.html",
+        "journal/yokohama-notice-1965.html",
+        "kit.html",
+        "law.html",
+        "map.html",
+        "reports/index.html",
+        "research.html",
+        "responses.html",
+        "sitemap.html",
+        "start.html"
+      ],
+      "first_context": "fo@ptaorg.com</a></p> <a class=\"yokomusubi-card\" href=\"https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/\" target=\"_blank\" rel=\"noopener noreferrer\"> <strong>磯子"
+    },
+    {
+      "url": "https://zen-p.net/tp/p301.html",
+      "domain": "zen-p.net",
+      "category": "民間・団体・報道",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "補助資料として位置付け、リンク切れ確認",
+      "occurrence_count": 4,
+      "source_count": 2,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "research.html"
+      ],
+      "first_context": "1</a></li> <li>PTA事務の学校委託 - 一般社団法人 全国PTA連絡協議会：<a href=\"https://zen-p.net/tp/p301.html\" rel=\"noopener\" target=\"_blank\">https://zen-p.net/tp/p"
+    },
+    {
+      "url": "https://zen-p.net/tp/p421.html",
+      "domain": "zen-p.net",
+      "category": "民間・団体・報道",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "補助資料として位置付け、リンク切れ確認",
+      "occurrence_count": 4,
+      "source_count": 2,
+      "source_files": [
+        "journal/lpsa-art35.html",
+        "research.html"
+      ],
+      "first_context": "note記事</a></li> <li>PTA活動に関する裁判例 - 全国PTA連絡協議会：<a href=\"https://zen-p.net/tp/p421.html\" rel=\"noopener\" target=\"_blank\">https://zen-p.net/tp/p"
+    },
+    {
+      "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "domain": "{s}.tile.openstreetmap.org",
+      "category": "CDN・地図・フォント",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "読み込み可否と外部依存リスクを確認",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_files": [
+        "js/board-responses.js"
+      ],
+      "first_context": "heelZoom:false}).setView([36.2,138.2],5); L.tileLayer(\"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\",{attribution:\"&copy; OpenStreetMap contributors\"}).ad"
+    },
+    {
+      "url": "mailto:info@ptaorg.com",
+      "domain": "",
+      "category": "連絡先",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "メールアドレス。表示・送信先の正確性を確認",
+      "occurrence_count": 51,
+      "source_count": 51,
+      "source_files": [
+        "404.html",
+        "archive.html",
+        "audit.html",
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html",
+        "disclosure.html",
+        "donate.html",
+        "edu-board-start.html",
+        "evidence.html",
+        "faq.html",
+        "glossary.html",
+        "guide.html",
+        "index.html",
+        "issues.html",
+        "journal/comprehensive-report.html",
+        "journal/consumer-agency.html",
+        "journal/delegation-school-duty.html",
+        "journal/duty-exemption.html",
+        "journal/edu-board-guideline.html",
+        "journal/edu-board-legal-view.html",
+        "journal/explain-deck.html",
+        "journal/fee-collection-governance.html",
+        "journal/fee-collection-proposal.html",
+        "journal/index.html",
+        "journal/kawasaki-school-duty.html",
+        "journal/legal-structure-supervision.html",
+        "journal/lpsa-art35.html",
+        "journal/mext-not-public.html",
+        "journal/non-member-info.html",
+        "journal/one-page-brief.html",
+        "journal/optout-invalidity-article.html",
+        "journal/optout-invalidity.html",
+        "journal/pta-duty-concentration.html",
+        "journal/public-interest-trap.html",
+        "journal/school-duties-vs-pta.html",
+        "journal/school-fee-illegality.html",
+        "journal/summary.html",
+        "journal/third-party-consent.html",
+        "journal/work-style-reform.html",
+        "journal/yokohama-notice-1965.html",
+        "kit.html",
+        "law.html",
+        "map.html",
+        "reports/index.html",
+        "research.html",
+        "responses.html",
+        "sitemap.html",
+        "start.html"
+      ],
+      "first_context": "<p>〒235-0021 神奈川県横浜市磯子区岡村<br>070-9012-7772<br><a href=\"mailto:info@ptaorg.com\">info@ptaorg.com</a></p> <a class=\"yokomusubi-card\" hr"
+    },
+    {
+      "url": "tel:07090127772",
+      "domain": "",
+      "category": "連絡先",
+      "priority": "B",
+      "check_status": "未実施",
+      "check_method": "電話番号。表示・発信先の正確性を確認",
+      "occurrence_count": 5,
+      "source_count": 5,
+      "source_files": [
+        "audit/board.html",
+        "audit/index.html",
+        "audit/parent.html",
+        "audit/principal.html",
+        "audit/pta.html"
+      ],
+      "first_context": "21</div> <div>神奈川県横浜市磯子区岡村</div> <div><a href=\"tel:07090127772\">070-9012-7772</a></div> <div><a href=\"mailto:info"
+    }
+  ]
+}

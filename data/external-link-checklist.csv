@@ -1,0 +1,156 @@
+﻿priority,category,check_status,domain,url,occurrence_count,source_count,source_files,check_method
+C,仕様参照URL,未実施,www.sitemaps.org,http://www.sitemaps.org/schemas/sitemap/0.9,1,1,sitemap.xml,構造化データ・サイトマップ仕様。通常は変更不要
+A,Adobe共有資料,未実施,acrobat.adobe.com,https://acrobat.adobe.com/id/urn:aaid:sc:AP:07df7371-c3ab-44a9-a96c-7a6c4266d8fc,4,3,journal/lpsa-art35.html / journal/pta-duty-concentration.html / research.html,公開範囲・権限・資料名・恒久性を確認
+A,Adobe共有資料,未実施,acrobat.adobe.com,https://acrobat.adobe.com/id/urn:aaid:sc:AP:6d60dffb-c5b2-4084-beb5-f90fc83a4b4d,2,2,journal/school-duties-vs-pta.html / research.html,公開範囲・権限・資料名・恒久性を確認
+A,Adobe共有資料,未実施,acrobat.adobe.com,https://acrobat.adobe.com/id/urn:aaid:sc:AP:6e1c1e91-3ae3-495a-8fad-75ba30aae40b,2,2,journal/edu-board-guideline.html / research.html,公開範囲・権限・資料名・恒久性を確認
+A,Adobe共有資料,未実施,acrobat.adobe.com,https://acrobat.adobe.com/id/urn:aaid:sc:AP:eea7f8a5-4a69-4bb6-ab8f-7550c036c5a8,2,2,journal/yokohama-notice-1965.html / research.html,公開範囲・権限・資料名・恒久性を確認
+A,Google系資料・旧サイト,未実施,drive.google.com,https://drive.google.com/open?id=1DistiBvtpsLTQXrLtOpz0pAAXJ5ide0TQnRTmyoURYA,1,1,archive.html,公開範囲・閲覧権限・移植後の要否を確認
+B,CDN・地図・フォント,未実施,fonts.googleapis.com,https://fonts.googleapis.com,51,51,404.html / archive.html / audit.html / audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / disclosure.html / donate.html / edu-board-start.html / evidence.html,読み込み可否と外部依存リスクを確認
+B,CDN・地図・フォント,未実施,fonts.googleapis.com,https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap,51,51,404.html / archive.html / audit.html / audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / disclosure.html / donate.html / edu-board-start.html / evidence.html,読み込み可否と外部依存リスクを確認
+B,CDN・地図・フォント,未実施,fonts.gstatic.com,https://fonts.gstatic.com,51,51,404.html / archive.html / audit.html / audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / disclosure.html / donate.html / edu-board-start.html / evidence.html,読み込み可否と外部依存リスクを確認
+B,研究機関・リポジトリ,未実施,kwansei.repo.nii.ac.jp,https://kwansei.repo.nii.ac.jp/record/27062/files/6.pdf,2,2,journal/lpsa-art35.html / research.html,資料名・著者・公開状態を確認
+A,一次資料・公的機関,未実施,laws.e-gov.go.jp,https://laws.e-gov.go.jp/law/325AC0000000261,4,2,journal/lpsa-art35.html / research.html,公開前にHTTP到達・資料名・取得日を確認
+B,SNS・外部発信,未実施,note.com,https://note.com/hiroshisatoh,6,6,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / data/site-config.json,プロフィール・投稿・チャンネルの到達確認
+B,SNS・外部発信,未実施,note.com,https://note.com/turtles8men/n/n70075af64dc4,2,2,journal/lpsa-art35.html / research.html,プロフィール・投稿・チャンネルの到達確認
+B,その他外部URL,未実施,ptaorg.github.io,https://ptaorg.github.io/ed/,11,6,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / data/board-responses-index.js,公開前にHTTP到達と引用位置を確認
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/,6,6,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / data/site-config.json,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/#website,10,5,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/404.html,3,2,404.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/archive.html,6,5,actual-pta-documents.html / archive.html / national-archive.html / sitemap.xml / yokohama-status.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/assets/og-image.png,56,51,404.html / archive.html / audit.html / audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / disclosure.html / donate.html / edu-board-start.html / evidence.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/audit.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/audit/board.html,2,2,audit/board.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/audit/index.html,18,8,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / diagnosis-pta-operation.html / implementation-roadmap.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/audit/index.html#breadcrumb,5,5,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/audit/index.html#webpage,5,5,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/audit/parent.html,2,2,audit/parent.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/audit/principal.html,2,2,audit/principal.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/audit/pta.html,3,2,audit/pta.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/board-responses.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/disclosure-request-kit.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/disclosure.html,3,2,disclosure.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/disclosure.html#audit,1,1,resident-audit-prep.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/donate.html,3,2,donate.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/edu-board-start.html,3,2,edu-board-start.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/evidence-map.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/evidence.html,3,2,evidence.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/evidence.html#claim,1,1,claim-evidence-ledger.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/evidence.html#heatmap,1,1,risk-heatmap.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/evidence.html#ledger,1,1,evidence-ledger.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/evidence.html#matrix,1,1,comparison-matrix.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/evidence.html#navigator,1,1,issue-navigator.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/evidence.html#visual,1,1,visual-overview.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/faq.html,3,2,faq.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/faq.html#reading,1,1,reading-guide.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/glossary.html,3,2,glossary.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/glossary.html#citation,1,1,citation-guide.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/glossary.html#notes,1,1,public-use-notes.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/guide.html,3,2,guide.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/guide.html#board,1,1,guide-board.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/guide.html#briefs,1,1,stakeholder-briefs.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/guide.html#checklist,1,1,board-checklist.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/guide.html#parent,1,1,guide-parent.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/guide.html#pta,1,1,guide-pta.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/guide.html#research,1,1,guide-research.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/index.html,14,10,audit.html / audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / index.html / map.html / research.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/issues.html,3,2,issues.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/issues.html#facilities,1,1,facilities.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/issues.html#fee,1,1,fee-collection.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/issues.html#membership,1,1,membership.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/issues.html#personnel,1,1,personnel.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/issues.html#privacy,1,1,privacy.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/comprehensive-report.html,6,4,journal/comprehensive-report.html / journal/feed.xml / report.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/consumer-agency.html,6,4,consumer-agency-pta-business.html / journal/consumer-agency.html / journal/feed.xml / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/delegation-school-duty.html,6,4,delegation-school-duty.html / journal/delegation-school-duty.html / journal/feed.xml / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/duty-exemption.html,6,4,duty-exemption-collapse.html / journal/duty-exemption.html / journal/feed.xml / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/edu-board-guideline.html,6,4,edu-board-guideline.html / journal/edu-board-guideline.html / journal/feed.xml / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/edu-board-legal-view.html,6,4,edu-board-legal-view.html / journal/edu-board-legal-view.html / journal/feed.xml / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/explain-deck.html,6,4,explain-deck.html / journal/explain-deck.html / journal/feed.xml / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/fee-collection-governance.html,6,4,fee-collection-governance.html / journal/fee-collection-governance.html / journal/feed.xml / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/fee-collection-proposal.html,6,4,fee-collection-proposal.html / journal/fee-collection-proposal.html / journal/feed.xml / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/index.html,6,5,journal.html / journal/feed.xml / journal/index.html / migration-index.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/kawasaki-school-duty.html,6,4,journal/feed.xml / journal/kawasaki-school-duty.html / kawasaki-school-duty-invalidity.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/legal-structure-supervision.html,6,4,journal/feed.xml / journal/legal-structure-supervision.html / legal-structure-supervision.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/lpsa-art35.html,6,4,journal/feed.xml / journal/lpsa-art35.html / lpsa-art35-conflict.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/mext-not-public.html,6,4,journal/feed.xml / journal/mext-not-public.html / mext-pta-not-public.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/non-member-info.html,6,4,journal/feed.xml / journal/non-member-info.html / non-member-info-impossibility.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/one-page-brief.html,6,4,journal/feed.xml / journal/one-page-brief.html / one-page-brief.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/optout-invalidity-article.html,6,4,journal/feed.xml / journal/optout-invalidity-article.html / optout-invalidity-article.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/optout-invalidity.html,6,4,journal/feed.xml / journal/optout-invalidity.html / optout-invalidity.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/pta-duty-concentration.html,6,4,journal/feed.xml / journal/pta-duty-concentration.html / pta-duty-concentration.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/public-interest-trap.html,6,4,journal/feed.xml / journal/public-interest-trap.html / public-interest-trap.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/school-duties-vs-pta.html,6,4,journal/feed.xml / journal/school-duties-vs-pta.html / school-duties-vs-pta.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/school-fee-illegality.html,6,4,journal/feed.xml / journal/school-fee-illegality.html / school-fee-collection-illegality.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/summary.html,6,4,journal/feed.xml / journal/summary.html / sitemap.xml / summary-pta-committee.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/third-party-consent.html,6,4,journal/feed.xml / journal/third-party-consent.html / sitemap.xml / third-party-consent-issue.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/work-style-reform.html,6,4,journal/feed.xml / journal/work-style-reform.html / sitemap.xml / work-style-reform-limit.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/journal/yokohama-notice-1965.html,6,4,journal/feed.xml / journal/yokohama-notice-1965.html / sitemap.xml / yokohama-notice-1965.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/kit.html,3,2,kit.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/kit.html#interview,1,1,interview-record-template.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/kit.html#print,1,1,print-toolkit.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/kit.html#timeline,1,1,timeline-builder.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/law-map.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/law.html,3,2,law.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/law.html#cases,1,1,cases.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/map.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/pta-issues-overview.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/reports/index.html,3,2,reports/index.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/research.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/responses.html,8,7,administrative-materials.html / answer-type-guide.html / response-analysis-guide.html / response-index.html / responses.html / sitemap.xml / source-policy.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/sitemap.html,3,2,sitemap.html / sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/sitemap.html?q={search_term_string,5,5,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/sitemap.xml,1,1,robots.txt,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/start-here-3min.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/start.html,3,2,sitemap.xml / start.html,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/submission-kit.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/term-glossary.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
+A,決済・支援導線,未実施,qr.paypay.ne.jp,https://qr.paypay.ne.jp/p2p01_OOcoe73WXQOj8C9p,1,1,donate.html,支援先・表示名・金額導線を確認
+C,仕様参照URL,未実施,schema.org,https://schema.org,5,5,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html,構造化データ・サイトマップ仕様。通常は変更不要
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/,2,2,data/board-responses-index.js / guide.html,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/ホーム/page,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/ホーム/pta運営適正化診断,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/ホーム/唯一の正解,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/ホーム/非会員情報の取得不可能性,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/全国pta資料館,1,1,archive.html,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/報告書鹿児島市pta運営状況報告書,1,1,reports/index.html,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/教育委員会/pta業務と職務専念義務,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/教育委員会/公益性と言う名の罠,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/教育委員会/公立学校におけるpta運営の法的適正化と教育委員会の-対応に関する包括的調査報告書,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/教育委員会/教委学校用ガイドライン,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/教育委員会/教育委員会の法的見解,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/教育委員会/横浜市教育委員会通知学教第1965号,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/オプトアウト加入の無効性,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/公立学校におけるpta業務従事と地方公務員法第35条職務専念義務の法的抵触に関する包括的論考,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/学校徴収金pta会費代理徴収問題の統治構造論,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/実物文書pta配布文書,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/川崎市pta業務の校務化の無効性,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/提言pta会費の代理徴収,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/文科省ptaは公務ではない,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/消費者庁ptaは事業者,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/総括pta適正化推進委員会,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/考察第三者提供同意問題点,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/論考ptaの法的構造と教育行政の監督責任,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/論考オプトアウトの無効性,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/論考教職員の働き方改革とpta会費代理徴収の限界,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/研究資料/適正化状況横浜市pta,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/課題と提言/公立学校におけるpta業務の職務専念義務免除運用の法理的破綻と組織的完全分離に関する緊急提言書,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/課題と提言/委任があれば校務,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/課題と提言/学校徴収金管理及びpta業務代行における法的整合性の-欠落と構造的違法性に関する包括的研究報告書,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/課題と提言/校務分掌とpta業務,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
+B,民間・団体・報道,未実施,sukusuku.tokyo-np.co.jp,https://sukusuku.tokyo-np.co.jp/education/56217/,4,2,journal/lpsa-art35.html / research.html,補助資料として位置付け、リンク切れ確認
+B,CDN・地図・フォント,未実施,unpkg.com,https://unpkg.com/leaflet@1.9.4/dist/leaflet.css,2,2,map.html / responses.html,読み込み可否と外部依存リスクを確認
+B,CDN・地図・フォント,未実施,unpkg.com,https://unpkg.com/leaflet@1.9.4/dist/leaflet.js,2,2,map.html / responses.html,読み込み可否と外部依存リスクを確認
+A,自治体・公的機関,未実施,www.city.kawasaki.jp,https://www.city.kawasaki.jp/templates/outline/cmsfiles/contents/0000140/140964/R6.4.1PTAyoukou.pdf,2,2,journal/lpsa-art35.html / research.html,公開前にHTTP到達・資料名・取得日を確認
+B,民間・団体・報道,未実施,www.jichiro.gr.jp,https://www.jichiro.gr.jp/jichiken_kako/report/rep_aichi33/11/1107_jre/index.htm,2,2,journal/lpsa-art35.html / research.html,補助資料として位置付け、リンク切れ確認
+A,一次資料・公的機関,未実施,www.mext.go.jp,https://www.mext.go.jp/a_menu/shotou/uneishien/detail/1416970_00001.htm,4,2,journal/work-style-reform.html / research.html,公開前にHTTP到達・資料名・取得日を確認
+A,一次資料・公的機関,未実施,www.mext.go.jp,https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/079/sonota/1412985.htm,4,2,journal/work-style-reform.html / research.html,公開前にHTTP到達・資料名・取得日を確認
+A,一次資料・公的機関,未実施,www.mext.go.jp,https://www.mext.go.jp/content/20201120-mxt_zaimu-000011189_1.pdf,2,2,journal/work-style-reform.html / research.html,公開前にHTTP到達・資料名・取得日を確認
+A,一次資料・公的機関,未実施,www.sangiin.go.jp,https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/217/syup/s217019.pdf,2,2,journal/lpsa-art35.html / research.html,公開前にHTTP到達・資料名・取得日を確認
+B,SNS・外部発信,未実施,www.youtube.com,https://www.youtube.com/@PTA%E9%81%A9%E6%AD%A3%E5%8C%96%E6%8E%A8%E9%80%B2%E5%A7%94%E5%93%A1%E4%BC%9A,52,52,404.html / archive.html / audit.html / audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / data/site-config.json / disclosure.html / donate.html / edu-board-start.html,プロフィール・投稿・チャンネルの到達確認
+B,SNS・外部発信,未実施,x.com,https://x.com/jjjqqqxxx0852,52,52,404.html / archive.html / audit.html / audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / data/site-config.json / disclosure.html / donate.html / edu-board-start.html,プロフィール・投稿・チャンネルの到達確認
+A,自治体・公的機関,未実施,yokomusubi.city.yokohama.lg.jp,https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/,52,52,404.html / archive.html / audit.html / audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / data/site-config.json / disclosure.html / donate.html / edu-board-start.html,公開前にHTTP到達・資料名・取得日を確認
+B,民間・団体・報道,未実施,zen-p.net,https://zen-p.net/tp/p301.html,4,2,journal/lpsa-art35.html / research.html,補助資料として位置付け、リンク切れ確認
+B,民間・団体・報道,未実施,zen-p.net,https://zen-p.net/tp/p421.html,4,2,journal/lpsa-art35.html / research.html,補助資料として位置付け、リンク切れ確認
+B,CDN・地図・フォント,未実施,{s}.tile.openstreetmap.org,https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png,1,1,js/board-responses.js,読み込み可否と外部依存リスクを確認
+B,連絡先,未実施,,mailto:info@ptaorg.com,51,51,404.html / archive.html / audit.html / audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html / disclosure.html / donate.html / edu-board-start.html / evidence.html,メールアドレス。表示・送信先の正確性を確認
+B,連絡先,未実施,,tel:07090127772,5,5,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html,電話番号。表示・発信先の正確性を確認
