@@ -20,11 +20,9 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
-
 <style>
 .strength-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}.strength-panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow-soft)}.strength-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.metric-box{background:#f6f7fb;border:1px solid var(--line);border-radius:18px;padding:16px}.metric-box strong{display:block;font-size:2rem;color:var(--navy);line-height:1}.metric-box span{font-size:.86rem;color:var(--muted)}.route-card{position:relative;border-left:5px solid var(--gold)}.route-card .tag{font-size:.78rem;font-weight:900;color:var(--gold);letter-spacing:.08em}.bookmark-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.bookmark-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow-soft)}.bookmark-card h3{margin-top:0;color:var(--navy)}.mini-note{font-size:.9rem;color:var(--muted)}.map-list{columns:3;column-gap:24px}.map-list li{break-inside:avoid;margin:0 0 6px}.article-accordion details,.article-full details{border:1px solid var(--line);border-radius:18px;background:#fff;margin:0 0 16px;box-shadow:var(--shadow-soft);overflow:hidden}.article-accordion summary{cursor:pointer;padding:18px 22px;font-weight:900;color:var(--navy);display:flex;justify-content:space-between;gap:20px}.article-accordion summary span{font-size:.85rem;color:var(--muted);font-weight:700}.article-body{padding:0 22px 22px;border-top:1px solid var(--line);background:#fff}.article-body .site-header,.article-body .footer,.article-body .breadcrumb{display:none}.article-body .page-hero{padding:28px 0}.article-body .page-hero h1{font-size:clamp(1.5rem,3vw,2.5rem)}.toc-mini{background:#f7f8fb;border:1px solid var(--line);border-radius:18px;padding:18px}.toc-mini a{display:inline-block;margin:4px 10px 4px 0}.shiori{border:1px dashed #c9a348;background:#fffdf5;border-radius:18px;padding:18px}.shiori h3{margin-top:0}.read-path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.audit-embed-note{padding:16px;border-radius:16px;background:#f4f6f9;border:1px solid var(--line)}@media(max-width:900px){.strength-hero-grid,.bookmark-grid,.read-path{grid-template-columns:1fr}.map-list{columns:1}.strength-metrics{grid-template-columns:1fr}}
 </style>
-
 </head>
 <body>
 <header class="site-header"><div class="nav-container">
@@ -62,26 +60,25 @@
 <div class="close-overlay" id="closeOverlay">CLOSE ×</div></div>
 <main>
 <nav aria-label="breadcrumb" class="breadcrumb"><a href="index.html">トップ</a> / <span>監査アプリ</span></nav>
-<section class="page-hero"><div class="page-hero-inner"><div class="page-hero-kicker">Audit App</div><h1>立場別に確認する<br><em>PTA運営監査</em></h1><p>保護者、PTA役員、学校管理職、教育委員会の4立場から、同じPTA運営を別の視点で点検します。診断結果は法的判断そのものではなく、資料確認の優先順位を決めるための入口です。</p><div class="hero-actions"><a class="btn-gold" href="audit/index.html">監査アプリを開く</a><a class="btn-outline" href="responses.html">回答DBを見る</a></div></div></section>
-<section class="evidence-level-strip" aria-label="根拠レベル表示">
-  <div class="evidence-level-strip__inner">
-    <div><strong>根拠レベル</strong><p>監査アプリは法的判断そのものではなく、確認資料と論点の優先順位を整理する入口です。</p></div>
-    <div class="evidence-level-pills"><span class="evidence-pill evidence-pill--tool">点検ツール</span><span class="evidence-pill evidence-pill--source">資料確認用</span><span class="evidence-pill evidence-pill--official">回答DB参照</span><span class="evidence-pill evidence-pill--review">最終判断ではない</span></div>
-    <a class="evidence-level-link" href="evidence.html#evidence-levels">表示の意味</a>
-  </div>
+<section class="page-hero"><div class="page-hero-inner"><div class="page-hero-kicker">Audit App</div><h1>立場別に確認する<br/><em>PTA運営監査</em></h1><p>保護者、PTA役員、学校管理職、教育委員会の4立場から、同じPTA運営を別の視点で点検します。診断結果は法的判断そのものではなく、資料確認の優先順位を決めるための入口です。</p><div class="hero-actions"><a class="btn-gold" href="audit/index.html">監査アプリを開く</a><a class="btn-outline" href="responses.html">回答DBを見る</a></div></div></section>
+<section aria-label="根拠レベル表示" class="evidence-level-strip">
+<div class="evidence-level-strip__inner">
+<div><strong>根拠レベル</strong><p>監査アプリは法的判断そのものではなく、確認資料と論点の優先順位を整理する入口です。</p></div>
+<div class="evidence-level-pills"><span class="evidence-pill evidence-pill--tool">点検ツール</span><span class="evidence-pill evidence-pill--source">資料確認用</span><span class="evidence-pill evidence-pill--official">回答DB参照</span><span class="evidence-pill evidence-pill--review">最終判断ではない</span></div>
+<a class="evidence-level-link" href="evidence.html#evidence-levels">表示の意味</a>
+</div>
 </section>
-
 <section class="section white"><div class="wrap"><div class="section-center"><div class="section-kicker">Bookmarks</div><h2 class="section-title">4立場のしおり</h2><p class="section-lead">それぞれの立場で、先に見るべき注意点を固定します。</p></div><div class="bookmark-grid"><article class="bookmark-card" id="parent"><h3>保護者</h3><p>入会申込書があるか、同意が明確か、会費徴収が学校徴収金と混在していないかを確認します。</p><ul><li>加入・会費・個人情報の確認</li><li>該当資料：回答DB、開示資料、実物文書、法制度マップ</li><li>次の行動：不明点を記録し、回答本文または提出キットへ進む</li></ul><a class="btn-navy" href="audit/parent.html">この立場で診断する</a></article>
 <article class="bookmark-card" id="pta"><h3>PTA役員</h3><p>任意団体として、会員名簿・会計資料・規約・役員選出・学校への事務依存を確認します。</p><ul><li>会員管理・会計・学校依存の確認</li><li>該当資料：回答DB、開示資料、実物文書、法制度マップ</li><li>次の行動：不明点を記録し、回答本文または提出キットへ進む</li></ul><a class="btn-navy" href="audit/pta.html">この立場で診断する</a></article>
 <article class="bookmark-card" id="principal"><h3>学校管理職</h3><p>校内事務、教職員関与、学校徴収金、個人情報、学校媒体利用を確認します。</p><ul><li>校内事務・勤務時間中のPTA事務・学校徴収金の確認</li><li>該当資料：回答DB、開示資料、実物文書、法制度マップ</li><li>次の行動：不明点を記録し、回答本文または提出キットへ進む</li></ul><a class="btn-navy" href="audit/principal.html">この立場で診断する</a></article>
 <article class="bookmark-card" id="board"><h3>教育委員会</h3><p>方針、各学校への通知、個人情報提供、教職員関与、監査耐性を確認します。</p><ul><li>方針・通知・監査耐性の確認</li><li>該当資料：回答DB、開示資料、実物文書、法制度マップ</li><li>次の行動：不明点を記録し、回答本文または提出キットへ進む</li></ul><a class="btn-navy" href="audit/board.html">この立場で診断する</a></article></div></div></section>
 <section class="section"><div class="wrap-narrow"><div class="shiori"><h3>注意点</h3><ul><li>診断は、資料確認の入口です。最終的には規約、配布文書、会計資料、学校・教育委員会の回答原文を確認します。</li><li>「任意加入」と書かれていても、入会申込・個人情報提供・会費徴収の運用が一致しているかを別に確認します。</li><li>学校管理職・教育委員会は、PTAが任意団体であることと、学校が関与する事務の根拠を分けて確認します。</li></ul></div></div></section>
 <section class="section white"><div class="wrap"><div class="section-center"><div class="section-kicker">Next</div><h2 class="section-title">診断後に見るページ</h2></div><div class="grid-3"><a class="card" href="map.html" style="text-decoration:none"><h3>全国マップ</h3><p>他自治体の回答類型を確認します。</p></a><a class="card" href="responses.html" style="text-decoration:none"><h3>回答DB</h3><p>自治体回答の本文を確認します。</p></a><a class="card" href="kit.html" style="text-decoration:none"><h3>提出キット</h3><p>照会・申入れの準備に進みます。</p></a></div></div></section>
-</main>
+<section class="section white thin-page-final-note"><div class="wrap-narrow"><article class="longform"><h2>本文としての整理</h2><p>立場別に確認する PTA運営監査は、単なるリンク先ではなく、PTA問題を確認する際の補助ページです。このページでは、対象となる論点、確認すべき資料、次に進むべきページを整理します。</p><p>PTA問題は、加入意思、会費徴収、個人情報、教職員関与、学校施設・媒体利用が重なって現れることがあります。そのため、ひとつの文書だけで判断せず、複数の資料を照合して確認してください。</p><h2>確認すべきこと</h2><ul><li>このページの対象が、どの論点に関係するかを確認する。</li><li>資料の作成主体、日付、対象範囲を確認する。</li><li>外部提出に使う場合は、回答本文や原資料に戻って確認する。</li></ul><h2>次に読むページ</h2><ul><li><a href="issues.html">5大論点</a></li><li><a href="responses.html">教育委員会回答DB</a></li><li><a href="evidence.html">根拠と資料</a></li><li><a href="kit.html">実務キット</a></li></ul></article></div></section></main>
 <footer class="footer"><div class="footer-grid" style="grid-template-columns:1.4fr 1fr 1fr 1fr 1fr">
 <div>
 <h3>PTA適正化推進委員会</h3>
-<p>〒235-0021 神奈川県横浜市磯子区岡村<br/>070-9012-7772<br/><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></p>
+<p>〒235-0021 神奈川県横浜市磯子区岡村<br>070-9012-7772<br/><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></br></p>
 <a class="yokomusubi-card" href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" rel="noopener noreferrer" target="_blank">
 <strong>磯子区「よこむすび」掲載団体</strong>
 <span>登録番号: 磯子12406 / 分類番号: 12-4</span></a>
