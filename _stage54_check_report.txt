@@ -1,0 +1,11 @@
+stage54 archive framework check
+html_files: 122
+h1_bad_total: 0 []
+href_hash_total: 0 []
+broken_links_total: 0 []
+json_bad_total: 0 []
+css_bad_total: 0 []
+banned_hits_total: 0 []
+created_material_dirs: materials/documents, materials/interviews, materials/thumbnails, materials/captions
+created_templates: data/materials-manifest.template.json, data/media-manifest.template.json
+note: internal links with query parameters are checked against the base HTML file.

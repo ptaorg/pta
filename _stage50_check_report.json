@@ -1,0 +1,16 @@
+{
+  "html_files": 122,
+  "errors": [],
+  "error_count": 0,
+  "forbidden_found": [],
+  "forbidden_count": 0,
+  "updated_files": [
+    "index.html",
+    "responses.html",
+    "guide-pta.html",
+    "guide-board.html",
+    "edu-board-start.html",
+    "edu-board-guideline.html",
+    "privacy.html"
+  ]
+}
