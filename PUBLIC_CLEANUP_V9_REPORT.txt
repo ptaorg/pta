@@ -1,0 +1,54 @@
+PTAサイト public cleanup v9 実施報告
+作成日: 2026-05-13
+
+対象ZIP:
+- pta_site_public_cleanup_v8(1).zip
+
+実施内容:
+1. 登録済み資料の実装
+- data/materials-manifest.json を空状態から7件登録へ更新。
+- ZIP内に実在するPDF 3件を登録。
+  - docs/pta_proper_operation_edu_board_school.pdf
+  - docs/pta_work_and_duty.pdf
+  - docs/mext_24mka187.pdf
+- 回答DB・Excel元データ・情報公開請求キット・根拠対応表を、収録済み資料として補助登録。
+- PDF 3件について assets/materials/ にサムネイル画像を生成。
+- 動画・音声はZIP内に実在ファイルが確認できないため、media-manifest は空のまま維持。
+
+2. 資料館ページの改善
+- archive.html / actual-pta-documents.html の説明文を、登録済み資料が表示される前提に更新。
+- 登録件数・未実施確認を示す manifest-status-note を追加。
+- 外部原資料URLとの突合は未実施であることを明示。
+
+3. materials.js の改善
+- PDF / Excel / JS / JSON / HTML のリンク種別に応じて表示ラベルを出し分け。
+- サムネイル未設定のデータファイルで画像崩れが起きないように、アイコン表示へ修正。
+- 動画・音声が未登録の場合の空表示文言を公開向けに整理。
+
+4. サイトマップ・検索対象の整合
+- data/page-index.json を再生成。
+  - 検索対象ページ: 122 HTML
+  - 回答DB本文: 111件
+  - 合計検索対象: 233件
+- sitemap.xml を404を除く全HTMLから再生成。
+- sitemap.html を目的別の全ページ一覧へ更新。
+- 以前、通常導線から見つけにくかった audit.html / board-responses.html / faq.html / administrative-materials.html / lpsa-art35-conflict.html / yokohama-notice-1965.html 等も、全ページ一覧に含めた。
+
+5. トップページ
+- v8時点ですでに「立場別3入口」＋「資料3入口」に整理済みだったため、大きな再増築は行わず維持。
+- 余計な説明追加は避けた。
+
+検証結果:
+- HTMLファイル数: 123
+- 内部リンク切れ: 0
+- ページ内アンカー切れ: 0
+- materials-manifest 登録ファイル存在確認: 問題なし
+- JSON構文確認: 問題なし
+- JS構文確認: 問題なし
+- sitemap.xml 掲載対象: 122 HTML（404.html除外）
+
+未実施・注意:
+- 外部リンクの実在確認は未実施。
+- 文部科学省通知PDFについて、外部原URL・国立国会図書館アーカイブ等との突合は未実施。
+- 教育委員会回答DBの各回答について、原資料PDF・添付資料との突合は未実施。
+- 実物の入会案内、会費徴収資料、個人情報同意書、役員選出資料等は、現ZIP内に追加ファイルがないため未登録。

@@ -1,0 +1,15 @@
+PTAサイト公開準備 v10 EDU復元報告
+
+実施内容
+1. EDU.html を復元・新設。edu-board-guideline.html の内容を中核ページとして複製し、EDUの公開URLを確保。
+2. /EDU/ でも開けるように EDU/index.html をリダイレクト入口として追加。
+3. トップページに「最重要ページ / EDU」カードを追加し、教育委員会向け指針をサイトの集大成として明示。
+4. 主要ページのヘッダーに「EDU指針」を追加。
+5. guide-board.html とトップの関連導線で、EDUを最初に開けるように変更。
+6. sitemap.html / sitemap.xml / data/page-index.json に EDU.html を追加。
+7. 旧URL edu-board-guideline.html は互換用として残存。
+
+未実施
+- 外部リンクの実在確認
+- 教育委員会回答DBの原資料PDFとの突合
+- 追加実物資料の登録

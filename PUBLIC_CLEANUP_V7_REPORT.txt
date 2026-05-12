@@ -1,0 +1,16 @@
+PTA SITE PUBLIC CLEANUP V7 REPORT
+目的: ハブページの迷子感を減らし、archive.html等の前置きを削減
+
+実施内容:
+- archive.html: 冒頭をごたくから「まず押すところ」へ変更。登録済み資料を上部へ移動。説明はdetailsへ退避。
+- start.html / guide.html / edu-board-start.html / evidence.html / actual-pta-documents.html: 入口カード化、本文圧縮。
+- responses.html: DB内の最初のクリック先を3つに明示。
+- index.html: 「迷ったらここから」3カードを追加。
+- CSS: Stage 59 として簡潔なクリックカード、折りたたみ、簡易表を追加。
+- 既存ページからの旧アンカーリンクを壊さないため、evidence.html / guide.html / responses.html に互換アンカーを追加。
+- data/page-index.json: 変更後の本文スニペットで再生成、404除外を維持。
+
+HTMLファイル数: 123
+重複ID: 0
+内部リンク/アンカー問題: 0
+page-index内404混入: False

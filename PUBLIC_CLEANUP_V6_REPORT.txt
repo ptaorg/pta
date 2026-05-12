@@ -1,0 +1,45 @@
+PTAサイト公開前整理 v6 実施記録
+
+実施日: 2026-05-12
+基礎ZIP: pta_site_public_cleanup_v5(1).zip
+
+実施内容:
+1. research.html の重複IDを解消
+   - sec1〜sec9 の重複を article-番号-sec番号 形式へ変更
+   - ページ内リンクも対応するIDへ更新
+
+2. 404ページの検索混入を整理
+   - data/page-index.json から 404.html を除外
+   - count/pageCount を更新
+   - 404.html の robots を noindex,follow に変更
+   - 404本文内の「本文を抽出できませんでした」を削除
+
+3. 回答DBの条文番号確認フラグを追加
+   - data/board-responses-index.js に qualityFlags: lawReferenceCheck を追加
+   - 対象: 回答本文・照会文中に「地方教育行政法第10条」等を含むもの
+   - 追加数: 詳細本文 7件、自治体 5件
+   - 原文は削除せず、検証フラグとして表示する方式
+   - responses.html に条文番号注記を追加
+   - css/style.css にフラグ表示スタイルを追加
+
+4. 実物文書・動画の受け皿を強化
+   - data/materials-manifest.json を新設
+   - data/media-manifest.json を新設
+   - js/materials.js を新設
+   - actual-pta-documents.html と archive.html に登録済み資料の自動表示枠を追加
+   - 資料未登録時は空状態を表示
+
+5. 検証
+   - HTMLファイル数: 123
+   - 重複ID: 0件
+   - 内部ファイルリンク切れ: 0件
+   - ページ内アンカー切れ: 0件
+   - page-index 内 404混入: なし
+   - materials/media manifest JSON構文: OK
+   - js/materials.js 構文: OK
+
+未実施:
+- 外部リンク全件の実在確認
+- 実物資料PNG/PDF/動画の流し込み
+- 回答原資料PDFとの全文突合
+- GitHubへのコミット・反映
