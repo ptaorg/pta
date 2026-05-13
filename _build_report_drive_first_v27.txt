@@ -1,0 +1,22 @@
+PTA site public drive-first v27 build report
+Final verification after wording cleanup
+
+output_size_mb: 7.48
+output_files: 246
+html_files: 196
+remaining_pdf_count: 3
+broken_internal_links_count: 0
+remaining_pdfs:
+ - docs/pta_proper_operation_edu_board_school.pdf
+ - docs/mext_24mka187.pdf
+ - docs/pta_work_and_duty.pdf
+remaining_material_pdf_refs_pages:
+remaining_iframe_pages:
+broken_internal_links_count: 0
+remaining_terms:
+ - PDF本体をサイト内に配置しました: 0
+ - サイト内PDFとしても閲覧: 0
+ - PDF本体を開く: 0
+ - サイト内PDF：: 0
+ - PDF本文をこのページ内で確認できます: 0
+ - PDF本体: 0

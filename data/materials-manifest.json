@@ -1,8 +1,44 @@
 {
   "schemaVersion": 2,
   "updated": "2026-05-13",
-  "note": "公開用の資料登録ファイルです。実在確認済みの収録ファイルだけを登録しています。外部リンク・原資料URLとの突合は別途確認が必要です。",
+  "note": "公開用の資料登録ファイルです。収録PDFと外部資料フォルダを分けて登録しています。外部フォルダの資料を引用・提出する場合は、PDF本文・開示決定文書・公開範囲・個人情報処理を確認してください。",
   "items": [
+    {
+      "id": "evidence-highlights-page",
+      "title": "実物資料で見るPTA問題",
+      "type": "サイト内資料入口",
+      "source": "PTA適正化推進委員会",
+      "year": "2026年",
+      "status": "公開ページ",
+      "file": "evidence-highlights.html",
+      "thumbnail": "",
+      "summary": "公文書開示請求等で入手したPTA関連実物資料を、入会・会費・個人情報・役員選出・学校関与の5分類で読む入口ページです。",
+      "issues": [
+        "実物資料",
+        "公文書開示",
+        "資料館"
+      ],
+      "analysis": "個別資料ページと原資料プレビューへ接続します。"
+    },
+    {
+      "id": "evidence-catalog-page",
+      "title": "実物資料カタログ",
+      "type": "サイト内目録",
+      "source": "PTA適正化推進委員会",
+      "year": "2026年",
+      "status": "公開ページ",
+      "file": "materials-catalog.html",
+      "thumbnail": "",
+      "summary": "全国各地のPTA関連資料を、資料名・学校名・自治体名・論点候補で探すためのサイト内目録です。",
+      "issues": [
+        "実物資料",
+        "資料館",
+        "入会",
+        "会費",
+        "学校関与"
+      ],
+      "analysis": "タグは資料名からの仮分類です。正式引用時はPDF本文と開示決定文書を確認します。"
+    },
     {
       "id": "doc-edu-board-school-shiori-v2",
       "title": "PTA適正運営のしおり（教育委員会・学校用）第2版",
@@ -59,6 +95,57 @@
         "施設利用"
       ],
       "analysis": "PDF本文は収録済みですが、公開時は文部科学省側の現行掲載URL又はアーカイブ資料との照合を推奨します。"
+    },
+    {
+      "id": "drive-saitama-pref-pta-docs",
+      "title": "埼玉県 県立学校PTA・後援会関係資料フォルダ",
+      "type": "外部Google Drive資料フォルダ",
+      "source": "PTA適正化推進委員会整理資料",
+      "year": "令和6年度資料等",
+      "status": "外部フォルダ（公開範囲はリンク先設定に依存）",
+      "file": "https://drive.google.com/drive/folders/1tBkWaC4-cI4tNloXaT6TKCrTnebhs0re",
+      "summary": "入会意思確認書、PTA・後援会入会同意書、加入関係文書、入学のしおり等を確認する入口です。",
+      "issues": [
+        "埼玉県",
+        "入会意思確認",
+        "PTA・後援会",
+        "入学のしおり"
+      ],
+      "analysis": "入会意思確認、会費徴収、後援会との一体運用、学校側関与の有無を資料ごとに確認します。"
+    },
+    {
+      "id": "drive-kuki-school-pta-docs",
+      "title": "久喜市 学校別PTA関連資料フォルダ",
+      "type": "外部Google Drive資料フォルダ",
+      "source": "PTA適正化推進委員会整理資料",
+      "year": "2026年整理",
+      "status": "外部フォルダ（公開範囲はリンク先設定に依存）",
+      "file": "https://drive.google.com/drive/folders/1CIrU8d-VVss8D-A7J-Gz6a7R-Losxs9R",
+      "summary": "小学校・中学校ごとにPDFが整理されたフォルダです。入学説明会資料、加入案内、学校配布文書等を学校別に確認する入口です。",
+      "issues": [
+        "久喜市",
+        "学校別",
+        "入会案内",
+        "学校配布文書"
+      ],
+      "analysis": "学校名、文書名、年度、配布・回収主体を確認し、加入・会費・個人情報・役員選出を分けて読みます。"
+    },
+    {
+      "id": "drive-national-pta-doc-folders",
+      "title": "全国・自治体別PTA関連資料フォルダ",
+      "type": "外部Google Drive資料フォルダ",
+      "source": "PTA適正化推進委員会整理資料",
+      "year": "随時更新",
+      "status": "外部フォルダ（公開範囲はリンク先設定に依存）",
+      "file": "https://drive.google.com/drive/folders/1tbfpjRNJIhwQypk1vsAOaE7_qwW-lrm5",
+      "summary": "神奈川県、埼玉県、久喜市、川口市、豊橋市、仙台市など、自治体・地域別に整理したPTA関連資料の入口です。",
+      "issues": [
+        "実物資料",
+        "自治体別",
+        "学校配布文書",
+        "開示資料"
+      ],
+      "analysis": "資料名だけで判断せず、PDF本文、作成主体、年度、開示決定文書、個人情報処理を確認します。"
     },
     {
       "id": "data-board-responses-ui",
