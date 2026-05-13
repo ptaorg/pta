@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ptaorg.github.io/pta/EDU.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/actual-pta-documents.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/administrative-materials.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/answer-type-guide.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/archive.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/audit/board.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/audit//</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/audit/parent.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/audit/principal.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/audit/pta.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/audit.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/board-checklist.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/board-responses.html</loc></url>
@@ -23,6 +27,7 @@
   <url><loc>https://ptaorg.github.io/pta/edu-board-guideline.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/edu-board-legal-view.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/edu-board-start.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/edu.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/evidence-ledger.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/evidence-map.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/evidence.html</loc></url>
@@ -43,6 +48,32 @@
   <url><loc>https://ptaorg.github.io/pta/interview-record-template.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/issue-navigator.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/issues.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/comprehensive-report.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/consumer-agency.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/delegation-school-duty.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/duty-exemption.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/edu-board-guideline.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/edu-board-legal-view.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/explain-deck.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/fee-collection-governance.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/fee-collection-proposal.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal//</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/kawasaki-school-duty.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/legal-structure-supervision.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/lpsa-art35.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/mext-not-public.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/non-member-info.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/one-page-brief.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/optout-invalidity-article.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/optout-invalidity.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/pta-duty-concentration.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/public-interest-trap.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/school-duties-vs-pta.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/school-fee-illegality.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/summary.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/third-party-consent.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/work-style-reform.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/journal/yokohama-notice-1965.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/journal.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/kawasaki-school-duty-invalidity.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/kit.html</loc></url>
@@ -67,6 +98,7 @@
   <url><loc>https://ptaorg.github.io/pta/publication-checklist.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/reading-guide.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/report.html</loc></url>
+  <url><loc>https://ptaorg.github.io/pta/reports//</loc></url>
   <url><loc>https://ptaorg.github.io/pta/research-index.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/research.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/resident-audit-prep.html</loc></url>
@@ -91,5 +123,4 @@
   <url><loc>https://ptaorg.github.io/pta/work-style-reform-limit.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/yokohama-notice-1965.html</loc></url>
   <url><loc>https://ptaorg.github.io/pta/yokohama-status.html</loc></url>
-  <url><loc>https://ptaorg.github.io/pta/EDU/</loc></url>
 </urlset>
