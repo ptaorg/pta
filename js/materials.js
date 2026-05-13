@@ -48,12 +48,12 @@
     if(materialGrid){
       const data = await loadJson("data/materials-manifest.json");
       const items = Array.isArray(data?.items) ? data.items : [];
-      materialGrid.innerHTML = items.length ? items.map(materialCard).join("") : '<div class="manifest-empty">公開用manifestには、まだ実物文書が登録されていません。資料を追加する場合は <code>data/materials-manifest.json</code> に追記します。</div>';
+      materialGrid.innerHTML = items.length ? items.map(materialCard).join("") : '<div class="manifest-empty">現在公開している実物文書はありません。追加資料は、個人情報・公開範囲を確認したうえで順次掲載します。</div>';
     }
     if(mediaGrid){
       const data = await loadJson("data/media-manifest.json");
       const items = Array.isArray(data?.items) ? data.items : [];
-      mediaGrid.innerHTML = items.length ? items.map(mediaCard).join("") : '<div class="manifest-empty">現時点で公開用manifestに動画・音声は登録していません。動画・音声を追加する場合は、顔・音声・学校名・児童名等の公開可否を確認してから <code>data/media-manifest.json</code> に追記します。</div>';
+      mediaGrid.innerHTML = items.length ? items.map(mediaCard).join("") : '<div class="manifest-empty">現在公開している関連動画・音声はありません。追加資料は、顔・音声・学校名・児童名等の公開範囲を確認したうえで順次掲載します。</div>';
     }
   }
   document.addEventListener("DOMContentLoaded", render);
