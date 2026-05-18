@@ -1,0 +1,10 @@
+{
+  "base_pta": "https://ptaorg.github.io/pta/",
+  "base_d": "https://ptaorg.github.io/d/",
+  "menu_changed_html_count": 193,
+  "support_menu_placement": "desktop nav: rightmost item before hamburger button; hamburger overlay: last item in first mobile group",
+  "sitemap_indexable_url_count": 190,
+  "sitemap_excluded_count": 14,
+  "new_paypay_url": "https://qr.paypay.ne.jp/p2p01_7qyY46XqZxGgVsQw",
+  "old_paypay_urls_removed": "removed from public HTML; report intentionally does not repeat old URLs"
+}

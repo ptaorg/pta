@@ -104,7 +104,7 @@ A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/
 A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/start.html,3,2,sitemap.xml / start.html,ローカルファイル存在確認。公開URL統一の確認対象
 A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/submission-kit.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
 A,サイト内絶対URL,未実施,ptaorg.github.io,https://ptaorg.github.io/pta/term-glossary.html,1,1,sitemap.xml,ローカルファイル存在確認。公開URL統一の確認対象
-A,決済・支援導線,未実施,qr.paypay.ne.jp,https://qr.paypay.ne.jp/p2p01_OOcoe73WXQOj8C9p,1,1,donate.html,支援先・表示名・金額導線を確認
+A,決済・支援導線,未実施,qr.paypay.ne.jp,https://qr.paypay.ne.jp/p2p01_7qyY46XqZxGgVsQw,1,1,donate.html,支援先・表示名・金額導線を確認
 C,仕様参照URL,未実施,schema.org,https://schema.org,5,5,audit/board.html / audit/index.html / audit/parent.html / audit/principal.html / audit/pta.html,構造化データ・サイトマップ仕様。通常は変更不要
 A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/,2,2,data/board-responses-index.js / guide.html,公開範囲・閲覧権限・移植後の要否を確認
 A,Google系資料・旧サイト,未実施,sites.google.com,https://sites.google.com/view/ptatekiseika/ホーム/page,1,1,data/migration-pages.json,公開範囲・閲覧権限・移植後の要否を確認
