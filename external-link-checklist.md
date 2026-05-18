@@ -28,7 +28,7 @@
 - [Adobe共有資料] https://acrobat.adobe.com/id/urn:aaid:sc:AP:eea7f8a5-4a69-4bb6-ab8f-7550c036c5a8 （出現: 2、初出: journal/yokohama-notice-1965.html）
 - [Google系資料・旧サイト] https://drive.google.com/open?id=1DistiBvtpsLTQXrLtOpz0pAAXJ5ide0TQnRTmyoURYA （出現: 1、初出: archive.html）
 - [一次資料・公的機関] https://laws.e-gov.go.jp/law/325AC0000000261 （出現: 4、初出: journal/lpsa-art35.html）
-- [決済・支援導線] https://qr.paypay.ne.jp/p2p01_OOcoe73WXQOj8C9p （出現: 1、初出: donate.html）
+- [決済・支援導線] https://qr.paypay.ne.jp/p2p01_7qyY46XqZxGgVsQw （出現: 1、初出: donate.html）
 - [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/ （出現: 2、初出: data/board-responses-index.js）
 - [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/ホーム/page （出現: 1、初出: data/migration-pages.json）
 - [Google系資料・旧サイト] https://sites.google.com/view/ptatekiseika/ホーム/pta運営適正化診断 （出現: 1、初出: data/migration-pages.json）

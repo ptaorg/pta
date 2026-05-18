@@ -61,16 +61,16 @@ def patch_mobile(text: str, href: str):
 
 
 def patch_home_actions(text: str):
-    if 'href="donate.html">支援する</a>' in text:
+    if 'href="https://ptaorg.github.io/d/">支援する</a>' in text:
         return text
     def repl(m):
         inner = m.group(2)
         if 'donate.html' in inner or '支援する' in inner:
             return m.group(0)
         if BOARD_BTN_RE.search(inner):
-            inner = BOARD_BTN_RE.sub(r'\1\n  <a class="home-btn" href="donate.html">支援する</a>', inner, count=1)
+            inner = BOARD_BTN_RE.sub(r'\1\n  <a class="home-btn" href="https://ptaorg.github.io/d/">支援する</a>', inner, count=1)
         else:
-            inner = inner + '\n  <a class="home-btn" href="donate.html">支援する</a>\n'
+            inner = inner + '\n  <a class="home-btn" href="https://ptaorg.github.io/d/">支援する</a>\n'
         return m.group(1) + inner + m.group(3)
     return HOME_ACTIONS_RE.sub(repl, text, count=1)
 
