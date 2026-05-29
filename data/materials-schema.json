@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ptaorg.github.io/pta/data/materials-schema.json",
+  "title": "PTA実物資料メタデータ",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "status",
+    "localPage",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "資料を一意に識別するID。URLや画像フォルダ名に使う。"
+    },
+    "title": {
+      "type": "string",
+      "description": "資料名。原資料名を優先し、推測で改題しない。"
+    },
+    "prefecture": {
+      "type": "string",
+      "description": "都道府県。未確認の場合は空文字又は未確認。"
+    },
+    "municipality": {
+      "type": "string",
+      "description": "自治体名。未確認の場合は空文字又は未確認。"
+    },
+    "school": {
+      "type": "string",
+      "description": "学校名。公開可否・個人情報処理を確認する。"
+    },
+    "year": {
+      "type": "string",
+      "description": "年度又は作成年。資料本文で確認できる範囲で記載。"
+    },
+    "documentType": {
+      "type": "string",
+      "description": "入会案内、入会申込書、会費通知、学校徴収金、個人情報同意書、役員選出、校務分掌、職専免、通知等。"
+    },
+    "sourceType": {
+      "type": "string",
+      "description": "公文書開示、任意提供、公開資料、委員会作成資料など。"
+    },
+    "obtainedBy": {
+      "type": "string",
+      "description": "取得方法。公文書開示請求等。個人情報を含む場合は公開処理を確認する。"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "原資料確認済み",
+        "収録済みPDF",
+        "外部フォルダ",
+        "外部原URL未突合",
+        "Drive公開範囲依存",
+        "資料名からの仮分類",
+        "本文未確認",
+        "公開保留"
+      ],
+      "description": "検証状態。確認していないものを確認済み扱いしない。"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "論点タグ。例：入会、会費、個人情報、学校関与、役員選出、学校徴収金、服務。"
+    },
+    "driveUrl": {
+      "type": "string",
+      "description": "原本PDF等のGoogle Driveリンク。主導線ではなく補助リンクとして扱う。"
+    },
+    "localPage": {
+      "type": "string",
+      "description": "サイト内の資料ページURL。読者の主導線。"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["src", "alt"],
+        "properties": {
+          "src": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          },
+          "caption": {
+            "type": "string"
+          },
+          "commentary": {
+            "type": "string",
+            "description": "画像に対応する解説。資料本文を改変せず、確認できる事実と論点を分ける。"
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "string",
+      "description": "資料の概要。資料未確認部分は明示する。"
+    },
+    "checkPoints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "この資料で見るべき点。"
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "制度上の論点。断定が必要な場合は根拠資料を確認する。"
+    },
+    "boardAction": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "教育委員会が確認・通知・点検すべき事項。"
+    },
+    "relatedPages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
