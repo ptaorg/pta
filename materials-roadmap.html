@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0b2a4a" />
+<title>実物PTA資料庫 整備ロードマップ | PTA適正化推進委員会</title>
+<meta name="description" content="各地から取り寄せた実際のPTA資料群を、サイト内完結型の資料庫として整理するための整備方針です。" />
+<link rel="canonical" href="https://ptaorg.github.io/pta/materials-roadmap.html" />
+<link href="css/style.css" rel="stylesheet" />
+<style>.roadmap-step{background:#fff;border:1px solid var(--line,#d8dee8);border-radius:16px;padding:18px;margin:18px 0}.roadmap-step h3{margin-top:0;color:#0b2a4a}.roadmap-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.roadmap-card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:14px}.strong-note{background:#ecfdf5;border:1px solid #99f6e4;color:#134e4a;border-radius:14px;padding:16px;margin:20px 0}</style>
+</head>
+<body id="page-top"><a class="skip-link" href="#main-content">本文へスキップ</a>
+<header class="site-header"><div class="nav-container">
+<a class="logo" href="index.html"><span class="logo-mark">POPC</span><span>PTA適正化推進委員会</span></a>
+<nav aria-label="主要ナビゲーション" class="desktop-nav desktop-nav--simple">
+<a class="nav-link" href="index.html">トップ</a>
+<a class="nav-link" href="guide-parent.html">保護者</a>
+<a class="nav-link" href="guide-pta.html">PTA役員</a>
+<a class="nav-link" href="guide-board.html">学校・教委</a>
+<a class="nav-link nav-link--edu" href="edu.html">edu指針</a>
+<a class="nav-link active" aria-current="page" href="materials-catalog.html">資料庫</a>
+<a class="nav-link" href="search.html">検索</a>
+</nav>
+</div></header>
+<main id="main-content">
+<nav aria-label="breadcrumb" class="breadcrumb"><a href="index.html">トップ</a> / <a href="materials-catalog.html">実物資料カタログ</a> / <span>資料庫整備ロードマップ</span></nav>
+<section class="page-hero lean-hero"><div class="page-hero-inner"><div class="page-hero-kicker">Material Archive Roadmap</div><h1>実物PTA資料庫<br><em>整備ロードマップ</em></h1><p>Google Driveは原本保管に使い、読者の閲覧・検索・解説はこのサイト内で完結させます。</p></div></section>
+<section class="section"><div class="wrap-narrow">
+<div class="strong-note"><strong>方針：</strong>資料庫は、Driveフォルダへのリンク集ではなく、実際のPTA資料を画像化し、画像と解説をセットで見せるサイト内完結型の資料庫として整備します。</div>
+<h2>目的</h2>
+<p>各地から取り寄せたPTA資料を、保護者、PTA役員、学校管理職、教育委員会が同じ画面で確認できるように整理します。資料をただ保存するのではなく、どの部分が入会、会費、個人情報、学校関与、服務、施設利用の論点に関係するのかを、画像と解説で確認できる形にします。</p>
+<div class="roadmap-step"><h3>第1段階：資料の棚卸し</h3><ul><li>資料名、自治体名、学校名、年度、取得方法を整理する。</li><li>原本PDF、画像化済み資料、未確認資料を分ける。</li><li>公開保留、マスキング必要、公開可能を区別する。</li></ul></div>
+<div class="roadmap-step"><h3>第2段階：資料データの標準化</h3><p><code>data/materials-schema.json</code> に合わせて、資料ごとのメタデータを整理します。</p><div class="roadmap-grid"><div class="roadmap-card"><strong>基本情報</strong><br>資料名、自治体、学校、年度、取得方法。</div><div class="roadmap-card"><strong>検証状態</strong><br>原資料確認済み、外部原URL未突合、本文未確認等。</div><div class="roadmap-card"><strong>論点タグ</strong><br>入会、会費、個人情報、学校関与、役員選出等。</div><div class="roadmap-card"><strong>教育委員会確認事項</strong><br>通知・点検・改善指示につながる確認項目。</div></div></div>
+<div class="roadmap-step"><h3>第3段階：PDFの画像化</h3><ul><li>資料PDFをページごとにWebP等へ変換する。</li><li>画像は <code>assets/materials/自治体名/資料ID/</code> に配置する。</li><li>個人情報が含まれる場合は、マスキング済み画像だけを公開する。</li><li>原本PDFはDrive等に保管し、サイト内ページから補助リンクとして提示する。</li></ul></div>
+<div class="roadmap-step"><h3>第4段階：画像＋解説ページの作成</h3><p><code>material-page-template.html</code> を複製し、資料ごとにページを作成します。</p><ul><li>画像から確認できる事実を記載する。</li><li>制度上の論点を整理する。</li><li>未確認事項を明示する。</li><li>教育委員会が確認すべき事項を列挙する。</li></ul></div>
+<div class="roadmap-step"><h3>第5段階：立場別ページへの接続</h3><ul><li>保護者向けページから、入会案内・会費通知・個人情報同意書へ接続する。</li><li>PTA役員向けページから、会員管理・規約・会計・個人情報規程へ接続する。</li><li>学校・教育委員会向けページから、学校関与・学校徴収金・校務分掌・職専免資料へ接続する。</li></ul></div>
+<h2>教育委員会向けの最終導線</h2>
+<p>教育委員会に対しては、PTAそのものを直接統制するのではなく、学校が関与している範囲を点検対象として整理します。資料ページは、最終的に学校宛通知、事務連絡、ガイドライン、点検票の作成につながる構成にします。</p>
+<ul><li>学校によるPTA入会案内の配布・回収</li><li>学校によるPTA会費徴収</li><li>学校保有個人情報のPTA提供</li><li>教職員の勤務時間内PTA事務</li><li>学校連絡ツールによるPTA通知</li><li>学校施設・印刷機・学校HPの利用</li><li>非会員児童・保護者の不利益取扱い</li></ul>
+<h2>関連ページ</h2>
+<ul><li><a href="materials-catalog.html">実物資料カタログ</a></li><li><a href="material-page-template.html">実物資料ページテンプレート</a></li><li><a href="guide-board.html">学校・教育委員会向けページ</a></li><li><a href="edu.html">教育委員会向け指針</a></li></ul>
+</div></section>
+</main>
+<footer class="site-footer"><p class="copyright">© PTA適正化推進委員会</p></footer>
+<script defer src="js/site.js"></script>
+</body>
+</html>
