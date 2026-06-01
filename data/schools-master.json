@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "description": "全国PTA資料館の学校母集団台帳。自治体公式学校一覧を根拠に、資料がある学校だけでなく当該自治体内の学校全体を管理する。",
+  "important_rules": [
+    "開示資料に含まれる学校だけを母集団にしない。",
+    "資料なし、未確認、不存在回答を混同しない。",
+    "架空の学校名、自治体名、資料名を作成しない。",
+    "このファイルには実在確認済みの学校だけを追加する。"
+  ],
+  "allowed_school_status": [
+    "現存",
+    "統廃合要確認",
+    "対象外・要確認",
+    "閉校",
+    "未確認"
+  ],
+  "fields": [
+    "prefecture",
+    "municipality",
+    "municipality_slug",
+    "school_name",
+    "school_slug",
+    "school_type",
+    "official_school_list_source",
+    "official_school_url",
+    "address",
+    "latitude",
+    "longitude",
+    "school_status",
+    "note"
+  ],
+  "schools": []
+}
