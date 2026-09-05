@@ -434,7 +434,7 @@ const LEGACY_MIGRATION_TARGETS={
   'journal/optout-invalidity.html':'/journal/optout-invalidity.html'
 };
 function initLegacyMigration(){
-  if(location.hostname!=='ptaorg.github.io'||!location.pathname.startsWith('/pta/'))return;
+  if(!location.pathname.startsWith('/pta/'))return;
   let key='';
   try{key=decodeURIComponent(location.pathname.slice('/pta/'.length));}catch(e){key=location.pathname.slice('/pta/'.length);}
   if(!key||key.endsWith('/'))key+='index.html';
