@@ -398,4 +398,58 @@ function initIssueNavigator(){document.querySelectorAll('[data-navigator]').forE
 function initCopyButtons(){document.querySelectorAll('[data-copy-target]').forEach(btn=>btn.addEventListener('click',async()=>{const el=document.getElementById(btn.dataset.copyTarget);if(!el)return;const txt=el.innerText||el.textContent||'';try{await navigator.clipboard.writeText(txt);btn.classList.add('copied');btn.textContent='コピー済み';setTimeout(()=>{btn.classList.remove('copied');btn.textContent='コピー'},1600);}catch(e){btn.textContent='選択してコピー';}}));}
 function initFaqSearch(){const input=document.getElementById('faqSearch');const list=document.querySelector('[data-faq-list]');if(!input||!list)return;input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();list.querySelectorAll('.faq-item').forEach(item=>{const t=(item.textContent+' '+(item.dataset.keywords||'')).toLowerCase();item.classList.toggle('is-hidden',q&& !t.includes(q));});});}
 
-document.addEventListener("DOMContentLoaded",()=>{initMobile();initDropdowns();initSearch();initIssueNavigator();initCopyButtons();initFaqSearch();});
+const CURRENT_SITE_ORIGIN='https://ptaorg.com';
+const LEGACY_MIGRATION_TARGETS={
+  'index.html':'/',
+  'responses.html':'/board-responses.html',
+  'board-responses.html':'/board-responses.html',
+  'facilities.html':'/facilities.html',
+  'fee-collection.html':'/fee-collection.html',
+  'guide-board.html':'/guide-board.html',
+  'guide-parent.html':'/guide-parent.html',
+  'guide-pta.html':'/guide-pta.html',
+  'membership.html':'/membership.html',
+  'privacy.html':'/privacy.html',
+  'personnel.html':'/personnel.html',
+  'cases.html':'/cases.html',
+  'report.html':'/report.html',
+  'journal.html':'/journal.html',
+  'administrative-materials.html':'/administrative-materials.html',
+  'summary-pta-committee.html':'/summary-pta-committee.html',
+  'visual-overview.html':'/visual-overview.html',
+  'explain-deck.html':'/explain-deck.html',
+  'pta-duty-concentration.html':'/personnel.html',
+  'duty-exemption-collapse.html':'/personnel.html',
+  'non-member-info-impossibility.html':'/privacy.html',
+  'school-fee-collection-illegality.html':'/fee-collection.html',
+  'fee-collection-governance.html':'/fee-collection.html',
+  'fee-collection-proposal.html':'/fee-collection.html',
+  'edu.html':'/guideline.html',
+  'board-checklist.html':'/guide-board.html',
+  'disclosure-request-kit.html':'/starter-kit/audit.html',
+  'resident-audit-prep.html':'/starter-kit/audit.html',
+  'audit/board.html':'/audit/index.html',
+  'audit/pta.html':'/audit/index.html',
+  'journal/school-fee-illegality.html':'/journal/pta-fee-collection-legal-analysis.html',
+  'journal/optout-invalidity.html':'/journal/optout-invalidity.html'
+};
+function initLegacyMigration(){
+  if(location.hostname!=='ptaorg.github.io'||!location.pathname.startsWith('/pta/'))return;
+  let key='';
+  try{key=decodeURIComponent(location.pathname.slice('/pta/'.length));}catch(e){key=location.pathname.slice('/pta/'.length);}
+  if(!key||key.endsWith('/'))key+='index.html';
+  const targetPath=LEGACY_MIGRATION_TARGETS[key];
+  const target=CURRENT_SITE_ORIGIN+(targetPath||'/');
+  if(targetPath){
+    const canonical=document.querySelector('link[rel="canonical"]');
+    if(canonical)canonical.href=target;
+  }
+  const banner=document.createElement('aside');
+  banner.setAttribute('aria-label','サイト移転のお知らせ');
+  banner.style.cssText='position:relative;z-index:99999;background:#fff7d6;border-bottom:2px solid #d7a900;color:#202020;padding:12px 16px;text-align:center;font:700 15px/1.6 system-ui,-apple-system,"Noto Sans JP",sans-serif;';
+  banner.innerHTML='この旧サイトの内容は現行サイト <strong>ptaorg.com</strong> に移行しています。 <a href="'+target+'" style="display:inline-block;margin-left:.5em;color:#0645ad;text-decoration:underline;">最新版を開く →</a>';
+  document.body.prepend(banner);
+  if(targetPath)setTimeout(()=>location.replace(target),1200);
+}
+
+document.addEventListener("DOMContentLoaded",()=>{initLegacyMigration();initMobile();initDropdowns();initSearch();initIssueNavigator();initCopyButtons();initFaqSearch();});
